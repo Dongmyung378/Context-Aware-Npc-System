@@ -1,62 +1,98 @@
-# Immersive NPC Interaction Design
+# Context-Aware NPC Interaction System
 
-Unreal Engine 5.4.4로 제작한 NPC 상호작용 프로토타입입니다. 플레이어의 상태를 무시하고 같은 대사를 반복하는 NPC, 시간과 무관하게 제자리에 머무는 NPC, 관계 변화가 게임 플레이와 연결되지 않는 문제를 줄이는 데 초점을 두었습니다.
+[English](README.md) | [한국어](README.ko.md)
 
-NPC는 시간표에 따라 등장하고 순찰하며, 대화 시 플레이어의 체력·소지금·신뢰도를 확인합니다. 퀘스트, 아이템 거래, 동행 기능도 신뢰도 변화와 연결되어 있습니다.
+An Unreal Engine 5 prototype exploring NPCs that respond to game state, follow daily routines, and connect relationships to gameplay.
 
-## 프로젝트에서 다룬 기능
+**Engine:** Unreal Engine 5.4.4<br>
+**Focus:** Blueprint systems, AI behavior, data-driven gameplay, and interaction design
 
-- **시간 기반 NPC 루틴** - 하루 1,440분을 기준으로 NPC의 등장·퇴장과 순찰을 관리합니다. Behaviour Tree와 Blackboard를 사용해 시간표와 동행 상태를 전환합니다.
-- **상태 우선 대화** - 체력이 30 이하이거나 소지금이 0이면 일반 인사보다 해당 상황에 맞는 대사가 먼저 나오도록 구성했습니다.
-- **신뢰도와 동행** - 대화와 퀘스트를 통해 쌓인 신뢰도가 NPC별 기준을 넘으면 동행을 요청할 수 있습니다. 동행 중에는 NPC가 기존 순찰 대신 플레이어를 따라갑니다.
-- **아이템·거래 시스템** - 데이터 테이블 기반 인벤토리와 상점을 구현했습니다. 채집 아이템에는 희귀 등급이 있으며, 희귀 아이템의 목표 생성 확률은 10%입니다. 신뢰도 100 이상에서는 특수 아이템을 구매할 수 있습니다.
-- **상호작용 대상 선택** - 여러 NPC가 가까이 있을 때 카메라 방향과 내적(dot product)을 이용해 의도한 대상을 고릅니다.
-- **플레이어 조작** - 달리기, 체력 소모, 1인칭/3인칭 전환, 아이템 획득 및 인벤토리 UI를 포함합니다.
+## Project Overview
 
-## 실행 방법
+Many game NPCs repeat the same dialogue regardless of the player's condition, remain in one place throughout the day, and treat relationships as a number with little gameplay impact. This project addresses those limitations with a state-aware interaction system built around schedules, dialogue priorities, trust, quests, trading, and companion behavior.
 
-실행 가능한 전체 게임 프로젝트는 용량 때문에 저장소에 포함하지 않았습니다. 아래 링크에서 전체 ZIP을 내려받아 압축을 푼 뒤 실행합니다.
+The playable project uses deterministic, data-driven dialogue rules. A separate LLM feasibility experiment was conducted during development, but it was not integrated because the tested model did not follow gameplay constraints consistently.
 
-1. [전체 게임 프로젝트 다운로드](https://drive.google.com/file/d/1qsdGAzKU3myKQVk04MfW-EngDHKKAqmW/view?usp=sharing)
-2. 압축을 해제하고 `NPC.uproject`를 엽니다.
-3. Unreal Engine에서 모듈 재빌드 여부를 묻는 경우 **Yes**를 선택합니다.
+## Key Features
 
-개발 및 실행 환경은 **Unreal Engine 5.4.4**입니다.
+| System | Implementation | Player-facing result |
+| --- | --- | --- |
+| Daily NPC routines | A 1,440-minute game clock controls NPC arrival, departure, and patrol behavior through Behavior Trees and Blackboards. | NPCs appear and move according to their schedules. |
+| State-priority dialogue | Dialogue checks health, money, and trust before selecting a response. Critical states such as health at or below 30 or no money take priority over greetings. | Conversations reflect the player's current situation. |
+| Trust and companions | Dialogue and quest outcomes update NPC-specific trust thresholds. | A trusted NPC can leave its patrol and follow the player. |
+| Data-driven inventory and trading | Data Tables define items, quests, NPCs, and dialogue. Rare gathering items use a target spawn probability of 10%. | Content can be tuned without rebuilding the interaction logic. |
+| Interaction targeting | Camera direction and a dot-product comparison select the intended target when several NPCs are nearby. | The player can interact more reliably in crowded spaces. |
+| Player systems | Sprinting, stamina, first-/third-person switching, item pickup, inventory, and shop interfaces are included. | The NPC features are demonstrated in a complete gameplay loop. |
 
-## 조작법
+## System Flow
 
-| 입력 | 기능 |
+```text
+Game clock ──> NPC schedule ──> Behavior Tree ──> spawn / patrol / follow
+Player state ────────────────> dialogue priority ──> contextual response
+Trust + quest state ─────────> trade / quest / companion availability
+Data Tables ─────────────────> NPC, item, dialogue, and UI configuration
+```
+
+## Demo and Full Project
+
+- [Download the complete playable project](https://drive.google.com/file/d/1qsdGAzKU3myKQVk04MfW-EngDHKKAqmW/view?usp=sharing)
+- [View screencasts and supporting material](https://drive.google.com/drive/folders/1NyVitLN8_N_IztialbqUIZ3nomCIZ69q?usp=sharing)
+
+To run the project:
+
+1. Download and extract the complete project.
+2. Open `NPC.uproject` in Unreal Engine 5.4.4.
+3. Select **Yes** if Unreal Engine asks to rebuild missing modules.
+
+The repository also includes a [compact package of the core assets](downloads/npc-core-assets.zip). It is provided for inspection and is not a standalone playable build.
+
+## Controls
+
+| Input | Action |
 | --- | --- |
-| `W` `A` `S` `D` | 이동 |
-| `Left Shift` | 달리기 |
-| `V` | 1인칭 / 3인칭 전환 |
-| `E` | 상호작용, 아이템 획득, 대화 종료 |
-| `I` | 인벤토리 열기 |
-| `R` | 대화 계속하기 |
-| `T` | 거래 창 열기 |
-| `F` | NPC 동행 요청 / 해제 |
+| `W` `A` `S` `D` | Move |
+| `Left Shift` | Sprint |
+| `V` | Toggle first-/third-person view |
+| `E` | Interact, pick up an item, or close dialogue |
+| `I` | Open inventory |
+| `R` | Continue a conversation |
+| `T` | Open the shop |
+| `F` | Ask an NPC to follow or stop following |
 
-## 저장소 구성
+## Validation
 
-| 파일 | 내용 |
-| --- | --- |
-| [3rd_Year_Project_Report - Dongmyung Park (10879360).pdf](<3rd_Year_Project_Report%20-%20Dongmyung%20Park%20(10879360).pdf>) | 설계 배경, 시스템 구조, 구현과 테스트 결과를 정리한 최종 보고서 |
-| [DongmyungPark_10879360_Project_Code.zip](DongmyungPark_10879360_Project_Code.zip) | NPC, Behaviour Tree, 데이터 테이블, UI 위젯 등 핵심 UE 블루프린트 에셋 |
-| [npc-for-game.ipynb](npc-for-game.ipynb) | Qwen2.5-1.5B-Instruct를 이용해 NPC 성격·시간·체력·소지금 조건을 프롬프트로 전달해 본 별도 실험 노트북 |
-| [QnA.pptx](QnA.pptx) | 최종 발표 및 Q&A 자료 |
+The project was checked with feature-level tests, scenario-based integration tests, and repeated probability measurements. Across 100 trials, quests appeared in 11% of observations and rare items in 14%; both were treated as plausible observations for systems configured with a 10% target probability. Test conditions and limitations are documented in Chapter 5 of the project report.
 
-## 시연 영상과 전체 자료
+## Repository Guide
 
-[Google Drive 프로젝트 폴더](https://drive.google.com/drive/folders/1NyVitLN8_N_IztialbqUIZ3nomCIZ69q?usp=sharing)에서 스크린캐스트와 전체 프로젝트 자료를 확인할 수 있습니다.
+```text
+.
+├── docs/
+│   ├── project-report.pdf
+│   └── project-presentation.pptx
+├── downloads/
+│   └── npc-core-assets.zip
+├── unreal-assets/
+│   ├── Characters/
+│   ├── Files/
+│   ├── README.md
+│   └── README.ko.md
+├── .gitignore
+├── README.md
+└── README.ko.md
+```
 
-## 검증 범위
+- [Project report](docs/project-report.pdf) — design rationale, system architecture, implementation, and testing
+- [Presentation](docs/project-presentation.pptx) — final project presentation and Q&A material
+- [Unreal asset index](unreal-assets/README.md) — a categorized guide to the included Blueprint and data assets
 
-기능 단위 테스트, 시나리오 기반 통합 테스트, 확률 시스템 반복 측정을 진행했습니다. 100회 측정에서 퀘스트 발생은 11%, 희귀 아이템 생성은 14%로 관측되어 각각 목표 확률 10%의 기대 범위 안에 있음을 확인했습니다. 자세한 테스트 조건과 한계는 최종 보고서 5장을 참고하세요.
+Daily notes, internal experiment records, generated Unreal files, and local configuration are intentionally excluded through `.gitignore` so the public repository stays focused on portfolio material.
 
-## LLM 실험에 관하여
+## Scope and Next Steps
 
-`npc-for-game.ipynb`는 Qwen2.5-1.5B-Instruct의 제로샷 대화 품질을 살펴보기 위한 실험입니다. 체력, 소지금, NPC 성격 같은 제약을 일관되게 지키지 못하는 경우가 있어, 이 모델을 게임의 실제 대화 시스템에 연결하지는 않았습니다. 현재 게임은 데이터 테이블과 상태 기반 규칙으로 대화를 제어하며, 향후에는 게임 데이터에 맞춘 파인튜닝 또는 RAG/LoRA 같은 방식이 필요하다고 보았습니다.
+The current dialogue system is rule-based and designed for predictable gameplay behavior. A future version could evaluate a fine-tuned model or retrieval-augmented generation while retaining deterministic validation for health, money, quests, trust, and item transactions.
 
-## 작성자
+## Author
 
-Dongmyung Park · BSc Artificial Intelligence · Third Year Project (2026)
+Dongmyung Park<br>
+BSc Artificial Intelligence · Third Year Project · 2026

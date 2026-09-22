@@ -1,0 +1,7 @@
+*.uasset binary
+*.umap binary
+*.pdf binary
+*.pptx binary
+*.zip binary
+*.md text eol=lf
+*.txt text eol=lf

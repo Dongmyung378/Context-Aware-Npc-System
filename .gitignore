@@ -1,0 +1,40 @@
+# Private development material
+/internal/
+/private/
+/daily/
+/daily-notes/
+/dev-notes/
+/experiment-notes/
+/experiments/
+*.private.md
+*.local.md
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+
+# Unreal Engine generated files
+.vs/
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+*.sln
+*.suo
+*.opensdf
+*.sdf
+
+# Jupyter and Python caches
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+
+# Editor and operating-system files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.tmp
+*.log
