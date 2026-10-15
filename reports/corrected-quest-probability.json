@@ -1,0 +1,14 @@
+{
+  "schema": "npc-actual-quest-probability/v1",
+  "test": "NPC.Gameplay.QuestProbability",
+  "scope": "Actual Charles Talk ProcessEvent with open real dialogue, stamina100, money1000, no active quest and InteractionEnd=false reset before each trial. Conditional proposal sampling, not 10000 full keyboard conversations or quest completions. Fresh PIE ends after this isolated synchronous loop; source assets are never saved.",
+  "trials": 10000,
+  "quest_count": 1003,
+  "quest_rate": 0.1003,
+  "rng_seed": 378,
+  "configured_threshold": 0.1,
+  "wilson_95_lower": 0.09456489044619147,
+  "wilson_95_upper": 0.10634207785132739,
+  "sampling_elapsed_seconds": 0.11409880000064732,
+  "assertions_passed": true
+}

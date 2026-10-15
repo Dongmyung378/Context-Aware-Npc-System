@@ -1,0 +1,609 @@
+{
+  "schema": "npc-original-gameplay-contracts/v1",
+  "test": "NPC.Gameplay.OriginalContracts",
+  "scope": "Actual PIE actors and original Blueprint ProcessEvent calls. In-memory fixture controls are not proof of keyboard, navigation completion, or user-study behavior.",
+  "engine_version": "5.4.4-35576357+++UE5+Release-5.4",
+  "map": "/Game/ThirdPerson/Maps/ThirdPersonMap",
+  "isolation": "Per-case reflected property restoration; actor ticks disabled during synchronous probes; fresh PIE ends after suite. No source assets are saved.",
+  "rng_scope": "Dialogue probes set explicit global Rand/SRand seeds in the isolated editor test process; they do not claim statistical accuracy.",
+  "npc_data_oracles": [
+    {
+      "asset": "/Game/AI/DT_NPC_Data",
+      "row": "NPC_01",
+      "npc": "Charles",
+      "required_trust_follow": 80,
+      "start_time": 420,
+      "end_time": 1140,
+      "source": "Frozen original editor DataTable export; report PDF32/46 supplies interval and inclusive follow rules."
+    },
+    {
+      "asset": "/Game/AI/DT_NPC_Data",
+      "row": "NPC_02",
+      "npc": "George",
+      "required_trust_follow": 40,
+      "start_time": 330,
+      "end_time": 1050,
+      "source": "Frozen original editor DataTable export; report PDF32/46 supplies interval and inclusive follow rules."
+    },
+    {
+      "asset": "/Game/AI/DT_NPC_Data",
+      "row": "NPC_03",
+      "npc": "Leon",
+      "required_trust_follow": 60,
+      "start_time": 390,
+      "end_time": 1110,
+      "source": "Frozen original editor DataTable export; report PDF32/46 supplies interval and inclusive follow rules."
+    },
+    {
+      "asset": "/Game/AI/DT_NPC_Data",
+      "row": "NPC_04",
+      "npc": "Lucia",
+      "required_trust_follow": 60,
+      "start_time": 0,
+      "end_time": 720,
+      "source": "Frozen original editor DataTable export; report PDF32/46 supplies interval and inclusive follow rules."
+    },
+    {
+      "asset": "/Game/AI/DT_NPC_Data",
+      "row": "NPC_05",
+      "npc": "Rose",
+      "required_trust_follow": 20,
+      "start_time": 420,
+      "end_time": 1140,
+      "source": "Frozen original editor DataTable export; report PDF32/46 supplies interval and inclusive follow rules."
+    }
+  ],
+  "cases": [
+    {
+      "id": "clock.1439.500_plus_0.500",
+      "oracle": "Report PDF28 modulo formula, actual ReceiveTick",
+      "expected": 0,
+      "actual": 0,
+      "passed": true
+    },
+    {
+      "id": "clock.1439.500_plus_1.000",
+      "oracle": "Report PDF28 modulo formula, actual ReceiveTick",
+      "expected": 0.5,
+      "actual": 0.5,
+      "passed": true
+    },
+    {
+      "id": "clock.0.000_plus_60.000",
+      "oracle": "Report PDF28 modulo formula, actual ReceiveTick",
+      "expected": 60,
+      "actual": 60,
+      "passed": true
+    },
+    {
+      "id": "clock.360.000_plus_120.000",
+      "oracle": "Report PDF28 modulo formula, actual ReceiveTick",
+      "expected": 480,
+      "actual": 480,
+      "passed": true
+    },
+    {
+      "id": "movement.stamina_0",
+      "oracle": "Report PDF34/56; fixed expected boundary values",
+      "expected": 200,
+      "actual": 200,
+      "passed": true
+    },
+    {
+      "id": "movement.stamina_19",
+      "oracle": "Report PDF34/56; fixed expected boundary values",
+      "expected": 200,
+      "actual": 200,
+      "passed": true
+    },
+    {
+      "id": "movement.stamina_20",
+      "oracle": "Report PDF34/56; fixed expected boundary values",
+      "expected": 300,
+      "actual": 300,
+      "passed": true
+    },
+    {
+      "id": "movement.stamina_21",
+      "oracle": "Report PDF34/56; fixed expected boundary values",
+      "expected": 300,
+      "actual": 300,
+      "passed": true
+    },
+    {
+      "id": "movement.stamina_30",
+      "oracle": "Report PDF34/56; fixed expected boundary values",
+      "expected": 300,
+      "actual": 300,
+      "passed": true
+    },
+    {
+      "id": "movement.recovers_at_20",
+      "oracle": "Report PDF34 false branch restores Base_Speed",
+      "expected": 300,
+      "actual": 300,
+      "passed": true
+    },
+    {
+      "id": "decay.current_3_max_100",
+      "oracle": "Report PDF34 Figure12 dynamic MaxStamina clamp",
+      "expected": 0,
+      "actual": 0,
+      "passed": true
+    },
+    {
+      "id": "decay.current_100_max_100",
+      "oracle": "Report PDF34 Figure12 dynamic MaxStamina clamp",
+      "expected": 90,
+      "actual": 90,
+      "passed": true
+    },
+    {
+      "id": "decay.current_109_max_110",
+      "oracle": "Report PDF34 Figure12 dynamic MaxStamina clamp",
+      "expected": 108,
+      "actual": 108,
+      "passed": true
+    },
+    {
+      "id": "decay.current_0_max_100",
+      "oracle": "Report PDF34 Figure12 dynamic MaxStamina clamp",
+      "expected": 0,
+      "actual": 0,
+      "passed": true
+    },
+    {
+      "id": "follow.Charles.trust_79",
+      "oracle": "Original /Game/AI/DT_NPC_Data row NPC_01: Required_Trust_Follow=80; report PDF46 inclusive >= rule",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "id": "follow.Charles.trust_79.blackboard",
+      "oracle": "Actual BehaviorTree Blackboard agrees with original follow branch",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "id": "follow.Charles.trust_80",
+      "oracle": "Original /Game/AI/DT_NPC_Data row NPC_01: Required_Trust_Follow=80; report PDF46 inclusive >= rule",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "id": "follow.Charles.trust_80.blackboard",
+      "oracle": "Actual BehaviorTree Blackboard agrees with original follow branch",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "id": "follow.Charles.trust_81",
+      "oracle": "Original /Game/AI/DT_NPC_Data row NPC_01: Required_Trust_Follow=80; report PDF46 inclusive >= rule",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "id": "follow.Charles.trust_81.blackboard",
+      "oracle": "Actual BehaviorTree Blackboard agrees with original follow branch",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "id": "follow.Charles.toggle_off",
+      "oracle": "Existing Follow input toggles an already-following NPC off",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "id": "follow.George.trust_39",
+      "oracle": "Original /Game/AI/DT_NPC_Data row NPC_02: Required_Trust_Follow=40; report PDF46 inclusive >= rule",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "id": "follow.George.trust_39.blackboard",
+      "oracle": "Actual BehaviorTree Blackboard agrees with original follow branch",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "id": "follow.George.trust_40",
+      "oracle": "Original /Game/AI/DT_NPC_Data row NPC_02: Required_Trust_Follow=40; report PDF46 inclusive >= rule",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "id": "follow.George.trust_40.blackboard",
+      "oracle": "Actual BehaviorTree Blackboard agrees with original follow branch",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "id": "follow.George.trust_41",
+      "oracle": "Original /Game/AI/DT_NPC_Data row NPC_02: Required_Trust_Follow=40; report PDF46 inclusive >= rule",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "id": "follow.George.trust_41.blackboard",
+      "oracle": "Actual BehaviorTree Blackboard agrees with original follow branch",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "id": "follow.George.toggle_off",
+      "oracle": "Existing Follow input toggles an already-following NPC off",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "id": "follow.Leon.trust_59",
+      "oracle": "Original /Game/AI/DT_NPC_Data row NPC_03: Required_Trust_Follow=60; report PDF46 inclusive >= rule",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "id": "follow.Leon.trust_59.blackboard",
+      "oracle": "Actual BehaviorTree Blackboard agrees with original follow branch",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "id": "follow.Leon.trust_60",
+      "oracle": "Original /Game/AI/DT_NPC_Data row NPC_03: Required_Trust_Follow=60; report PDF46 inclusive >= rule",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "id": "follow.Leon.trust_60.blackboard",
+      "oracle": "Actual BehaviorTree Blackboard agrees with original follow branch",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "id": "follow.Leon.trust_61",
+      "oracle": "Original /Game/AI/DT_NPC_Data row NPC_03: Required_Trust_Follow=60; report PDF46 inclusive >= rule",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "id": "follow.Leon.trust_61.blackboard",
+      "oracle": "Actual BehaviorTree Blackboard agrees with original follow branch",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "id": "follow.Leon.toggle_off",
+      "oracle": "Existing Follow input toggles an already-following NPC off",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "id": "follow.Lucia.trust_59",
+      "oracle": "Original /Game/AI/DT_NPC_Data row NPC_04: Required_Trust_Follow=60; report PDF46 inclusive >= rule",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "id": "follow.Lucia.trust_59.blackboard",
+      "oracle": "Actual BehaviorTree Blackboard agrees with original follow branch",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "id": "follow.Lucia.trust_60",
+      "oracle": "Original /Game/AI/DT_NPC_Data row NPC_04: Required_Trust_Follow=60; report PDF46 inclusive >= rule",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "id": "follow.Lucia.trust_60.blackboard",
+      "oracle": "Actual BehaviorTree Blackboard agrees with original follow branch",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "id": "follow.Lucia.trust_61",
+      "oracle": "Original /Game/AI/DT_NPC_Data row NPC_04: Required_Trust_Follow=60; report PDF46 inclusive >= rule",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "id": "follow.Lucia.trust_61.blackboard",
+      "oracle": "Actual BehaviorTree Blackboard agrees with original follow branch",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "id": "follow.Lucia.toggle_off",
+      "oracle": "Existing Follow input toggles an already-following NPC off",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "id": "follow.Rose.trust_19",
+      "oracle": "Original /Game/AI/DT_NPC_Data row NPC_05: Required_Trust_Follow=20; report PDF46 inclusive >= rule",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "id": "follow.Rose.trust_19.blackboard",
+      "oracle": "Actual BehaviorTree Blackboard agrees with original follow branch",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "id": "follow.Rose.trust_20",
+      "oracle": "Original /Game/AI/DT_NPC_Data row NPC_05: Required_Trust_Follow=20; report PDF46 inclusive >= rule",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "id": "follow.Rose.trust_20.blackboard",
+      "oracle": "Actual BehaviorTree Blackboard agrees with original follow branch",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "id": "follow.Rose.trust_21",
+      "oracle": "Original /Game/AI/DT_NPC_Data row NPC_05: Required_Trust_Follow=20; report PDF46 inclusive >= rule",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "id": "follow.Rose.trust_21.blackboard",
+      "oracle": "Actual BehaviorTree Blackboard agrees with original follow branch",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "id": "follow.Rose.toggle_off",
+      "oracle": "Existing Follow input toggles an already-following NPC off",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "id": "schedule.Charles.time_419.999",
+      "oracle": "Original /Game/AI/DT_NPC_Data row NPC_01: active 420<=t<1140; report PDF32; IsAtHome is home intent, not completed navigation",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "id": "schedule.Charles.time_420.000",
+      "oracle": "Original /Game/AI/DT_NPC_Data row NPC_01: active 420<=t<1140; report PDF32; IsAtHome is home intent, not completed navigation",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "id": "schedule.Charles.time_1139.999",
+      "oracle": "Original /Game/AI/DT_NPC_Data row NPC_01: active 420<=t<1140; report PDF32; IsAtHome is home intent, not completed navigation",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "id": "schedule.Charles.time_1140.000",
+      "oracle": "Original /Game/AI/DT_NPC_Data row NPC_01: active 420<=t<1140; report PDF32; IsAtHome is home intent, not completed navigation",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "id": "schedule.George.time_329.999",
+      "oracle": "Original /Game/AI/DT_NPC_Data row NPC_02: active 330<=t<1050; report PDF32; IsAtHome is home intent, not completed navigation",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "id": "schedule.George.time_330.000",
+      "oracle": "Original /Game/AI/DT_NPC_Data row NPC_02: active 330<=t<1050; report PDF32; IsAtHome is home intent, not completed navigation",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "id": "schedule.George.time_1049.999",
+      "oracle": "Original /Game/AI/DT_NPC_Data row NPC_02: active 330<=t<1050; report PDF32; IsAtHome is home intent, not completed navigation",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "id": "schedule.George.time_1050.000",
+      "oracle": "Original /Game/AI/DT_NPC_Data row NPC_02: active 330<=t<1050; report PDF32; IsAtHome is home intent, not completed navigation",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "id": "schedule.Leon.time_389.999",
+      "oracle": "Original /Game/AI/DT_NPC_Data row NPC_03: active 390<=t<1110; report PDF32; IsAtHome is home intent, not completed navigation",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "id": "schedule.Leon.time_390.000",
+      "oracle": "Original /Game/AI/DT_NPC_Data row NPC_03: active 390<=t<1110; report PDF32; IsAtHome is home intent, not completed navigation",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "id": "schedule.Leon.time_1109.999",
+      "oracle": "Original /Game/AI/DT_NPC_Data row NPC_03: active 390<=t<1110; report PDF32; IsAtHome is home intent, not completed navigation",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "id": "schedule.Leon.time_1110.000",
+      "oracle": "Original /Game/AI/DT_NPC_Data row NPC_03: active 390<=t<1110; report PDF32; IsAtHome is home intent, not completed navigation",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "id": "schedule.Lucia.time_1439.999",
+      "oracle": "Original /Game/AI/DT_NPC_Data row NPC_04: active 0<=t<720; report PDF32; IsAtHome is home intent, not completed navigation",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "id": "schedule.Lucia.time_0.000",
+      "oracle": "Original /Game/AI/DT_NPC_Data row NPC_04: active 0<=t<720; report PDF32; IsAtHome is home intent, not completed navigation",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "id": "schedule.Lucia.time_719.999",
+      "oracle": "Original /Game/AI/DT_NPC_Data row NPC_04: active 0<=t<720; report PDF32; IsAtHome is home intent, not completed navigation",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "id": "schedule.Lucia.time_720.000",
+      "oracle": "Original /Game/AI/DT_NPC_Data row NPC_04: active 0<=t<720; report PDF32; IsAtHome is home intent, not completed navigation",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "id": "schedule.Rose.time_419.999",
+      "oracle": "Original /Game/AI/DT_NPC_Data row NPC_05: active 420<=t<1140; report PDF32; IsAtHome is home intent, not completed navigation",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "id": "schedule.Rose.time_420.000",
+      "oracle": "Original /Game/AI/DT_NPC_Data row NPC_05: active 420<=t<1140; report PDF32; IsAtHome is home intent, not completed navigation",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "id": "schedule.Rose.time_1139.999",
+      "oracle": "Original /Game/AI/DT_NPC_Data row NPC_05: active 420<=t<1140; report PDF32; IsAtHome is home intent, not completed navigation",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "id": "schedule.Rose.time_1140.000",
+      "oracle": "Original /Game/AI/DT_NPC_Data row NPC_05: active 420<=t<1140; report PDF32; IsAtHome is home intent, not completed navigation",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "id": "dialogue.stamina_30.money_0.seed_378",
+      "oracle": "Original report PDF44-45/60, actual DataTable lines as independent output oracle",
+      "expected": "Actual NPC dialogue map context: Stamina",
+      "actual": "Snap out of it! We’re losing precious time. Catch your breath and move, now!",
+      "passed": true
+    },
+    {
+      "id": "dialogue.stamina_31.money_0.seed_378",
+      "oracle": "Original report PDF44-45/60, actual DataTable lines as independent output oracle",
+      "expected": "Actual NPC dialogue map context: Money",
+      "actual": "Time is money, and you clearly have neither. Don't waste my time if you can't pay!",
+      "passed": true
+    },
+    {
+      "id": "dialogue.stamina_30.money_0.seed_17",
+      "oracle": "Original report PDF44-45/60, actual DataTable lines as independent output oracle",
+      "expected": "Actual NPC dialogue map context: Stamina",
+      "actual": "Snap out of it! We’re losing precious time. Catch your breath and move, now!",
+      "passed": true
+    },
+    {
+      "id": "dialogue.stamina_31.money_0.seed_17",
+      "oracle": "Original report PDF44-45/60, actual DataTable lines as independent output oracle",
+      "expected": "Actual NPC dialogue map context: Money",
+      "actual": "Time is money, and you clearly have neither. Don't waste my time if you can't pay!",
+      "passed": true
+    },
+    {
+      "id": "dialogue.stamina_30.money_0.seed_42",
+      "oracle": "Original report PDF44-45/60, actual DataTable lines as independent output oracle",
+      "expected": "Actual NPC dialogue map context: Stamina",
+      "actual": "Snap out of it! We’re losing precious time. Catch your breath and move, now!",
+      "passed": true
+    },
+    {
+      "id": "dialogue.stamina_31.money_0.seed_42",
+      "oracle": "Original report PDF44-45/60, actual DataTable lines as independent output oracle",
+      "expected": "Actual NPC dialogue map context: Money",
+      "actual": "Time is money, and you clearly have neither. Don't waste my time if you can't pay!",
+      "passed": true
+    },
+    {
+      "id": "dialogue.stamina_30.money_0.seed_123",
+      "oracle": "Original report PDF44-45/60, actual DataTable lines as independent output oracle",
+      "expected": "Actual NPC dialogue map context: Stamina",
+      "actual": "Snap out of it! We’re losing precious time. Catch your breath and move, now!",
+      "passed": true
+    },
+    {
+      "id": "dialogue.stamina_31.money_0.seed_123",
+      "oracle": "Original report PDF44-45/60, actual DataTable lines as independent output oracle",
+      "expected": "Actual NPC dialogue map context: Money",
+      "actual": "Time is money, and you clearly have neither. Don't waste my time if you can't pay!",
+      "passed": true
+    },
+    {
+      "id": "schedule.active_dialogue_blocks_home_intent",
+      "oracle": "Report PDF61 claims active interaction prevents scheduled departure",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    }
+  ],
+  "case_count": 78,
+  "passed_cases": 78,
+  "failed_cases": 0,
+  "status": "passed",
+  "assertions_passed": true
+}

@@ -1,0 +1,499 @@
+{
+  "schema": "npc-blueprint-inspection-index/v1",
+  "engine": "Unreal Engine 5.4.4",
+  "purpose": "Native graph, authored data and behavior-tree settings review. Static export evidence is distinct from actual-engine gameplay reports.",
+  "original_full_archive": {
+    "filename": "Project.zip",
+    "bytes": 2257866122,
+    "sha256": "ba8e4ba770461e5272ff6cfaeaf4be9fe0219ec3fa630a404572c627e8080bfe",
+    "download": "https://drive.google.com/file/d/1qsdGAzKU3myKQVk04MfW-EngDHKKAqmW/view?usp=sharing"
+  },
+  "source_manifest": "../manifests/original-project.json",
+  "source_manifest_note": "The release original-project manifest is derived from the pinned archive. Embedded initial asset hashes were checked against its ZIP-entry manifest.",
+  "initial_named_graph_export_count": 18,
+  "initial_resolved_blueprint_count": 16,
+  "initial_export_aliases": {
+    "BP_Mushroom.json": "BP_Item_Master.json",
+    "WBP_DialogueEnd.json": "WBP_Dialogue.json"
+  },
+  "initial_vendor_graph_export_count": 1,
+  "maintained_graph_export_count": 2,
+  "derived_records_do_not_modify_assets": true,
+  "redacted_local_path_string_count": 0,
+  "files": [
+    {
+      "path": "README.ko.md",
+      "bytes": 2032,
+      "sha256": "9ba7a94bc09169156fcb6391c42f9955acc88f4ad757881396f5f7ba3ed2e078"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1788,
+      "sha256": "e6e19d4b362dc9ef4c05d83f3adb15f03c4e99875aac57e627fba6b27f2afcf2"
+    },
+    {
+      "path": "behavior-tree/BT_NPC-task-settings.json",
+      "bytes": 1860,
+      "sha256": "8a9b741d6618254e80392ccc796583df51153645f5379975ad28eb9437fd8b98"
+    },
+    {
+      "path": "blueprints/initial/BPI_Interaction.json",
+      "bytes": 4547,
+      "sha256": "54c54bf93c12566e3120cd9b4f3be4bd7c45f7a5aa2937bf8c19b65e74048ec5",
+      "source_export_sha256": "54c54bf93c12566e3120cd9b4f3be4bd7c45f7a5aa2937bf8c19b65e74048ec5",
+      "byte_identical_to_source_export": true,
+      "stage": "initial_project_export",
+      "blueprint": "/Game/AI/BPI_Interaction.BPI_Interaction",
+      "graph_count": 2,
+      "node_count": 2,
+      "invalid_link_count": 0,
+      "complete": true,
+      "redacted_path_strings": 0,
+      "source_asset": {
+        "path": "Content/AI/BPI_Interaction.uasset",
+        "bytes": 12106,
+        "sha256": "fad3c702a9ad9e5b502adabb9b93d964499873c43d567849775a6062b38d5884"
+      },
+      "source_asset_basis": "Pinned original Project.zip entry."
+    },
+    {
+      "path": "blueprints/initial/BP_GameMode.json",
+      "bytes": 238405,
+      "sha256": "40844abdace7a27391cd8a645a71b86d923bbd82f6ec6acde250d66a1b8e58b0",
+      "source_export_sha256": "40844abdace7a27391cd8a645a71b86d923bbd82f6ec6acde250d66a1b8e58b0",
+      "byte_identical_to_source_export": true,
+      "stage": "initial_project_export",
+      "blueprint": "/Game/AI/BP_GameMode.BP_GameMode",
+      "graph_count": 2,
+      "node_count": 53,
+      "invalid_link_count": 0,
+      "complete": true,
+      "redacted_path_strings": 0,
+      "source_asset": {
+        "path": "Content/AI/BP_GameMode.uasset",
+        "bytes": 167913,
+        "sha256": "c9da075169c9f0cb5225a42db3d5146c9dd0826ba8f68a5ea8f8e5b649290e95"
+      },
+      "source_asset_basis": "Pinned original Project.zip entry."
+    },
+    {
+      "path": "blueprints/initial/BP_Item_Master.json",
+      "bytes": 335423,
+      "sha256": "68b4dcc290f4188a634ea505b0382a2609a60494e26b8289d3abe85d92674966",
+      "source_export_sha256": "68b4dcc290f4188a634ea505b0382a2609a60494e26b8289d3abe85d92674966",
+      "byte_identical_to_source_export": true,
+      "stage": "initial_project_export",
+      "blueprint": "/Game/AI/BP_Item_Master.BP_Item_Master",
+      "graph_count": 2,
+      "node_count": 74,
+      "invalid_link_count": 0,
+      "complete": true,
+      "redacted_path_strings": 0,
+      "source_asset": {
+        "path": "Content/AI/BP_Item_Master.uasset",
+        "bytes": 258613,
+        "sha256": "78bc9366b8930e45142afd91fd1c47f50d5dafdbcce38635460285a2aaffc6e0"
+      },
+      "source_asset_basis": "Pinned original Project.zip entry."
+    },
+    {
+      "path": "blueprints/initial/BP_Mushroom.json",
+      "bytes": 335423,
+      "sha256": "68b4dcc290f4188a634ea505b0382a2609a60494e26b8289d3abe85d92674966",
+      "source_export_sha256": "68b4dcc290f4188a634ea505b0382a2609a60494e26b8289d3abe85d92674966",
+      "byte_identical_to_source_export": true,
+      "stage": "initial_project_export",
+      "blueprint": "/Game/AI/BP_Item_Master.BP_Item_Master",
+      "graph_count": 2,
+      "node_count": 74,
+      "invalid_link_count": 0,
+      "complete": true,
+      "redacted_path_strings": 0,
+      "source_asset": {
+        "path": "Content/AI/BP_Item_Master.uasset",
+        "bytes": 258613,
+        "sha256": "78bc9366b8930e45142afd91fd1c47f50d5dafdbcce38635460285a2aaffc6e0"
+      },
+      "source_asset_basis": "Pinned original Project.zip entry."
+    },
+    {
+      "path": "blueprints/initial/BP_NPC_Standard.json",
+      "bytes": 1945505,
+      "sha256": "16a1ef0577eb80f3816691e251a86da92ee0a6c3657fba289f935f3fb4697a95",
+      "source_export_sha256": "16a1ef0577eb80f3816691e251a86da92ee0a6c3657fba289f935f3fb4697a95",
+      "byte_identical_to_source_export": true,
+      "stage": "initial_project_export",
+      "blueprint": "/Game/ThirdPerson/Blueprints/BP_NPC_Standard.BP_NPC_Standard",
+      "graph_count": 3,
+      "node_count": 486,
+      "invalid_link_count": 0,
+      "complete": true,
+      "redacted_path_strings": 0,
+      "source_asset": {
+        "path": "Content/ThirdPerson/Blueprints/BP_NPC_Standard.uasset",
+        "bytes": 1244022,
+        "sha256": "cfa016f6545b336e9054968b39bc25904c22757dbe4cc2629a4d538d85bb8acf"
+      },
+      "source_asset_basis": "Pinned original Project.zip entry."
+    },
+    {
+      "path": "blueprints/initial/BP_ThirdPersonCharacter.json",
+      "bytes": 363433,
+      "sha256": "a69bc4fcf75e645df0ed86fbfd66f7f22d144898d16d9bc2bf542da76a3f3c8d",
+      "source_export_sha256": "a69bc4fcf75e645df0ed86fbfd66f7f22d144898d16d9bc2bf542da76a3f3c8d",
+      "byte_identical_to_source_export": true,
+      "stage": "initial_project_export",
+      "blueprint": "/Game/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.BP_ThirdPersonCharacter",
+      "graph_count": 4,
+      "node_count": 95,
+      "invalid_link_count": 0,
+      "complete": true,
+      "redacted_path_strings": 0,
+      "source_asset": {
+        "path": "Content/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.uasset",
+        "bytes": 300903,
+        "sha256": "3744550848a9c69421b3863b37d7fe207bf3fb5e3558e2d63a6194a27af472f5"
+      },
+      "source_asset_basis": "Pinned original Project.zip entry."
+    },
+    {
+      "path": "blueprints/initial/BTD_RandomChance.json",
+      "bytes": 15745,
+      "sha256": "709c6961e34bba9bc514e320808ccbcbeeeea2b4e3a39bfb23daf9b9d7f35164",
+      "source_export_sha256": "709c6961e34bba9bc514e320808ccbcbeeeea2b4e3a39bfb23daf9b9d7f35164",
+      "byte_identical_to_source_export": true,
+      "stage": "initial_project_export",
+      "blueprint": "/Game/AI/BTD_RandomChance.BTD_RandomChance",
+      "graph_count": 2,
+      "node_count": 5,
+      "invalid_link_count": 0,
+      "complete": true,
+      "redacted_path_strings": 0,
+      "source_asset": {
+        "path": "Content/AI/BTD_RandomChance.uasset",
+        "bytes": 27665,
+        "sha256": "07b6c7638c24b65a78e4e8582642b65dc250f6f41b83df999aec46de64325079"
+      },
+      "source_asset_basis": "Pinned original Project.zip entry."
+    },
+    {
+      "path": "blueprints/initial/BTTask_ChasePlayer.json",
+      "bytes": 25409,
+      "sha256": "fcf077908f3d3cf10dd2ef94d3e92f5858f5fcdfd3bdffcc0bab515e56131201",
+      "source_export_sha256": "fcf077908f3d3cf10dd2ef94d3e92f5858f5fcdfd3bdffcc0bab515e56131201",
+      "byte_identical_to_source_export": true,
+      "stage": "initial_project_export",
+      "blueprint": "/Game/AI/BTTask_ChasePlayer.BTTask_ChasePlayer",
+      "graph_count": 1,
+      "node_count": 6,
+      "invalid_link_count": 0,
+      "complete": true,
+      "redacted_path_strings": 0,
+      "source_asset": {
+        "path": "Content/AI/BTTask_ChasePlayer.uasset",
+        "bytes": 33323,
+        "sha256": "0f771a148e47d8dd2899af7d392fad6ad0f9b765143ea15802858ca929b50218"
+      },
+      "source_asset_basis": "Pinned original Project.zip entry."
+    },
+    {
+      "path": "blueprints/initial/BTTask_PatrolRandom.json",
+      "bytes": 59687,
+      "sha256": "c731d72e791f489b02329613b1e134497677256f3a51e90bf36a9219255c9431",
+      "source_export_sha256": "c731d72e791f489b02329613b1e134497677256f3a51e90bf36a9219255c9431",
+      "byte_identical_to_source_export": true,
+      "stage": "initial_project_export",
+      "blueprint": "/Game/AI/BTTask_PatrolRandom.BTTask_PatrolRandom",
+      "graph_count": 1,
+      "node_count": 14,
+      "invalid_link_count": 0,
+      "complete": true,
+      "redacted_path_strings": 0,
+      "source_asset": {
+        "path": "Content/AI/BTTask_PatrolRandom.uasset",
+        "bytes": 59090,
+        "sha256": "6e591a9ef1626c7106f30cbba38c7fa12d9d53e6a8b4896ca5ea01069f68f017"
+      },
+      "source_asset_basis": "Pinned original Project.zip entry."
+    },
+    {
+      "path": "blueprints/initial/My_AIController.json",
+      "bytes": 22718,
+      "sha256": "f80a8d503fafab50c07cba775bac1f3ad022559aa8f928173c701e4a1e0176d7",
+      "source_export_sha256": "f80a8d503fafab50c07cba775bac1f3ad022559aa8f928173c701e4a1e0176d7",
+      "byte_identical_to_source_export": true,
+      "stage": "initial_project_export",
+      "blueprint": "/Game/AI/My_AIController.My_AIController",
+      "graph_count": 2,
+      "node_count": 7,
+      "invalid_link_count": 0,
+      "complete": true,
+      "redacted_path_strings": 0,
+      "source_asset": {
+        "path": "Content/AI/My_AIController.uasset",
+        "bytes": 41674,
+        "sha256": "434314893f1896db00de847af262824327aef709637f1bd4365091cb41fbf81f"
+      },
+      "source_asset_basis": "Pinned original Project.zip entry."
+    },
+    {
+      "path": "blueprints/initial/WBP_Clock_Stamina_Money_Dash.json",
+      "bytes": 141588,
+      "sha256": "a767846e13b8a31e59d22f86d6fa968af3873bd0e2a5bc270d307cee8a8d0bd0",
+      "source_export_sha256": "a767846e13b8a31e59d22f86d6fa968af3873bd0e2a5bc270d307cee8a8d0bd0",
+      "byte_identical_to_source_export": true,
+      "stage": "initial_project_export",
+      "blueprint": "/Game/AI/WBP_Clock_Stamina_Money_Dash.WBP_Clock_Stamina_Money_Dash",
+      "graph_count": 5,
+      "node_count": 40,
+      "invalid_link_count": 0,
+      "complete": true,
+      "redacted_path_strings": 0,
+      "source_asset": {
+        "path": "Content/AI/WBP_Clock_Stamina_Money_Dash.uasset",
+        "bytes": 134319,
+        "sha256": "69a7a3d9235048ffb0d1865a88e5526d5ae41b7806bd0cb8e6dfd6d73be9f6d3"
+      },
+      "source_asset_basis": "Pinned original Project.zip entry."
+    },
+    {
+      "path": "blueprints/initial/WBP_Dialogue.json",
+      "bytes": 8849,
+      "sha256": "b7d556047064e03bccc25d1cba9a17ddc0c1485d108087250763ad6875b55784",
+      "source_export_sha256": "b7d556047064e03bccc25d1cba9a17ddc0c1485d108087250763ad6875b55784",
+      "byte_identical_to_source_export": true,
+      "stage": "initial_project_export",
+      "blueprint": "/Game/AI/WBP_Dialogue.WBP_Dialogue",
+      "graph_count": 1,
+      "node_count": 3,
+      "invalid_link_count": 0,
+      "complete": true,
+      "redacted_path_strings": 0,
+      "source_asset": {
+        "path": "Content/AI/WBP_Dialogue.uasset",
+        "bytes": 43142,
+        "sha256": "9c1365f28a9d3103e24ff462f8f18053d149576f6f4c2f367deda2aa496c273e"
+      },
+      "source_asset_basis": "Pinned original Project.zip entry."
+    },
+    {
+      "path": "blueprints/initial/WBP_DialogueEnd.json",
+      "bytes": 8849,
+      "sha256": "b7d556047064e03bccc25d1cba9a17ddc0c1485d108087250763ad6875b55784",
+      "source_export_sha256": "b7d556047064e03bccc25d1cba9a17ddc0c1485d108087250763ad6875b55784",
+      "byte_identical_to_source_export": true,
+      "stage": "initial_project_export",
+      "blueprint": "/Game/AI/WBP_Dialogue.WBP_Dialogue",
+      "graph_count": 1,
+      "node_count": 3,
+      "invalid_link_count": 0,
+      "complete": true,
+      "redacted_path_strings": 0,
+      "source_asset": {
+        "path": "Content/AI/WBP_Dialogue.uasset",
+        "bytes": 43142,
+        "sha256": "9c1365f28a9d3103e24ff462f8f18053d149576f6f4c2f367deda2aa496c273e"
+      },
+      "source_asset_basis": "Pinned original Project.zip entry."
+    },
+    {
+      "path": "blueprints/initial/WBP_Interaction.json",
+      "bytes": 8861,
+      "sha256": "a016a434c5441cac9469d913d1d1756f07a08ba9c725ae0d4498ee05051e3154",
+      "source_export_sha256": "a016a434c5441cac9469d913d1d1756f07a08ba9c725ae0d4498ee05051e3154",
+      "byte_identical_to_source_export": true,
+      "stage": "initial_project_export",
+      "blueprint": "/Game/AI/WBP_Interaction.WBP_Interaction",
+      "graph_count": 1,
+      "node_count": 3,
+      "invalid_link_count": 0,
+      "complete": true,
+      "redacted_path_strings": 0,
+      "source_asset": {
+        "path": "Content/AI/WBP_Interaction.uasset",
+        "bytes": 43176,
+        "sha256": "973cf436e1ebb1340d62279763cf145a67ff37ca57827842e17520c5318e0988"
+      },
+      "source_asset_basis": "Pinned original Project.zip entry."
+    },
+    {
+      "path": "blueprints/initial/WBP_InventoryLine.json",
+      "bytes": 736896,
+      "sha256": "9ec2424765d1ae587457a3f6a95133d755463a801ad855635ca2c9354e8514ef",
+      "source_export_sha256": "9ec2424765d1ae587457a3f6a95133d755463a801ad855635ca2c9354e8514ef",
+      "byte_identical_to_source_export": true,
+      "stage": "initial_project_export",
+      "blueprint": "/Game/AI/WBP_InventoryLine.WBP_InventoryLine",
+      "graph_count": 2,
+      "node_count": 167,
+      "invalid_link_count": 0,
+      "complete": true,
+      "redacted_path_strings": 0,
+      "source_asset": {
+        "path": "Content/AI/WBP_InventoryLine.uasset",
+        "bytes": 537193,
+        "sha256": "366866f9561d9dcbae3e55969c8846774f70b03127b3a3954ff7674b69ef06c5"
+      },
+      "source_asset_basis": "Pinned original Project.zip entry."
+    },
+    {
+      "path": "blueprints/initial/WBP_InventoryMain.json",
+      "bytes": 54019,
+      "sha256": "65ef7795da60244ad836835db7fd3bbb139b91d9b2a66b1bc7d2b09ee4ca9e18",
+      "source_export_sha256": "65ef7795da60244ad836835db7fd3bbb139b91d9b2a66b1bc7d2b09ee4ca9e18",
+      "byte_identical_to_source_export": true,
+      "stage": "initial_project_export",
+      "blueprint": "/Game/AI/WBP_InventoryMain.WBP_InventoryMain",
+      "graph_count": 1,
+      "node_count": 14,
+      "invalid_link_count": 0,
+      "complete": true,
+      "redacted_path_strings": 0,
+      "source_asset": {
+        "path": "Content/AI/WBP_InventoryMain.uasset",
+        "bytes": 73190,
+        "sha256": "d1dc9aa3fe4e9c46625aff374be41e38c208e484c6af0b7ee5d958b766159b65"
+      },
+      "source_asset_basis": "Pinned original Project.zip entry."
+    },
+    {
+      "path": "blueprints/initial/WBP_ShopMain.json",
+      "bytes": 153959,
+      "sha256": "26f6c0204f45bcc80f3596064494e4966599862ca3fa481462a0270d215cb081",
+      "source_export_sha256": "26f6c0204f45bcc80f3596064494e4966599862ca3fa481462a0270d215cb081",
+      "byte_identical_to_source_export": true,
+      "stage": "initial_project_export",
+      "blueprint": "/Game/AI/WBP_ShopMain.WBP_ShopMain",
+      "graph_count": 3,
+      "node_count": 41,
+      "invalid_link_count": 0,
+      "complete": true,
+      "redacted_path_strings": 0,
+      "source_asset": {
+        "path": "Content/AI/WBP_ShopMain.uasset",
+        "bytes": 163014,
+        "sha256": "e876c7422a6a4d62ac6a1aead258663ae2414c90baf23a11bba57ee51679ac3c"
+      },
+      "source_asset_basis": "Pinned original Project.zip entry."
+    },
+    {
+      "path": "blueprints/initial/WBP_Take.json",
+      "bytes": 8833,
+      "sha256": "866b08205ea97122318790f99934ce576057abafd30fb068b2b1baac3a4d9e5f",
+      "source_export_sha256": "866b08205ea97122318790f99934ce576057abafd30fb068b2b1baac3a4d9e5f",
+      "byte_identical_to_source_export": true,
+      "stage": "initial_project_export",
+      "blueprint": "/Game/AI/WBP_Take.WBP_Take",
+      "graph_count": 1,
+      "node_count": 3,
+      "invalid_link_count": 0,
+      "complete": true,
+      "redacted_path_strings": 0,
+      "source_asset": {
+        "path": "Content/AI/WBP_Take.uasset",
+        "bytes": 42650,
+        "sha256": "a422de141ec90a32453254611c58160dd1eda6b356c3f095c55c2407b30e7e14"
+      },
+      "source_asset_basis": "Pinned original Project.zip entry."
+    },
+    {
+      "path": "blueprints/maintained/BP_NPC_Standard.json",
+      "bytes": 1949890,
+      "sha256": "58de489100e0213496e5ad4555c1d486adc10fcd868fd40e72bbf8af20d95354",
+      "source_export_sha256": "58de489100e0213496e5ad4555c1d486adc10fcd868fd40e72bbf8af20d95354",
+      "byte_identical_to_source_export": true,
+      "stage": "retained_dialogue_and_schedule_corrections",
+      "blueprint": "/Game/ThirdPerson/Blueprints/BP_NPC_Standard.BP_NPC_Standard",
+      "graph_count": 3,
+      "node_count": 487,
+      "invalid_link_count": 0,
+      "complete": true,
+      "redacted_path_strings": 0,
+      "source_asset": {
+        "path": "Content/ThirdPerson/Blueprints/BP_NPC_Standard.uasset",
+        "bytes": 1245641,
+        "sha256": "34016ac778f1fc6dd8c64c21c9f9248b73ef8d60ce89c2e9fd28ccf61737e759"
+      },
+      "source_asset_basis": "Maintained source package; also check release final-project manifest."
+    },
+    {
+      "path": "blueprints/npc-execution-changes.json",
+      "bytes": 2986,
+      "sha256": "b1a3ecfd94e2a2995bcb2ff1d17f7d5fd18fc41ba4d8e7a02f2cf198db8deb8f"
+    },
+    {
+      "path": "tables/initial/DT_Item_Data.json",
+      "bytes": 19209,
+      "sha256": "314fb26d1a534bb3d63d955e741c8450c32c1309d7687e13438ae9e67fa0dcf4",
+      "source_export_sha256": "c27dad9709be0ce317f9e7c0709cf9c4be7f701bc2164c9acd637600f6375603",
+      "source_section": "assets[].rows"
+    },
+    {
+      "path": "tables/initial/DT_NPC_Data.json",
+      "bytes": 2823,
+      "sha256": "9d087b2b764f4d585269b3bd3bdad7c6f06e90e105cb26dffaf253642a8865bf",
+      "source_export_sha256": "c27dad9709be0ce317f9e7c0709cf9c4be7f701bc2164c9acd637600f6375603",
+      "source_section": "assets[].rows"
+    },
+    {
+      "path": "tables/initial/DT_QuestList.json",
+      "bytes": 8373,
+      "sha256": "79ba39f9a3e975ff31f8ce945103a917089af4384b71aa82f62d3bd262548759",
+      "source_export_sha256": "c27dad9709be0ce317f9e7c0709cf9c4be7f701bc2164c9acd637600f6375603",
+      "source_section": "assets[].rows"
+    },
+    {
+      "path": "vendor/butterfly-construction-change.json",
+      "bytes": 1252,
+      "sha256": "192c25dbe7266db9132862b49fd8d619458efd59eb612f20df3e2176edf991df"
+    },
+    {
+      "path": "vendor/initial/BP_Butterfly.json",
+      "bytes": 193786,
+      "sha256": "2f48966170dfb63a65e2bf4e930d1e2fb23d11793ddd72347bdc5fea69f1229e",
+      "source_export_sha256": "2f48966170dfb63a65e2bf4e930d1e2fb23d11793ddd72347bdc5fea69f1229e",
+      "byte_identical_to_source_export": true,
+      "stage": "initial_vendor_construction_script",
+      "blueprint": "/Game/AdvancedVillagePack/Blueprints/BP_Butterfly.BP_Butterfly",
+      "graph_count": 2,
+      "node_count": 59,
+      "invalid_link_count": 0,
+      "complete": true,
+      "redacted_path_strings": 0,
+      "source_asset": {
+        "path": "Content/AdvancedVillagePack/Blueprints/BP_Butterfly.uasset",
+        "bytes": 405458,
+        "sha256": "640042ddd9231d78cf892758564984e1e39eafd7d51f0235ad5c8fcda93cadc1"
+      },
+      "source_asset_basis": "Pinned original Project.zip entry."
+    },
+    {
+      "path": "vendor/maintained/BP_Butterfly.json",
+      "bytes": 161348,
+      "sha256": "2c4256b597f45b7fbeb187c18f5787dc9da71c62dd3dd9f2551bb57ed074506b",
+      "source_export_sha256": "2c4256b597f45b7fbeb187c18f5787dc9da71c62dd3dd9f2551bb57ed074506b",
+      "byte_identical_to_source_export": true,
+      "stage": "construction_safe_animation_initialization",
+      "blueprint": "/Game/AdvancedVillagePack/Blueprints/BP_Butterfly.BP_Butterfly",
+      "graph_count": 2,
+      "node_count": 58,
+      "invalid_link_count": 0,
+      "complete": true,
+      "redacted_path_strings": 0,
+      "source_asset": {
+        "path": "Content/AdvancedVillagePack/Blueprints/BP_Butterfly.uasset",
+        "bytes": 256859,
+        "sha256": "42a73c962c4fd230ece429dd5be8c570e59a9413f6f19920588bb6a09dd1e259"
+      },
+      "source_asset_basis": "Maintained source package; also check release final-project manifest."
+    }
+  ],
+  "initial_source_basis": "The project restored from the SHA-pinned Project.zip is the sole initial-source baseline for these graph and table inspections.",
+  "source_zip_entry_manifest_sha256": "4ed343ffe4553600c1834ef129c3fca3899f03502201b7850184e4f3a33c404d",
+  "directly_verified_archive_entries": [
+    "Content/AI/DT_Item_Data.uasset",
+    "Content/AI/DT_NPC_Data.uasset",
+    "Content/AI/DT_QuestList.uasset",
+    "Content/AI/BT_NPC.uasset"
+  ]
+}

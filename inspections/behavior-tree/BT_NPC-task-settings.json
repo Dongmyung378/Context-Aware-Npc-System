@@ -1,0 +1,38 @@
+{
+  "schema": "npc-authored-behavior-tree-settings/v1",
+  "tree": "/Game/AI/BT_NPC.BT_NPC",
+  "root_node": "/Game/AI/BT_NPC.BT_NPC:BTComposite_Selector_0",
+  "source": "Actual Unreal object inspection. These are task objects embedded in BT_NPC, not their Blueprint class default objects.",
+  "source_export_sha256": "f7caed595f6d1a5a20f94f1a328fab9d8fd68eb7369371ca40383c0c780d7cce",
+  "source_asset": {
+    "path": "Content/AI/BT_NPC.uasset",
+    "bytes": 51207,
+    "sha256": "9067ed8e2079587b6863eba2b4695aa0ac4bd681cf00d85394af353010af7e6a"
+  },
+  "initial_and_maintained_BT_asset_sha256_equal": true,
+  "tasks": [
+    {
+      "object": "/Game/AI/BT_NPC.BT_NPC:BTTask_ChasePlayer_C_0",
+      "class": "/Game/AI/BTTask_ChasePlayer.BTTask_ChasePlayer_C",
+      "parent_composite": "/Game/AI/BT_NPC.BT_NPC:BTComposite_Sequence_2",
+      "tree_asset": "/Game/AI/BT_NPC.BT_NPC",
+      "class_default_object": false,
+      "speed_parameter": "ChaseSpeed",
+      "authored_tree_instance_speed": 150,
+      "class_default_speed": 300
+    },
+    {
+      "object": "/Game/AI/BT_NPC.BT_NPC:BTTask_PatrolRandom_C_0",
+      "class": "/Game/AI/BTTask_PatrolRandom.BTTask_PatrolRandom_C",
+      "parent_composite": "/Game/AI/BT_NPC.BT_NPC:BTComposite_Sequence_1",
+      "tree_asset": "/Game/AI/BT_NPC.BT_NPC",
+      "class_default_object": false,
+      "speed_parameter": "Patrol Speed",
+      "authored_tree_instance_speed": 150,
+      "class_default_speed": 150,
+      "patrol_radius": 1500
+    }
+  ],
+  "interpretation": "Chase Blueprint class default300 is overridden to150 in the authored BT_NPC task instance. Patrol task instance150 and radius1500 are also retained. The navigation test reads authored task instances and compares live NodeInstances; no speed-setting gameplay patch was adopted.",
+  "source_asset_basis": "Entry from the SHA-pinned Project.zip."
+}

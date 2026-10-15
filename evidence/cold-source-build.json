@@ -1,0 +1,14 @@
+{
+  "schema": "npc-source-build-receipt/v1",
+  "status": "passed",
+  "context": "New project restored from original ZIP and reviewed overlay, without project Binaries, Intermediate or Saved files.",
+  "engine": "5.4.4",
+  "target": "NPCEditor Win64 Development",
+  "actions": 29,
+  "elapsed_seconds": 53.02,
+  "compiler_folder_version": "14.38.33130",
+  "compiler_build_version": "14.38.33145",
+  "windows_sdk": "10.0.26100.0",
+  "original_log_sha256": "09a8b40cd81e13bef8836d0b5c7f8811f19716ec10d4918c914694fde463378c",
+  "subsequent_runner_build": "The source-build step in the fresh runner rechecks the now-built target; its elapsed time is not the cold build duration."
+}

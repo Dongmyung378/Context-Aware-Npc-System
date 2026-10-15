@@ -1,0 +1,12 @@
+{
+  "status": "passed_source_restoration",
+  "source_version": "1",
+  "engine_version": "5.4.4",
+  "original_archive_sha256": "ba8e4ba770461e5272ff6cfaeaf4be9fe0219ec3fa630a404572c627e8080bfe",
+  "original_source_files": 2349,
+  "overlay_files": 29,
+  "verified_final_source_files": 2371,
+  "output": "<new restored project directory>",
+  "gameplay_executed": false,
+  "scope": "File identity and restoration only; Unreal gameplay requires separate engine execution."
+}

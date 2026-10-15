@@ -1,0 +1,31 @@
+{
+  "schema": "npc-actual-render-capture/v1",
+  "status": "passed",
+  "test": "NPC.Visual.Capture",
+  "scope": "Actual PIE game rendering using the original V first-person action. Clock and player position are fixed for capture and Charles AI is paused for the posed view. Original dialogue/trade Blueprint paths are invoked. No game asset is saved.",
+  "physical_keyboard_or_mouse_verified": false,
+  "images": [
+    {
+      "path": "figures/screenshots/dialogue.png",
+      "width": 1280,
+      "height": 720,
+      "bytes": 1045349,
+      "sha256": "ccb08c65ee03e4c74153864c0c2c33e4dfc252f78aa7f1225afa22845313c5bf"
+    },
+    {
+      "path": "figures/screenshots/gameplay.png",
+      "width": 1280,
+      "height": 720,
+      "bytes": 1104571,
+      "sha256": "bbc58e4dd6a196e74d7dd12c980aa8c580c2a667979d5591d4399f6583f326e1"
+    },
+    {
+      "path": "figures/screenshots/trading.png",
+      "width": 1280,
+      "height": 720,
+      "bytes": 410592,
+      "sha256": "d2afa8d740d4384f4e446b3b37340bd6c2906c6c4d3463ee0ec003a89d2b5f7f"
+    }
+  ],
+  "original_automation_report_sha256": "4328ee9cfaa110d1a812b19bcdbc2e270541f08e9dfbd59417010609c66e9f3c"
+}

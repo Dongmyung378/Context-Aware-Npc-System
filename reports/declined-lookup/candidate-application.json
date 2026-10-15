@@ -1,0 +1,254 @@
+{
+  "schema": "npc-candidate-application/v1",
+  "saved": true,
+  "initial_asset_sha256": "cfa016f6545b336e9054968b39bc25904c22757dbe4cc2629a4d538d85bb8acf",
+  "patch": {
+    "schema": "npc-tick-lookup-candidate/v1",
+    "operation": "optimize_tick_lookup",
+    "ok": true,
+    "asset_saved": false,
+    "changed": true,
+    "blueprint": "/Game/ThirdPerson/Blueprints/BP_NPC_Standard.BP_NPC_Standard",
+    "status": "candidate_compiled_in_memory",
+    "compiled_this_call": true,
+    "sequence_branch_order_preserved": true,
+    "per_frame_evaluation_preserved": true,
+    "interact_lookup_untouched": true,
+    "new_gameplay_variables": false,
+    "initial_tick_lookup_and_cast_pairs": 3,
+    "candidate_tick_lookup_and_cast_pairs": 1,
+    "removed_edges": [
+      {
+        "output": {
+          "node_guid": "DC53B1CE-4E93-EF92-6074-02958AF40D33",
+          "pin_name": "then",
+          "pin_guid": "57CD4DDA-451F-F709-045C-31B391062C3C"
+        },
+        "input": {
+          "node_guid": "4E338E87-4961-2171-ABAE-1BA87FA36E15",
+          "pin_name": "execute",
+          "pin_guid": "2DFCAA19-4F30-B0C8-C947-07A8A7EF00BD"
+        }
+      },
+      {
+        "output": {
+          "node_guid": "4E338E87-4961-2171-ABAE-1BA87FA36E15",
+          "pin_name": "then_0",
+          "pin_guid": "88E24F12-4B3D-6AFF-FADE-9AA7E7A07B41"
+        },
+        "input": {
+          "node_guid": "A15444DF-49CF-CBEB-3AB0-BDB507A1C8B1",
+          "pin_name": "execute",
+          "pin_guid": "58F56BE8-4696-B81D-4BD7-EC850883740D"
+        }
+      },
+      {
+        "output": {
+          "node_guid": "A15444DF-49CF-CBEB-3AB0-BDB507A1C8B1",
+          "pin_name": "then",
+          "pin_guid": "2567E42A-4F74-DF92-1E75-BE8EDBDA08D7"
+        },
+        "input": {
+          "node_guid": "9DB60F60-464F-F40E-45E5-4CAE6E1BA158",
+          "pin_name": "execute",
+          "pin_guid": "33ADF103-4C6E-558F-5428-15AF069BBF6F"
+        }
+      },
+      {
+        "output": {
+          "node_guid": "4E338E87-4961-2171-ABAE-1BA87FA36E15",
+          "pin_name": "then_1",
+          "pin_guid": "F0213724-4195-5500-04F0-F8962973AD45"
+        },
+        "input": {
+          "node_guid": "D5AAF500-4096-5B7A-E41B-CEAC051FC5F3",
+          "pin_name": "execute",
+          "pin_guid": "58F56BE8-4696-B81D-4BD7-EC850883740D"
+        }
+      },
+      {
+        "output": {
+          "node_guid": "D5AAF500-4096-5B7A-E41B-CEAC051FC5F3",
+          "pin_name": "then",
+          "pin_guid": "2567E42A-4F74-DF92-1E75-BE8EDBDA08D7"
+        },
+        "input": {
+          "node_guid": "2964D7D6-4AC0-351E-D059-769F580070B1",
+          "pin_name": "execute",
+          "pin_guid": "F3710200-4A28-A087-E8A4-909C3C826255"
+        }
+      },
+      {
+        "output": {
+          "node_guid": "4E338E87-4961-2171-ABAE-1BA87FA36E15",
+          "pin_name": "then_2",
+          "pin_guid": "4249DE35-46D6-6AC5-6585-1CBD3EB182FD"
+        },
+        "input": {
+          "node_guid": "EA7327E0-4D10-73E9-B751-F884D65872BD",
+          "pin_name": "execute",
+          "pin_guid": "58F56BE8-4696-B81D-4BD7-EC850883740D"
+        }
+      },
+      {
+        "output": {
+          "node_guid": "EA7327E0-4D10-73E9-B751-F884D65872BD",
+          "pin_name": "then",
+          "pin_guid": "2567E42A-4F74-DF92-1E75-BE8EDBDA08D7"
+        },
+        "input": {
+          "node_guid": "8EA2F7F6-4542-71CE-70D9-819F1C21AE1D",
+          "pin_name": "execute",
+          "pin_guid": "1D64DE31-48CF-313C-BBDF-E0B2E5F4CF59"
+        }
+      },
+      {
+        "output": {
+          "node_guid": "D5AAF500-4096-5B7A-E41B-CEAC051FC5F3",
+          "pin_name": "AsBP Game Mode",
+          "pin_guid": "9354B9C0-4362-D703-40F2-95845A4D01D1"
+        },
+        "input": {
+          "node_guid": "5AF0D799-4D79-B5C4-CDC9-2DAA5E0BA140",
+          "pin_name": "self",
+          "pin_guid": "280E30FD-494A-B966-74F3-C1ADCB4CE4CA"
+        }
+      },
+      {
+        "output": {
+          "node_guid": "EA7327E0-4D10-73E9-B751-F884D65872BD",
+          "pin_name": "AsBP Game Mode",
+          "pin_guid": "9354B9C0-4362-D703-40F2-95845A4D01D1"
+        },
+        "input": {
+          "node_guid": "63519E1F-4ED2-9B28-0C79-EF8A6D5F00C9",
+          "pin_name": "self",
+          "pin_guid": "280E30FD-494A-B966-74F3-C1ADCB4CE4CA"
+        }
+      }
+    ],
+    "added_edges": [
+      {
+        "output": {
+          "node_guid": "DC53B1CE-4E93-EF92-6074-02958AF40D33",
+          "pin_name": "then",
+          "pin_guid": "57CD4DDA-451F-F709-045C-31B391062C3C"
+        },
+        "input": {
+          "node_guid": "A15444DF-49CF-CBEB-3AB0-BDB507A1C8B1",
+          "pin_name": "execute",
+          "pin_guid": "58F56BE8-4696-B81D-4BD7-EC850883740D"
+        }
+      },
+      {
+        "output": {
+          "node_guid": "A15444DF-49CF-CBEB-3AB0-BDB507A1C8B1",
+          "pin_name": "then",
+          "pin_guid": "2567E42A-4F74-DF92-1E75-BE8EDBDA08D7"
+        },
+        "input": {
+          "node_guid": "4E338E87-4961-2171-ABAE-1BA87FA36E15",
+          "pin_name": "execute",
+          "pin_guid": "2DFCAA19-4F30-B0C8-C947-07A8A7EF00BD"
+        }
+      },
+      {
+        "output": {
+          "node_guid": "4E338E87-4961-2171-ABAE-1BA87FA36E15",
+          "pin_name": "then_0",
+          "pin_guid": "88E24F12-4B3D-6AFF-FADE-9AA7E7A07B41"
+        },
+        "input": {
+          "node_guid": "9DB60F60-464F-F40E-45E5-4CAE6E1BA158",
+          "pin_name": "execute",
+          "pin_guid": "33ADF103-4C6E-558F-5428-15AF069BBF6F"
+        }
+      },
+      {
+        "output": {
+          "node_guid": "4E338E87-4961-2171-ABAE-1BA87FA36E15",
+          "pin_name": "then_1",
+          "pin_guid": "F0213724-4195-5500-04F0-F8962973AD45"
+        },
+        "input": {
+          "node_guid": "2964D7D6-4AC0-351E-D059-769F580070B1",
+          "pin_name": "execute",
+          "pin_guid": "F3710200-4A28-A087-E8A4-909C3C826255"
+        }
+      },
+      {
+        "output": {
+          "node_guid": "4E338E87-4961-2171-ABAE-1BA87FA36E15",
+          "pin_name": "then_2",
+          "pin_guid": "4249DE35-46D6-6AC5-6585-1CBD3EB182FD"
+        },
+        "input": {
+          "node_guid": "8EA2F7F6-4542-71CE-70D9-819F1C21AE1D",
+          "pin_name": "execute",
+          "pin_guid": "1D64DE31-48CF-313C-BBDF-E0B2E5F4CF59"
+        }
+      },
+      {
+        "output": {
+          "node_guid": "A15444DF-49CF-CBEB-3AB0-BDB507A1C8B1",
+          "pin_name": "AsBP Game Mode",
+          "pin_guid": "9354B9C0-4362-D703-40F2-95845A4D01D1"
+        },
+        "input": {
+          "node_guid": "5AF0D799-4D79-B5C4-CDC9-2DAA5E0BA140",
+          "pin_name": "self",
+          "pin_guid": "280E30FD-494A-B966-74F3-C1ADCB4CE4CA"
+        }
+      },
+      {
+        "output": {
+          "node_guid": "A15444DF-49CF-CBEB-3AB0-BDB507A1C8B1",
+          "pin_name": "AsBP Game Mode",
+          "pin_guid": "9354B9C0-4362-D703-40F2-95845A4D01D1"
+        },
+        "input": {
+          "node_guid": "63519E1F-4ED2-9B28-0C79-EF8A6D5F00C9",
+          "pin_name": "self",
+          "pin_guid": "280E30FD-494A-B966-74F3-C1ADCB4CE4CA"
+        }
+      }
+    ],
+    "performance_claim": "None. Adopt only after same-scenario functional and performance measurements.",
+    "compilation": {
+      "schema": "npc-audit/v1",
+      "operation": "compile_blueprint",
+      "ok": true,
+      "blueprint": "/Game/ThirdPerson/Blueprints/BP_NPC_Standard.BP_NPC_Standard",
+      "status": 3,
+      "errors": 0,
+      "warnings": 0,
+      "asset_saved": false,
+      "messages": []
+    }
+  },
+  "save": {
+    "schema": "npc-maintenance/v1",
+    "operation": "save_reviewed_packages",
+    "ok": true,
+    "state": "completed",
+    "journal": "<verification-workspace>/project/Saved/NpcAudit/candidate-save.json",
+    "transaction_scope": "independent package saves; no distributed or multi-file atomicity",
+    "caller_backups_required": true,
+    "backups_verified_by_this_api": false,
+    "packages": [
+      {
+        "package": "/Game/ThirdPerson/Blueprints/BP_NPC_Standard",
+        "filename": "<verification-workspace>/project/Content/ThirdPerson/Blueprints/BP_NPC_Standard.uasset",
+        "state": "saved",
+        "dirty_before": true,
+        "file_existed": true,
+        "sha1_before": "5241ea44cb7e66bfffd809237c52aef01094affa",
+        "bytes_before": 1244022,
+        "post_save_file_readable": true,
+        "sha1_after": "13e3984ba1e789d249ce7e5d0d1369d155743d6f",
+        "bytes_after": 1242614
+      }
+    ]
+  },
+  "candidate_asset_sha256": "bc3ea5cd2219e2003e3c8fda1ee1907e254ad80178f807fec9897a922250bac4"
+}

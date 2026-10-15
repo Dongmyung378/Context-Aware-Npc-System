@@ -1,0 +1,24 @@
+{
+  "schema": "npc-vendor-graph-review/v1",
+  "initial": "initial/BP_Butterfly.json",
+  "maintained": "maintained/BP_Butterfly.json",
+  "source": "Reviewed original and corrected native Blueprint exports plus the patch preservation report.",
+  "change": {
+    "blueprint": "/Game/AdvancedVillagePack/Blueprints/BP_Butterfly.BP_Butterfly",
+    "replacement_function": "USkeletalMeshComponent::OverrideAnimationData",
+    "unrelated_graph_snapshot_preserved": true,
+    "untouched_graph_sha1_before": "27c4a5922b5409c9df949d278e81e0a99bc664bf",
+    "untouched_graph_sha1_after": "27c4a5922b5409c9df949d278e81e0a99bc664bf",
+    "animation_array_selection_preserved": true,
+    "rate_expression_preserved": true,
+    "event_graph_untouched": true,
+    "playback_initial_state": "single-node animation, looping=true, playing=true, position=0, existing rate expression",
+    "preservation_scope": "reviewed graph inputs and topology; actual preview and runtime animation must also be exercised in Unreal"
+  },
+  "compile_result": {
+    "status": 3,
+    "errors": 0,
+    "warnings": 0
+  },
+  "scope": "Compiler compatibility and reviewed wiring/default preservation. This JSON is not a visual animation test or proof that all vendor behavior is unchanged."
+}

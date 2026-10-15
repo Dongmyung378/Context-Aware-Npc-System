@@ -1,0 +1,166 @@
+{
+  "schema": "npc-authored-table-inspection/v1",
+  "asset": "/Game/AI/DT_QuestList",
+  "source_stage": "initial_project_restored_from_pinned_Project.zip",
+  "source_asset": {
+    "path": "Content/AI/DT_QuestList.uasset",
+    "bytes": 16308,
+    "sha256": "be116ae82198ab0a6339dd4a7bbaef450c7a7d6c909a37c371370e491d798be9"
+  },
+  "row_count": 15,
+  "values": "Original engine-exported row values, including export-text strings. No row or default values are changed.",
+  "rows": [
+    {
+      "Name": "Q_Apple",
+      "Quest_Name": "NSLOCTEXT(\"[741CD00ACAF21FAD5562594BBDD4EB32]\", \"03D6655A49D32682BD7A09A73EC81DFC\", \"Crunchy Snack\")",
+      "Quest_Type": "Item_Collection",
+      "Target_Item": "Apple",
+      "Target_Amount": 5,
+      "Reward_Gold": 10,
+      "Reward_Trust": 5,
+      "Quest_Description": "NSLOCTEXT(\"[741CD00ACAF21FAD5562594BBDD4EB32]\", \"021BED794EC4532988A26E875E788E10\", \"[Quest] My mouth is so dry from talking! Bring me 5 Apples.\")"
+    },
+    {
+      "Name": "Q_Tomato",
+      "Quest_Name": "NSLOCTEXT(\"[741CD00ACAF21FAD5562594BBDD4EB32]\", \"74410CE2483BB002987C0D93077801FC\", \"Red Health Booster\")",
+      "Quest_Type": "Item_Collection",
+      "Target_Item": "Tomato",
+      "Target_Amount": 3,
+      "Reward_Gold": 6,
+      "Reward_Trust": 3,
+      "Quest_Description": "NSLOCTEXT(\"[741CD00ACAF21FAD5562594BBDD4EB32]\", \"7685E49F4BB128123A2372A438628E1D\", \"[Quest] I\\'m feeling a bit sluggish today. Could you fetch 3 Tomatoes?\")"
+    },
+    {
+      "Name": "Q_Onion",
+      "Quest_Name": "NSLOCTEXT(\"[741CD00ACAF21FAD5562594BBDD4EB32]\", \"EBE55BB1480D8E474F7C82B97721E4C3\", \"Onion Tears\")",
+      "Quest_Type": "Item_Collection",
+      "Target_Item": "Onion",
+      "Target_Amount": 4,
+      "Reward_Gold": 8,
+      "Reward_Trust": 4,
+      "Quest_Description": "NSLOCTEXT(\"[741CD00ACAF21FAD5562594BBDD4EB32]\", \"5FB0822A451A82D6952EC29D36E767F6\", \"[Quest] Chopping onions makes me cry too much... Fetch 4 Onions for me, and I won\\'t forget your kindness!\")"
+    },
+    {
+      "Name": "Q_Carrot",
+      "Quest_Name": "NSLOCTEXT(\"[741CD00ACAF21FAD5562594BBDD4EB32]\", \"AD601ACB4AB756DF2E1704967AB03786\", \"Rabbit\\'s Treasure\")",
+      "Quest_Type": "Item_Collection",
+      "Target_Item": "Carrot",
+      "Target_Amount": 3,
+      "Reward_Gold": 6,
+      "Reward_Trust": 3,
+      "Quest_Description": "NSLOCTEXT(\"[741CD00ACAF21FAD5562594BBDD4EB32]\", \"A68B986742CA82595D95AAA3CE6E792D\", \"[Quest] A chatterbox needs vitamins! Bring me 3 Carrots, and our friendship will grow even stronger.\")"
+    },
+    {
+      "Name": "Q_Potato",
+      "Quest_Name": "NSLOCTEXT(\"[741CD00ACAF21FAD5562594BBDD4EB32]\", \"E793A59447B8E2E6DCD79D8FF0DA6466\", \"Hearty Potatoes\")",
+      "Quest_Type": "Item_Collection",
+      "Target_Item": "Potato",
+      "Target_Amount": 6,
+      "Reward_Gold": 6,
+      "Reward_Trust": 3,
+      "Quest_Description": "NSLOCTEXT(\"[741CD00ACAF21FAD5562594BBDD4EB32]\", \"5743C8414C302E6FF88114B6D9B7FE0E\", \"[Quest] 6 Potatoes are all I need for tonight\\'s stew! Are you ready to sit down and chat while they cook?\")"
+    },
+    {
+      "Name": "Q_Rare_Apple",
+      "Quest_Name": "NSLOCTEXT(\"[741CD00ACAF21FAD5562594BBDD4EB32]\", \"8D404DA94FF6A77E42E815A001385049\", \"Golden Temptation\")",
+      "Quest_Type": "Item_Collection",
+      "Target_Item": "Rare Apple",
+      "Target_Amount": 1,
+      "Reward_Gold": 2,
+      "Reward_Trust": 2,
+      "Quest_Description": "NSLOCTEXT(\"[741CD00ACAF21FAD5562594BBDD4EB32]\", \"2778CD9942BE4E4C4B03CFB1A1CFDEF5\", \"[Quest] Look at that shine! That\\'s a Rare Apple! Bring it to me.\")"
+    },
+    {
+      "Name": "Q_Rare_Melon",
+      "Quest_Name": "NSLOCTEXT(\"[741CD00ACAF21FAD5562594BBDD4EB32]\", \"F6B94544401A4D2227D4C2AF6BFA7256\", \"Luxury Scent\")",
+      "Quest_Type": "Item_Collection",
+      "Target_Item": "Rare Melon",
+      "Target_Amount": 1,
+      "Reward_Gold": 8,
+      "Reward_Trust": 8,
+      "Quest_Description": "NSLOCTEXT(\"[741CD00ACAF21FAD5562594BBDD4EB32]\", \"CC418765429F6AF711235EAEDB13EECD\", \"[Quest] This aroma... it\\'s definitely a Rare Melon! Bring me one.\")"
+    },
+    {
+      "Name": "Q_Rare_Peach",
+      "Quest_Name": "NSLOCTEXT(\"[741CD00ACAF21FAD5562594BBDD4EB32]\", \"2FD3D2904E41687D69A66F8A0085D5E8\", \"Mystic Peach\")",
+      "Quest_Type": "Item_Collection",
+      "Target_Item": "Rare Peach",
+      "Target_Amount": 1,
+      "Reward_Gold": 4,
+      "Reward_Trust": 4,
+      "Quest_Description": "NSLOCTEXT(\"[741CD00ACAF21FAD5562594BBDD4EB32]\", \"624208A547AD2565BDD4BEB0B764C910\", \"[Quest] They say a Rare Peach keeps you young!\")"
+    },
+    {
+      "Name": "Q_Rare_Cabbage",
+      "Quest_Name": "NSLOCTEXT(\"[741CD00ACAF21FAD5562594BBDD4EB32]\", \"E27717244FF3131F149470B351F213EF\", \"Giant Cabbage\")",
+      "Quest_Type": "Item_Collection",
+      "Target_Item": "Rare Cabbage",
+      "Target_Amount": 1,
+      "Reward_Gold": 6,
+      "Reward_Trust": 6,
+      "Quest_Description": "NSLOCTEXT(\"[741CD00ACAF21FAD5562594BBDD4EB32]\", \"214FFC06406E6111A61451AFD63D8317\", \"[Quest] Rare Cabbages could feed the whole village!\")"
+    },
+    {
+      "Name": "Q_Rare_Pineapple",
+      "Quest_Name": "NSLOCTEXT(\"[741CD00ACAF21FAD5562594BBDD4EB32]\", \"7B2849014A7AC4AA2F9FA08E660F6010\", \"Prickly Gem\")",
+      "Quest_Type": "Item_Collection",
+      "Target_Item": "Rare Pineapple",
+      "Target_Amount": 1,
+      "Reward_Gold": 6,
+      "Reward_Trust": 6,
+      "Quest_Description": "NSLOCTEXT(\"[741CD00ACAF21FAD5562594BBDD4EB32]\", \"8A4DDD9F40A1680603EB6D94FDC076B7\", \"[Quest] A Rare Pineapple? You\\'re quite the adventurer! Bring it here.\")"
+    },
+    {
+      "Name": "Q_Gold_Loan",
+      "Quest_Name": "NSLOCTEXT(\"[741CD00ACAF21FAD5562594BBDD4EB32]\", \"90A9C37A47BC7D218397DFA31E7BE5B0\", \"Lost My Wallet\")",
+      "Quest_Type": "Gold_Donation",
+      "Target_Item": "None",
+      "Target_Amount": 30,
+      "Reward_Gold": 0,
+      "Reward_Trust": 9,
+      "Quest_Description": "NSLOCTEXT(\"[741CD00ACAF21FAD5562594BBDD4EB32]\", \"EA2E70254E6CB69054F356BA4A9A41DD\", \"[Quest] I think I dropped my wallet at the market! Lend me 30 gold?\")"
+    },
+    {
+      "Name": "Q_Gold_Invest",
+      "Quest_Name": "NSLOCTEXT(\"[741CD00ACAF21FAD5562594BBDD4EB32]\", \"247F4E8E49BD32D8C6A8EA9AD418632A\", \"Shady Investment\")",
+      "Quest_Type": "Gold_Donation",
+      "Target_Item": "None",
+      "Target_Amount": 100,
+      "Reward_Gold": 0,
+      "Reward_Trust": 30,
+      "Quest_Description": "NSLOCTEXT(\"[741CD00ACAF21FAD5562594BBDD4EB32]\", \"6426A4CC4445422B869ECC95686D2C72\", \"[Quest] I have a top-secret tip! Invest 100 gold with me.\")"
+    },
+    {
+      "Name": "Q_Gold_Treat",
+      "Quest_Name": "NSLOCTEXT(\"[741CD00ACAF21FAD5562594BBDD4EB32]\", \"3655273E4FF9764488C1C8A78C1AF8B5\", \"Buy Me a Drink!\")",
+      "Quest_Type": "Gold_Donation",
+      "Target_Item": "None",
+      "Target_Amount": 50,
+      "Reward_Gold": 0,
+      "Reward_Trust": 15,
+      "Quest_Description": "NSLOCTEXT(\"[741CD00ACAF21FAD5562594BBDD4EB32]\", \"8F12581F44A7DF10912C3AA573CB86A0\", \"[Quest] I\\'m having a rough day. Spend 50 gold on me, and I\\'ll keep your secrets safe for a lifetime!\")"
+    },
+    {
+      "Name": "Q_Gold_Charity",
+      "Quest_Name": "NSLOCTEXT(\"[741CD00ACAF21FAD5562594BBDD4EB32]\", \"FA5DE61E4D35765D6D9F3CA1E8ED5948\", \"Village Fund\")",
+      "Quest_Type": "Gold_Donation",
+      "Target_Item": "None",
+      "Target_Amount": 200,
+      "Reward_Gold": 0,
+      "Reward_Trust": 60,
+      "Quest_Description": "NSLOCTEXT(\"[741CD00ACAF21FAD5562594BBDD4EB32]\", \"E3808EEF467819AA36377EA8BBB7D292\", \"[Quest] The plaza needs repairs. Can you donate 200 gold? The whole village will look up to you as a hero!\")"
+    },
+    {
+      "Name": "Q_Gold_Emergency",
+      "Quest_Name": "NSLOCTEXT(\"[741CD00ACAF21FAD5562594BBDD4EB32]\", \"6BC046704040B3235545FF9F2B099BA6\", \"Quick Cash\")",
+      "Quest_Type": "Gold_Donation",
+      "Target_Item": "None",
+      "Target_Amount": 100,
+      "Reward_Gold": 0,
+      "Reward_Trust": 30,
+      "Quest_Description": "NSLOCTEXT(\"[741CD00ACAF21FAD5562594BBDD4EB32]\", \"87BD2DF447EA3C12F9F9C29CF920BA02\", \"[Quest] It\\'s an emergency! Lend me 100 gold.\")"
+    }
+  ],
+  "source_asset_basis": "Entry from the SHA-pinned original Project.zip.",
+  "initial_and_maintained_asset_sha256_equal": true
+}

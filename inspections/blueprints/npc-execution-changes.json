@@ -1,0 +1,91 @@
+{
+  "schema": "npc-execution-link-comparison/v1",
+  "blueprint": "/Game/ThirdPerson/Blueprints/BP_NPC_Standard.BP_NPC_Standard",
+  "initial": "initial/BP_NPC_Standard.json",
+  "maintained": "maintained/BP_NPC_Standard.json",
+  "scope": "Stable node GUID and named execution pins only. This summary does not compare every pure data wire, pin ID, comment or layout; use the complete exports for full review.",
+  "removed_execution_links": [
+    {
+      "graph": "EventGraph",
+      "output_node": "03A23920-4C29-D6EE-2BF3-33B9586AE665",
+      "output_node_title": "Branch",
+      "output_pin": "else",
+      "input_node": "5166DE7F-4BFA-ED5E-573F-F3879C1BD329",
+      "input_pin": "execute"
+    },
+    {
+      "graph": "EventGraph",
+      "output_node": "5166DE7F-4BFA-ED5E-573F-F3879C1BD329",
+      "output_node_title": "Branch",
+      "output_pin": "else",
+      "input_node": "3985C114-4B65-FBBC-4680-63A218085D37",
+      "input_pin": "execute"
+    },
+    {
+      "graph": "EventGraph",
+      "output_node": "72C0987B-4585-79D3-EEF3-3884D9F01F2D",
+      "output_node_title": "Branch",
+      "output_pin": "else",
+      "input_node": "C50A5832-4BCE-3C57-613A-FB8AE31105B1",
+      "input_pin": "execute"
+    },
+    {
+      "graph": "EventGraph",
+      "output_node": "9DB60F60-464F-F40E-45E5-4CAE6E1BA158",
+      "output_node_title": "Branch",
+      "output_pin": "else",
+      "input_node": "B83AADD6-49F0-407A-4574-B081B9623A81",
+      "input_pin": "execute"
+    }
+  ],
+  "added_execution_links": [
+    {
+      "graph": "EventGraph",
+      "output_node": "03A23920-4C29-D6EE-2BF3-33B9586AE665",
+      "output_node_title": "Branch",
+      "output_pin": "else",
+      "input_node": "3985C114-4B65-FBBC-4680-63A218085D37",
+      "input_pin": "execute"
+    },
+    {
+      "graph": "EventGraph",
+      "output_node": "15C20261-0C15-4F2A-AB80-1D0180000001",
+      "output_node_title": "Branch",
+      "output_pin": "else",
+      "input_node": "B83AADD6-49F0-407A-4574-B081B9623A81",
+      "input_pin": "execute"
+    },
+    {
+      "graph": "EventGraph",
+      "output_node": "5166DE7F-4BFA-ED5E-573F-F3879C1BD329",
+      "output_node_title": "Branch",
+      "output_pin": "else",
+      "input_node": "C50A5832-4BCE-3C57-613A-FB8AE31105B1",
+      "input_pin": "execute"
+    },
+    {
+      "graph": "EventGraph",
+      "output_node": "72C0987B-4585-79D3-EEF3-3884D9F01F2D",
+      "output_node_title": "Branch",
+      "output_pin": "else",
+      "input_node": "5166DE7F-4BFA-ED5E-573F-F3879C1BD329",
+      "input_pin": "execute"
+    },
+    {
+      "graph": "EventGraph",
+      "output_node": "9DB60F60-464F-F40E-45E5-4CAE6E1BA158",
+      "output_node_title": "Branch",
+      "output_pin": "else",
+      "input_node": "15C20261-0C15-4F2A-AB80-1D0180000001",
+      "input_pin": "execute"
+    }
+  ],
+  "added_nodes": [
+    {
+      "guid": "15C20261-0C15-4F2A-AB80-1D0180000001",
+      "title": "Branch",
+      "class": "/Script/BlueprintGraph.K2Node_IfThenElse"
+    }
+  ],
+  "removed_nodes": []
+}

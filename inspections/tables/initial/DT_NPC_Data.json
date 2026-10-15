@@ -1,0 +1,71 @@
+{
+  "schema": "npc-authored-table-inspection/v1",
+  "asset": "/Game/AI/DT_NPC_Data",
+  "source_stage": "initial_project_restored_from_pinned_Project.zip",
+  "source_asset": {
+    "path": "Content/AI/DT_NPC_Data.uasset",
+    "bytes": 5537,
+    "sha256": "be4de9bc4c73247d693493fb8996518ee2cc429daa29a9bf01f50da4bde9788b"
+  },
+  "row_count": 5,
+  "values": "Original engine-exported row values, including export-text strings. No row or default values are changed.",
+  "rows": [
+    {
+      "Name": "NPC_01",
+      "NPC_Name": "NSLOCTEXT(\"[F711B25B3A3BF2E271B053A99B3EDCAE]\", \"1CBCD35B45E4CF3C34D970860CC62295\", \"Charles\")",
+      "Personality_Type": "Busy",
+      "Widget_Color": "(R=0.831373,G=0.000000,B=0.000000,A=1.000000)",
+      "Start_Time": 420,
+      "End_Time": 1140,
+      "Home_Location": "(X=-2910.000000,Y=-6630.000000,Z=200.000000)",
+      "Trust_Level": 0,
+      "Required_Trust_Follow": 80
+    },
+    {
+      "Name": "NPC_02",
+      "NPC_Name": "NSLOCTEXT(\"[F711B25B3A3BF2E271B053A99B3EDCAE]\", \"D3F2B6174BDA2D558D2DB6BF6FD4349E\", \"George\")",
+      "Personality_Type": "Talkative",
+      "Widget_Color": "(R=0.015686,G=0.749020,B=0.678431,A=1.000000)",
+      "Start_Time": 330,
+      "End_Time": 1050,
+      "Home_Location": "(X=-1268.000000,Y=-6194.000000,Z=200.000000)",
+      "Trust_Level": 39,
+      "Required_Trust_Follow": 40
+    },
+    {
+      "Name": "NPC_03",
+      "NPC_Name": "NSLOCTEXT(\"[F711B25B3A3BF2E271B053A99B3EDCAE]\", \"BA689F29490AD877BE69B8A3EBFEFE7E\", \"Leon\")",
+      "Personality_Type": "Grumpy",
+      "Widget_Color": "(R=0.160832,G=0.159745,B=0.165179,A=1.000000)",
+      "Start_Time": 390,
+      "End_Time": 1110,
+      "Home_Location": "(X=-1765.000000,Y=-4833.000000,Z=200.000000)",
+      "Trust_Level": 0,
+      "Required_Trust_Follow": 60
+    },
+    {
+      "Name": "NPC_04",
+      "NPC_Name": "NSLOCTEXT(\"[F711B25B3A3BF2E271B053A99B3EDCAE]\", \"BE07B15741AA6F79F8CE8887DC66ED34\", \"Lucia\")",
+      "Personality_Type": "Mysterious",
+      "Widget_Color": "(R=0.396078,G=0.078431,B=0.431373,A=1.000000)",
+      "Start_Time": 0,
+      "End_Time": 720,
+      "Home_Location": "(X=-2160.000000,Y=180.000000,Z=200.000000)",
+      "Trust_Level": 0,
+      "Required_Trust_Follow": 60
+    },
+    {
+      "Name": "NPC_05",
+      "NPC_Name": "NSLOCTEXT(\"[F711B25B3A3BF2E271B053A99B3EDCAE]\", \"06E5456F4640150B4A366580A8D385A2\", \"Rose\")",
+      "Personality_Type": "Friendly",
+      "Widget_Color": "(R=0.905882,G=0.494118,B=0.725490,A=1.000000)",
+      "Start_Time": 420,
+      "End_Time": 1140,
+      "Home_Location": "(X=-2000.000000,Y=-7535.000000,Z=200.000000)",
+      "Trust_Level": 0,
+      "Required_Trust_Follow": 20
+    }
+  ],
+  "source_asset_basis": "Entry from the SHA-pinned original Project.zip.",
+  "initial_and_maintained_asset_sha256_equal": true
+}

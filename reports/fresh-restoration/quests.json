@@ -1,0 +1,207 @@
+{
+  "schema": "npc-gameplay-quest-contracts/v1",
+  "test": "NPC.Gameplay.QuestContracts",
+  "engine_version": "5.4.4-35576357+++UE5+Release-5.4",
+  "map": "/Game/ThirdPerson/Maps/ThirdPersonMap",
+  "scope": "Fresh actual PIE, Charles, original Talk/quest logic. Real authored DataTable rows seed active quests; no replacement quest implementation or quest-generation RNG. Does not cover every quest row, keyboard input, long-running UI, or navigation.",
+  "isolation": "Synchronous cases snapshot player/NPC/Blackboard properties and remove their newly created dialogue/shop widgets. Controller input focus and native latent/navigation state are not claimed fully restored; this dedicated PIE session is ended after the suite. No assets are saved.",
+  "quest_table": "/Game/AI/DT_QuestList.DT_QuestList",
+  "Q_Apple_authored_row": {
+    "Quest_Name": "Crunchy Snack",
+    "Quest_Type": "Item_Collection",
+    "Target_Item": "Apple",
+    "Target_Amount": 5,
+    "Reward_Gold": 10,
+    "Reward_Trust": 5,
+    "Quest_Description": "[Quest] My mouth is so dry from talking! Bring me 5 Apples."
+  },
+  "Q_Gold_Loan_authored_row": {
+    "Quest_Name": "Lost My Wallet",
+    "Quest_Type": "Gold_Donation",
+    "Target_Item": "None",
+    "Target_Amount": 30,
+    "Reward_Gold": 0,
+    "Reward_Trust": 9,
+    "Quest_Description": "[Quest] I think I dropped my wallet at the market! Lend me 30 gold?"
+  },
+  "Apple_authored_item_row": {
+    "Item_Name": "Apple",
+    "Item_Mesh": "/Script/Engine.StaticMesh'/Game/Food_Pack_01/Meshes/Food_Fruit_Apple_01.Food_Fruit_Apple_01'",
+    "Material": "/Script/Engine.MaterialInstanceConstant'/Game/Food_Pack_01/Materials/M_Food_Fruit_Apple_01.M_Food_Fruit_Apple_01'",
+    "Item_Type": "Gathering",
+    "Is_Rare": false,
+    "Item_Price": 1,
+    "Trust_Point": 0,
+    "Count": 1,
+    "Restore_Amount": 0,
+    "Required_Trust": 0
+  },
+  "base_scenarios": 5,
+  "case_count": 8,
+  "passed_cases": 8,
+  "failed_cases": 0,
+  "cases": [
+    {
+      "id": "quest.apple.count_4",
+      "quest_row": "Q_Apple",
+      "oracle": "Original DT_QuestList authored requirements/rewards; fixed independent expected amounts. Duplicate input is within the same interaction, not a newly assigned quest.",
+      "expected": {
+        "money": 100,
+        "trust": 10,
+        "quest_active": true,
+        "apple_count": 4,
+        "inventory_entries": 1
+      },
+      "actual": {
+        "money": 100,
+        "trust": 10,
+        "quest_active": true,
+        "apple_count": 4,
+        "inventory_entries": 1
+      },
+      "passed": true
+    },
+    {
+      "id": "quest.apple.count_5",
+      "quest_row": "Q_Apple",
+      "oracle": "Original DT_QuestList authored requirements/rewards; fixed independent expected amounts. Duplicate input is within the same interaction, not a newly assigned quest.",
+      "expected": {
+        "money": 110,
+        "trust": 15,
+        "quest_active": false,
+        "apple_count": 0,
+        "inventory_entries": 0
+      },
+      "actual": {
+        "money": 110,
+        "trust": 15,
+        "quest_active": false,
+        "apple_count": 0,
+        "inventory_entries": 0
+      },
+      "passed": true
+    },
+    {
+      "id": "quest.apple.count_5.duplicate_talk",
+      "quest_row": "Q_Apple",
+      "oracle": "Original DT_QuestList authored requirements/rewards; fixed independent expected amounts. Duplicate input is within the same interaction, not a newly assigned quest.",
+      "expected": {
+        "money": 110,
+        "trust": 15,
+        "quest_active": false,
+        "apple_count": 0,
+        "inventory_entries": 0
+      },
+      "actual": {
+        "money": 110,
+        "trust": 15,
+        "quest_active": false,
+        "apple_count": 0,
+        "inventory_entries": 0
+      },
+      "passed": true
+    },
+    {
+      "id": "quest.apple.count_6",
+      "quest_row": "Q_Apple",
+      "oracle": "Original DT_QuestList authored requirements/rewards; fixed independent expected amounts. Duplicate input is within the same interaction, not a newly assigned quest.",
+      "expected": {
+        "money": 110,
+        "trust": 15,
+        "quest_active": false,
+        "apple_count": 1,
+        "inventory_entries": 1
+      },
+      "actual": {
+        "money": 110,
+        "trust": 15,
+        "quest_active": false,
+        "apple_count": 1,
+        "inventory_entries": 1
+      },
+      "passed": true
+    },
+    {
+      "id": "quest.apple.count_6.duplicate_talk",
+      "quest_row": "Q_Apple",
+      "oracle": "Original DT_QuestList authored requirements/rewards; fixed independent expected amounts. Duplicate input is within the same interaction, not a newly assigned quest.",
+      "expected": {
+        "money": 110,
+        "trust": 15,
+        "quest_active": false,
+        "apple_count": 1,
+        "inventory_entries": 1
+      },
+      "actual": {
+        "money": 110,
+        "trust": 15,
+        "quest_active": false,
+        "apple_count": 1,
+        "inventory_entries": 1
+      },
+      "passed": true
+    },
+    {
+      "id": "quest.loan.money_29",
+      "quest_row": "Q_Gold_Loan",
+      "oracle": "Original DT_QuestList authored requirements/rewards; fixed independent expected amounts. Duplicate input is within the same interaction, not a newly assigned quest.",
+      "expected": {
+        "money": 29,
+        "trust": 10,
+        "quest_active": true,
+        "apple_count": 0,
+        "inventory_entries": 0
+      },
+      "actual": {
+        "money": 29,
+        "trust": 10,
+        "quest_active": true,
+        "apple_count": 0,
+        "inventory_entries": 0
+      },
+      "passed": true
+    },
+    {
+      "id": "quest.loan.money_30",
+      "quest_row": "Q_Gold_Loan",
+      "oracle": "Original DT_QuestList authored requirements/rewards; fixed independent expected amounts. Duplicate input is within the same interaction, not a newly assigned quest.",
+      "expected": {
+        "money": 0,
+        "trust": 19,
+        "quest_active": false,
+        "apple_count": 0,
+        "inventory_entries": 0
+      },
+      "actual": {
+        "money": 0,
+        "trust": 19,
+        "quest_active": false,
+        "apple_count": 0,
+        "inventory_entries": 0
+      },
+      "passed": true
+    },
+    {
+      "id": "quest.loan.money_30.duplicate_talk",
+      "quest_row": "Q_Gold_Loan",
+      "oracle": "Original DT_QuestList authored requirements/rewards; fixed independent expected amounts. Duplicate input is within the same interaction, not a newly assigned quest.",
+      "expected": {
+        "money": 0,
+        "trust": 19,
+        "quest_active": false,
+        "apple_count": 0,
+        "inventory_entries": 0
+      },
+      "actual": {
+        "money": 0,
+        "trust": 19,
+        "quest_active": false,
+        "apple_count": 0,
+        "inventory_entries": 0
+      },
+      "passed": true
+    }
+  ],
+  "status": "passed",
+  "assertions_passed": true
+}

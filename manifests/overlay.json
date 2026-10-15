@@ -1,0 +1,209 @@
+{
+  "schema_version": 1,
+  "source_version": "1",
+  "files": [
+    {
+      "path": "Config/DefaultEngine.ini",
+      "bytes": 2737,
+      "sha256": "bcb54a2b3193a1babc30c782fd4440ef25ec248328a6654abf71f1764136548e",
+      "payload": "overlay/Config/DefaultEngine.ini",
+      "base_sha256": "424e00310a744461392d81a807ec8a7da50ffc4484161b109d6ee2b95eecfde2"
+    },
+    {
+      "path": "Config/DefaultGame.ini",
+      "bytes": 279,
+      "sha256": "cd971e10cc71d2b563daff2147e10b045493c4a1a16b57971d3eebe65958b678",
+      "payload": "overlay/Config/DefaultGame.ini",
+      "base_sha256": "eed1ed47afe668afad313671fd38ce3572bb130d14384199795fbf33dcfe0b2e"
+    },
+    {
+      "path": "Content/AdvancedVillagePack/Blueprints/BP_Butterfly.uasset",
+      "bytes": 256859,
+      "sha256": "42a73c962c4fd230ece429dd5be8c570e59a9413f6f19920588bb6a09dd1e259",
+      "payload": "overlay/Content/AdvancedVillagePack/Blueprints/BP_Butterfly.uasset",
+      "base_sha256": "640042ddd9231d78cf892758564984e1e39eafd7d51f0235ad5c8fcda93cadc1"
+    },
+    {
+      "path": "Content/ThirdPerson/Blueprints/BP_NPC_Standard.uasset",
+      "bytes": 1245641,
+      "sha256": "34016ac778f1fc6dd8c64c21c9f9248b73ef8d60ce89c2e9fd28ccf61737e759",
+      "payload": "overlay/Content/ThirdPerson/Blueprints/BP_NPC_Standard.uasset",
+      "base_sha256": "cfa016f6545b336e9054968b39bc25904c22757dbe4cc2629a4d538d85bb8acf"
+    },
+    {
+      "path": "Content/ThirdPerson/Maps/ThirdPersonMap.umap",
+      "bytes": 22275,
+      "sha256": "bcf2e864488502f833dec59b8e47385400c9a02e6d33815bf8e4b41114ab6614",
+      "payload": "overlay/Content/ThirdPerson/Maps/ThirdPersonMap.umap",
+      "base_sha256": "795511cc22ec56a5458093f8cb68821e4faaa2f03b3692d3909e77be92d38873"
+    },
+    {
+      "path": "Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/6/Y8/B5W8N6X01MFMWF4ZO4QWYL.uasset",
+      "bytes": 469506,
+      "sha256": "49b9836aa1405a6d35b71e8a566ab3eacc847ce7fdf331bd9825f85dd7f42ad7",
+      "payload": "overlay/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/6/Y8/B5W8N6X01MFMWF4ZO4QWYL.uasset",
+      "base_sha256": "7e4e054a9001615763d3e987be8d485bfafbffb15e6f7ccd026ee7d909447442"
+    },
+    {
+      "path": "NPC.uproject",
+      "bytes": 776,
+      "sha256": "95f45cdd6eace5594c8d153d63e0fedad2cff6ba0ba8f31660c27b8d91f49ea9",
+      "payload": "overlay/NPC.uproject",
+      "base_sha256": "70c87bd1da4895e6647901a401fe81efdbcb4c2dcc50a30ec45629f00e3e8a64"
+    },
+    {
+      "path": "Plugins/NpcAudit/NpcAudit.uplugin",
+      "bytes": 411,
+      "sha256": "4d72beeccfca70a0778dfc3fc2a5c7ec24b196fa1378f9963aa86fcb9ec761db",
+      "payload": "overlay/Plugins/NpcAudit/NpcAudit.uplugin",
+      "base_sha256": null
+    },
+    {
+      "path": "Plugins/NpcAudit/README.md",
+      "bytes": 4782,
+      "sha256": "d69872146c1e54cdd601e8ec0c48527450b44db009d3ea036126dec95a681a16",
+      "payload": "overlay/Plugins/NpcAudit/README.md",
+      "base_sha256": null
+    },
+    {
+      "path": "Plugins/NpcAudit/Source/NpcAudit/NpcAudit.Build.cs",
+      "bytes": 496,
+      "sha256": "8f4549bb4e1b36aa119679ce2c6d30e71f1f82821f75d04f1933e41a64364805",
+      "payload": "overlay/Plugins/NpcAudit/Source/NpcAudit/NpcAudit.Build.cs",
+      "base_sha256": null
+    },
+    {
+      "path": "Plugins/NpcAudit/Source/NpcAudit/Private/NpcAuditLibrary.cpp",
+      "bytes": 28768,
+      "sha256": "90d8f63be7cb41adb94022e23b55ccaaf4808c107f1008e662a3fcf355a68c8e",
+      "payload": "overlay/Plugins/NpcAudit/Source/NpcAudit/Private/NpcAuditLibrary.cpp",
+      "base_sha256": null
+    },
+    {
+      "path": "Plugins/NpcAudit/Source/NpcAudit/Private/NpcAuditModule.cpp",
+      "bytes": 84,
+      "sha256": "fbd823a23fb67ba83238c6f8bf7909eec31a4348c126100e3d909ea1985b3aa9",
+      "payload": "overlay/Plugins/NpcAudit/Source/NpcAudit/Private/NpcAuditModule.cpp",
+      "base_sha256": null
+    },
+    {
+      "path": "Plugins/NpcAudit/Source/NpcAudit/Private/NpcBlueprintPatchLibrary.cpp",
+      "bytes": 4926,
+      "sha256": "990632d7fcbb3b8705545321b83f494218ef4e15b322b72737985921a7db44b2",
+      "payload": "overlay/Plugins/NpcAudit/Source/NpcAudit/Private/NpcBlueprintPatchLibrary.cpp",
+      "base_sha256": null
+    },
+    {
+      "path": "Plugins/NpcAudit/Source/NpcAudit/Private/NpcGameplayTests.cpp",
+      "bytes": 42344,
+      "sha256": "6b1cd0afc77d3bb62ec308074273c66f7e73ee38ffe6a061e9faf3c060e2f269",
+      "payload": "overlay/Plugins/NpcAudit/Source/NpcAudit/Private/NpcGameplayTests.cpp",
+      "base_sha256": null
+    },
+    {
+      "path": "Plugins/NpcAudit/Source/NpcAudit/Private/NpcInteractionTests.cpp",
+      "bytes": 56423,
+      "sha256": "e3e57b1bd72700bfb1892bdd944357f25752466964157f0dc170dd6033932477",
+      "payload": "overlay/Plugins/NpcAudit/Source/NpcAudit/Private/NpcInteractionTests.cpp",
+      "base_sha256": null
+    },
+    {
+      "path": "Plugins/NpcAudit/Source/NpcAudit/Private/NpcInventoryInputTests.cpp",
+      "bytes": 36680,
+      "sha256": "89b41bc0c7e60fdd9266d47fa4e7423080ca0c5d85991d668141f1286ae7f6d2",
+      "payload": "overlay/Plugins/NpcAudit/Source/NpcAudit/Private/NpcInventoryInputTests.cpp",
+      "base_sha256": null
+    },
+    {
+      "path": "Plugins/NpcAudit/Source/NpcAudit/Private/NpcMaintenanceLibrary.cpp",
+      "bytes": 43918,
+      "sha256": "c8fcf30bf5e97a83ceb6d3f025c8a493aa8630051e940be69032d591a4e87a50",
+      "payload": "overlay/Plugins/NpcAudit/Source/NpcAudit/Private/NpcMaintenanceLibrary.cpp",
+      "base_sha256": null
+    },
+    {
+      "path": "Plugins/NpcAudit/Source/NpcAudit/Private/NpcNavigationTests.cpp",
+      "bytes": 65210,
+      "sha256": "585ad491dc1d7d79bfddc0917af110ba6372bb73e30cf0620d07e163b0d080f0",
+      "payload": "overlay/Plugins/NpcAudit/Source/NpcAudit/Private/NpcNavigationTests.cpp",
+      "base_sha256": null
+    },
+    {
+      "path": "Plugins/NpcAudit/Source/NpcAudit/Private/NpcProbabilityTests.cpp",
+      "bytes": 7717,
+      "sha256": "892296ffc166e3dfbfdb5192ff8dd654f5624aa8e562206c061e3d1b8b904fce",
+      "payload": "overlay/Plugins/NpcAudit/Source/NpcAudit/Private/NpcProbabilityTests.cpp",
+      "base_sha256": null
+    },
+    {
+      "path": "Plugins/NpcAudit/Source/NpcAudit/Private/NpcProfileTests.cpp",
+      "bytes": 45946,
+      "sha256": "9cd303b15eb9d48cf60d6b0f9118c32c0c118657ac6b9065bbdb2b3f56b0198c",
+      "payload": "overlay/Plugins/NpcAudit/Source/NpcAudit/Private/NpcProfileTests.cpp",
+      "base_sha256": null
+    },
+    {
+      "path": "Plugins/NpcAudit/Source/NpcAudit/Private/NpcQuestTests.cpp",
+      "bytes": 30349,
+      "sha256": "8a11c56d449fb45a1354f20614d43d99d501ce979868bc3ee7fd1207a2b7d8bc",
+      "payload": "overlay/Plugins/NpcAudit/Source/NpcAudit/Private/NpcQuestTests.cpp",
+      "base_sha256": null
+    },
+    {
+      "path": "Plugins/NpcAudit/Source/NpcAudit/Private/NpcTickOptimizationLibrary.cpp",
+      "bytes": 14264,
+      "sha256": "e562a67f4a5b0d13db1430d669670436fc2042661f96abea545ff81c3c4c170d",
+      "payload": "overlay/Plugins/NpcAudit/Source/NpcAudit/Private/NpcTickOptimizationLibrary.cpp",
+      "base_sha256": null
+    },
+    {
+      "path": "Plugins/NpcAudit/Source/NpcAudit/Private/NpcVendorPatchLibrary.cpp",
+      "bytes": 24784,
+      "sha256": "2b12dedc58420c578e14b7bdf099b222121cf8bb33b6cf0457469300d6846a13",
+      "payload": "overlay/Plugins/NpcAudit/Source/NpcAudit/Private/NpcVendorPatchLibrary.cpp",
+      "base_sha256": null
+    },
+    {
+      "path": "Plugins/NpcAudit/Source/NpcAudit/Private/NpcVisualTests.cpp",
+      "bytes": 7964,
+      "sha256": "9d45711f7edc76e697aa923e2bc002355c598054fee8cb263cc3eb7d8714b8c7",
+      "payload": "overlay/Plugins/NpcAudit/Source/NpcAudit/Private/NpcVisualTests.cpp",
+      "base_sha256": null
+    },
+    {
+      "path": "Plugins/NpcAudit/Source/NpcAudit/Public/NpcAuditLibrary.h",
+      "bytes": 1902,
+      "sha256": "76a2180068576d99151237a66278ef1b2b560d15a7119efbc9a0f6e82502c802",
+      "payload": "overlay/Plugins/NpcAudit/Source/NpcAudit/Public/NpcAuditLibrary.h",
+      "base_sha256": null
+    },
+    {
+      "path": "Plugins/NpcAudit/Source/NpcAudit/Public/NpcBlueprintPatchLibrary.h",
+      "bytes": 470,
+      "sha256": "72ef5cf5ea84e60c46aa0d65654dbca47c89575d06068d98be95af5b34212bda",
+      "payload": "overlay/Plugins/NpcAudit/Source/NpcAudit/Public/NpcBlueprintPatchLibrary.h",
+      "base_sha256": null
+    },
+    {
+      "path": "Plugins/NpcAudit/Source/NpcAudit/Public/NpcMaintenanceLibrary.h",
+      "bytes": 2344,
+      "sha256": "5c7b83c775c19dbf1dd8b4361b1663f9311e33554fa43cf16094af8ce5665557",
+      "payload": "overlay/Plugins/NpcAudit/Source/NpcAudit/Public/NpcMaintenanceLibrary.h",
+      "base_sha256": null
+    },
+    {
+      "path": "Plugins/NpcAudit/Source/NpcAudit/Public/NpcTickOptimizationLibrary.h",
+      "bytes": 549,
+      "sha256": "6dc26094c448133973bf7391bba5d621823e1555f91bbe981050cf34fa6c996c",
+      "payload": "overlay/Plugins/NpcAudit/Source/NpcAudit/Public/NpcTickOptimizationLibrary.h",
+      "base_sha256": null
+    },
+    {
+      "path": "Plugins/NpcAudit/Source/NpcAudit/Public/NpcVendorPatchLibrary.h",
+      "bytes": 732,
+      "sha256": "8b3b542b47ae2abaa91629985bad1b70c82ef215c4cf8d3164a3f420a6960a6d",
+      "payload": "overlay/Plugins/NpcAudit/Source/NpcAudit/Public/NpcVendorPatchLibrary.h",
+      "base_sha256": null
+    }
+  ]
+}

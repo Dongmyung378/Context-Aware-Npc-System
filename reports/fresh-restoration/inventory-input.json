@@ -1,0 +1,249 @@
+{
+  "schema": "npc-gameplay-inventory-input-contracts/v1",
+  "test": "NPC.Gameplay.InventoryInputContracts",
+  "engine_version": "5.4.4-35576357+++UE5+Release-5.4",
+  "scope": "Fresh actual PIE. Spawn the canonical BP_Item_Master with Item_ID Apple before BeginPlay, enter its actual overlap, inject E press/release through the real PlayerController input stack, and observe original inventory and60-second latent respawn. Shop tests call original Charles Interact/Trade and inspect original generated widget rows, not a manually populated sales list. Does not prove physical keyboard/OS focus, every item row, or rendered visual layout.",
+  "isolation": "Runtime inventory/player/NPC/clock properties are snapshotted; newly created widgets and spawned fixture items are removed before dedicated EndPIE. Input focus and native latent histories are not claimed generally reversible. No assets are saved; no time acceleration or timer-forcing is used.",
+  "original_pickup_contract": "Original pickup hides the actor and disables collision, then Delay60 seconds restores visibility/collision and re-decides rarity. It does not destroy the pickup actor.",
+  "shop_contract": "Charles ItemsToSell populates all4 catalog rows into NPC_SalesList at each trust level. Original WBP_ShopMain filters NPC_ShopList display rows by Required_Trust:3 normal rows at99,4 including Titan Blood at100 and101.",
+  "whole_wait_limit_seconds": 110,
+  "expected_checkpoints": 6,
+  "authored_Charles_ItemsToSell": [
+    "Juice",
+    "Beer",
+    "Whiskey",
+    "Titan_Blood"
+  ],
+  "Titan_Blood_authored_row": {
+    "Item_Name": "Titan Blood",
+    "Item_Mesh": "None",
+    "Material": "None",
+    "Item_Type": "Special_Food",
+    "Is_Rare": false,
+    "Item_Price": 100,
+    "Trust_Point": 0,
+    "Count": 1,
+    "Restore_Amount": 0,
+    "Required_Trust": 100
+  },
+  "canonical_pickup_class": "/Game/AI/BP_Item_Master.BP_Item_Master_C",
+  "status": "passed",
+  "real_elapsed_seconds": 64.22328520193696,
+  "case_count": 6,
+  "passed_cases": 6,
+  "failed_cases": 0,
+  "cases": [
+    {
+      "id": "pickup.E_new_stack",
+      "oracle": "Actual overlap enables original actor E binding; real PlayerController E press/release must add exactly one authored item and enter the original hidden/collision-off cooldown.",
+      "actor": "/Game/ThirdPerson/Maps/UEDPIE_0_ThirdPersonMap.ThirdPersonMap:PersistentLevel.BP_Item_Master_C_0",
+      "requested_base_Item_ID": "Apple",
+      "actual_original_DecideItem_Final_ID": "Rare_Apple",
+      "authored_selected_item_row": {
+        "Item_Name": "Rare Apple",
+        "Item_Mesh": "/Script/Engine.StaticMesh'/Game/Food_Pack_01/Meshes/Food_Fruit_Apple_01.Food_Fruit_Apple_01'",
+        "Material": "/Script/Engine.Material'/Game/StarterContent/Materials/M_Metal_Gold.M_Metal_Gold'",
+        "Item_Type": "Gathering",
+        "Is_Rare": true,
+        "Item_Price": 1,
+        "Trust_Point": 1,
+        "Count": 1,
+        "Restore_Amount": 0,
+        "Required_Trust": 0
+      },
+      "initial_inventory_quantity": 0,
+      "original_sphere_radius": 150,
+      "original_sphere_generates_overlap_events": true,
+      "actual_player_overlap": true,
+      "input_component_in_controller_stack": true,
+      "bound_E_pressed_callbacks": 1,
+      "overlap_wait_real_seconds": 0.01575309783220291,
+      "press_InputKey_returned": false,
+      "pressed_world_time": 2.231939397752285,
+      "release_InputKey_returned": true,
+      "release_world_time": 2.2402727976441383,
+      "expected_quantity": 1,
+      "actual_quantity": 1,
+      "actual_matching_stacks": 1,
+      "original_actor_still_exists": true,
+      "hidden_after_pickup": true,
+      "collision_disabled_after_pickup": true,
+      "observation_world_time": 2.2486061975359917,
+      "actual_inventory": [
+        {
+          "item_Name": "Rare Apple",
+          "item_Mesh": "/Game/Food_Pack_01/Meshes/Food_Fruit_Apple_01.Food_Fruit_Apple_01",
+          "material": "/Game/StarterContent/Materials/M_Metal_Gold.M_Metal_Gold",
+          "item_Type": "Gathering",
+          "is_Rare": true,
+          "item_Price": 1,
+          "trust_Point": 1,
+          "count": 1,
+          "restore_Amount": 0,
+          "required_Trust": 0
+        }
+      ],
+      "passed": true,
+      "reason": "actual_E_input_inventory_and_hidden_cooldown",
+      "real_elapsed_seconds": 4.2022633999586105
+    },
+    {
+      "id": "pickup.E_existing_stack",
+      "oracle": "Actual overlap enables original actor E binding; real PlayerController E press/release must add exactly one authored item and enter the original hidden/collision-off cooldown.",
+      "actor": "/Game/ThirdPerson/Maps/UEDPIE_0_ThirdPersonMap.ThirdPersonMap:PersistentLevel.BP_Item_Master_C_1",
+      "requested_base_Item_ID": "Apple",
+      "actual_original_DecideItem_Final_ID": "Rare_Apple",
+      "authored_selected_item_row": {
+        "Item_Name": "Rare Apple",
+        "Item_Mesh": "/Script/Engine.StaticMesh'/Game/Food_Pack_01/Meshes/Food_Fruit_Apple_01.Food_Fruit_Apple_01'",
+        "Material": "/Script/Engine.Material'/Game/StarterContent/Materials/M_Metal_Gold.M_Metal_Gold'",
+        "Item_Type": "Gathering",
+        "Is_Rare": true,
+        "Item_Price": 1,
+        "Trust_Point": 1,
+        "Count": 1,
+        "Restore_Amount": 0,
+        "Required_Trust": 0
+      },
+      "initial_inventory_quantity": 2,
+      "original_sphere_radius": 150,
+      "original_sphere_generates_overlap_events": true,
+      "actual_player_overlap": true,
+      "input_component_in_controller_stack": true,
+      "bound_E_pressed_callbacks": 1,
+      "overlap_wait_real_seconds": 0.015430297702550888,
+      "press_InputKey_returned": false,
+      "pressed_world_time": 2.2652730010449886,
+      "release_InputKey_returned": true,
+      "release_world_time": 2.273606400936842,
+      "expected_quantity": 3,
+      "actual_quantity": 3,
+      "actual_matching_stacks": 1,
+      "original_actor_still_exists": true,
+      "hidden_after_pickup": true,
+      "collision_disabled_after_pickup": true,
+      "observation_world_time": 2.2819398008286953,
+      "actual_inventory": [
+        {
+          "item_Name": "Rare Apple",
+          "item_Mesh": "/Game/Food_Pack_01/Meshes/Food_Fruit_Apple_01.Food_Fruit_Apple_01",
+          "material": "/Game/StarterContent/Materials/M_Metal_Gold.M_Metal_Gold",
+          "item_Type": "Gathering",
+          "is_Rare": true,
+          "item_Price": 1,
+          "trust_Point": 1,
+          "count": 3,
+          "restore_Amount": 0,
+          "required_Trust": 0
+        }
+      ],
+      "passed": true,
+      "reason": "actual_E_input_inventory_and_hidden_cooldown",
+      "real_elapsed_seconds": 4.234825901687145
+    },
+    {
+      "id": "shop.original_Trade.trust_99",
+      "oracle": "Original NPC_01 ItemsToSell and DT_Item_Data Titan_Blood Required_Trust100: underlying catalog4, displayed normal rows3, special row visible only at trust>=100.",
+      "trust_fixture": 99,
+      "actual_shop_in_viewport": true,
+      "catalog_row_count": 4,
+      "displayed_widget_count": 3,
+      "actual_catalog_item_names": [
+        "Beer",
+        "Juice",
+        "Titan Blood",
+        "Whiskey"
+      ],
+      "expected_displayed_item_names": [
+        "Beer",
+        "Juice",
+        "Whiskey"
+      ],
+      "actual_displayed_item_names": [
+        "Beer",
+        "Juice",
+        "Whiskey"
+      ],
+      "original_Interact_closed_widgets_and_flags": true,
+      "passed": true,
+      "reason": "actual_Trade_population_and_original_UI_trust_filter",
+      "real_elapsed_seconds": 4.239802401512861
+    },
+    {
+      "id": "shop.original_Trade.trust_100",
+      "oracle": "Original NPC_01 ItemsToSell and DT_Item_Data Titan_Blood Required_Trust100: underlying catalog4, displayed normal rows3, special row visible only at trust>=100.",
+      "trust_fixture": 100,
+      "actual_shop_in_viewport": true,
+      "catalog_row_count": 4,
+      "displayed_widget_count": 4,
+      "actual_catalog_item_names": [
+        "Beer",
+        "Juice",
+        "Titan Blood",
+        "Whiskey"
+      ],
+      "expected_displayed_item_names": [
+        "Beer",
+        "Juice",
+        "Titan Blood",
+        "Whiskey"
+      ],
+      "actual_displayed_item_names": [
+        "Beer",
+        "Juice",
+        "Titan Blood",
+        "Whiskey"
+      ],
+      "original_Interact_closed_widgets_and_flags": true,
+      "passed": true,
+      "reason": "actual_Trade_population_and_original_UI_trust_filter",
+      "real_elapsed_seconds": 4.244624700397253
+    },
+    {
+      "id": "shop.original_Trade.trust_101",
+      "oracle": "Original NPC_01 ItemsToSell and DT_Item_Data Titan_Blood Required_Trust100: underlying catalog4, displayed normal rows3, special row visible only at trust>=100.",
+      "trust_fixture": 101,
+      "actual_shop_in_viewport": true,
+      "catalog_row_count": 4,
+      "displayed_widget_count": 4,
+      "actual_catalog_item_names": [
+        "Beer",
+        "Juice",
+        "Titan Blood",
+        "Whiskey"
+      ],
+      "expected_displayed_item_names": [
+        "Beer",
+        "Juice",
+        "Titan Blood",
+        "Whiskey"
+      ],
+      "actual_displayed_item_names": [
+        "Beer",
+        "Juice",
+        "Titan Blood",
+        "Whiskey"
+      ],
+      "original_Interact_closed_widgets_and_flags": true,
+      "passed": true,
+      "reason": "actual_Trade_population_and_original_UI_trust_filter",
+      "real_elapsed_seconds": 4.2493568025529385
+    },
+    {
+      "id": "pickup.real_60_second_respawn",
+      "oracle": "Original BP_Item_Master Delay60 restores visibility and collision without automatically adding inventory. Two actual E inputs already produced the expected3-item stack.",
+      "world_seconds_since_first_input": 60.03740990161896,
+      "world_seconds_since_second_input": 60.004076298326254,
+      "real_respawn_wait_seconds": 59.98767840117216,
+      "first_actor_visible_and_collision_enabled": true,
+      "second_actor_visible_and_collision_enabled": true,
+      "expected_inventory_quantity": 3,
+      "actual_inventory_quantity": 3,
+      "actual_matching_stacks": 1,
+      "passed": true,
+      "reason": "actual_world_delay_respawn_without_extra_pickup",
+      "real_elapsed_seconds": 64.22246469929814
+    }
+  ],
+  "assertions_passed": true
+}

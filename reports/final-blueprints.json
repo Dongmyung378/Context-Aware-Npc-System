@@ -1,0 +1,757 @@
+{
+  "schema": "npc-project-editor-audit/v1",
+  "scope": "Every /Game Blueprint asset, editor compile with SkipSave; not a gameplay coverage claim",
+  "engine_version": "5.4.4-35576357+++UE5+Release-5.4",
+  "assets": [
+    {
+      "path": "/Game/Characters/Mannequins/Animations/ABP_Manny",
+      "asset_class": "AnimBlueprint",
+      "loaded": true,
+      "compile": {
+        "schema": "npc-audit/v1",
+        "operation": "compile_blueprint",
+        "ok": true,
+        "blueprint": "/Game/Characters/Mannequins/Animations/ABP_Manny.ABP_Manny",
+        "status": 3,
+        "errors": 0,
+        "warnings": 0,
+        "asset_saved": false,
+        "messages": [
+          {
+            "severity": 4,
+            "message": "Transition  Jump to Fall Loop  is using an automatic transition rule but the source  Sequence Player 'MM_Jump'  is set as looping.  Please clear the 'Loop Animation' flag"
+          }
+        ]
+      }
+    },
+    {
+      "path": "/Game/Characters/Mannequins/Animations/ABP_Quinn",
+      "asset_class": "AnimBlueprint",
+      "loaded": true,
+      "compile": {
+        "schema": "npc-audit/v1",
+        "operation": "compile_blueprint",
+        "ok": true,
+        "blueprint": "/Game/Characters/Mannequins/Animations/ABP_Quinn.ABP_Quinn",
+        "status": 3,
+        "errors": 0,
+        "warnings": 0,
+        "asset_saved": false,
+        "messages": []
+      }
+    },
+    {
+      "path": "/Game/AI/BPI_Interaction",
+      "asset_class": "Blueprint",
+      "loaded": true,
+      "compile": {
+        "schema": "npc-audit/v1",
+        "operation": "compile_blueprint",
+        "ok": true,
+        "blueprint": "/Game/AI/BPI_Interaction.BPI_Interaction",
+        "status": 3,
+        "errors": 0,
+        "warnings": 0,
+        "asset_saved": false,
+        "messages": []
+      }
+    },
+    {
+      "path": "/Game/ThirdPerson/Blueprints/BP_ThirdPersonCharacter",
+      "asset_class": "Blueprint",
+      "loaded": true,
+      "compile": {
+        "schema": "npc-audit/v1",
+        "operation": "compile_blueprint",
+        "ok": true,
+        "blueprint": "/Game/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.BP_ThirdPersonCharacter",
+        "status": 3,
+        "errors": 0,
+        "warnings": 0,
+        "asset_saved": false,
+        "messages": []
+      }
+    },
+    {
+      "path": "/Game/ThirdPerson/Blueprints/BP_NPC_Standard",
+      "asset_class": "Blueprint",
+      "loaded": true,
+      "compile": {
+        "schema": "npc-audit/v1",
+        "operation": "compile_blueprint",
+        "ok": true,
+        "blueprint": "/Game/ThirdPerson/Blueprints/BP_NPC_Standard.BP_NPC_Standard",
+        "status": 3,
+        "errors": 0,
+        "warnings": 0,
+        "asset_saved": false,
+        "messages": []
+      }
+    },
+    {
+      "path": "/Game/AI/BP_GameMode",
+      "asset_class": "Blueprint",
+      "loaded": true,
+      "compile": {
+        "schema": "npc-audit/v1",
+        "operation": "compile_blueprint",
+        "ok": true,
+        "blueprint": "/Game/AI/BP_GameMode.BP_GameMode",
+        "status": 3,
+        "errors": 0,
+        "warnings": 0,
+        "asset_saved": false,
+        "messages": []
+      }
+    },
+    {
+      "path": "/Game/AI/WBP_Clock_Stamina_Money_Dash",
+      "asset_class": "WidgetBlueprint",
+      "loaded": true,
+      "compile": {
+        "schema": "npc-audit/v1",
+        "operation": "compile_blueprint",
+        "ok": true,
+        "blueprint": "/Game/AI/WBP_Clock_Stamina_Money_Dash.WBP_Clock_Stamina_Money_Dash",
+        "status": 3,
+        "errors": 0,
+        "warnings": 0,
+        "asset_saved": false,
+        "messages": []
+      }
+    },
+    {
+      "path": "/Game/AI/WBP_InventoryMain",
+      "asset_class": "WidgetBlueprint",
+      "loaded": true,
+      "compile": {
+        "schema": "npc-audit/v1",
+        "operation": "compile_blueprint",
+        "ok": true,
+        "blueprint": "/Game/AI/WBP_InventoryMain.WBP_InventoryMain",
+        "status": 3,
+        "errors": 0,
+        "warnings": 0,
+        "asset_saved": false,
+        "messages": []
+      }
+    },
+    {
+      "path": "/Game/AI/WBP_InventoryLine",
+      "asset_class": "WidgetBlueprint",
+      "loaded": true,
+      "compile": {
+        "schema": "npc-audit/v1",
+        "operation": "compile_blueprint",
+        "ok": true,
+        "blueprint": "/Game/AI/WBP_InventoryLine.WBP_InventoryLine",
+        "status": 3,
+        "errors": 0,
+        "warnings": 0,
+        "asset_saved": false,
+        "messages": []
+      }
+    },
+    {
+      "path": "/Game/AI/WBP_Interaction",
+      "asset_class": "WidgetBlueprint",
+      "loaded": true,
+      "compile": {
+        "schema": "npc-audit/v1",
+        "operation": "compile_blueprint",
+        "ok": true,
+        "blueprint": "/Game/AI/WBP_Interaction.WBP_Interaction",
+        "status": 3,
+        "errors": 0,
+        "warnings": 0,
+        "asset_saved": false,
+        "messages": []
+      }
+    },
+    {
+      "path": "/Game/AI/WBP_ShopMain",
+      "asset_class": "WidgetBlueprint",
+      "loaded": true,
+      "compile": {
+        "schema": "npc-audit/v1",
+        "operation": "compile_blueprint",
+        "ok": true,
+        "blueprint": "/Game/AI/WBP_ShopMain.WBP_ShopMain",
+        "status": 3,
+        "errors": 0,
+        "warnings": 0,
+        "asset_saved": false,
+        "messages": []
+      }
+    },
+    {
+      "path": "/Game/AI/WBP_Dialogue",
+      "asset_class": "WidgetBlueprint",
+      "loaded": true,
+      "compile": {
+        "schema": "npc-audit/v1",
+        "operation": "compile_blueprint",
+        "ok": true,
+        "blueprint": "/Game/AI/WBP_Dialogue.WBP_Dialogue",
+        "status": 3,
+        "errors": 0,
+        "warnings": 0,
+        "asset_saved": false,
+        "messages": []
+      }
+    },
+    {
+      "path": "/Game/AI/BTD_RandomChance",
+      "asset_class": "Blueprint",
+      "loaded": true,
+      "compile": {
+        "schema": "npc-audit/v1",
+        "operation": "compile_blueprint",
+        "ok": true,
+        "blueprint": "/Game/AI/BTD_RandomChance.BTD_RandomChance",
+        "status": 3,
+        "errors": 0,
+        "warnings": 0,
+        "asset_saved": false,
+        "messages": []
+      }
+    },
+    {
+      "path": "/Game/AI/BTTask_ChasePlayer",
+      "asset_class": "Blueprint",
+      "loaded": true,
+      "compile": {
+        "schema": "npc-audit/v1",
+        "operation": "compile_blueprint",
+        "ok": true,
+        "blueprint": "/Game/AI/BTTask_ChasePlayer.BTTask_ChasePlayer",
+        "status": 3,
+        "errors": 0,
+        "warnings": 0,
+        "asset_saved": false,
+        "messages": []
+      }
+    },
+    {
+      "path": "/Game/AI/BTTask_PatrolRandom",
+      "asset_class": "Blueprint",
+      "loaded": true,
+      "compile": {
+        "schema": "npc-audit/v1",
+        "operation": "compile_blueprint",
+        "ok": true,
+        "blueprint": "/Game/AI/BTTask_PatrolRandom.BTTask_PatrolRandom",
+        "status": 3,
+        "errors": 0,
+        "warnings": 0,
+        "asset_saved": false,
+        "messages": []
+      }
+    },
+    {
+      "path": "/Game/AI/My_AIController",
+      "asset_class": "Blueprint",
+      "loaded": true,
+      "compile": {
+        "schema": "npc-audit/v1",
+        "operation": "compile_blueprint",
+        "ok": true,
+        "blueprint": "/Game/AI/My_AIController.My_AIController",
+        "status": 3,
+        "errors": 0,
+        "warnings": 0,
+        "asset_saved": false,
+        "messages": []
+      }
+    },
+    {
+      "path": "/Game/AI/BP_Item_Master",
+      "asset_class": "Blueprint",
+      "loaded": true,
+      "compile": {
+        "schema": "npc-audit/v1",
+        "operation": "compile_blueprint",
+        "ok": true,
+        "blueprint": "/Game/AI/BP_Item_Master.BP_Item_Master",
+        "status": 3,
+        "errors": 0,
+        "warnings": 0,
+        "asset_saved": false,
+        "messages": []
+      }
+    },
+    {
+      "path": "/Game/AI/WBP_Take",
+      "asset_class": "WidgetBlueprint",
+      "loaded": true,
+      "compile": {
+        "schema": "npc-audit/v1",
+        "operation": "compile_blueprint",
+        "ok": true,
+        "blueprint": "/Game/AI/WBP_Take.WBP_Take",
+        "status": 3,
+        "errors": 0,
+        "warnings": 0,
+        "asset_saved": false,
+        "messages": []
+      }
+    },
+    {
+      "path": "/Game/Characters/Mannequins/Rigs/ABP_Quinn_PostProcess",
+      "asset_class": "AnimBlueprint",
+      "loaded": true,
+      "compile": {
+        "schema": "npc-audit/v1",
+        "operation": "compile_blueprint",
+        "ok": true,
+        "blueprint": "/Game/Characters/Mannequins/Rigs/ABP_Quinn_PostProcess.ABP_Quinn_PostProcess",
+        "status": 3,
+        "errors": 0,
+        "warnings": 0,
+        "asset_saved": false,
+        "messages": []
+      }
+    },
+    {
+      "path": "/Game/Characters/Mannequins/Rigs/ABP_Manny_PostProcess",
+      "asset_class": "AnimBlueprint",
+      "loaded": true,
+      "compile": {
+        "schema": "npc-audit/v1",
+        "operation": "compile_blueprint",
+        "ok": true,
+        "blueprint": "/Game/Characters/Mannequins/Rigs/ABP_Manny_PostProcess.ABP_Manny_PostProcess",
+        "status": 3,
+        "errors": 0,
+        "warnings": 0,
+        "asset_saved": false,
+        "messages": []
+      }
+    },
+    {
+      "path": "/Game/StarterContent/Blueprints/BP_LightStudio",
+      "asset_class": "Blueprint",
+      "loaded": true,
+      "compile": {
+        "schema": "npc-audit/v1",
+        "operation": "compile_blueprint",
+        "ok": true,
+        "blueprint": "/Game/StarterContent/Blueprints/BP_LightStudio.BP_LightStudio",
+        "status": 3,
+        "errors": 0,
+        "warnings": 0,
+        "asset_saved": false,
+        "messages": []
+      }
+    },
+    {
+      "path": "/Game/StarterContent/Blueprints/Blueprint_WallSconce",
+      "asset_class": "Blueprint",
+      "loaded": true,
+      "compile": {
+        "schema": "npc-audit/v1",
+        "operation": "compile_blueprint",
+        "ok": true,
+        "blueprint": "/Game/StarterContent/Blueprints/Blueprint_WallSconce.Blueprint_WallSconce",
+        "status": 3,
+        "errors": 0,
+        "warnings": 0,
+        "asset_saved": false,
+        "messages": []
+      }
+    },
+    {
+      "path": "/Game/StarterContent/Blueprints/Blueprint_Effect_Steam",
+      "asset_class": "Blueprint",
+      "loaded": true,
+      "compile": {
+        "schema": "npc-audit/v1",
+        "operation": "compile_blueprint",
+        "ok": true,
+        "blueprint": "/Game/StarterContent/Blueprints/Blueprint_Effect_Steam.Blueprint_Effect_Steam",
+        "status": 3,
+        "errors": 0,
+        "warnings": 0,
+        "asset_saved": false,
+        "messages": []
+      }
+    },
+    {
+      "path": "/Game/StarterContent/Blueprints/Blueprint_Effect_Sparks",
+      "asset_class": "Blueprint",
+      "loaded": true,
+      "compile": {
+        "schema": "npc-audit/v1",
+        "operation": "compile_blueprint",
+        "ok": true,
+        "blueprint": "/Game/StarterContent/Blueprints/Blueprint_Effect_Sparks.Blueprint_Effect_Sparks",
+        "status": 3,
+        "errors": 0,
+        "warnings": 0,
+        "asset_saved": false,
+        "messages": []
+      }
+    },
+    {
+      "path": "/Game/StarterContent/Blueprints/Blueprint_Effect_Smoke",
+      "asset_class": "Blueprint",
+      "loaded": true,
+      "compile": {
+        "schema": "npc-audit/v1",
+        "operation": "compile_blueprint",
+        "ok": true,
+        "blueprint": "/Game/StarterContent/Blueprints/Blueprint_Effect_Smoke.Blueprint_Effect_Smoke",
+        "status": 3,
+        "errors": 0,
+        "warnings": 0,
+        "asset_saved": false,
+        "messages": []
+      }
+    },
+    {
+      "path": "/Game/StarterContent/Blueprints/Blueprint_Effect_Fire",
+      "asset_class": "Blueprint",
+      "loaded": true,
+      "compile": {
+        "schema": "npc-audit/v1",
+        "operation": "compile_blueprint",
+        "ok": true,
+        "blueprint": "/Game/StarterContent/Blueprints/Blueprint_Effect_Fire.Blueprint_Effect_Fire",
+        "status": 3,
+        "errors": 0,
+        "warnings": 0,
+        "asset_saved": false,
+        "messages": []
+      }
+    },
+    {
+      "path": "/Game/StarterContent/Blueprints/Blueprint_Effect_Explosion",
+      "asset_class": "Blueprint",
+      "loaded": true,
+      "compile": {
+        "schema": "npc-audit/v1",
+        "operation": "compile_blueprint",
+        "ok": true,
+        "blueprint": "/Game/StarterContent/Blueprints/Blueprint_Effect_Explosion.Blueprint_Effect_Explosion",
+        "status": 3,
+        "errors": 0,
+        "warnings": 0,
+        "asset_saved": false,
+        "messages": []
+      }
+    },
+    {
+      "path": "/Game/StarterContent/Blueprints/Blueprint_CeilingLight",
+      "asset_class": "Blueprint",
+      "loaded": true,
+      "compile": {
+        "schema": "npc-audit/v1",
+        "operation": "compile_blueprint",
+        "ok": true,
+        "blueprint": "/Game/StarterContent/Blueprints/Blueprint_CeilingLight.Blueprint_CeilingLight",
+        "status": 3,
+        "errors": 0,
+        "warnings": 0,
+        "asset_saved": false,
+        "messages": []
+      }
+    },
+    {
+      "path": "/Game/AdvancedVillagePack/Blueprints/BP_Well",
+      "asset_class": "Blueprint",
+      "loaded": true,
+      "compile": {
+        "schema": "npc-audit/v1",
+        "operation": "compile_blueprint",
+        "ok": true,
+        "blueprint": "/Game/AdvancedVillagePack/Blueprints/BP_Well.BP_Well",
+        "status": 3,
+        "errors": 0,
+        "warnings": 0,
+        "asset_saved": false,
+        "messages": []
+      }
+    },
+    {
+      "path": "/Game/AdvancedVillagePack/Blueprints/BP_Tree",
+      "asset_class": "Blueprint",
+      "loaded": true,
+      "compile": {
+        "schema": "npc-audit/v1",
+        "operation": "compile_blueprint",
+        "ok": true,
+        "blueprint": "/Game/AdvancedVillagePack/Blueprints/BP_Tree.BP_Tree",
+        "status": 3,
+        "errors": 0,
+        "warnings": 0,
+        "asset_saved": false,
+        "messages": []
+      }
+    },
+    {
+      "path": "/Game/AdvancedVillagePack/Blueprints/BP_Street_Lamp_OnDayOnNight",
+      "asset_class": "Blueprint",
+      "loaded": true,
+      "compile": {
+        "schema": "npc-audit/v1",
+        "operation": "compile_blueprint",
+        "ok": true,
+        "blueprint": "/Game/AdvancedVillagePack/Blueprints/BP_Street_Lamp_OnDayOnNight.BP_Street_Lamp_OnDayOnNight",
+        "status": 3,
+        "errors": 0,
+        "warnings": 0,
+        "asset_saved": false,
+        "messages": []
+      }
+    },
+    {
+      "path": "/Game/AdvancedVillagePack/Blueprints/BP_Street_Lamp",
+      "asset_class": "Blueprint",
+      "loaded": true,
+      "compile": {
+        "schema": "npc-audit/v1",
+        "operation": "compile_blueprint",
+        "ok": true,
+        "blueprint": "/Game/AdvancedVillagePack/Blueprints/BP_Street_Lamp.BP_Street_Lamp",
+        "status": 3,
+        "errors": 0,
+        "warnings": 0,
+        "asset_saved": false,
+        "messages": []
+      }
+    },
+    {
+      "path": "/Game/AdvancedVillagePack/Blueprints/BP_House_Var02_OnDayOnNight",
+      "asset_class": "Blueprint",
+      "loaded": true,
+      "compile": {
+        "schema": "npc-audit/v1",
+        "operation": "compile_blueprint",
+        "ok": true,
+        "blueprint": "/Game/AdvancedVillagePack/Blueprints/BP_House_Var02_OnDayOnNight.BP_House_Var02_OnDayOnNight",
+        "status": 3,
+        "errors": 0,
+        "warnings": 0,
+        "asset_saved": false,
+        "messages": []
+      }
+    },
+    {
+      "path": "/Game/AdvancedVillagePack/Blueprints/BP_House_Var02",
+      "asset_class": "Blueprint",
+      "loaded": true,
+      "compile": {
+        "schema": "npc-audit/v1",
+        "operation": "compile_blueprint",
+        "ok": true,
+        "blueprint": "/Game/AdvancedVillagePack/Blueprints/BP_House_Var02.BP_House_Var02",
+        "status": 3,
+        "errors": 0,
+        "warnings": 0,
+        "asset_saved": false,
+        "messages": []
+      }
+    },
+    {
+      "path": "/Game/AdvancedVillagePack/Blueprints/BP_House_Var01_OnDayOnNight",
+      "asset_class": "Blueprint",
+      "loaded": true,
+      "compile": {
+        "schema": "npc-audit/v1",
+        "operation": "compile_blueprint",
+        "ok": true,
+        "blueprint": "/Game/AdvancedVillagePack/Blueprints/BP_House_Var01_OnDayOnNight.BP_House_Var01_OnDayOnNight",
+        "status": 3,
+        "errors": 0,
+        "warnings": 0,
+        "asset_saved": false,
+        "messages": []
+      }
+    },
+    {
+      "path": "/Game/AdvancedVillagePack/Blueprints/BP_House_Var01",
+      "asset_class": "Blueprint",
+      "loaded": true,
+      "compile": {
+        "schema": "npc-audit/v1",
+        "operation": "compile_blueprint",
+        "ok": true,
+        "blueprint": "/Game/AdvancedVillagePack/Blueprints/BP_House_Var01.BP_House_Var01",
+        "status": 3,
+        "errors": 0,
+        "warnings": 0,
+        "asset_saved": false,
+        "messages": []
+      }
+    },
+    {
+      "path": "/Game/AdvancedVillagePack/Blueprints/BP_CampFire_OnDayOnNight",
+      "asset_class": "Blueprint",
+      "loaded": true,
+      "compile": {
+        "schema": "npc-audit/v1",
+        "operation": "compile_blueprint",
+        "ok": true,
+        "blueprint": "/Game/AdvancedVillagePack/Blueprints/BP_CampFire_OnDayOnNight.BP_CampFire_OnDayOnNight",
+        "status": 3,
+        "errors": 0,
+        "warnings": 0,
+        "asset_saved": false,
+        "messages": []
+      }
+    },
+    {
+      "path": "/Game/AdvancedVillagePack/Blueprints/BP_CampFire",
+      "asset_class": "Blueprint",
+      "loaded": true,
+      "compile": {
+        "schema": "npc-audit/v1",
+        "operation": "compile_blueprint",
+        "ok": true,
+        "blueprint": "/Game/AdvancedVillagePack/Blueprints/BP_CampFire.BP_CampFire",
+        "status": 3,
+        "errors": 0,
+        "warnings": 0,
+        "asset_saved": false,
+        "messages": []
+      }
+    },
+    {
+      "path": "/Game/AdvancedVillagePack/Blueprints/BP_Butterfly",
+      "asset_class": "Blueprint",
+      "loaded": true,
+      "compile": {
+        "schema": "npc-audit/v1",
+        "operation": "compile_blueprint",
+        "ok": true,
+        "blueprint": "/Game/AdvancedVillagePack/Blueprints/BP_Butterfly.BP_Butterfly",
+        "status": 3,
+        "errors": 0,
+        "warnings": 0,
+        "asset_saved": false,
+        "messages": []
+      }
+    },
+    {
+      "path": "/Game/AdvancedVillagePack/Blueprints/Misc/BP_Misc_Text",
+      "asset_class": "Blueprint",
+      "loaded": true,
+      "compile": {
+        "schema": "npc-audit/v1",
+        "operation": "compile_blueprint",
+        "ok": true,
+        "blueprint": "/Game/AdvancedVillagePack/Blueprints/Misc/BP_Misc_Text.BP_Misc_Text",
+        "status": 3,
+        "errors": 0,
+        "warnings": 0,
+        "asset_saved": false,
+        "messages": []
+      }
+    },
+    {
+      "path": "/Game/AdvancedVillagePack/Blueprints/Misc/BP_Misc_DayNight_Cycle",
+      "asset_class": "Blueprint",
+      "loaded": true,
+      "compile": {
+        "schema": "npc-audit/v1",
+        "operation": "compile_blueprint",
+        "ok": true,
+        "blueprint": "/Game/AdvancedVillagePack/Blueprints/Misc/BP_Misc_DayNight_Cycle.BP_Misc_DayNight_Cycle",
+        "status": 3,
+        "errors": 0,
+        "warnings": 0,
+        "asset_saved": false,
+        "messages": []
+      }
+    },
+    {
+      "path": "/Game/AdvancedVillagePack/Blueprints/Misc/BP_Interface_OnDayOnNight",
+      "asset_class": "Blueprint",
+      "loaded": true,
+      "compile": {
+        "schema": "npc-audit/v1",
+        "operation": "compile_blueprint",
+        "ok": true,
+        "blueprint": "/Game/AdvancedVillagePack/Blueprints/Misc/BP_Interface_OnDayOnNight.BP_Interface_OnDayOnNight",
+        "status": 3,
+        "errors": 0,
+        "warnings": 0,
+        "asset_saved": false,
+        "messages": []
+      }
+    },
+    {
+      "path": "/Game/CR/Demo/Animations/ABP_Quinn",
+      "asset_class": "AnimBlueprint",
+      "loaded": true,
+      "compile": {
+        "schema": "npc-audit/v1",
+        "operation": "compile_blueprint",
+        "ok": true,
+        "blueprint": "/Game/CR/Demo/Animations/ABP_Quinn.ABP_Quinn",
+        "status": 3,
+        "errors": 0,
+        "warnings": 0,
+        "asset_saved": false,
+        "messages": []
+      }
+    },
+    {
+      "path": "/Game/CR/Demo/Animations/ABP_Manny",
+      "asset_class": "AnimBlueprint",
+      "loaded": true,
+      "compile": {
+        "schema": "npc-audit/v1",
+        "operation": "compile_blueprint",
+        "ok": true,
+        "blueprint": "/Game/CR/Demo/Animations/ABP_Manny.ABP_Manny",
+        "status": 3,
+        "errors": 0,
+        "warnings": 0,
+        "asset_saved": false,
+        "messages": [
+          {
+            "severity": 4,
+            "message": "Transition  Jump to Fall Loop  is using an automatic transition rule but the source  Sequence Player 'MM_Jump'  is set as looping.  Please clear the 'Loop Animation' flag"
+          }
+        ]
+      }
+    },
+    {
+      "path": "/Game/CR/Demo/Rigs/ABP_Quinn_PostProcess",
+      "asset_class": "AnimBlueprint",
+      "loaded": true,
+      "compile": {
+        "schema": "npc-audit/v1",
+        "operation": "compile_blueprint",
+        "ok": true,
+        "blueprint": "/Game/CR/Demo/Rigs/ABP_Quinn_PostProcess.ABP_Quinn_PostProcess",
+        "status": 3,
+        "errors": 0,
+        "warnings": 0,
+        "asset_saved": false,
+        "messages": []
+      }
+    },
+    {
+      "path": "/Game/CR/Demo/Rigs/ABP_Manny_PostProcess",
+      "asset_class": "AnimBlueprint",
+      "loaded": true,
+      "compile": {
+        "schema": "npc-audit/v1",
+        "operation": "compile_blueprint",
+        "ok": true,
+        "blueprint": "/Game/CR/Demo/Rigs/ABP_Manny_PostProcess.ABP_Manny_PostProcess",
+        "status": 3,
+        "errors": 0,
+        "warnings": 0,
+        "asset_saved": false,
+        "messages": []
+      }
+    }
+  ],
+  "errors": [],
+  "asset_count": 46,
+  "expected_asset_count": 46,
+  "assertions_passed": true
+}

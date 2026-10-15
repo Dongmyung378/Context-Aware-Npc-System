@@ -1,0 +1,22 @@
+{
+  "schema": "npc-bounded-performance-decision/v1",
+  "initial_median_ms": 12.974349781870842,
+  "candidate_median_ms": 12.450899928808212,
+  "reduction_percent": 4.034497773399403,
+  "initial_run_medians_ms": [
+    13.244401663541794,
+    12.974349781870842,
+    12.762900441884995
+  ],
+  "candidate_run_medians_ms": [
+    12.326400727033615,
+    12.529797852039337,
+    12.450899928808212
+  ],
+  "predefined_minimum_reduction_percent": 5,
+  "adopted": false,
+  "measurement_scope": "Actual PIE world actor-tick span, all world actors, 50 NPCs, D3D12 1280x720, three independent runs",
+  "statistical_significance_claim": false,
+  "final_asset_restored_to_initial": true,
+  "decision": "declined_and_experiment_stopped_before_additional_loads"
+}

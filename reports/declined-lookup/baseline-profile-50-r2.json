@@ -1,0 +1,6914 @@
+{
+  "schema": "npc-actual-pie-profile/v1",
+  "test": "NPC.Profile.Capture",
+  "status": "passed",
+  "error": "",
+  "engine_version": "5.4.4-35576357+++UE5+Release-5.4",
+  "map": "/Game/ThirdPerson/Maps/ThirdPersonMap",
+  "requested_npc_count": 50,
+  "original_npc_count": 5,
+  "spawned_npc_count": 45,
+  "original_row_names": [
+    "NPC_01",
+    "NPC_02",
+    "NPC_03",
+    "NPC_04",
+    "NPC_05"
+  ],
+  "seed": 378,
+  "seed_scope": "Global FMath::RandInit before loading the map and before deferred clone spawning; not a guarantee of identical whole-engine stochastic traces.",
+  "frozen_schedule_minute": 600,
+  "configured_time_speed": 0,
+  "requested_warmup_seconds": 10,
+  "requested_sample_seconds": 15,
+  "total_test_wall_seconds": 28.91049959883094,
+  "setup_wall_seconds": 3.8929058983922005,
+  "maximum_test_wall_seconds": 115,
+  "completion_check_lateness_seconds": 0.01759370043873787,
+  "minimum_required_samples": 30,
+  "setup_counts": {
+    "npc_count": 50,
+    "npc_begun_play_count": 50,
+    "npc_hidden_count": 0,
+    "npc_collision_enabled_count": 50,
+    "npc_actor_tick_enabled_count": 50,
+    "npc_ai_controller_count": 50,
+    "world_ai_controller_count": 50,
+    "npc_brain_running_count": 50,
+    "npc_blackboard_known_count": 50,
+    "npc_active_count": 2
+  },
+  "final_counts": {
+    "npc_count": 50,
+    "npc_begun_play_count": 50,
+    "npc_hidden_count": 0,
+    "npc_collision_enabled_count": 50,
+    "npc_actor_tick_enabled_count": 50,
+    "npc_ai_controller_count": 50,
+    "world_ai_controller_count": 50,
+    "npc_brain_running_count": 50,
+    "npc_blackboard_known_count": 50,
+    "npc_active_count": 50
+  },
+  "active_count_definition": "Original NPC class, visible, actor collision enabled, actual AI Blackboard has IsAtHome=false. Actor tick and brain running are reported separately.",
+  "world_actor_tick_ms": {
+    "samples": 728,
+    "quantile_method": "linear interpolation at (n-1)*p",
+    "median_ms": 12.974349781870842,
+    "p95_ms": 15.377684496343136,
+    "minimum_ms": 11.91449910402298,
+    "maximum_ms": 21.126098930835724,
+    "mean_ms": 13.330315904957908,
+    "first_sample_at_seconds": 0.009796898812055588,
+    "last_sample_at_seconds": 14.997653499245644
+  },
+  "editor_end_frame_interval_ms": {
+    "samples": 727,
+    "quantile_method": "linear interpolation at (n-1)*p",
+    "median_ms": 20.190797746181488,
+    "p95_ms": 23.360850661993027,
+    "minimum_ms": 18.669098615646362,
+    "maximum_ms": 31.35339915752411,
+    "mean_ms": 20.615934526248026,
+    "first_sample_at_seconds": 0.028872299939393997,
+    "last_sample_at_seconds": 14.99702050164342
+  },
+  "raw_world_actor_tick_ms": [
+    {
+      "at_seconds": 0.009796898812055588,
+      "milliseconds": 12.404203414916992
+    },
+    {
+      "at_seconds": 0.029274601489305496,
+      "milliseconds": 12.458298355340958
+    },
+    {
+      "at_seconds": 0.04913020133972168,
+      "milliseconds": 13.030100613832474
+    },
+    {
+      "at_seconds": 0.06925740092992783,
+      "milliseconds": 12.443099170923233
+    },
+    {
+      "at_seconds": 0.08875180035829544,
+      "milliseconds": 12.631699442863464
+    },
+    {
+      "at_seconds": 0.10814490169286728,
+      "milliseconds": 12.639299035072327
+    },
+    {
+      "at_seconds": 0.12831449881196022,
+      "milliseconds": 12.364000082015991
+    },
+    {
+      "at_seconds": 0.14831890165805817,
+      "milliseconds": 14.094199985265732
+    },
+    {
+      "at_seconds": 0.16932250186800957,
+      "milliseconds": 12.974299490451813
+    },
+    {
+      "at_seconds": 0.18922020122408867,
+      "milliseconds": 13.285700231790543
+    },
+    {
+      "at_seconds": 0.20960550010204315,
+      "milliseconds": 12.743499130010605
+    },
+    {
+      "at_seconds": 0.22977140173316002,
+      "milliseconds": 13.771399855613708
+    },
+    {
+      "at_seconds": 0.2512097992002964,
+      "milliseconds": 14.12920281291008
+    },
+    {
+      "at_seconds": 0.27271459996700287,
+      "milliseconds": 12.952301651239395
+    },
+    {
+      "at_seconds": 0.29274459928274155,
+      "milliseconds": 12.673899531364441
+    },
+    {
+      "at_seconds": 0.31305570155382156,
+      "milliseconds": 12.393500655889511
+    },
+    {
+      "at_seconds": 0.33249080181121826,
+      "milliseconds": 12.440498918294907
+    },
+    {
+      "at_seconds": 0.3520507998764515,
+      "milliseconds": 12.70730048418045
+    },
+    {
+      "at_seconds": 0.37182560190558434,
+      "milliseconds": 12.248799204826355
+    },
+    {
+      "at_seconds": 0.39105140045285225,
+      "milliseconds": 13.515699654817581
+    },
+    {
+      "at_seconds": 0.412363700568676,
+      "milliseconds": 12.620799243450165
+    },
+    {
+      "at_seconds": 0.4320866987109184,
+      "milliseconds": 12.915600091218948
+    },
+    {
+      "at_seconds": 0.4526089020073414,
+      "milliseconds": 13.156596571207047
+    },
+    {
+      "at_seconds": 0.472893800586462,
+      "milliseconds": 12.835398316383362
+    },
+    {
+      "at_seconds": 0.4939314015209675,
+      "milliseconds": 12.97919824719429
+    },
+    {
+      "at_seconds": 0.5144929997622967,
+      "milliseconds": 13.5825015604496
+    },
+    {
+      "at_seconds": 0.5353198014199734,
+      "milliseconds": 13.26020061969757
+    },
+    {
+      "at_seconds": 0.5556560009717941,
+      "milliseconds": 13.039499521255493
+    },
+    {
+      "at_seconds": 0.5756524987518787,
+      "milliseconds": 12.690301984548569
+    },
+    {
+      "at_seconds": 0.5959940999746323,
+      "milliseconds": 14.207098633050919
+    },
+    {
+      "at_seconds": 0.6173126995563507,
+      "milliseconds": 12.887399643659592
+    },
+    {
+      "at_seconds": 0.6375369988381863,
+      "milliseconds": 12.725703418254852
+    },
+    {
+      "at_seconds": 0.6573405005037785,
+      "milliseconds": 12.846201658248901
+    },
+    {
+      "at_seconds": 0.6772381998598576,
+      "milliseconds": 12.591999024152756
+    },
+    {
+      "at_seconds": 0.6967438012361526,
+      "milliseconds": 12.652497738599777
+    },
+    {
+      "at_seconds": 0.7164265997707844,
+      "milliseconds": 12.873802334070206
+    },
+    {
+      "at_seconds": 0.7364922016859055,
+      "milliseconds": 13.259697705507278
+    },
+    {
+      "at_seconds": 0.7578337006270885,
+      "milliseconds": 12.926097959280014
+    },
+    {
+      "at_seconds": 0.777710098773241,
+      "milliseconds": 13.009101152420044
+    },
+    {
+      "at_seconds": 0.7979466989636421,
+      "milliseconds": 12.721899896860123
+    },
+    {
+      "at_seconds": 0.8182969018816948,
+      "milliseconds": 12.759599834680557
+    },
+    {
+      "at_seconds": 0.8381926007568836,
+      "milliseconds": 12.865997850894928
+    },
+    {
+      "at_seconds": 0.8585449010133743,
+      "milliseconds": 13.046197593212128
+    },
+    {
+      "at_seconds": 0.8786701001226902,
+      "milliseconds": 12.511201202869415
+    },
+    {
+      "at_seconds": 0.8980377987027168,
+      "milliseconds": 12.347500771284103
+    },
+    {
+      "at_seconds": 0.9175475016236305,
+      "milliseconds": 14.032397419214249
+    },
+    {
+      "at_seconds": 0.9393347017467022,
+      "milliseconds": 15.117596834897995
+    },
+    {
+      "at_seconds": 0.9613824002444744,
+      "milliseconds": 12.488100677728653
+    },
+    {
+      "at_seconds": 0.9809897989034653,
+      "milliseconds": 12.43630051612854
+    },
+    {
+      "at_seconds": 1.001230999827385,
+      "milliseconds": 12.87199929356575
+    },
+    {
+      "at_seconds": 1.0209962986409664,
+      "milliseconds": 12.939803302288055
+    },
+    {
+      "at_seconds": 1.041634202003479,
+      "milliseconds": 13.025298714637756
+    },
+    {
+      "at_seconds": 1.062430702149868,
+      "milliseconds": 14.409799128770828
+    },
+    {
+      "at_seconds": 1.0847579017281532,
+      "milliseconds": 12.957897037267685
+    },
+    {
+      "at_seconds": 1.1045756004750729,
+      "milliseconds": 12.393400073051453
+    },
+    {
+      "at_seconds": 1.1239214017987251,
+      "milliseconds": 13.091597706079483
+    },
+    {
+      "at_seconds": 1.1438635997474194,
+      "milliseconds": 12.530099600553513
+    },
+    {
+      "at_seconds": 1.1633693985641003,
+      "milliseconds": 12.515000998973846
+    },
+    {
+      "at_seconds": 1.183085098862648,
+      "milliseconds": 12.704402208328247
+    },
+    {
+      "at_seconds": 1.202786199748516,
+      "milliseconds": 12.423001229763031
+    },
+    {
+      "at_seconds": 1.222164399921894,
+      "milliseconds": 12.963902205228806
+    },
+    {
+      "at_seconds": 1.2422805987298489,
+      "milliseconds": 15.714500099420547
+    },
+    {
+      "at_seconds": 1.2657059989869595,
+      "milliseconds": 13.052202761173248
+    },
+    {
+      "at_seconds": 1.2858127020299435,
+      "milliseconds": 12.888297438621521
+    },
+    {
+      "at_seconds": 1.3067440018057823,
+      "milliseconds": 13.16479966044426
+    },
+    {
+      "at_seconds": 1.3272118009626865,
+      "milliseconds": 12.579400092363358
+    },
+    {
+      "at_seconds": 1.3469149991869926,
+      "milliseconds": 13.117201626300812
+    },
+    {
+      "at_seconds": 1.3669387996196747,
+      "milliseconds": 12.397900223731995
+    },
+    {
+      "at_seconds": 1.386505302041769,
+      "milliseconds": 12.512698769569397
+    },
+    {
+      "at_seconds": 1.4074436016380787,
+      "milliseconds": 13.216700404882431
+    },
+    {
+      "at_seconds": 1.4283967018127441,
+      "milliseconds": 12.846197932958603
+    },
+    {
+      "at_seconds": 1.4481493011116982,
+      "milliseconds": 13.541501015424728
+    },
+    {
+      "at_seconds": 1.4689242988824844,
+      "milliseconds": 14.843601733446121
+    },
+    {
+      "at_seconds": 1.4909489005804062,
+      "milliseconds": 12.513600289821625
+    },
+    {
+      "at_seconds": 1.510521799325943,
+      "milliseconds": 12.938201427459717
+    },
+    {
+      "at_seconds": 1.5305862985551357,
+      "milliseconds": 12.672901153564453
+    },
+    {
+      "at_seconds": 1.5503072999417782,
+      "milliseconds": 13.107798993587494
+    },
+    {
+      "at_seconds": 1.570218700915575,
+      "milliseconds": 12.495499104261398
+    },
+    {
+      "at_seconds": 1.5898669995367527,
+      "milliseconds": 12.683700770139694
+    },
+    {
+      "at_seconds": 1.6096839010715485,
+      "milliseconds": 14.483097940683365
+    },
+    {
+      "at_seconds": 1.6310451999306679,
+      "milliseconds": 12.207798659801483
+    },
+    {
+      "at_seconds": 1.6502094008028507,
+      "milliseconds": 13.081599026918411
+    },
+    {
+      "at_seconds": 1.6709970012307167,
+      "milliseconds": 12.66539841890335
+    },
+    {
+      "at_seconds": 1.690919902175665,
+      "milliseconds": 12.822799384593964
+    },
+    {
+      "at_seconds": 1.7107741013169289,
+      "milliseconds": 12.519799172878265
+    },
+    {
+      "at_seconds": 1.730290800333023,
+      "milliseconds": 12.483298778533936
+    },
+    {
+      "at_seconds": 1.7499639987945557,
+      "milliseconds": 12.657999992370605
+    },
+    {
+      "at_seconds": 1.769582100212574,
+      "milliseconds": 12.79519870877266
+    },
+    {
+      "at_seconds": 1.789443802088499,
+      "milliseconds": 13.06070014834404
+    },
+    {
+      "at_seconds": 1.8093466013669968,
+      "milliseconds": 13.187699019908905
+    },
+    {
+      "at_seconds": 1.8296502009034157,
+      "milliseconds": 13.303399085998535
+    },
+    {
+      "at_seconds": 1.849811501801014,
+      "milliseconds": 13.393796980381012
+    },
+    {
+      "at_seconds": 1.8700117021799088,
+      "milliseconds": 14.536697417497635
+    },
+    {
+      "at_seconds": 1.892433200031519,
+      "milliseconds": 13.333700597286224
+    },
+    {
+      "at_seconds": 1.9127232991158962,
+      "milliseconds": 12.26920261979103
+    },
+    {
+      "at_seconds": 1.931802500039339,
+      "milliseconds": 12.72520050406456
+    },
+    {
+      "at_seconds": 1.9512753002345562,
+      "milliseconds": 12.62570172548294
+    },
+    {
+      "at_seconds": 1.970797199755907,
+      "milliseconds": 15.879299491643906
+    },
+    {
+      "at_seconds": 1.9941261000931263,
+      "milliseconds": 12.728799134492874
+    },
+    {
+      "at_seconds": 2.01384099945426,
+      "milliseconds": 13.181302696466446
+    },
+    {
+      "at_seconds": 2.0341267995536327,
+      "milliseconds": 12.422200292348862
+    },
+    {
+      "at_seconds": 2.0537649989128113,
+      "milliseconds": 12.926802039146423
+    },
+    {
+      "at_seconds": 2.073599699884653,
+      "milliseconds": 12.620002031326294
+    },
+    {
+      "at_seconds": 2.09344619885087,
+      "milliseconds": 12.6878023147583
+    },
+    {
+      "at_seconds": 2.1132505014538765,
+      "milliseconds": 12.315098196268082
+    },
+    {
+      "at_seconds": 2.1326562985777855,
+      "milliseconds": 12.762200087308884
+    },
+    {
+      "at_seconds": 2.1525014005601406,
+      "milliseconds": 13.648398220539093
+    },
+    {
+      "at_seconds": 2.1733065992593765,
+      "milliseconds": 13.096600770950317
+    },
+    {
+      "at_seconds": 2.1936274990439415,
+      "milliseconds": 12.753501534461975
+    },
+    {
+      "at_seconds": 2.2134069986641407,
+      "milliseconds": 12.760400772094727
+    },
+    {
+      "at_seconds": 2.2334287986159325,
+      "milliseconds": 14.649201184511185
+    },
+    {
+      "at_seconds": 2.255205899477005,
+      "milliseconds": 13.533800840377808
+    },
+    {
+      "at_seconds": 2.2785766012966633,
+      "milliseconds": 13.430297374725342
+    },
+    {
+      "at_seconds": 2.299541398882866,
+      "milliseconds": 12.610401958227158
+    },
+    {
+      "at_seconds": 2.319198600947857,
+      "milliseconds": 13.294000178575516
+    },
+    {
+      "at_seconds": 2.339842300862074,
+      "milliseconds": 13.927798718214035
+    },
+    {
+      "at_seconds": 2.3606709986925125,
+      "milliseconds": 12.70340010523796
+    },
+    {
+      "at_seconds": 2.3804786019027233,
+      "milliseconds": 12.654896825551987
+    },
+    {
+      "at_seconds": 2.4002935998141766,
+      "milliseconds": 12.393198907375336
+    },
+    {
+      "at_seconds": 2.4197213016450405,
+      "milliseconds": 12.888800352811813
+    },
+    {
+      "at_seconds": 2.440142899751663,
+      "milliseconds": 13.512101024389267
+    },
+    {
+      "at_seconds": 2.4611716009676456,
+      "milliseconds": 13.010498136281967
+    },
+    {
+      "at_seconds": 2.481563601642847,
+      "milliseconds": 12.966997921466827
+    },
+    {
+      "at_seconds": 2.5016998015344143,
+      "milliseconds": 13.001900166273117
+    },
+    {
+      "at_seconds": 2.5218367986381054,
+      "milliseconds": 13.262603431940079
+    },
+    {
+      "at_seconds": 2.542596001178026,
+      "milliseconds": 13.311900198459625
+    },
+    {
+      "at_seconds": 2.563858799636364,
+      "milliseconds": 13.47469910979271
+    },
+    {
+      "at_seconds": 2.5849392004311085,
+      "milliseconds": 12.621600180864334
+    },
+    {
+      "at_seconds": 2.604568898677826,
+      "milliseconds": 15.979502350091934
+    },
+    {
+      "at_seconds": 2.6283672004938126,
+      "milliseconds": 13.459499925374985
+    },
+    {
+      "at_seconds": 2.6500546000897884,
+      "milliseconds": 12.880101799964905
+    },
+    {
+      "at_seconds": 2.6700850017368793,
+      "milliseconds": 13.789299875497818
+    },
+    {
+      "at_seconds": 2.691107898950577,
+      "milliseconds": 13.33250105381012
+    },
+    {
+      "at_seconds": 2.712871301919222,
+      "milliseconds": 12.667600065469742
+    },
+    {
+      "at_seconds": 2.7327378019690514,
+      "milliseconds": 12.596197426319122
+    },
+    {
+      "at_seconds": 2.7526930011808872,
+      "milliseconds": 13.481099158525467
+    },
+    {
+      "at_seconds": 2.7733922004699707,
+      "milliseconds": 12.466400861740112
+    },
+    {
+      "at_seconds": 2.792891100049019,
+      "milliseconds": 12.635700404644012
+    },
+    {
+      "at_seconds": 2.813071198761463,
+      "milliseconds": 13.36270198225975
+    },
+    {
+      "at_seconds": 2.8333455994725227,
+      "milliseconds": 12.94500008225441
+    },
+    {
+      "at_seconds": 2.8533920012414455,
+      "milliseconds": 13.299800455570221
+    },
+    {
+      "at_seconds": 2.8740860000252724,
+      "milliseconds": 12.390900403261185
+    },
+    {
+      "at_seconds": 2.8943572007119656,
+      "milliseconds": 14.839500188827515
+    },
+    {
+      "at_seconds": 2.916321400552988,
+      "milliseconds": 15.201300382614136
+    },
+    {
+      "at_seconds": 2.939273700118065,
+      "milliseconds": 12.654900550842285
+    },
+    {
+      "at_seconds": 2.9593384005129337,
+      "milliseconds": 13.739999383687973
+    },
+    {
+      "at_seconds": 2.980137500911951,
+      "milliseconds": 13.437598943710327
+    },
+    {
+      "at_seconds": 3.0008901990950108,
+      "milliseconds": 12.470800429582596
+    },
+    {
+      "at_seconds": 3.0205358006060123,
+      "milliseconds": 12.64600083231926
+    },
+    {
+      "at_seconds": 3.040046501904726,
+      "milliseconds": 15.177398920059204
+    },
+    {
+      "at_seconds": 3.062763400375843,
+      "milliseconds": 12.523699551820755
+    },
+    {
+      "at_seconds": 3.0821525007486343,
+      "milliseconds": 12.839499861001968
+    },
+    {
+      "at_seconds": 3.1019807010889053,
+      "milliseconds": 13.068299740552902
+    },
+    {
+      "at_seconds": 3.121833201497793,
+      "milliseconds": 12.765798717737198
+    },
+    {
+      "at_seconds": 3.142241198569536,
+      "milliseconds": 12.424301356077194
+    },
+    {
+      "at_seconds": 3.1622892022132874,
+      "milliseconds": 13.228598982095718
+    },
+    {
+      "at_seconds": 3.182480599731207,
+      "milliseconds": 12.746099382638931
+    },
+    {
+      "at_seconds": 3.202402099967003,
+      "milliseconds": 12.546900659799576
+    },
+    {
+      "at_seconds": 3.221943400800228,
+      "milliseconds": 12.611400336027145
+    },
+    {
+      "at_seconds": 3.2422997020184994,
+      "milliseconds": 15.592999756336212
+    },
+    {
+      "at_seconds": 3.2649318017065525,
+      "milliseconds": 14.461297541856766
+    },
+    {
+      "at_seconds": 3.286275900900364,
+      "milliseconds": 12.779999524354935
+    },
+    {
+      "at_seconds": 3.306748401373625,
+      "milliseconds": 12.624800205230713
+    },
+    {
+      "at_seconds": 3.3263131007552147,
+      "milliseconds": 14.699500054121017
+    },
+    {
+      "at_seconds": 3.347993701696396,
+      "milliseconds": 12.520398944616318
+    },
+    {
+      "at_seconds": 3.367898602038622,
+      "milliseconds": 12.864898890256882
+    },
+    {
+      "at_seconds": 3.3877689987421036,
+      "milliseconds": 13.224802911281586
+    },
+    {
+      "at_seconds": 3.407950699329376,
+      "milliseconds": 12.651901692152023
+    },
+    {
+      "at_seconds": 3.427768900990486,
+      "milliseconds": 12.64980062842369
+    },
+    {
+      "at_seconds": 3.447741601616144,
+      "milliseconds": 13.66259902715683
+    },
+    {
+      "at_seconds": 3.4688648022711277,
+      "milliseconds": 13.141199946403503
+    },
+    {
+      "at_seconds": 3.489963699132204,
+      "milliseconds": 12.849900871515274
+    },
+    {
+      "at_seconds": 3.5097943991422653,
+      "milliseconds": 12.45950162410736
+    },
+    {
+      "at_seconds": 3.5293271988630295,
+      "milliseconds": 12.384500354528427
+    },
+    {
+      "at_seconds": 3.5483895987272263,
+      "milliseconds": 12.84320279955864
+    },
+    {
+      "at_seconds": 3.5682763010263443,
+      "milliseconds": 12.680299580097198
+    },
+    {
+      "at_seconds": 3.5882761999964714,
+      "milliseconds": 12.757699936628342
+    },
+    {
+      "at_seconds": 3.607966799288988,
+      "milliseconds": 12.455202639102936
+    },
+    {
+      "at_seconds": 3.6273889988660812,
+      "milliseconds": 12.952502816915512
+    },
+    {
+      "at_seconds": 3.6471653021872044,
+      "milliseconds": 12.156397104263306
+    },
+    {
+      "at_seconds": 3.666244801133871,
+      "milliseconds": 13.163000345230103
+    },
+    {
+      "at_seconds": 3.6865896992385387,
+      "milliseconds": 13.420701026916504
+    },
+    {
+      "at_seconds": 3.7073759995400906,
+      "milliseconds": 15.434999018907547
+    },
+    {
+      "at_seconds": 3.7318846993148327,
+      "milliseconds": 15.722502022981644
+    },
+    {
+      "at_seconds": 3.755414701998234,
+      "milliseconds": 18.87589693069458
+    },
+    {
+      "at_seconds": 3.7832253016531467,
+      "milliseconds": 17.724499106407166
+    },
+    {
+      "at_seconds": 3.8093446008861065,
+      "milliseconds": 15.25149866938591
+    },
+    {
+      "at_seconds": 3.832810301333666,
+      "milliseconds": 16.2556990981102
+    },
+    {
+      "at_seconds": 3.856776900589466,
+      "milliseconds": 15.379399061203003
+    },
+    {
+      "at_seconds": 3.8805817998945713,
+      "milliseconds": 14.235299080610275
+    },
+    {
+      "at_seconds": 3.9031465016305447,
+      "milliseconds": 14.157596975564957
+    },
+    {
+      "at_seconds": 3.9249959997832775,
+      "milliseconds": 17.309099435806274
+    },
+    {
+      "at_seconds": 3.9499684013426304,
+      "milliseconds": 15.219997614622116
+    },
+    {
+      "at_seconds": 3.9724561013281345,
+      "milliseconds": 16.633298248052597
+    },
+    {
+      "at_seconds": 3.9961996003985405,
+      "milliseconds": 13.4878009557724
+    },
+    {
+      "at_seconds": 4.016895901411772,
+      "milliseconds": 14.14019986987114
+    },
+    {
+      "at_seconds": 4.0390757992863655,
+      "milliseconds": 16.394201666116714
+    },
+    {
+      "at_seconds": 4.06322779878974,
+      "milliseconds": 14.625001698732376
+    },
+    {
+      "at_seconds": 4.085201300680637,
+      "milliseconds": 14.600399881601334
+    },
+    {
+      "at_seconds": 4.107487499713898,
+      "milliseconds": 13.298999518156052
+    },
+    {
+      "at_seconds": 4.128500498831272,
+      "milliseconds": 14.61780071258545
+    },
+    {
+      "at_seconds": 4.150248900055885,
+      "milliseconds": 13.836100697517395
+    },
+    {
+      "at_seconds": 4.171164400875568,
+      "milliseconds": 12.366198003292084
+    },
+    {
+      "at_seconds": 4.190546002238989,
+      "milliseconds": 15.1606984436512
+    },
+    {
+      "at_seconds": 4.213133700191975,
+      "milliseconds": 13.470899313688278
+    },
+    {
+      "at_seconds": 4.234403200447559,
+      "milliseconds": 13.907499611377716
+    },
+    {
+      "at_seconds": 4.255632899701595,
+      "milliseconds": 13.279300183057785
+    },
+    {
+      "at_seconds": 4.276298198848963,
+      "milliseconds": 17.107300460338593
+    },
+    {
+      "at_seconds": 4.300874501466751,
+      "milliseconds": 13.53209838271141
+    },
+    {
+      "at_seconds": 4.321541398763657,
+      "milliseconds": 13.820603489875793
+    },
+    {
+      "at_seconds": 4.34238899871707,
+      "milliseconds": 12.721702456474304
+    },
+    {
+      "at_seconds": 4.362205799669027,
+      "milliseconds": 12.347299605607986
+    },
+    {
+      "at_seconds": 4.381485000252724,
+      "milliseconds": 12.227598577737808
+    },
+    {
+      "at_seconds": 4.401092201471329,
+      "milliseconds": 12.686699628829956
+    },
+    {
+      "at_seconds": 4.421082802116871,
+      "milliseconds": 12.788098305463791
+    },
+    {
+      "at_seconds": 4.440699599683285,
+      "milliseconds": 12.533601373434067
+    },
+    {
+      "at_seconds": 4.460139501839876,
+      "milliseconds": 12.760598212480545
+    },
+    {
+      "at_seconds": 4.479796901345253,
+      "milliseconds": 15.178598463535309
+    },
+    {
+      "at_seconds": 4.501922599971294,
+      "milliseconds": 12.171100825071335
+    },
+    {
+      "at_seconds": 4.5214293003082275,
+      "milliseconds": 13.64229992032051
+    },
+    {
+      "at_seconds": 4.543281000107527,
+      "milliseconds": 13.287600129842758
+    },
+    {
+      "at_seconds": 4.564552702009678,
+      "milliseconds": 13.082098215818405
+    },
+    {
+      "at_seconds": 4.584496401250362,
+      "milliseconds": 13.030897825956345
+    },
+    {
+      "at_seconds": 4.6044108010828495,
+      "milliseconds": 12.180600315332413
+    },
+    {
+      "at_seconds": 4.623531598597765,
+      "milliseconds": 13.151701539754868
+    },
+    {
+      "at_seconds": 4.643766298890114,
+      "milliseconds": 12.970499694347382
+    },
+    {
+      "at_seconds": 4.664398301392794,
+      "milliseconds": 13.695597648620605
+    },
+    {
+      "at_seconds": 4.686355799436569,
+      "milliseconds": 14.354601502418518
+    },
+    {
+      "at_seconds": 4.708227898925543,
+      "milliseconds": 13.92890140414238
+    },
+    {
+      "at_seconds": 4.7299536019563675,
+      "milliseconds": 15.374500304460526
+    },
+    {
+      "at_seconds": 4.753251802176237,
+      "milliseconds": 14.418698847293854
+    },
+    {
+      "at_seconds": 4.775051701813936,
+      "milliseconds": 12.407399713993073
+    },
+    {
+      "at_seconds": 4.79495520144701,
+      "milliseconds": 14.68529924750328
+    },
+    {
+      "at_seconds": 4.817125901579857,
+      "milliseconds": 16.85759797692299
+    },
+    {
+      "at_seconds": 4.841892998665571,
+      "milliseconds": 14.912102371454239
+    },
+    {
+      "at_seconds": 4.864574301987886,
+      "milliseconds": 14.118898659944534
+    },
+    {
+      "at_seconds": 4.8862802013754845,
+      "milliseconds": 14.435600489377975
+    },
+    {
+      "at_seconds": 4.909361001104116,
+      "milliseconds": 14.80339840054512
+    },
+    {
+      "at_seconds": 4.931259099394083,
+      "milliseconds": 15.23740217089653
+    },
+    {
+      "at_seconds": 4.953896101564169,
+      "milliseconds": 13.223499059677124
+    },
+    {
+      "at_seconds": 4.975120700895786,
+      "milliseconds": 14.677997678518295
+    },
+    {
+      "at_seconds": 4.997088599950075,
+      "milliseconds": 14.054201543331146
+    },
+    {
+      "at_seconds": 5.018564999103546,
+      "milliseconds": 13.42800259590149
+    },
+    {
+      "at_seconds": 5.039020400494337,
+      "milliseconds": 13.022799044847488
+    },
+    {
+      "at_seconds": 5.058944001793861,
+      "milliseconds": 13.75339925289154
+    },
+    {
+      "at_seconds": 5.0800305008888245,
+      "milliseconds": 15.562798827886581
+    },
+    {
+      "at_seconds": 5.102625899016857,
+      "milliseconds": 13.228200376033783
+    },
+    {
+      "at_seconds": 5.122613601386547,
+      "milliseconds": 13.702400028705597
+    },
+    {
+      "at_seconds": 5.143876399844885,
+      "milliseconds": 13.275299221277237
+    },
+    {
+      "at_seconds": 5.164146199822426,
+      "milliseconds": 13.233602046966553
+    },
+    {
+      "at_seconds": 5.184647001326084,
+      "milliseconds": 13.060100376605988
+    },
+    {
+      "at_seconds": 5.205985300242901,
+      "milliseconds": 13.655800372362137
+    },
+    {
+      "at_seconds": 5.227277800440788,
+      "milliseconds": 13.648498803377151
+    },
+    {
+      "at_seconds": 5.248309899121523,
+      "milliseconds": 14.051400125026703
+    },
+    {
+      "at_seconds": 5.269727200269699,
+      "milliseconds": 12.929700314998627
+    },
+    {
+      "at_seconds": 5.290125399827957,
+      "milliseconds": 13.048801571130753
+    },
+    {
+      "at_seconds": 5.310183599591255,
+      "milliseconds": 12.69020140171051
+    },
+    {
+      "at_seconds": 5.329893000423908,
+      "milliseconds": 12.321099638938904
+    },
+    {
+      "at_seconds": 5.349166698753834,
+      "milliseconds": 12.511301785707474
+    },
+    {
+      "at_seconds": 5.3691015020012856,
+      "milliseconds": 13.127896934747696
+    },
+    {
+      "at_seconds": 5.3892528004944324,
+      "milliseconds": 14.935601502656937
+    },
+    {
+      "at_seconds": 5.412034999579191,
+      "milliseconds": 13.835400342941284
+    },
+    {
+      "at_seconds": 5.433279201388359,
+      "milliseconds": 13.719499111175537
+    },
+    {
+      "at_seconds": 5.454856101423502,
+      "milliseconds": 14.435797929763794
+    },
+    {
+      "at_seconds": 5.476842202246189,
+      "milliseconds": 14.460597187280655
+    },
+    {
+      "at_seconds": 5.49884369969368,
+      "milliseconds": 13.797499239444733
+    },
+    {
+      "at_seconds": 5.5201559998095036,
+      "milliseconds": 13.741601258516312
+    },
+    {
+      "at_seconds": 5.541234198957682,
+      "milliseconds": 13.724200427532196
+    },
+    {
+      "at_seconds": 5.562716402113438,
+      "milliseconds": 14.455199241638184
+    },
+    {
+      "at_seconds": 5.584947399795055,
+      "milliseconds": 13.193599879741669
+    },
+    {
+      "at_seconds": 5.605308201164007,
+      "milliseconds": 13.075098395347595
+    },
+    {
+      "at_seconds": 5.625732600688934,
+      "milliseconds": 12.986801564693451
+    },
+    {
+      "at_seconds": 5.645811300724745,
+      "milliseconds": 12.410499155521393
+    },
+    {
+      "at_seconds": 5.665373899042606,
+      "milliseconds": 12.803900986909866
+    },
+    {
+      "at_seconds": 5.685083098709583,
+      "milliseconds": 12.587301433086395
+    },
+    {
+      "at_seconds": 5.704526301473379,
+      "milliseconds": 12.991297990083694
+    },
+    {
+      "at_seconds": 5.7244780994951725,
+      "milliseconds": 12.752801179885864
+    },
+    {
+      "at_seconds": 5.744217399507761,
+      "milliseconds": 12.61100172996521
+    },
+    {
+      "at_seconds": 5.763798899948597,
+      "milliseconds": 12.462899088859558
+    },
+    {
+      "at_seconds": 5.783134698867798,
+      "milliseconds": 12.666400521993637
+    },
+    {
+      "at_seconds": 5.803827099502087,
+      "milliseconds": 12.235302478075027
+    },
+    {
+      "at_seconds": 5.823966700583696,
+      "milliseconds": 12.837100774049759
+    },
+    {
+      "at_seconds": 5.843684699386358,
+      "milliseconds": 12.588199228048325
+    },
+    {
+      "at_seconds": 5.863762900233269,
+      "milliseconds": 12.474801391363144
+    },
+    {
+      "at_seconds": 5.883093200623989,
+      "milliseconds": 12.94419914484024
+    },
+    {
+      "at_seconds": 5.903331100940704,
+      "milliseconds": 12.903299182653427
+    },
+    {
+      "at_seconds": 5.923014599829912,
+      "milliseconds": 14.742899686098099
+    },
+    {
+      "at_seconds": 5.94471849873662,
+      "milliseconds": 12.48440146446228
+    },
+    {
+      "at_seconds": 5.9640084989368916,
+      "milliseconds": 12.527402490377426
+    },
+    {
+      "at_seconds": 5.983615700155497,
+      "milliseconds": 13.060800731182098
+    },
+    {
+      "at_seconds": 6.003808401525021,
+      "milliseconds": 12.62899860739708
+    },
+    {
+      "at_seconds": 6.023686800152063,
+      "milliseconds": 12.51159980893135
+    },
+    {
+      "at_seconds": 6.043372601270676,
+      "milliseconds": 12.624900788068771
+    },
+    {
+      "at_seconds": 6.062901999801397,
+      "milliseconds": 12.72590085864067
+    },
+    {
+      "at_seconds": 6.082342501729727,
+      "milliseconds": 12.908097356557846
+    },
+    {
+      "at_seconds": 6.102346200495958,
+      "milliseconds": 12.746300548315048
+    },
+    {
+      "at_seconds": 6.122194100171328,
+      "milliseconds": 12.888900935649872
+    },
+    {
+      "at_seconds": 6.141836501657963,
+      "milliseconds": 14.973998069763184
+    },
+    {
+      "at_seconds": 6.163951501250267,
+      "milliseconds": 12.974400073289871
+    },
+    {
+      "at_seconds": 6.184163600206375,
+      "milliseconds": 12.849599123001099
+    },
+    {
+      "at_seconds": 6.204143598675728,
+      "milliseconds": 12.824900448322296
+    },
+    {
+      "at_seconds": 6.223871301859617,
+      "milliseconds": 13.463400304317474
+    },
+    {
+      "at_seconds": 6.245640601962805,
+      "milliseconds": 12.651197612285614
+    },
+    {
+      "at_seconds": 6.265262998640537,
+      "milliseconds": 12.548699975013733
+    },
+    {
+      "at_seconds": 6.284759901463985,
+      "milliseconds": 13.383697718381882
+    },
+    {
+      "at_seconds": 6.305101301521063,
+      "milliseconds": 13.073399662971497
+    },
+    {
+      "at_seconds": 6.3252329006791115,
+      "milliseconds": 12.72210106253624
+    },
+    {
+      "at_seconds": 6.344944801181555,
+      "milliseconds": 13.272199779748917
+    },
+    {
+      "at_seconds": 6.365017700940371,
+      "milliseconds": 12.497801333665848
+    },
+    {
+      "at_seconds": 6.384376101195812,
+      "milliseconds": 12.334700673818588
+    },
+    {
+      "at_seconds": 6.403712600469589,
+      "milliseconds": 13.659898191690445
+    },
+    {
+      "at_seconds": 6.424351502209902,
+      "milliseconds": 12.653697282075882
+    },
+    {
+      "at_seconds": 6.44395599886775,
+      "milliseconds": 12.504402548074722
+    },
+    {
+      "at_seconds": 6.463418401777744,
+      "milliseconds": 13.899300247430801
+    },
+    {
+      "at_seconds": 6.4868083000183105,
+      "milliseconds": 13.762500137090683
+    },
+    {
+      "at_seconds": 6.507774502038956,
+      "milliseconds": 21.126098930835724
+    },
+    {
+      "at_seconds": 6.539167199283838,
+      "milliseconds": 18.68860051035881
+    },
+    {
+      "at_seconds": 6.5695354007184505,
+      "milliseconds": 20.55869996547699
+    },
+    {
+      "at_seconds": 6.598828200250864,
+      "milliseconds": 16.97690039873123
+    },
+    {
+      "at_seconds": 6.624586600810289,
+      "milliseconds": 17.384998500347137
+    },
+    {
+      "at_seconds": 6.6527113020420074,
+      "milliseconds": 18.995899707078934
+    },
+    {
+      "at_seconds": 6.680377699434757,
+      "milliseconds": 20.441100001335144
+    },
+    {
+      "at_seconds": 6.708767902106047,
+      "milliseconds": 14.599699527025223
+    },
+    {
+      "at_seconds": 6.731790199875832,
+      "milliseconds": 19.69899982213974
+    },
+    {
+      "at_seconds": 6.759572200477123,
+      "milliseconds": 14.751501381397247
+    },
+    {
+      "at_seconds": 6.781520798802376,
+      "milliseconds": 13.189602643251419
+    },
+    {
+      "at_seconds": 6.8015905022621155,
+      "milliseconds": 12.940097600221634
+    },
+    {
+      "at_seconds": 6.82182089984417,
+      "milliseconds": 13.66250216960907
+    },
+    {
+      "at_seconds": 6.8425646014511585,
+      "milliseconds": 13.123899698257446
+    },
+    {
+      "at_seconds": 6.863049902021885,
+      "milliseconds": 12.79899850487709
+    },
+    {
+      "at_seconds": 6.88327069953084,
+      "milliseconds": 13.088900595903397
+    },
+    {
+      "at_seconds": 6.903239902108908,
+      "milliseconds": 12.95899972319603
+    },
+    {
+      "at_seconds": 6.923166900873184,
+      "milliseconds": 14.522898942232132
+    },
+    {
+      "at_seconds": 6.9445687010884285,
+      "milliseconds": 12.444600462913513
+    },
+    {
+      "at_seconds": 6.965789798647165,
+      "milliseconds": 13.062503188848495
+    },
+    {
+      "at_seconds": 6.986540898680687,
+      "milliseconds": 14.376901090145111
+    },
+    {
+      "at_seconds": 7.008142098784447,
+      "milliseconds": 13.08780163526535
+    },
+    {
+      "at_seconds": 7.029172599315643,
+      "milliseconds": 13.172801584005356
+    },
+    {
+      "at_seconds": 7.050068400800228,
+      "milliseconds": 12.973397970199585
+    },
+    {
+      "at_seconds": 7.069908000528812,
+      "milliseconds": 13.078298419713974
+    },
+    {
+      "at_seconds": 7.090319201350212,
+      "milliseconds": 12.454397976398468
+    },
+    {
+      "at_seconds": 7.109568800777197,
+      "milliseconds": 12.350399047136307
+    },
+    {
+      "at_seconds": 7.128871101886034,
+      "milliseconds": 13.803597539663315
+    },
+    {
+      "at_seconds": 7.149645298719406,
+      "milliseconds": 15.883401036262512
+    },
+    {
+      "at_seconds": 7.172390699386597,
+      "milliseconds": 12.636799365282059
+    },
+    {
+      "at_seconds": 7.191815301775932,
+      "milliseconds": 14.913097023963928
+    },
+    {
+      "at_seconds": 7.214439801871777,
+      "milliseconds": 13.151399791240692
+    },
+    {
+      "at_seconds": 7.235570400953293,
+      "milliseconds": 12.784101068973541
+    },
+    {
+      "at_seconds": 7.255248501896858,
+      "milliseconds": 14.254797250032425
+    },
+    {
+      "at_seconds": 7.276493098586798,
+      "milliseconds": 12.63350248336792
+    },
+    {
+      "at_seconds": 7.295921601355076,
+      "milliseconds": 13.511598110198975
+    },
+    {
+      "at_seconds": 7.316563598811626,
+      "milliseconds": 13.778802007436752
+    },
+    {
+      "at_seconds": 7.337292902171612,
+      "milliseconds": 12.868199497461319
+    },
+    {
+      "at_seconds": 7.357134200632572,
+      "milliseconds": 12.972798198461533
+    },
+    {
+      "at_seconds": 7.377040199935436,
+      "milliseconds": 12.422598898410797
+    },
+    {
+      "at_seconds": 7.396447099745274,
+      "milliseconds": 12.441199272871017
+    },
+    {
+      "at_seconds": 7.416348401457071,
+      "milliseconds": 12.706898152828217
+    },
+    {
+      "at_seconds": 7.436310701072216,
+      "milliseconds": 16.528397798538208
+    },
+    {
+      "at_seconds": 7.460446301847696,
+      "milliseconds": 13.630099594593048
+    },
+    {
+      "at_seconds": 7.482179298996925,
+      "milliseconds": 12.517701834440231
+    },
+    {
+      "at_seconds": 7.5016264989972115,
+      "milliseconds": 12.52710074186325
+    },
+    {
+      "at_seconds": 7.5212165005505085,
+      "milliseconds": 13.284798711538315
+    },
+    {
+      "at_seconds": 7.541574500501156,
+      "milliseconds": 12.95509934425354
+    },
+    {
+      "at_seconds": 7.561460200697184,
+      "milliseconds": 12.879099696874619
+    },
+    {
+      "at_seconds": 7.581224698573351,
+      "milliseconds": 12.883100658655167
+    },
+    {
+      "at_seconds": 7.601815700531006,
+      "milliseconds": 13.228598982095718
+    },
+    {
+      "at_seconds": 7.622255001217127,
+      "milliseconds": 12.46659830212593
+    },
+    {
+      "at_seconds": 7.641668800264597,
+      "milliseconds": 12.898601591587067
+    },
+    {
+      "at_seconds": 7.6619087010622025,
+      "milliseconds": 12.82079890370369
+    },
+    {
+      "at_seconds": 7.682144999504089,
+      "milliseconds": 12.868702411651611
+    },
+    {
+      "at_seconds": 7.7019818015396595,
+      "milliseconds": 12.436598539352417
+    },
+    {
+      "at_seconds": 7.721888799220324,
+      "milliseconds": 16.576699912548065
+    },
+    {
+      "at_seconds": 7.746327500790358,
+      "milliseconds": 14.633998274803162
+    },
+    {
+      "at_seconds": 7.768005099147558,
+      "milliseconds": 12.968502938747406
+    },
+    {
+      "at_seconds": 7.788531102240086,
+      "milliseconds": 13.610899448394775
+    },
+    {
+      "at_seconds": 7.809496201574802,
+      "milliseconds": 12.690600007772446
+    },
+    {
+      "at_seconds": 7.829234600067139,
+      "milliseconds": 13.4723000228405
+    },
+    {
+      "at_seconds": 7.850691799074411,
+      "milliseconds": 13.140901923179626
+    },
+    {
+      "at_seconds": 7.870831701904535,
+      "milliseconds": 12.70739734172821
+    },
+    {
+      "at_seconds": 7.891253400593996,
+      "milliseconds": 13.588499277830124
+    },
+    {
+      "at_seconds": 7.912134598940611,
+      "milliseconds": 13.19970190525055
+    },
+    {
+      "at_seconds": 7.933017801493406,
+      "milliseconds": 13.704098761081696
+    },
+    {
+      "at_seconds": 7.95405650138855,
+      "milliseconds": 14.792900532484055
+    },
+    {
+      "at_seconds": 7.975782200694084,
+      "milliseconds": 13.094000518321991
+    },
+    {
+      "at_seconds": 7.996354501694441,
+      "milliseconds": 12.559697031974792
+    },
+    {
+      "at_seconds": 8.016834400594234,
+      "milliseconds": 13.245698064565659
+    },
+    {
+      "at_seconds": 8.037619799375534,
+      "milliseconds": 12.988902628421783
+    },
+    {
+      "at_seconds": 8.057652901858091,
+      "milliseconds": 12.88289949297905
+    },
+    {
+      "at_seconds": 8.07742239907384,
+      "milliseconds": 12.461502104997635
+    },
+    {
+      "at_seconds": 8.096984900534153,
+      "milliseconds": 12.759100645780563
+    },
+    {
+      "at_seconds": 8.116767399013042,
+      "milliseconds": 12.951202690601349
+    },
+    {
+      "at_seconds": 8.137442201375961,
+      "milliseconds": 13.374999165534973
+    },
+    {
+      "at_seconds": 8.158434599637985,
+      "milliseconds": 12.671500444412231
+    },
+    {
+      "at_seconds": 8.178212899714708,
+      "milliseconds": 12.874599546194077
+    },
+    {
+      "at_seconds": 8.198293600231409,
+      "milliseconds": 13.699200004339218
+    },
+    {
+      "at_seconds": 8.219071000814438,
+      "milliseconds": 14.123599976301193
+    },
+    {
+      "at_seconds": 8.24329899996519,
+      "milliseconds": 12.935198843479156
+    },
+    {
+      "at_seconds": 8.263498201966286,
+      "milliseconds": 12.862198054790497
+    },
+    {
+      "at_seconds": 8.28327240049839,
+      "milliseconds": 12.891899794340134
+    },
+    {
+      "at_seconds": 8.303224500268698,
+      "milliseconds": 12.842301279306412
+    },
+    {
+      "at_seconds": 8.32288109883666,
+      "milliseconds": 13.789102435112
+    },
+    {
+      "at_seconds": 8.344098001718521,
+      "milliseconds": 14.874499291181564
+    },
+    {
+      "at_seconds": 8.367269899696112,
+      "milliseconds": 13.154499232769012
+    },
+    {
+      "at_seconds": 8.387451998889446,
+      "milliseconds": 13.216301798820496
+    },
+    {
+      "at_seconds": 8.408256400376558,
+      "milliseconds": 13.653799891471863
+    },
+    {
+      "at_seconds": 8.429821200668812,
+      "milliseconds": 13.399600982666016
+    },
+    {
+      "at_seconds": 8.45035120099783,
+      "milliseconds": 13.439901173114777
+    },
+    {
+      "at_seconds": 8.471158798784018,
+      "milliseconds": 16.51110127568245
+    },
+    {
+      "at_seconds": 8.494746401906013,
+      "milliseconds": 13.141598552465439
+    },
+    {
+      "at_seconds": 8.515257101505995,
+      "milliseconds": 14.376398175954819
+    },
+    {
+      "at_seconds": 8.537164401262999,
+      "milliseconds": 14.12300020456314
+    },
+    {
+      "at_seconds": 8.559021100401878,
+      "milliseconds": 13.335701078176498
+    },
+    {
+      "at_seconds": 8.58039990067482,
+      "milliseconds": 13.609901070594788
+    },
+    {
+      "at_seconds": 8.600901201367378,
+      "milliseconds": 13.266898691654205
+    },
+    {
+      "at_seconds": 8.62097730115056,
+      "milliseconds": 13.268399983644485
+    },
+    {
+      "at_seconds": 8.64148100093007,
+      "milliseconds": 14.956299215555191
+    },
+    {
+      "at_seconds": 8.664095301181078,
+      "milliseconds": 13.927597552537918
+    },
+    {
+      "at_seconds": 8.685117699205875,
+      "milliseconds": 14.911800622940063
+    },
+    {
+      "at_seconds": 8.708298798650503,
+      "milliseconds": 15.647903084754944
+    },
+    {
+      "at_seconds": 8.731616299599409,
+      "milliseconds": 17.0041024684906
+    },
+    {
+      "at_seconds": 8.756575100123882,
+      "milliseconds": 13.685900717973709
+    },
+    {
+      "at_seconds": 8.778051100671291,
+      "milliseconds": 13.668600469827652
+    },
+    {
+      "at_seconds": 8.799266502261162,
+      "milliseconds": 13.269398361444473
+    },
+    {
+      "at_seconds": 8.820143800228834,
+      "milliseconds": 14.399901032447815
+    },
+    {
+      "at_seconds": 8.842071700841188,
+      "milliseconds": 13.730999082326889
+    },
+    {
+      "at_seconds": 8.864136900752783,
+      "milliseconds": 14.49500024318695
+    },
+    {
+      "at_seconds": 8.88637750223279,
+      "milliseconds": 14.163199812173843
+    },
+    {
+      "at_seconds": 8.907804001122713,
+      "milliseconds": 13.391200453042984
+    },
+    {
+      "at_seconds": 8.928745601326227,
+      "milliseconds": 13.532500714063644
+    },
+    {
+      "at_seconds": 8.950498200953007,
+      "milliseconds": 13.519298285245895
+    },
+    {
+      "at_seconds": 8.971239298582077,
+      "milliseconds": 14.558501541614532
+    },
+    {
+      "at_seconds": 8.99348720163107,
+      "milliseconds": 12.862097471952438
+    },
+    {
+      "at_seconds": 9.01359760016203,
+      "milliseconds": 13.349100947380066
+    },
+    {
+      "at_seconds": 9.034415699541569,
+      "milliseconds": 13.335101306438446
+    },
+    {
+      "at_seconds": 9.054926700890064,
+      "milliseconds": 13.721399009227753
+    },
+    {
+      "at_seconds": 9.0765300989151,
+      "milliseconds": 14.193899929523468
+    },
+    {
+      "at_seconds": 9.097751799970865,
+      "milliseconds": 13.071201741695404
+    },
+    {
+      "at_seconds": 9.117821801453829,
+      "milliseconds": 12.867197394371033
+    },
+    {
+      "at_seconds": 9.138421900570393,
+      "milliseconds": 13.664301484823227
+    },
+    {
+      "at_seconds": 9.159991800785065,
+      "milliseconds": 15.459798276424408
+    },
+    {
+      "at_seconds": 9.184216398745775,
+      "milliseconds": 14.824602752923965
+    },
+    {
+      "at_seconds": 9.20716129988432,
+      "milliseconds": 14.896001666784286
+    },
+    {
+      "at_seconds": 9.230144798755646,
+      "milliseconds": 19.249003380537033
+    },
+    {
+      "at_seconds": 9.257261700928211,
+      "milliseconds": 14.198698103427887
+    },
+    {
+      "at_seconds": 9.27961540222168,
+      "milliseconds": 15.879999846220016
+    },
+    {
+      "at_seconds": 9.303555101156235,
+      "milliseconds": 14.781199395656586
+    },
+    {
+      "at_seconds": 9.326558101922274,
+      "milliseconds": 15.350200235843658
+    },
+    {
+      "at_seconds": 9.35059079900384,
+      "milliseconds": 13.319600373506546
+    },
+    {
+      "at_seconds": 9.370955999940634,
+      "milliseconds": 12.619901448488235
+    },
+    {
+      "at_seconds": 9.390323001891375,
+      "milliseconds": 13.032399117946625
+    },
+    {
+      "at_seconds": 9.410665601491928,
+      "milliseconds": 13.043899089097977
+    },
+    {
+      "at_seconds": 9.430785600095987,
+      "milliseconds": 12.194100767374039
+    },
+    {
+      "at_seconds": 9.450140699744225,
+      "milliseconds": 13.70370015501976
+    },
+    {
+      "at_seconds": 9.47078350186348,
+      "milliseconds": 13.165399432182312
+    },
+    {
+      "at_seconds": 9.491118598729372,
+      "milliseconds": 13.59499990940094
+    },
+    {
+      "at_seconds": 9.512073501944542,
+      "milliseconds": 13.271499425172806
+    },
+    {
+      "at_seconds": 9.532591801136732,
+      "milliseconds": 13.46229761838913
+    },
+    {
+      "at_seconds": 9.553020399063826,
+      "milliseconds": 13.267502188682556
+    },
+    {
+      "at_seconds": 9.573233500123024,
+      "milliseconds": 12.171100825071335
+    },
+    {
+      "at_seconds": 9.592932999134064,
+      "milliseconds": 12.9317007958889
+    },
+    {
+      "at_seconds": 9.613051801919937,
+      "milliseconds": 13.525299727916718
+    },
+    {
+      "at_seconds": 9.633901800960302,
+      "milliseconds": 14.075100421905518
+    },
+    {
+      "at_seconds": 9.655162699520588,
+      "milliseconds": 13.724800199270248
+    },
+    {
+      "at_seconds": 9.675838999450207,
+      "milliseconds": 12.648899108171463
+    },
+    {
+      "at_seconds": 9.695557501167059,
+      "milliseconds": 12.553300708532333
+    },
+    {
+      "at_seconds": 9.715102799236774,
+      "milliseconds": 12.785602360963821
+    },
+    {
+      "at_seconds": 9.73503990098834,
+      "milliseconds": 12.502998113632202
+    },
+    {
+      "at_seconds": 9.754567999392748,
+      "milliseconds": 12.653399258852005
+    },
+    {
+      "at_seconds": 9.77422060072422,
+      "milliseconds": 13.162698596715927
+    },
+    {
+      "at_seconds": 9.795582801103592,
+      "milliseconds": 13.416100293397903
+    },
+    {
+      "at_seconds": 9.816031999886036,
+      "milliseconds": 13.57480138540268
+    },
+    {
+      "at_seconds": 9.837738700211048,
+      "milliseconds": 14.679599553346634
+    },
+    {
+      "at_seconds": 9.860142700374126,
+      "milliseconds": 13.251598924398422
+    },
+    {
+      "at_seconds": 9.880416601896286,
+      "milliseconds": 13.868197798728943
+    },
+    {
+      "at_seconds": 9.901456501334906,
+      "milliseconds": 12.36259937286377
+    },
+    {
+      "at_seconds": 9.92073430120945,
+      "milliseconds": 13.14929872751236
+    },
+    {
+      "at_seconds": 9.940716501325369,
+      "milliseconds": 12.62269914150238
+    },
+    {
+      "at_seconds": 9.960519801825285,
+      "milliseconds": 12.802798300981522
+    },
+    {
+      "at_seconds": 9.980342399328947,
+      "milliseconds": 13.095799833536148
+    },
+    {
+      "at_seconds": 10.000861201435328,
+      "milliseconds": 13.65559920668602
+    },
+    {
+      "at_seconds": 10.021204601973295,
+      "milliseconds": 12.530200183391571
+    },
+    {
+      "at_seconds": 10.040620099753141,
+      "milliseconds": 12.308701872825623
+    },
+    {
+      "at_seconds": 10.060218900442123,
+      "milliseconds": 12.261901050806046
+    },
+    {
+      "at_seconds": 10.079172801226377,
+      "milliseconds": 12.323997914791107
+    },
+    {
+      "at_seconds": 10.098455000668764,
+      "milliseconds": 13.06929811835289
+    },
+    {
+      "at_seconds": 10.118129398673773,
+      "milliseconds": 12.29030266404152
+    },
+    {
+      "at_seconds": 10.137222900986671,
+      "milliseconds": 12.817300856113434
+    },
+    {
+      "at_seconds": 10.157313700765371,
+      "milliseconds": 14.478698372840881
+    },
+    {
+      "at_seconds": 10.178537398576736,
+      "milliseconds": 12.580402195453644
+    },
+    {
+      "at_seconds": 10.197913698852062,
+      "milliseconds": 12.451600283384323
+    },
+    {
+      "at_seconds": 10.217171799391508,
+      "milliseconds": 12.654002755880356
+    },
+    {
+      "at_seconds": 10.237258199602365,
+      "milliseconds": 12.71900162100792
+    },
+    {
+      "at_seconds": 10.257145799696445,
+      "milliseconds": 12.844201177358627
+    },
+    {
+      "at_seconds": 10.276641499251127,
+      "milliseconds": 12.203600257635117
+    },
+    {
+      "at_seconds": 10.295783899724483,
+      "milliseconds": 12.571100145578384
+    },
+    {
+      "at_seconds": 10.315308600664139,
+      "milliseconds": 12.49229907989502
+    },
+    {
+      "at_seconds": 10.334768898785114,
+      "milliseconds": 12.57530227303505
+    },
+    {
+      "at_seconds": 10.354266300797462,
+      "milliseconds": 12.587998062372208
+    },
+    {
+      "at_seconds": 10.373564299196005,
+      "milliseconds": 15.010301023721695
+    },
+    {
+      "at_seconds": 10.39554550126195,
+      "milliseconds": 12.020498514175415
+    },
+    {
+      "at_seconds": 10.414382800459862,
+      "milliseconds": 12.359298765659332
+    },
+    {
+      "at_seconds": 10.433593101799488,
+      "milliseconds": 12.414798140525818
+    },
+    {
+      "at_seconds": 10.452890701591969,
+      "milliseconds": 13.427797704935074
+    },
+    {
+      "at_seconds": 10.473446801304817,
+      "milliseconds": 12.251097708940506
+    },
+    {
+      "at_seconds": 10.492992099374533,
+      "milliseconds": 12.732699513435364
+    },
+    {
+      "at_seconds": 10.512819800525904,
+      "milliseconds": 12.870799750089645
+    },
+    {
+      "at_seconds": 10.532712001353502,
+      "milliseconds": 12.401498854160309
+    },
+    {
+      "at_seconds": 10.55240099877119,
+      "milliseconds": 13.165201991796494
+    },
+    {
+      "at_seconds": 10.572590298950672,
+      "milliseconds": 12.466900050640106
+    },
+    {
+      "at_seconds": 10.59181059896946,
+      "milliseconds": 12.78660073876381
+    },
+    {
+      "at_seconds": 10.612028401345015,
+      "milliseconds": 13.118397444486618
+    },
+    {
+      "at_seconds": 10.631951101124287,
+      "milliseconds": 12.768000364303589
+    },
+    {
+      "at_seconds": 10.65215840190649,
+      "milliseconds": 14.003198593854904
+    },
+    {
+      "at_seconds": 10.673525299876928,
+      "milliseconds": 13.153798878192902
+    },
+    {
+      "at_seconds": 10.694087602198124,
+      "milliseconds": 12.605197727680206
+    },
+    {
+      "at_seconds": 10.713569901883602,
+      "milliseconds": 13.116300106048584
+    },
+    {
+      "at_seconds": 10.733945202082396,
+      "milliseconds": 13.389799743890762
+    },
+    {
+      "at_seconds": 10.754546601325274,
+      "milliseconds": 12.981697916984558
+    },
+    {
+      "at_seconds": 10.774502001702785,
+      "milliseconds": 12.858197093009949
+    },
+    {
+      "at_seconds": 10.794236801564693,
+      "milliseconds": 12.413699179887772
+    },
+    {
+      "at_seconds": 10.81344709917903,
+      "milliseconds": 12.339901179075241
+    },
+    {
+      "at_seconds": 10.832585901021957,
+      "milliseconds": 12.107998132705688
+    },
+    {
+      "at_seconds": 10.851366199553013,
+      "milliseconds": 13.85509967803955
+    },
+    {
+      "at_seconds": 10.872205302119255,
+      "milliseconds": 12.521997094154358
+    },
+    {
+      "at_seconds": 10.891603700816631,
+      "milliseconds": 12.847900390625
+    },
+    {
+      "at_seconds": 10.911915600299835,
+      "milliseconds": 12.342501431703568
+    },
+    {
+      "at_seconds": 10.93185219913721,
+      "milliseconds": 12.928999960422516
+    },
+    {
+      "at_seconds": 10.95212860032916,
+      "milliseconds": 13.328898698091507
+    },
+    {
+      "at_seconds": 10.972510501742363,
+      "milliseconds": 12.279298156499863
+    },
+    {
+      "at_seconds": 10.991814401000738,
+      "milliseconds": 12.626498937606812
+    },
+    {
+      "at_seconds": 11.011358600109816,
+      "milliseconds": 12.483201920986176
+    },
+    {
+      "at_seconds": 11.03082799911499,
+      "milliseconds": 12.834601104259491
+    },
+    {
+      "at_seconds": 11.050528600811958,
+      "milliseconds": 12.68870010972023
+    },
+    {
+      "at_seconds": 11.070369400084019,
+      "milliseconds": 12.681201100349426
+    },
+    {
+      "at_seconds": 11.089878801256418,
+      "milliseconds": 12.295298278331757
+    },
+    {
+      "at_seconds": 11.108874801546335,
+      "milliseconds": 12.811597436666489
+    },
+    {
+      "at_seconds": 11.129646800458431,
+      "milliseconds": 14.718398451805115
+    },
+    {
+      "at_seconds": 11.151131801307201,
+      "milliseconds": 12.770898640155792
+    },
+    {
+      "at_seconds": 11.171634901314974,
+      "milliseconds": 13.177499175071716
+    },
+    {
+      "at_seconds": 11.191654101014137,
+      "milliseconds": 12.754600495100021
+    },
+    {
+      "at_seconds": 11.211358200758696,
+      "milliseconds": 12.556899338960648
+    },
+    {
+      "at_seconds": 11.231240700930357,
+      "milliseconds": 12.936998158693314
+    },
+    {
+      "at_seconds": 11.25094959884882,
+      "milliseconds": 12.693103402853012
+    },
+    {
+      "at_seconds": 11.270681999623775,
+      "milliseconds": 12.413900345563889
+    },
+    {
+      "at_seconds": 11.2902338989079,
+      "milliseconds": 13.460502028465271
+    },
+    {
+      "at_seconds": 11.311366502195597,
+      "milliseconds": 13.471599668264389
+    },
+    {
+      "at_seconds": 11.33154059946537,
+      "milliseconds": 12.270599603652954
+    },
+    {
+      "at_seconds": 11.350781802088022,
+      "milliseconds": 12.668699026107788
+    },
+    {
+      "at_seconds": 11.37078319862485,
+      "milliseconds": 12.584701180458069
+    },
+    {
+      "at_seconds": 11.390177100896835,
+      "milliseconds": 12.814197689294815
+    },
+    {
+      "at_seconds": 11.409925799816847,
+      "milliseconds": 12.808602303266525
+    },
+    {
+      "at_seconds": 11.429549898952246,
+      "milliseconds": 12.388400733470917
+    },
+    {
+      "at_seconds": 11.44867629930377,
+      "milliseconds": 13.015400618314743
+    },
+    {
+      "at_seconds": 11.468635100871325,
+      "milliseconds": 13.182900846004486
+    },
+    {
+      "at_seconds": 11.48882620036602,
+      "milliseconds": 12.690801173448563
+    },
+    {
+      "at_seconds": 11.508433599025011,
+      "milliseconds": 13.264801353216171
+    },
+    {
+      "at_seconds": 11.528687600046396,
+      "milliseconds": 12.465700507164001
+    },
+    {
+      "at_seconds": 11.547947201877832,
+      "milliseconds": 12.217599898576736
+    },
+    {
+      "at_seconds": 11.567254200577736,
+      "milliseconds": 12.175701558589935
+    },
+    {
+      "at_seconds": 11.586087301373482,
+      "milliseconds": 12.78739795088768
+    },
+    {
+      "at_seconds": 11.605798900127411,
+      "milliseconds": 12.347601354122162
+    },
+    {
+      "at_seconds": 11.625007599592209,
+      "milliseconds": 12.634899467229843
+    },
+    {
+      "at_seconds": 11.644570399075747,
+      "milliseconds": 12.256599962711334
+    },
+    {
+      "at_seconds": 11.664454698562622,
+      "milliseconds": 12.817401438951492
+    },
+    {
+      "at_seconds": 11.684254001826048,
+      "milliseconds": 12.87129893898964
+    },
+    {
+      "at_seconds": 11.704038299620152,
+      "milliseconds": 13.0171999335289
+    },
+    {
+      "at_seconds": 11.724302500486374,
+      "milliseconds": 13.772901147603989
+    },
+    {
+      "at_seconds": 11.74568260088563,
+      "milliseconds": 12.917198240756989
+    },
+    {
+      "at_seconds": 11.765485402196646,
+      "milliseconds": 12.902598828077316
+    },
+    {
+      "at_seconds": 11.785590000450611,
+      "milliseconds": 12.880999594926834
+    },
+    {
+      "at_seconds": 11.805271200835705,
+      "milliseconds": 12.903500348329544
+    },
+    {
+      "at_seconds": 11.825561501085758,
+      "milliseconds": 13.56619969010353
+    },
+    {
+      "at_seconds": 11.846501000225544,
+      "milliseconds": 13.860698789358139
+    },
+    {
+      "at_seconds": 11.86795100197196,
+      "milliseconds": 14.10609856247902
+    },
+    {
+      "at_seconds": 11.890116699039936,
+      "milliseconds": 14.280300587415695
+    },
+    {
+      "at_seconds": 11.91190379858017,
+      "milliseconds": 13.791102916002274
+    },
+    {
+      "at_seconds": 11.933676902204752,
+      "milliseconds": 13.196196407079697
+    },
+    {
+      "at_seconds": 11.955221202224493,
+      "milliseconds": 14.746196568012238
+    },
+    {
+      "at_seconds": 11.977542500942945,
+      "milliseconds": 13.77049833536148
+    },
+    {
+      "at_seconds": 11.99935119971633,
+      "milliseconds": 14.757301658391953
+    },
+    {
+      "at_seconds": 12.02350690215826,
+      "milliseconds": 14.166098088026047
+    },
+    {
+      "at_seconds": 12.045294098556042,
+      "milliseconds": 13.942401856184006
+    },
+    {
+      "at_seconds": 12.066873699426651,
+      "milliseconds": 13.444099575281143
+    },
+    {
+      "at_seconds": 12.087917301803827,
+      "milliseconds": 13.879798352718353
+    },
+    {
+      "at_seconds": 12.108527399599552,
+      "milliseconds": 12.341499328613281
+    },
+    {
+      "at_seconds": 12.127874098718166,
+      "milliseconds": 12.712303549051285
+    },
+    {
+      "at_seconds": 12.147632502019405,
+      "milliseconds": 12.825697660446167
+    },
+    {
+      "at_seconds": 12.16772460192442,
+      "milliseconds": 12.41689920425415
+    },
+    {
+      "at_seconds": 12.186877202242613,
+      "milliseconds": 12.483697384595871
+    },
+    {
+      "at_seconds": 12.206122700124979,
+      "milliseconds": 12.244101613759995
+    },
+    {
+      "at_seconds": 12.225376699119806,
+      "milliseconds": 12.67550140619278
+    },
+    {
+      "at_seconds": 12.24508859962225,
+      "milliseconds": 12.7469003200531
+    },
+    {
+      "at_seconds": 12.264948099851608,
+      "milliseconds": 11.91449910402298
+    },
+    {
+      "at_seconds": 12.283549599349499,
+      "milliseconds": 13.016000390052795
+    },
+    {
+      "at_seconds": 12.303741000592709,
+      "milliseconds": 13.367000967264175
+    },
+    {
+      "at_seconds": 12.32484320178628,
+      "milliseconds": 14.296099543571472
+    },
+    {
+      "at_seconds": 12.346018701791763,
+      "milliseconds": 14.032397419214249
+    },
+    {
+      "at_seconds": 12.36732479929924,
+      "milliseconds": 12.63660192489624
+    },
+    {
+      "at_seconds": 12.387104701250792,
+      "milliseconds": 13.284098356962204
+    },
+    {
+      "at_seconds": 12.407799001783133,
+      "milliseconds": 12.916900217533112
+    },
+    {
+      "at_seconds": 12.427531100809574,
+      "milliseconds": 12.171600013971329
+    },
+    {
+      "at_seconds": 12.446694798767567,
+      "milliseconds": 12.326102703809738
+    },
+    {
+      "at_seconds": 12.466856501996517,
+      "milliseconds": 12.821197509765625
+    },
+    {
+      "at_seconds": 12.486462499946356,
+      "milliseconds": 12.936901301145554
+    },
+    {
+      "at_seconds": 12.506336100399494,
+      "milliseconds": 12.668300420045853
+    },
+    {
+      "at_seconds": 12.525958899408579,
+      "milliseconds": 12.820202857255936
+    },
+    {
+      "at_seconds": 12.546716000884771,
+      "milliseconds": 12.547299265861511
+    },
+    {
+      "at_seconds": 12.566301599144936,
+      "milliseconds": 12.86490261554718
+    },
+    {
+      "at_seconds": 12.586702600121498,
+      "milliseconds": 12.630999088287354
+    },
+    {
+      "at_seconds": 12.606165900826454,
+      "milliseconds": 12.938398867845535
+    },
+    {
+      "at_seconds": 12.626998599618673,
+      "milliseconds": 12.354500591754913
+    },
+    {
+      "at_seconds": 12.645958099514246,
+      "milliseconds": 12.334201484918594
+    },
+    {
+      "at_seconds": 12.665171898901463,
+      "milliseconds": 13.169001787900925
+    },
+    {
+      "at_seconds": 12.685360498726368,
+      "milliseconds": 12.182403355836868
+    },
+    {
+      "at_seconds": 12.704433798789978,
+      "milliseconds": 12.643400579690933
+    },
+    {
+      "at_seconds": 12.723595801740885,
+      "milliseconds": 12.395098805427551
+    },
+    {
+      "at_seconds": 12.742729101330042,
+      "milliseconds": 12.625299394130707
+    },
+    {
+      "at_seconds": 12.762024398893118,
+      "milliseconds": 12.29500025510788
+    },
+    {
+      "at_seconds": 12.781290002167225,
+      "milliseconds": 12.772798538208008
+    },
+    {
+      "at_seconds": 12.800972901284695,
+      "milliseconds": 12.33379915356636
+    },
+    {
+      "at_seconds": 12.819960299879313,
+      "milliseconds": 13.050802052021027
+    },
+    {
+      "at_seconds": 12.840260401368141,
+      "milliseconds": 12.16140016913414
+    },
+    {
+      "at_seconds": 12.859664902091026,
+      "milliseconds": 12.486997991800308
+    },
+    {
+      "at_seconds": 12.878997601568699,
+      "milliseconds": 12.615498155355453
+    },
+    {
+      "at_seconds": 12.898393798619509,
+      "milliseconds": 12.683100998401642
+    },
+    {
+      "at_seconds": 12.917913399636745,
+      "milliseconds": 12.700900435447693
+    },
+    {
+      "at_seconds": 12.937259301543236,
+      "milliseconds": 12.19869777560234
+    },
+    {
+      "at_seconds": 12.956188399344683,
+      "milliseconds": 12.718502432107925
+    },
+    {
+      "at_seconds": 12.975972700864077,
+      "milliseconds": 12.419100850820541
+    },
+    {
+      "at_seconds": 12.995404198765755,
+      "milliseconds": 12.236900627613068
+    },
+    {
+      "at_seconds": 13.014253299683332,
+      "milliseconds": 12.049201875925064
+    },
+    {
+      "at_seconds": 13.033037699759007,
+      "milliseconds": 12.24140077829361
+    },
+    {
+      "at_seconds": 13.051891598850489,
+      "milliseconds": 12.979600578546524
+    },
+    {
+      "at_seconds": 13.07197580114007,
+      "milliseconds": 12.496400624513626
+    },
+    {
+      "at_seconds": 13.092435099184513,
+      "milliseconds": 12.50459998846054
+    },
+    {
+      "at_seconds": 13.112054899334908,
+      "milliseconds": 12.47430220246315
+    },
+    {
+      "at_seconds": 13.131373699754477,
+      "milliseconds": 12.254700064659119
+    },
+    {
+      "at_seconds": 13.150757100433111,
+      "milliseconds": 13.929501175880432
+    },
+    {
+      "at_seconds": 13.17152700200677,
+      "milliseconds": 13.022199273109436
+    },
+    {
+      "at_seconds": 13.191276799887419,
+      "milliseconds": 14.722000807523727
+    },
+    {
+      "at_seconds": 13.212856501340866,
+      "milliseconds": 12.759998440742493
+    },
+    {
+      "at_seconds": 13.233004499226809,
+      "milliseconds": 13.358701020479202
+    },
+    {
+      "at_seconds": 13.253539402037859,
+      "milliseconds": 13.41089978814125
+    },
+    {
+      "at_seconds": 13.274135001003742,
+      "milliseconds": 14.384899288415909
+    },
+    {
+      "at_seconds": 13.29634040221572,
+      "milliseconds": 13.8963982462883
+    },
+    {
+      "at_seconds": 13.318186398595572,
+      "milliseconds": 15.523500740528107
+    },
+    {
+      "at_seconds": 13.341208301484585,
+      "milliseconds": 15.36019891500473
+    },
+    {
+      "at_seconds": 13.363969400525093,
+      "milliseconds": 13.66100087761879
+    },
+    {
+      "at_seconds": 13.384849101305008,
+      "milliseconds": 12.943997979164124
+    },
+    {
+      "at_seconds": 13.404770899564028,
+      "milliseconds": 13.034801930189133
+    },
+    {
+      "at_seconds": 13.424856401979923,
+      "milliseconds": 12.638099491596222
+    },
+    {
+      "at_seconds": 13.444578301161528,
+      "milliseconds": 12.952297925949097
+    },
+    {
+      "at_seconds": 13.465351399034262,
+      "milliseconds": 15.867002308368683
+    },
+    {
+      "at_seconds": 13.488439198583364,
+      "milliseconds": 13.270303606987
+    },
+    {
+      "at_seconds": 13.509537398815155,
+      "milliseconds": 14.863502234220505
+    },
+    {
+      "at_seconds": 13.531725499778986,
+      "milliseconds": 12.936700135469437
+    },
+    {
+      "at_seconds": 13.551614500582218,
+      "milliseconds": 16.600999981164932
+    },
+    {
+      "at_seconds": 13.575726602226496,
+      "milliseconds": 14.142896980047226
+    },
+    {
+      "at_seconds": 13.599389098584652,
+      "milliseconds": 13.102702796459198
+    },
+    {
+      "at_seconds": 13.620403200387955,
+      "milliseconds": 15.06200060248375
+    },
+    {
+      "at_seconds": 13.642737001180649,
+      "milliseconds": 13.768699020147324
+    },
+    {
+      "at_seconds": 13.663771498948336,
+      "milliseconds": 14.14240151643753
+    },
+    {
+      "at_seconds": 13.685090102255344,
+      "milliseconds": 13.194296509027481
+    },
+    {
+      "at_seconds": 13.70523039996624,
+      "milliseconds": 12.63429969549179
+    },
+    {
+      "at_seconds": 13.725691299885511,
+      "milliseconds": 13.383399695158005
+    },
+    {
+      "at_seconds": 13.747161101549864,
+      "milliseconds": 14.426600188016891
+    },
+    {
+      "at_seconds": 13.768960501998663,
+      "milliseconds": 16.47699996829033
+    },
+    {
+      "at_seconds": 13.792478200048208,
+      "milliseconds": 13.426098972558975
+    },
+    {
+      "at_seconds": 13.813645001500845,
+      "milliseconds": 13.973698019981384
+    },
+    {
+      "at_seconds": 13.834528401494026,
+      "milliseconds": 13.33019882440567
+    },
+    {
+      "at_seconds": 13.856158901005983,
+      "milliseconds": 12.894097715616226
+    },
+    {
+      "at_seconds": 13.876097600907087,
+      "milliseconds": 12.336701154708862
+    },
+    {
+      "at_seconds": 13.896157499402761,
+      "milliseconds": 12.198802083730698
+    },
+    {
+      "at_seconds": 13.915287900716066,
+      "milliseconds": 14.015201479196548
+    },
+    {
+      "at_seconds": 13.936285201460123,
+      "milliseconds": 12.650899589061737
+    },
+    {
+      "at_seconds": 13.956023201346397,
+      "milliseconds": 12.49070093035698
+    },
+    {
+      "at_seconds": 13.97531719878316,
+      "milliseconds": 12.379202991724014
+    },
+    {
+      "at_seconds": 13.994825400412083,
+      "milliseconds": 13.27589899301529
+    },
+    {
+      "at_seconds": 14.014961700886488,
+      "milliseconds": 12.468699365854263
+    },
+    {
+      "at_seconds": 14.03432609885931,
+      "milliseconds": 12.595999985933304
+    },
+    {
+      "at_seconds": 14.05375250056386,
+      "milliseconds": 12.364700436592102
+    },
+    {
+      "at_seconds": 14.072744902223349,
+      "milliseconds": 12.568399310112
+    },
+    {
+      "at_seconds": 14.09207209944725,
+      "milliseconds": 12.832101434469223
+    },
+    {
+      "at_seconds": 14.111747600138187,
+      "milliseconds": 13.071902096271515
+    },
+    {
+      "at_seconds": 14.13272850215435,
+      "milliseconds": 14.432799071073532
+    },
+    {
+      "at_seconds": 14.153802800923586,
+      "milliseconds": 12.540798634290695
+    },
+    {
+      "at_seconds": 14.17321790009737,
+      "milliseconds": 12.414202094078064
+    },
+    {
+      "at_seconds": 14.192280001938343,
+      "milliseconds": 12.349199503660202
+    },
+    {
+      "at_seconds": 14.21134589985013,
+      "milliseconds": 12.81050220131874
+    },
+    {
+      "at_seconds": 14.232719499617815,
+      "milliseconds": 13.567201793193817
+    },
+    {
+      "at_seconds": 14.253237199038267,
+      "milliseconds": 12.393303215503693
+    },
+    {
+      "at_seconds": 14.27252009883523,
+      "milliseconds": 12.398801743984222
+    },
+    {
+      "at_seconds": 14.291825599968433,
+      "milliseconds": 14.720600098371506
+    },
+    {
+      "at_seconds": 14.313466299325228,
+      "milliseconds": 13.360802084207535
+    },
+    {
+      "at_seconds": 14.33382860198617,
+      "milliseconds": 12.857098132371902
+    },
+    {
+      "at_seconds": 14.35364529863,
+      "milliseconds": 12.748602777719498
+    },
+    {
+      "at_seconds": 14.373947899788618,
+      "milliseconds": 12.714799493551254
+    },
+    {
+      "at_seconds": 14.394128698855639,
+      "milliseconds": 12.677200138568878
+    },
+    {
+      "at_seconds": 14.414009999483824,
+      "milliseconds": 12.939400970935822
+    },
+    {
+      "at_seconds": 14.434630401432514,
+      "milliseconds": 14.203198254108429
+    },
+    {
+      "at_seconds": 14.455733802169561,
+      "milliseconds": 13.118397444486618
+    },
+    {
+      "at_seconds": 14.47592829912901,
+      "milliseconds": 13.401202857494354
+    },
+    {
+      "at_seconds": 14.496203102171421,
+      "milliseconds": 12.474197894334793
+    },
+    {
+      "at_seconds": 14.515495400875807,
+      "milliseconds": 12.45339959859848
+    },
+    {
+      "at_seconds": 14.534890800714493,
+      "milliseconds": 12.68329843878746
+    },
+    {
+      "at_seconds": 14.554489102214575,
+      "milliseconds": 13.238698244094849
+    },
+    {
+      "at_seconds": 14.574411500245333,
+      "milliseconds": 13.00320029258728
+    },
+    {
+      "at_seconds": 14.595315400511026,
+      "milliseconds": 13.482600450515747
+    },
+    {
+      "at_seconds": 14.615439102053642,
+      "milliseconds": 13.655997812747955
+    },
+    {
+      "at_seconds": 14.636336501687765,
+      "milliseconds": 12.615099549293518
+    },
+    {
+      "at_seconds": 14.655972000211477,
+      "milliseconds": 12.79899850487709
+    },
+    {
+      "at_seconds": 14.676624100655317,
+      "milliseconds": 13.804201036691666
+    },
+    {
+      "at_seconds": 14.69745809957385,
+      "milliseconds": 12.48680055141449
+    },
+    {
+      "at_seconds": 14.716861300170422,
+      "milliseconds": 13.147599995136261
+    },
+    {
+      "at_seconds": 14.736876100301743,
+      "milliseconds": 13.318199664354324
+    },
+    {
+      "at_seconds": 14.75728889927268,
+      "milliseconds": 13.411000370979309
+    },
+    {
+      "at_seconds": 14.77742949873209,
+      "milliseconds": 12.343201786279678
+    },
+    {
+      "at_seconds": 14.797581601887941,
+      "milliseconds": 13.2874995470047
+    },
+    {
+      "at_seconds": 14.817967500537634,
+      "milliseconds": 14.014799147844315
+    },
+    {
+      "at_seconds": 14.838979501277208,
+      "milliseconds": 12.817800045013428
+    },
+    {
+      "at_seconds": 14.85907020047307,
+      "milliseconds": 13.2066011428833
+    },
+    {
+      "at_seconds": 14.879319999366999,
+      "milliseconds": 13.03200051188469
+    },
+    {
+      "at_seconds": 14.899118300527334,
+      "milliseconds": 12.485701590776443
+    },
+    {
+      "at_seconds": 14.918561801314354,
+      "milliseconds": 12.599200010299683
+    },
+    {
+      "at_seconds": 14.937998101115227,
+      "milliseconds": 12.37110048532486
+    },
+    {
+      "at_seconds": 14.958297599107027,
+      "milliseconds": 12.166902422904968
+    },
+    {
+      "at_seconds": 14.977359298616648,
+      "milliseconds": 12.84870132803917
+    },
+    {
+      "at_seconds": 14.997653499245644,
+      "milliseconds": 13.067301362752914
+    }
+  ],
+  "raw_editor_end_frame_interval_ms": [
+    {
+      "at_seconds": 0.028872299939393997,
+      "milliseconds": 19.63619887828827
+    },
+    {
+      "at_seconds": 0.04871559888124466,
+      "milliseconds": 19.843298941850662
+    },
+    {
+      "at_seconds": 0.06884710118174553,
+      "milliseconds": 20.13150230050087
+    },
+    {
+      "at_seconds": 0.08834080025553703,
+      "milliseconds": 19.493699073791504
+    },
+    {
+      "at_seconds": 0.10774550214409828,
+      "milliseconds": 19.40470188856125
+    },
+    {
+      "at_seconds": 0.12776220217347145,
+      "milliseconds": 20.01670002937317
+    },
+    {
+      "at_seconds": 0.1477488987147808,
+      "milliseconds": 19.986696541309357
+    },
+    {
+      "at_seconds": 0.1689244993031025,
+      "milliseconds": 21.175600588321686
+    },
+    {
+      "at_seconds": 0.1887946017086506,
+      "milliseconds": 19.870102405548096
+    },
+    {
+      "at_seconds": 0.20916999876499176,
+      "milliseconds": 20.37539705634117
+    },
+    {
+      "at_seconds": 0.22934919968247414,
+      "milliseconds": 20.179200917482376
+    },
+    {
+      "at_seconds": 0.25079939886927605,
+      "milliseconds": 21.45019918680191
+    },
+    {
+      "at_seconds": 0.2721880003809929,
+      "milliseconds": 21.388601511716843
+    },
+    {
+      "at_seconds": 0.2923262007534504,
+      "milliseconds": 20.138200372457504
+    },
+    {
+      "at_seconds": 0.31255530193448067,
+      "milliseconds": 20.229101181030273
+    },
+    {
+      "at_seconds": 0.33208880200982094,
+      "milliseconds": 19.53350007534027
+    },
+    {
+      "at_seconds": 0.3516530990600586,
+      "milliseconds": 19.564297050237656
+    },
+    {
+      "at_seconds": 0.371416799724102,
+      "milliseconds": 19.763700664043427
+    },
+    {
+      "at_seconds": 0.3906453996896744,
+      "milliseconds": 19.228599965572357
+    },
+    {
+      "at_seconds": 0.4118226021528244,
+      "milliseconds": 21.177202463150024
+    },
+    {
+      "at_seconds": 0.4316665008664131,
+      "milliseconds": 19.843898713588715
+    },
+    {
+      "at_seconds": 0.4521874003112316,
+      "milliseconds": 20.520899444818497
+    },
+    {
+      "at_seconds": 0.4724716991186142,
+      "milliseconds": 20.284298807382584
+    },
+    {
+      "at_seconds": 0.4934547021985054,
+      "milliseconds": 20.983003079891205
+    },
+    {
+      "at_seconds": 0.5140713006258011,
+      "milliseconds": 20.616598427295685
+    },
+    {
+      "at_seconds": 0.5348048992455006,
+      "milliseconds": 20.733598619699478
+    },
+    {
+      "at_seconds": 0.5552285015583038,
+      "milliseconds": 20.42360231280327
+    },
+    {
+      "at_seconds": 0.5752453990280628,
+      "milliseconds": 20.016897469758987
+    },
+    {
+      "at_seconds": 0.5955531001091003,
+      "milliseconds": 20.30770108103752
+    },
+    {
+      "at_seconds": 0.6168980002403259,
+      "milliseconds": 21.344900131225586
+    },
+    {
+      "at_seconds": 0.6371157020330429,
+      "milliseconds": 20.21770179271698
+    },
+    {
+      "at_seconds": 0.6569346003234386,
+      "milliseconds": 19.818898290395737
+    },
+    {
+      "at_seconds": 0.676825501024723,
+      "milliseconds": 19.89090070128441
+    },
+    {
+      "at_seconds": 0.6963354013860226,
+      "milliseconds": 19.509900361299515
+    },
+    {
+      "at_seconds": 0.7160076014697552,
+      "milliseconds": 19.672200083732605
+    },
+    {
+      "at_seconds": 0.7360612004995346,
+      "milliseconds": 20.053599029779434
+    },
+    {
+      "at_seconds": 0.7572732008993626,
+      "milliseconds": 21.212000399827957
+    },
+    {
+      "at_seconds": 0.7773150019347668,
+      "milliseconds": 20.041801035404205
+    },
+    {
+      "at_seconds": 0.7974431999027729,
+      "milliseconds": 20.128197968006134
+    },
+    {
+      "at_seconds": 0.81779919937253,
+      "milliseconds": 20.35599946975708
+    },
+    {
+      "at_seconds": 0.8377762995660305,
+      "milliseconds": 19.97710019350052
+    },
+    {
+      "at_seconds": 0.858109999448061,
+      "milliseconds": 20.333699882030487
+    },
+    {
+      "at_seconds": 0.8782306015491486,
+      "milliseconds": 20.12060210108757
+    },
+    {
+      "at_seconds": 0.8976306021213531,
+      "milliseconds": 19.40000057220459
+    },
+    {
+      "at_seconds": 0.9171341992914677,
+      "milliseconds": 19.503597170114517
+    },
+    {
+      "at_seconds": 0.9388921000063419,
+      "milliseconds": 21.757900714874268
+    },
+    {
+      "at_seconds": 0.9609736986458302,
+      "milliseconds": 22.08159863948822
+    },
+    {
+      "at_seconds": 0.9805774018168449,
+      "milliseconds": 19.603703171014786
+    },
+    {
+      "at_seconds": 1.0007230006158352,
+      "milliseconds": 20.14559879899025
+    },
+    {
+      "at_seconds": 1.0205947011709213,
+      "milliseconds": 19.871700555086136
+    },
+    {
+      "at_seconds": 1.0412133000791073,
+      "milliseconds": 20.61859890818596
+    },
+    {
+      "at_seconds": 1.0619029998779297,
+      "milliseconds": 20.689699798822403
+    },
+    {
+      "at_seconds": 1.0842364020645618,
+      "milliseconds": 22.333402186632156
+    },
+    {
+      "at_seconds": 1.1041694022715092,
+      "milliseconds": 19.933000206947327
+    },
+    {
+      "at_seconds": 1.123514398932457,
+      "milliseconds": 19.3449966609478
+    },
+    {
+      "at_seconds": 1.1434712000191212,
+      "milliseconds": 19.9568010866642
+    },
+    {
+      "at_seconds": 1.1629628017544746,
+      "milliseconds": 19.49160173535347
+    },
+    {
+      "at_seconds": 1.1826754994690418,
+      "milliseconds": 19.712697714567184
+    },
+    {
+      "at_seconds": 1.2023799009621143,
+      "milliseconds": 19.70440149307251
+    },
+    {
+      "at_seconds": 1.221747700124979,
+      "milliseconds": 19.367799162864685
+    },
+    {
+      "at_seconds": 1.2418603003025055,
+      "milliseconds": 20.112600177526474
+    },
+    {
+      "at_seconds": 1.265243999660015,
+      "milliseconds": 23.383699357509613
+    },
+    {
+      "at_seconds": 1.2854063995182514,
+      "milliseconds": 20.162399858236313
+    },
+    {
+      "at_seconds": 1.3062269017100334,
+      "milliseconds": 20.820502191781998
+    },
+    {
+      "at_seconds": 1.326655600219965,
+      "milliseconds": 20.428698509931564
+    },
+    {
+      "at_seconds": 1.3465027995407581,
+      "milliseconds": 19.847199320793152
+    },
+    {
+      "at_seconds": 1.366541501134634,
+      "milliseconds": 20.038701593875885
+    },
+    {
+      "at_seconds": 1.3860942013561726,
+      "milliseconds": 19.552700221538544
+    },
+    {
+      "at_seconds": 1.4069235995411873,
+      "milliseconds": 20.829398185014725
+    },
+    {
+      "at_seconds": 1.4278945997357368,
+      "milliseconds": 20.97100019454956
+    },
+    {
+      "at_seconds": 1.447724100202322,
+      "milliseconds": 19.82950046658516
+    },
+    {
+      "at_seconds": 1.4685165993869305,
+      "milliseconds": 20.79249918460846
+    },
+    {
+      "at_seconds": 1.4905088022351265,
+      "milliseconds": 21.99220284819603
+    },
+    {
+      "at_seconds": 1.5100859999656677,
+      "milliseconds": 19.57719773054123
+    },
+    {
+      "at_seconds": 1.5301752015948296,
+      "milliseconds": 20.089201629161835
+    },
+    {
+      "at_seconds": 1.5498839989304543,
+      "milliseconds": 19.708797335624695
+    },
+    {
+      "at_seconds": 1.569813098758459,
+      "milliseconds": 19.929099828004837
+    },
+    {
+      "at_seconds": 1.589350800961256,
+      "milliseconds": 19.537702202796936
+    },
+    {
+      "at_seconds": 1.6092424020171165,
+      "milliseconds": 19.89160105586052
+    },
+    {
+      "at_seconds": 1.6306404992938042,
+      "milliseconds": 21.398097276687622
+    },
+    {
+      "at_seconds": 1.6497911997139454,
+      "milliseconds": 19.15070042014122
+    },
+    {
+      "at_seconds": 1.670490499585867,
+      "milliseconds": 20.69929987192154
+    },
+    {
+      "at_seconds": 1.690472699701786,
+      "milliseconds": 19.982200115919113
+    },
+    {
+      "at_seconds": 1.7103690020740032,
+      "milliseconds": 19.89630237221718
+    },
+    {
+      "at_seconds": 1.7298843003809452,
+      "milliseconds": 19.515298306941986
+    },
+    {
+      "at_seconds": 1.7495444007217884,
+      "milliseconds": 19.6601003408432
+    },
+    {
+      "at_seconds": 1.7691798992455006,
+      "milliseconds": 19.635498523712158
+    },
+    {
+      "at_seconds": 1.789019301533699,
+      "milliseconds": 19.83940228819847
+    },
+    {
+      "at_seconds": 1.8089364990592003,
+      "milliseconds": 19.91719752550125
+    },
+    {
+      "at_seconds": 1.8292386010289192,
+      "milliseconds": 20.302101969718933
+    },
+    {
+      "at_seconds": 1.8493184000253677,
+      "milliseconds": 20.079798996448517
+    },
+    {
+      "at_seconds": 1.8696098998188972,
+      "milliseconds": 20.29149979352951
+    },
+    {
+      "at_seconds": 1.8919075019657612,
+      "milliseconds": 22.297602146863937
+    },
+    {
+      "at_seconds": 1.9123128987848759,
+      "milliseconds": 20.405396819114685
+    },
+    {
+      "at_seconds": 1.931395299732685,
+      "milliseconds": 19.08240094780922
+    },
+    {
+      "at_seconds": 1.950874000787735,
+      "milliseconds": 19.478701055049896
+    },
+    {
+      "at_seconds": 1.9702887013554573,
+      "milliseconds": 19.41470056772232
+    },
+    {
+      "at_seconds": 1.9936924986541271,
+      "milliseconds": 23.403797298669815
+    },
+    {
+      "at_seconds": 2.0134305022656918,
+      "milliseconds": 19.738003611564636
+    },
+    {
+      "at_seconds": 2.0337059013545513,
+      "milliseconds": 20.275399088859558
+    },
+    {
+      "at_seconds": 2.0533493012189865,
+      "milliseconds": 19.643399864435196
+    },
+    {
+      "at_seconds": 2.073200900107622,
+      "milliseconds": 19.851598888635635
+    },
+    {
+      "at_seconds": 2.093044899404049,
+      "milliseconds": 19.843999296426773
+    },
+    {
+      "at_seconds": 2.112729799002409,
+      "milliseconds": 19.68489959836006
+    },
+    {
+      "at_seconds": 2.132250402122736,
+      "milliseconds": 19.520603120326996
+    },
+    {
+      "at_seconds": 2.1520855985581875,
+      "milliseconds": 19.835196435451508
+    },
+    {
+      "at_seconds": 2.172893598675728,
+      "milliseconds": 20.80800011754036
+    },
+    {
+      "at_seconds": 2.1931950002908707,
+      "milliseconds": 20.301401615142822
+    },
+    {
+      "at_seconds": 2.2129855006933212,
+      "milliseconds": 19.79050040245056
+    },
+    {
+      "at_seconds": 2.2330122999846935,
+      "milliseconds": 20.0267992913723
+    },
+    {
+      "at_seconds": 2.2547941021621227,
+      "milliseconds": 21.7818021774292
+    },
+    {
+      "at_seconds": 2.278066299855709,
+      "milliseconds": 23.27219769358635
+    },
+    {
+      "at_seconds": 2.299048699438572,
+      "milliseconds": 20.982399582862854
+    },
+    {
+      "at_seconds": 2.3187888003885746,
+      "milliseconds": 19.74010095000267
+    },
+    {
+      "at_seconds": 2.3394111022353172,
+      "milliseconds": 20.62230184674263
+    },
+    {
+      "at_seconds": 2.360274400562048,
+      "milliseconds": 20.863298326730728
+    },
+    {
+      "at_seconds": 2.3799789994955063,
+      "milliseconds": 19.70459893345833
+    },
+    {
+      "at_seconds": 2.39986490085721,
+      "milliseconds": 19.885901361703873
+    },
+    {
+      "at_seconds": 2.419299501925707,
+      "milliseconds": 19.434601068496704
+    },
+    {
+      "at_seconds": 2.4396429993212223,
+      "milliseconds": 20.343497395515442
+    },
+    {
+      "at_seconds": 2.460664201527834,
+      "milliseconds": 21.021202206611633
+    },
+    {
+      "at_seconds": 2.4811364002525806,
+      "milliseconds": 20.472198724746704
+    },
+    {
+      "at_seconds": 2.5012926012277603,
+      "milliseconds": 20.156200975179672
+    },
+    {
+      "at_seconds": 2.5214022994041443,
+      "milliseconds": 20.109698176383972
+    },
+    {
+      "at_seconds": 2.542185101658106,
+      "milliseconds": 20.782802253961563
+    },
+    {
+      "at_seconds": 2.563323799520731,
+      "milliseconds": 21.138697862625122
+    },
+    {
+      "at_seconds": 2.5845297016203403,
+      "milliseconds": 21.205902099609375
+    },
+    {
+      "at_seconds": 2.604136999696493,
+      "milliseconds": 19.6072980761528
+    },
+    {
+      "at_seconds": 2.627945400774479,
+      "milliseconds": 23.808401077985764
+    },
+    {
+      "at_seconds": 2.6494628004729748,
+      "milliseconds": 21.517399698495865
+    },
+    {
+      "at_seconds": 2.669667400419712,
+      "milliseconds": 20.20459994673729
+    },
+    {
+      "at_seconds": 2.690673802047968,
+      "milliseconds": 21.006401628255844
+    },
+    {
+      "at_seconds": 2.7123772017657757,
+      "milliseconds": 21.70339971780777
+    },
+    {
+      "at_seconds": 2.7323321998119354,
+      "milliseconds": 19.954998046159744
+    },
+    {
+      "at_seconds": 2.752268798649311,
+      "milliseconds": 19.93659883737564
+    },
+    {
+      "at_seconds": 2.7729659005999565,
+      "milliseconds": 20.697101950645447
+    },
+    {
+      "at_seconds": 2.7924559004604816,
+      "milliseconds": 19.48999986052513
+    },
+    {
+      "at_seconds": 2.8126666992902756,
+      "milliseconds": 20.21079882979393
+    },
+    {
+      "at_seconds": 2.832938201725483,
+      "milliseconds": 20.271502435207367
+    },
+    {
+      "at_seconds": 2.852956298738718,
+      "milliseconds": 20.018097013235092
+    },
+    {
+      "at_seconds": 2.8736458010971546,
+      "milliseconds": 20.689502358436584
+    },
+    {
+      "at_seconds": 2.893928300589323,
+      "milliseconds": 20.282499492168427
+    },
+    {
+      "at_seconds": 2.915810201317072,
+      "milliseconds": 21.88190072774887
+    },
+    {
+      "at_seconds": 2.9388259015977383,
+      "milliseconds": 23.01570028066635
+    },
+    {
+      "at_seconds": 2.958907600492239,
+      "milliseconds": 20.081698894500732
+    },
+    {
+      "at_seconds": 2.9797008000314236,
+      "milliseconds": 20.79319953918457
+    },
+    {
+      "at_seconds": 3.0004735998809338,
+      "milliseconds": 20.772799849510193
+    },
+    {
+      "at_seconds": 3.020116500556469,
+      "milliseconds": 19.642900675535202
+    },
+    {
+      "at_seconds": 3.0396360009908676,
+      "milliseconds": 19.51950043439865
+    },
+    {
+      "at_seconds": 3.0623487010598183,
+      "milliseconds": 22.712700068950653
+    },
+    {
+      "at_seconds": 3.081743001937866,
+      "milliseconds": 19.394300878047943
+    },
+    {
+      "at_seconds": 3.1015814021229744,
+      "milliseconds": 19.838400185108185
+    },
+    {
+      "at_seconds": 3.1214284002780914,
+      "milliseconds": 19.846998155117035
+    },
+    {
+      "at_seconds": 3.1417510993778706,
+      "milliseconds": 20.32269909977913
+    },
+    {
+      "at_seconds": 3.161863598972559,
+      "milliseconds": 20.112499594688416
+    },
+    {
+      "at_seconds": 3.18198100104928,
+      "milliseconds": 20.11740207672119
+    },
+    {
+      "at_seconds": 3.2019889019429684,
+      "milliseconds": 20.007900893688202
+    },
+    {
+      "at_seconds": 3.2215231992304325,
+      "milliseconds": 19.534297287464142
+    },
+    {
+      "at_seconds": 3.241838999092579,
+      "milliseconds": 20.315799862146378
+    },
+    {
+      "at_seconds": 3.2645263001322746,
+      "milliseconds": 22.68730103969574
+    },
+    {
+      "at_seconds": 3.285875901579857,
+      "milliseconds": 21.349601447582245
+    },
+    {
+      "at_seconds": 3.3061931990087032,
+      "milliseconds": 20.31729742884636
+    },
+    {
+      "at_seconds": 3.3258788995444775,
+      "milliseconds": 19.68570053577423
+    },
+    {
+      "at_seconds": 3.347595699131489,
+      "milliseconds": 21.716799587011337
+    },
+    {
+      "at_seconds": 3.3675093986094,
+      "milliseconds": 19.913699477910995
+    },
+    {
+      "at_seconds": 3.3873673006892204,
+      "milliseconds": 19.857902079820633
+    },
+    {
+      "at_seconds": 3.4075463004410267,
+      "milliseconds": 20.17899975180626
+    },
+    {
+      "at_seconds": 3.427335500717163,
+      "milliseconds": 19.7892002761364
+    },
+    {
+      "at_seconds": 3.447221700102091,
+      "milliseconds": 19.88619938492775
+    },
+    {
+      "at_seconds": 3.4684498012065887,
+      "milliseconds": 21.22810110449791
+    },
+    {
+      "at_seconds": 3.4894076995551586,
+      "milliseconds": 20.95789834856987
+    },
+    {
+      "at_seconds": 3.509390100836754,
+      "milliseconds": 19.98240128159523
+    },
+    {
+      "at_seconds": 3.5289203003048897,
+      "milliseconds": 19.530199468135834
+    },
+    {
+      "at_seconds": 3.547996699810028,
+      "milliseconds": 19.076399505138397
+    },
+    {
+      "at_seconds": 3.567831601947546,
+      "milliseconds": 19.83490213751793
+    },
+    {
+      "at_seconds": 3.587866999208927,
+      "milliseconds": 20.03539726138115
+    },
+    {
+      "at_seconds": 3.607564400881529,
+      "milliseconds": 19.6974016726017
+    },
+    {
+      "at_seconds": 3.6269721016287804,
+      "milliseconds": 19.40770074725151
+    },
+    {
+      "at_seconds": 3.6467682011425495,
+      "milliseconds": 19.79609951376915
+    },
+    {
+      "at_seconds": 3.66584400087595,
+      "milliseconds": 19.075799733400345
+    },
+    {
+      "at_seconds": 3.6861697994172573,
+      "milliseconds": 20.32579854130745
+    },
+    {
+      "at_seconds": 3.706859700381756,
+      "milliseconds": 20.68990096449852
+    },
+    {
+      "at_seconds": 3.731291402131319,
+      "milliseconds": 24.431701749563217
+    },
+    {
+      "at_seconds": 3.7548625990748405,
+      "milliseconds": 23.5711969435215
+    },
+    {
+      "at_seconds": 3.7826479002833366,
+      "milliseconds": 27.785301208496094
+    },
+    {
+      "at_seconds": 3.8089101016521454,
+      "milliseconds": 26.262201368808746
+    },
+    {
+      "at_seconds": 3.832352701574564,
+      "milliseconds": 23.442599922418594
+    },
+    {
+      "at_seconds": 3.8563231006264687,
+      "milliseconds": 23.97039905190468
+    },
+    {
+      "at_seconds": 3.88004419952631,
+      "milliseconds": 23.72109889984131
+    },
+    {
+      "at_seconds": 3.902573399245739,
+      "milliseconds": 22.529199719429016
+    },
+    {
+      "at_seconds": 3.924466300755739,
+      "milliseconds": 21.89290151000023
+    },
+    {
+      "at_seconds": 3.9494445994496346,
+      "milliseconds": 24.97829869389534
+    },
+    {
+      "at_seconds": 3.9718861989676952,
+      "milliseconds": 22.441599518060684
+    },
+    {
+      "at_seconds": 3.9957927986979485,
+      "milliseconds": 23.90659973025322
+    },
+    {
+      "at_seconds": 4.016450800001621,
+      "milliseconds": 20.65800130367279
+    },
+    {
+      "at_seconds": 4.038612700998783,
+      "milliseconds": 22.161900997161865
+    },
+    {
+      "at_seconds": 4.062811199575663,
+      "milliseconds": 24.1984985768795
+    },
+    {
+      "at_seconds": 4.08478320017457,
+      "milliseconds": 21.97200059890747
+    },
+    {
+      "at_seconds": 4.107037201523781,
+      "milliseconds": 22.25400134921074
+    },
+    {
+      "at_seconds": 4.128067798912525,
+      "milliseconds": 21.030597388744354
+    },
+    {
+      "at_seconds": 4.149833500385284,
+      "milliseconds": 21.765701472759247
+    },
+    {
+      "at_seconds": 4.170747999101877,
+      "milliseconds": 20.91449871659279
+    },
+    {
+      "at_seconds": 4.19013300165534,
+      "milliseconds": 19.385002553462982
+    },
+    {
+      "at_seconds": 4.212712600827217,
+      "milliseconds": 22.579599171876907
+    },
+    {
+      "at_seconds": 4.233807399868965,
+      "milliseconds": 21.094799041748047
+    },
+    {
+      "at_seconds": 4.255153998732567,
+      "milliseconds": 21.346598863601685
+    },
+    {
+      "at_seconds": 4.2758531011641026,
+      "milliseconds": 20.69910243153572
+    },
+    {
+      "at_seconds": 4.300446100533009,
+      "milliseconds": 24.59299936890602
+    },
+    {
+      "at_seconds": 4.321109700948,
+      "milliseconds": 20.66360041499138
+    },
+    {
+      "at_seconds": 4.341985400766134,
+      "milliseconds": 20.875699818134308
+    },
+    {
+      "at_seconds": 4.361792001873255,
+      "milliseconds": 19.806601107120514
+    },
+    {
+      "at_seconds": 4.381080001592636,
+      "milliseconds": 19.287999719381332
+    },
+    {
+      "at_seconds": 4.400674998760223,
+      "milliseconds": 19.59499716758728
+    },
+    {
+      "at_seconds": 4.4206723012030125,
+      "milliseconds": 19.997302442789078
+    },
+    {
+      "at_seconds": 4.4402727000415325,
+      "milliseconds": 19.60039883852005
+    },
+    {
+      "at_seconds": 4.459729500114918,
+      "milliseconds": 19.45680007338524
+    },
+    {
+      "at_seconds": 4.479390699416399,
+      "milliseconds": 19.661199301481247
+    },
+    {
+      "at_seconds": 4.501428101211786,
+      "milliseconds": 22.037401795387268
+    },
+    {
+      "at_seconds": 4.520922798663378,
+      "milliseconds": 19.49469745159149
+    },
+    {
+      "at_seconds": 4.542777501046658,
+      "milliseconds": 21.8547023832798
+    },
+    {
+      "at_seconds": 4.564139202237129,
+      "milliseconds": 21.36170119047165
+    },
+    {
+      "at_seconds": 4.584089200943708,
+      "milliseconds": 19.94999870657921
+    },
+    {
+      "at_seconds": 4.603980202227831,
+      "milliseconds": 19.891001284122467
+    },
+    {
+      "at_seconds": 4.623107701539993,
+      "milliseconds": 19.1274993121624
+    },
+    {
+      "at_seconds": 4.643332898616791,
+      "milliseconds": 20.225197076797485
+    },
+    {
+      "at_seconds": 4.663928799331188,
+      "milliseconds": 20.59590071439743
+    },
+    {
+      "at_seconds": 4.685805398970842,
+      "milliseconds": 21.87659963965416
+    },
+    {
+      "at_seconds": 4.707801699638367,
+      "milliseconds": 21.996300667524338
+    },
+    {
+      "at_seconds": 4.729511301964521,
+      "milliseconds": 21.70960232615471
+    },
+    {
+      "at_seconds": 4.752693299204111,
+      "milliseconds": 23.18199723958969
+    },
+    {
+      "at_seconds": 4.774568799883127,
+      "milliseconds": 21.875500679016113
+    },
+    {
+      "at_seconds": 4.794496599584818,
+      "milliseconds": 19.927799701690674
+    },
+    {
+      "at_seconds": 4.81661469861865,
+      "milliseconds": 22.11809903383255
+    },
+    {
+      "at_seconds": 4.8413424007594585,
+      "milliseconds": 24.727702140808105
+    },
+    {
+      "at_seconds": 4.864156302064657,
+      "milliseconds": 22.81390130519867
+    },
+    {
+      "at_seconds": 4.885827001184225,
+      "milliseconds": 21.67069911956787
+    },
+    {
+      "at_seconds": 4.908878602087498,
+      "milliseconds": 23.05160090327263
+    },
+    {
+      "at_seconds": 4.930835701525211,
+      "milliseconds": 21.957099437713623
+    },
+    {
+      "at_seconds": 4.953427501022816,
+      "milliseconds": 22.59179949760437
+    },
+    {
+      "at_seconds": 4.974632699042559,
+      "milliseconds": 21.205198019742966
+    },
+    {
+      "at_seconds": 4.9966408014297485,
+      "milliseconds": 22.008102387189865
+    },
+    {
+      "at_seconds": 5.018047198653221,
+      "milliseconds": 21.406397223472595
+    },
+    {
+      "at_seconds": 5.038593798875809,
+      "milliseconds": 20.546600222587585
+    },
+    {
+      "at_seconds": 5.058515202254057,
+      "milliseconds": 19.921403378248215
+    },
+    {
+      "at_seconds": 5.079585298895836,
+      "milliseconds": 21.070096641778946
+    },
+    {
+      "at_seconds": 5.1022038012743,
+      "milliseconds": 22.618502378463745
+    },
+    {
+      "at_seconds": 5.122201900929213,
+      "milliseconds": 19.99809965491295
+    },
+    {
+      "at_seconds": 5.1434482000768185,
+      "milliseconds": 21.246299147605896
+    },
+    {
+      "at_seconds": 5.163740798830986,
+      "milliseconds": 20.292598754167557
+    },
+    {
+      "at_seconds": 5.184204500168562,
+      "milliseconds": 20.463701337575912
+    },
+    {
+      "at_seconds": 5.205337300896645,
+      "milliseconds": 21.132800728082657
+    },
+    {
+      "at_seconds": 5.2268307991325855,
+      "milliseconds": 21.493498235940933
+    },
+    {
+      "at_seconds": 5.247877299785614,
+      "milliseconds": 21.046500653028488
+    },
+    {
+      "at_seconds": 5.269219499081373,
+      "milliseconds": 21.3421992957592
+    },
+    {
+      "at_seconds": 5.28965850174427,
+      "milliseconds": 20.43900266289711
+    },
+    {
+      "at_seconds": 5.309771999716759,
+      "milliseconds": 20.113497972488403
+    },
+    {
+      "at_seconds": 5.329497300088406,
+      "milliseconds": 19.72530037164688
+    },
+    {
+      "at_seconds": 5.34874090179801,
+      "milliseconds": 19.243601709604263
+    },
+    {
+      "at_seconds": 5.368657998740673,
+      "milliseconds": 19.917096942663193
+    },
+    {
+      "at_seconds": 5.38884299993515,
+      "milliseconds": 20.18500119447708
+    },
+    {
+      "at_seconds": 5.41152910143137,
+      "milliseconds": 22.686101496219635
+    },
+    {
+      "at_seconds": 5.432821001857519,
+      "milliseconds": 21.29190042614937
+    },
+    {
+      "at_seconds": 5.454289700835943,
+      "milliseconds": 21.468698978424072
+    },
+    {
+      "at_seconds": 5.476417701691389,
+      "milliseconds": 22.128000855445862
+    },
+    {
+      "at_seconds": 5.49838799983263,
+      "milliseconds": 21.970298141241074
+    },
+    {
+      "at_seconds": 5.519639998674393,
+      "milliseconds": 21.251998841762543
+    },
+    {
+      "at_seconds": 5.540801599621773,
+      "milliseconds": 21.161600947380066
+    },
+    {
+      "at_seconds": 5.5622395016252995,
+      "milliseconds": 21.437902003526688
+    },
+    {
+      "at_seconds": 5.5844313986599445,
+      "milliseconds": 22.19189703464508
+    },
+    {
+      "at_seconds": 5.604885701090097,
+      "milliseconds": 20.454302430152893
+    },
+    {
+      "at_seconds": 5.62530929967761,
+      "milliseconds": 20.42359858751297
+    },
+    {
+      "at_seconds": 5.64538399875164,
+      "milliseconds": 20.074699074029922
+    },
+    {
+      "at_seconds": 5.664967801421881,
+      "milliseconds": 19.583802670240402
+    },
+    {
+      "at_seconds": 5.684684298932552,
+      "milliseconds": 19.716497510671616
+    },
+    {
+      "at_seconds": 5.70412389934063,
+      "milliseconds": 19.43960040807724
+    },
+    {
+      "at_seconds": 5.724060699343681,
+      "milliseconds": 19.936800003051758
+    },
+    {
+      "at_seconds": 5.743808899074793,
+      "milliseconds": 19.748199731111526
+    },
+    {
+      "at_seconds": 5.763397701084614,
+      "milliseconds": 19.588802009820938
+    },
+    {
+      "at_seconds": 5.782640401273966,
+      "milliseconds": 19.242700189352036
+    },
+    {
+      "at_seconds": 5.803302299231291,
+      "milliseconds": 20.66189795732498
+    },
+    {
+      "at_seconds": 5.823450800031424,
+      "milliseconds": 20.14850080013275
+    },
+    {
+      "at_seconds": 5.843267802149057,
+      "milliseconds": 19.81700211763382
+    },
+    {
+      "at_seconds": 5.863331701606512,
+      "milliseconds": 20.06389945745468
+    },
+    {
+      "at_seconds": 5.882673799991608,
+      "milliseconds": 19.342098385095596
+    },
+    {
+      "at_seconds": 5.90291690081358,
+      "milliseconds": 20.243100821971893
+    },
+    {
+      "at_seconds": 5.922616299241781,
+      "milliseconds": 19.699398428201675
+    },
+    {
+      "at_seconds": 5.944265998899937,
+      "milliseconds": 21.64969965815544
+    },
+    {
+      "at_seconds": 5.963592302054167,
+      "milliseconds": 19.326303154230118
+    },
+    {
+      "at_seconds": 5.983211800456047,
+      "milliseconds": 19.619498401880264
+    },
+    {
+      "at_seconds": 6.00339550152421,
+      "milliseconds": 20.183701068162918
+    },
+    {
+      "at_seconds": 6.023223701864481,
+      "milliseconds": 19.828200340270996
+    },
+    {
+      "at_seconds": 6.042858298867941,
+      "milliseconds": 19.63459700345993
+    },
+    {
+      "at_seconds": 6.062495801597834,
+      "milliseconds": 19.63750272989273
+    },
+    {
+      "at_seconds": 6.081942401826382,
+      "milliseconds": 19.44660022854805
+    },
+    {
+      "at_seconds": 6.101910300552845,
+      "milliseconds": 19.967898726463318
+    },
+    {
+      "at_seconds": 6.121788699179888,
+      "milliseconds": 19.87839862704277
+    },
+    {
+      "at_seconds": 6.141437500715256,
+      "milliseconds": 19.648801535367966
+    },
+    {
+      "at_seconds": 6.163440600037575,
+      "milliseconds": 22.00309932231903
+    },
+    {
+      "at_seconds": 6.183729499578476,
+      "milliseconds": 20.288899540901184
+    },
+    {
+      "at_seconds": 6.203727401793003,
+      "milliseconds": 19.99790221452713
+    },
+    {
+      "at_seconds": 6.223445698618889,
+      "milliseconds": 19.718296825885773
+    },
+    {
+      "at_seconds": 6.245188400149345,
+      "milliseconds": 21.742701530456543
+    },
+    {
+      "at_seconds": 6.264858201146126,
+      "milliseconds": 19.669800996780396
+    },
+    {
+      "at_seconds": 6.284344099462032,
+      "milliseconds": 19.485898315906525
+    },
+    {
+      "at_seconds": 6.304602801799774,
+      "milliseconds": 20.258702337741852
+    },
+    {
+      "at_seconds": 6.324793599545956,
+      "milliseconds": 20.190797746181488
+    },
+    {
+      "at_seconds": 6.344532199203968,
+      "milliseconds": 19.73859965801239
+    },
+    {
+      "at_seconds": 6.364613302052021,
+      "milliseconds": 20.08110284805298
+    },
+    {
+      "at_seconds": 6.383932001888752,
+      "milliseconds": 19.318699836730957
+    },
+    {
+      "at_seconds": 6.403285700827837,
+      "milliseconds": 19.353698939085007
+    },
+    {
+      "at_seconds": 6.423920899629593,
+      "milliseconds": 20.635198801755905
+    },
+    {
+      "at_seconds": 6.44352899864316,
+      "milliseconds": 19.60809901356697
+    },
+    {
+      "at_seconds": 6.463007401674986,
+      "milliseconds": 19.47840303182602
+    },
+    {
+      "at_seconds": 6.48637530207634,
+      "milliseconds": 23.367900401353836
+    },
+    {
+      "at_seconds": 6.507332801818848,
+      "milliseconds": 20.957499742507935
+    },
+    {
+      "at_seconds": 6.538686200976372,
+      "milliseconds": 31.35339915752411
+    },
+    {
+      "at_seconds": 6.5687175989151,
+      "milliseconds": 30.031397938728333
+    },
+    {
+      "at_seconds": 6.598345801234245,
+      "milliseconds": 29.628202319145203
+    },
+    {
+      "at_seconds": 6.624064899981022,
+      "milliseconds": 25.71909874677658
+    },
+    {
+      "at_seconds": 6.652089901268482,
+      "milliseconds": 28.025001287460327
+    },
+    {
+      "at_seconds": 6.679788701236248,
+      "milliseconds": 27.698799967765808
+    },
+    {
+      "at_seconds": 6.70832259953022,
+      "milliseconds": 28.533898293972015
+    },
+    {
+      "at_seconds": 6.7312461994588375,
+      "milliseconds": 22.923599928617477
+    },
+    {
+      "at_seconds": 6.759107198566198,
+      "milliseconds": 27.86099910736084
+    },
+    {
+      "at_seconds": 6.7811095006763935,
+      "milliseconds": 22.00230211019516
+    },
+    {
+      "at_seconds": 6.801182899624109,
+      "milliseconds": 20.07339894771576
+    },
+    {
+      "at_seconds": 6.82129679992795,
+      "milliseconds": 20.113900303840637
+    },
+    {
+      "at_seconds": 6.842150900512934,
+      "milliseconds": 20.854100584983826
+    },
+    {
+      "at_seconds": 6.862635102123022,
+      "milliseconds": 20.48420161008835
+    },
+    {
+      "at_seconds": 6.882857698947191,
+      "milliseconds": 20.22259682416916
+    },
+    {
+      "at_seconds": 6.902836699038744,
+      "milliseconds": 19.979000091552734
+    },
+    {
+      "at_seconds": 6.922768399119377,
+      "milliseconds": 19.931700080633163
+    },
+    {
+      "at_seconds": 6.94414360076189,
+      "milliseconds": 21.375201642513275
+    },
+    {
+      "at_seconds": 6.964939899742603,
+      "milliseconds": 20.79629898071289
+    },
+    {
+      "at_seconds": 6.986089400947094,
+      "milliseconds": 21.14950120449066
+    },
+    {
+      "at_seconds": 7.00772650167346,
+      "milliseconds": 21.637100726366043
+    },
+    {
+      "at_seconds": 7.028711698949337,
+      "milliseconds": 20.985197275877
+    },
+    {
+      "at_seconds": 7.049560502171516,
+      "milliseconds": 20.848803222179413
+    },
+    {
+      "at_seconds": 7.069500599056482,
+      "milliseconds": 19.940096884965897
+    },
+    {
+      "at_seconds": 7.089765001088381,
+      "milliseconds": 20.2644020318985
+    },
+    {
+      "at_seconds": 7.109156101942062,
+      "milliseconds": 19.391100853681564
+    },
+    {
+      "at_seconds": 7.128424201160669,
+      "milliseconds": 19.26809921860695
+    },
+    {
+      "at_seconds": 7.1492393016815186,
+      "milliseconds": 20.815100520849228
+    },
+    {
+      "at_seconds": 7.171984698623419,
+      "milliseconds": 22.745396941900253
+    },
+    {
+      "at_seconds": 7.191395699977875,
+      "milliseconds": 19.411001354455948
+    },
+    {
+      "at_seconds": 7.213927999138832,
+      "milliseconds": 22.532299160957336
+    },
+    {
+      "at_seconds": 7.2351434007287025,
+      "milliseconds": 21.215401589870453
+    },
+    {
+      "at_seconds": 7.254851799458265,
+      "milliseconds": 19.70839872956276
+    },
+    {
+      "at_seconds": 7.276081800460815,
+      "milliseconds": 21.230001002550125
+    },
+    {
+      "at_seconds": 7.295518200844526,
+      "milliseconds": 19.43640038371086
+    },
+    {
+      "at_seconds": 7.316140498965979,
+      "milliseconds": 20.62229812145233
+    },
+    {
+      "at_seconds": 7.336894799023867,
+      "milliseconds": 20.75430005788803
+    },
+    {
+      "at_seconds": 7.3566096015274525,
+      "milliseconds": 19.714802503585815
+    },
+    {
+      "at_seconds": 7.376589700579643,
+      "milliseconds": 19.98009905219078
+    },
+    {
+      "at_seconds": 7.396033100783825,
+      "milliseconds": 19.44340020418167
+    },
+    {
+      "at_seconds": 7.41584850102663,
+      "milliseconds": 19.81540024280548
+    },
+    {
+      "at_seconds": 7.435905799269676,
+      "milliseconds": 20.057298243045807
+    },
+    {
+      "at_seconds": 7.459954801946878,
+      "milliseconds": 24.049002677202225
+    },
+    {
+      "at_seconds": 7.481718599796295,
+      "milliseconds": 21.763797849416733
+    },
+    {
+      "at_seconds": 7.5012172013521194,
+      "milliseconds": 19.49860155582428
+    },
+    {
+      "at_seconds": 7.520803701132536,
+      "milliseconds": 19.58649978041649
+    },
+    {
+      "at_seconds": 7.541159201413393,
+      "milliseconds": 20.355500280857086
+    },
+    {
+      "at_seconds": 7.561049301177263,
+      "milliseconds": 19.89009976387024
+    },
+    {
+      "at_seconds": 7.580829098820686,
+      "milliseconds": 19.77979764342308
+    },
+    {
+      "at_seconds": 7.6013104021549225,
+      "milliseconds": 20.481303334236145
+    },
+    {
+      "at_seconds": 7.621746700257063,
+      "milliseconds": 20.436298102140427
+    },
+    {
+      "at_seconds": 7.641258701682091,
+      "milliseconds": 19.512001425027847
+    },
+    {
+      "at_seconds": 7.661472499370575,
+      "milliseconds": 20.213797688484192
+    },
+    {
+      "at_seconds": 7.681717801839113,
+      "milliseconds": 20.245302468538284
+    },
+    {
+      "at_seconds": 7.70157689973712,
+      "milliseconds": 19.85909789800644
+    },
+    {
+      "at_seconds": 7.721429500728846,
+      "milliseconds": 19.85260099172592
+    },
+    {
+      "at_seconds": 7.7458184994757175,
+      "milliseconds": 24.38899874687195
+    },
+    {
+      "at_seconds": 7.767590701580048,
+      "milliseconds": 21.772202104330063
+    },
+    {
+      "at_seconds": 7.787987802177668,
+      "milliseconds": 20.39710059762001
+    },
+    {
+      "at_seconds": 7.809060499072075,
+      "milliseconds": 21.072696894407272
+    },
+    {
+      "at_seconds": 7.828835401684046,
+      "milliseconds": 19.7749026119709
+    },
+    {
+      "at_seconds": 7.850060600787401,
+      "milliseconds": 21.225199103355408
+    },
+    {
+      "at_seconds": 7.870431799441576,
+      "milliseconds": 20.371198654174805
+    },
+    {
+      "at_seconds": 7.89070650190115,
+      "milliseconds": 20.274702459573746
+    },
+    {
+      "at_seconds": 7.911700800061226,
+      "milliseconds": 20.99429816007614
+    },
+    {
+      "at_seconds": 7.932560298591852,
+      "milliseconds": 20.859498530626297
+    },
+    {
+      "at_seconds": 7.9536550007760525,
+      "milliseconds": 21.094702184200287
+    },
+    {
+      "at_seconds": 7.975379198789597,
+      "milliseconds": 21.724198013544083
+    },
+    {
+      "at_seconds": 7.99594160169363,
+      "milliseconds": 20.56240290403366
+    },
+    {
+      "at_seconds": 8.01638799905777,
+      "milliseconds": 20.446397364139557
+    },
+    {
+      "at_seconds": 8.037192400544882,
+      "milliseconds": 20.804401487112045
+    },
+    {
+      "at_seconds": 8.057222701609135,
+      "milliseconds": 20.030301064252853
+    },
+    {
+      "at_seconds": 8.077015802264214,
+      "milliseconds": 19.793100655078888
+    },
+    {
+      "at_seconds": 8.096576400101185,
+      "milliseconds": 19.560597836971283
+    },
+    {
+      "at_seconds": 8.116352502256632,
+      "milliseconds": 19.776102155447006
+    },
+    {
+      "at_seconds": 8.136938501149416,
+      "milliseconds": 20.58599889278412
+    },
+    {
+      "at_seconds": 8.157914001494646,
+      "milliseconds": 20.975500345230103
+    },
+    {
+      "at_seconds": 8.177801299840212,
+      "milliseconds": 19.887298345565796
+    },
+    {
+      "at_seconds": 8.197885800153017,
+      "milliseconds": 20.084500312805176
+    },
+    {
+      "at_seconds": 8.218666300177574,
+      "milliseconds": 20.780500024557114
+    },
+    {
+      "at_seconds": 8.242789398878813,
+      "milliseconds": 24.123098701238632
+    },
+    {
+      "at_seconds": 8.26305989921093,
+      "milliseconds": 20.27050033211708
+    },
+    {
+      "at_seconds": 8.282878499478102,
+      "milliseconds": 19.81860026717186
+    },
+    {
+      "at_seconds": 8.302810899913311,
+      "milliseconds": 19.932400435209274
+    },
+    {
+      "at_seconds": 8.322463098913431,
+      "milliseconds": 19.652199000120163
+    },
+    {
+      "at_seconds": 8.343654599040747,
+      "milliseconds": 21.19150012731552
+    },
+    {
+      "at_seconds": 8.36663319915533,
+      "milliseconds": 22.97860011458397
+    },
+    {
+      "at_seconds": 8.387039501219988,
+      "milliseconds": 20.40630206465721
+    },
+    {
+      "at_seconds": 8.407843001186848,
+      "milliseconds": 20.803499966859818
+    },
+    {
+      "at_seconds": 8.429184801876545,
+      "milliseconds": 21.341800689697266
+    },
+    {
+      "at_seconds": 8.449901901185513,
+      "milliseconds": 20.71709930896759
+    },
+    {
+      "at_seconds": 8.470734000205994,
+      "milliseconds": 20.83209902048111
+    },
+    {
+      "at_seconds": 8.494319699704647,
+      "milliseconds": 23.585699498653412
+    },
+    {
+      "at_seconds": 8.51482930034399,
+      "milliseconds": 20.50960063934326
+    },
+    {
+      "at_seconds": 8.536708299070597,
+      "milliseconds": 21.87899872660637
+    },
+    {
+      "at_seconds": 8.55848440155387,
+      "milliseconds": 21.776102483272552
+    },
+    {
+      "at_seconds": 8.579955600202084,
+      "milliseconds": 21.47119864821434
+    },
+    {
+      "at_seconds": 8.600501600652933,
+      "milliseconds": 20.546000450849533
+    },
+    {
+      "at_seconds": 8.62057700008154,
+      "milliseconds": 20.075399428606033
+    },
+    {
+      "at_seconds": 8.641040500253439,
+      "milliseconds": 20.463500171899796
+    },
+    {
+      "at_seconds": 8.663579098880291,
+      "milliseconds": 22.538598626852036
+    },
+    {
+      "at_seconds": 8.68461450189352,
+      "milliseconds": 21.03540301322937
+    },
+    {
+      "at_seconds": 8.707837499678135,
+      "milliseconds": 23.222997784614563
+    },
+    {
+      "at_seconds": 8.731181900948286,
+      "milliseconds": 23.34440127015114
+    },
+    {
+      "at_seconds": 8.756019201129675,
+      "milliseconds": 24.837300181388855
+    },
+    {
+      "at_seconds": 8.777589298784733,
+      "milliseconds": 21.570097655057907
+    },
+    {
+      "at_seconds": 8.798847801983356,
+      "milliseconds": 21.258503198623657
+    },
+    {
+      "at_seconds": 8.819728199392557,
+      "milliseconds": 20.88039740920067
+    },
+    {
+      "at_seconds": 8.841633401811123,
+      "milliseconds": 21.90520241856575
+    },
+    {
+      "at_seconds": 8.863452799618244,
+      "milliseconds": 21.819397807121277
+    },
+    {
+      "at_seconds": 8.885858502238989,
+      "milliseconds": 22.405702620744705
+    },
+    {
+      "at_seconds": 8.907388001680374,
+      "milliseconds": 21.52949944138527
+    },
+    {
+      "at_seconds": 8.92832250148058,
+      "milliseconds": 20.93449980020523
+    },
+    {
+      "at_seconds": 8.949856799095869,
+      "milliseconds": 21.534297615289688
+    },
+    {
+      "at_seconds": 8.970825102180243,
+      "milliseconds": 20.968303084373474
+    },
+    {
+      "at_seconds": 8.992970701307058,
+      "milliseconds": 22.145599126815796
+    },
+    {
+      "at_seconds": 9.013169098645449,
+      "milliseconds": 20.19839733839035
+    },
+    {
+      "at_seconds": 9.033979400992393,
+      "milliseconds": 20.81030234694481
+    },
+    {
+      "at_seconds": 9.054505798965693,
+      "milliseconds": 20.526397973299026
+    },
+    {
+      "at_seconds": 9.076086901128292,
+      "milliseconds": 21.581102162599564
+    },
+    {
+      "at_seconds": 9.097326699644327,
+      "milliseconds": 21.23979851603508
+    },
+    {
+      "at_seconds": 9.117410399019718,
+      "milliseconds": 20.083699375391006
+    },
+    {
+      "at_seconds": 9.137917000800371,
+      "milliseconds": 20.506601780653
+    },
+    {
+      "at_seconds": 9.159470699727535,
+      "milliseconds": 21.553698927164078
+    },
+    {
+      "at_seconds": 9.183630499988794,
+      "milliseconds": 24.15980026125908
+    },
+    {
+      "at_seconds": 9.20656830072403,
+      "milliseconds": 22.937800735235214
+    },
+    {
+      "at_seconds": 9.229665599763393,
+      "milliseconds": 23.09729903936386
+    },
+    {
+      "at_seconds": 9.256796602159739,
+      "milliseconds": 27.13100239634514
+    },
+    {
+      "at_seconds": 9.279117401689291,
+      "milliseconds": 22.32079952955246
+    },
+    {
+      "at_seconds": 9.303113900125027,
+      "milliseconds": 23.996498435735703
+    },
+    {
+      "at_seconds": 9.325980801135302,
+      "milliseconds": 22.866901010274887
+    },
+    {
+      "at_seconds": 9.350013598799706,
+      "milliseconds": 24.032797664403915
+    },
+    {
+      "at_seconds": 9.370544999837875,
+      "milliseconds": 20.53140103816986
+    },
+    {
+      "at_seconds": 9.389915701001883,
+      "milliseconds": 19.370701164007187
+    },
+    {
+      "at_seconds": 9.410260502249002,
+      "milliseconds": 20.344801247119904
+    },
+    {
+      "at_seconds": 9.430371601134539,
+      "milliseconds": 20.111098885536194
+    },
+    {
+      "at_seconds": 9.449740901589394,
+      "milliseconds": 19.369300454854965
+    },
+    {
+      "at_seconds": 9.47027900069952,
+      "milliseconds": 20.538099110126495
+    },
+    {
+      "at_seconds": 9.490671899169683,
+      "milliseconds": 20.392898470163345
+    },
+    {
+      "at_seconds": 9.511660799384117,
+      "milliseconds": 20.98890021443367
+    },
+    {
+      "at_seconds": 9.532171700149775,
+      "milliseconds": 20.510900765657425
+    },
+    {
+      "at_seconds": 9.55260119959712,
+      "milliseconds": 20.429499447345734
+    },
+    {
+      "at_seconds": 9.572825599461794,
+      "milliseconds": 20.224399864673615
+    },
+    {
+      "at_seconds": 9.59242619946599,
+      "milliseconds": 19.600600004196167
+    },
+    {
+      "at_seconds": 9.61262010037899,
+      "milliseconds": 20.193900913000107
+    },
+    {
+      "at_seconds": 9.6334543004632,
+      "milliseconds": 20.834200084209442
+    },
+    {
+      "at_seconds": 9.654747001826763,
+      "milliseconds": 21.292701363563538
+    },
+    {
+      "at_seconds": 9.67540530115366,
+      "milliseconds": 20.658299326896667
+    },
+    {
+      "at_seconds": 9.695158202201128,
+      "milliseconds": 19.752901047468185
+    },
+    {
+      "at_seconds": 9.714699100703001,
+      "milliseconds": 19.540898501873016
+    },
+    {
+      "at_seconds": 9.734522599726915,
+      "milliseconds": 19.823499023914337
+    },
+    {
+      "at_seconds": 9.754166301339865,
+      "milliseconds": 19.64370161294937
+    },
+    {
+      "at_seconds": 9.773816999047995,
+      "milliseconds": 19.650697708129883
+    },
+    {
+      "at_seconds": 9.795150600373745,
+      "milliseconds": 21.33360132575035
+    },
+    {
+      "at_seconds": 9.815616302192211,
+      "milliseconds": 20.465701818466187
+    },
+    {
+      "at_seconds": 9.837227899581194,
+      "milliseconds": 21.611597388982773
+    },
+    {
+      "at_seconds": 9.859661798924208,
+      "milliseconds": 22.433899343013763
+    },
+    {
+      "at_seconds": 9.879978399723768,
+      "milliseconds": 20.316600799560547
+    },
+    {
+      "at_seconds": 9.901045199483633,
+      "milliseconds": 21.066799759864807
+    },
+    {
+      "at_seconds": 9.920329801738262,
+      "milliseconds": 19.284602254629135
+    },
+    {
+      "at_seconds": 9.940304100513458,
+      "milliseconds": 19.974298775196075
+    },
+    {
+      "at_seconds": 9.960108701139688,
+      "milliseconds": 19.80460062623024
+    },
+    {
+      "at_seconds": 9.979914601892233,
+      "milliseconds": 19.805900752544403
+    },
+    {
+      "at_seconds": 10.00035209953785,
+      "milliseconds": 20.43749764561653
+    },
+    {
+      "at_seconds": 10.020798400044441,
+      "milliseconds": 20.446300506591797
+    },
+    {
+      "at_seconds": 10.040203999727964,
+      "milliseconds": 19.405599683523178
+    },
+    {
+      "at_seconds": 10.059696100652218,
+      "milliseconds": 19.492100924253464
+    },
+    {
+      "at_seconds": 10.078768700361252,
+      "milliseconds": 19.072599709033966
+    },
+    {
+      "at_seconds": 10.09802719950676,
+      "milliseconds": 19.258499145507812
+    },
+    {
+      "at_seconds": 10.117724798619747,
+      "milliseconds": 19.69759911298752
+    },
+    {
+      "at_seconds": 10.136827699840069,
+      "milliseconds": 19.102901220321655
+    },
+    {
+      "at_seconds": 10.15685249865055,
+      "milliseconds": 20.024798810482025
+    },
+    {
+      "at_seconds": 10.178140699863434,
+      "milliseconds": 21.288201212882996
+    },
+    {
+      "at_seconds": 10.197511401027441,
+      "milliseconds": 19.370701164007187
+    },
+    {
+      "at_seconds": 10.216766402125359,
+      "milliseconds": 19.255001097917557
+    },
+    {
+      "at_seconds": 10.236822001636028,
+      "milliseconds": 20.05559951066971
+    },
+    {
+      "at_seconds": 10.256643299013376,
+      "milliseconds": 19.821297377347946
+    },
+    {
+      "at_seconds": 10.276248700916767,
+      "milliseconds": 19.605401903390884
+    },
+    {
+      "at_seconds": 10.295380499213934,
+      "milliseconds": 19.131798297166824
+    },
+    {
+      "at_seconds": 10.314906299114227,
+      "milliseconds": 19.52579990029335
+    },
+    {
+      "at_seconds": 10.334357399493456,
+      "milliseconds": 19.451100379228592
+    },
+    {
+      "at_seconds": 10.353844001889229,
+      "milliseconds": 19.486602395772934
+    },
+    {
+      "at_seconds": 10.37313750013709,
+      "milliseconds": 19.293498247861862
+    },
+    {
+      "at_seconds": 10.395137000828981,
+      "milliseconds": 21.999500691890717
+    },
+    {
+      "at_seconds": 10.41396240144968,
+      "milliseconds": 18.82540062069893
+    },
+    {
+      "at_seconds": 10.433194901794195,
+      "milliseconds": 19.232500344514847
+    },
+    {
+      "at_seconds": 10.45246860012412,
+      "milliseconds": 19.273698329925537
+    },
+    {
+      "at_seconds": 10.473025400191545,
+      "milliseconds": 20.556800067424774
+    },
+    {
+      "at_seconds": 10.492582499980927,
+      "milliseconds": 19.557099789381027
+    },
+    {
+      "at_seconds": 10.512292101979256,
+      "milliseconds": 19.709601998329163
+    },
+    {
+      "at_seconds": 10.532302800565958,
+      "milliseconds": 20.010698586702347
+    },
+    {
+      "at_seconds": 10.55195790156722,
+      "milliseconds": 19.655101001262665
+    },
+    {
+      "at_seconds": 10.572189200669527,
+      "milliseconds": 20.231299102306366
+    },
+    {
+      "at_seconds": 10.591402001678944,
+      "milliseconds": 19.21280100941658
+    },
+    {
+      "at_seconds": 10.611608799546957,
+      "milliseconds": 20.206797868013382
+    },
+    {
+      "at_seconds": 10.631537400186062,
+      "milliseconds": 19.928600639104843
+    },
+    {
+      "at_seconds": 10.65166449919343,
+      "milliseconds": 20.127099007368088
+    },
+    {
+      "at_seconds": 10.673099301755428,
+      "milliseconds": 21.434802561998367
+    },
+    {
+      "at_seconds": 10.693676199764013,
+      "milliseconds": 20.576898008584976
+    },
+    {
+      "at_seconds": 10.713166698813438,
+      "milliseconds": 19.490499049425125
+    },
+    {
+      "at_seconds": 10.733546499162912,
+      "milliseconds": 20.379800349473953
+    },
+    {
+      "at_seconds": 10.754093501716852,
+      "milliseconds": 20.54700255393982
+    },
+    {
+      "at_seconds": 10.774000901728868,
+      "milliseconds": 19.907400012016296
+    },
+    {
+      "at_seconds": 10.793822899460793,
+      "milliseconds": 19.821997731924057
+    },
+    {
+      "at_seconds": 10.813044499605894,
+      "milliseconds": 19.221600145101547
+    },
+    {
+      "at_seconds": 10.832179300487041,
+      "milliseconds": 19.134800881147385
+    },
+    {
+      "at_seconds": 10.850967399775982,
+      "milliseconds": 18.78809928894043
+    },
+    {
+      "at_seconds": 10.871795300394297,
+      "milliseconds": 20.827900618314743
+    },
+    {
+      "at_seconds": 10.89119840040803,
+      "milliseconds": 19.40310001373291
+    },
+    {
+      "at_seconds": 10.911422900855541,
+      "milliseconds": 20.224500447511673
+    },
+    {
+      "at_seconds": 10.931356102228165,
+      "milliseconds": 19.933201372623444
+    },
+    {
+      "at_seconds": 10.951645601540804,
+      "milliseconds": 20.289499312639236
+    },
+    {
+      "at_seconds": 10.9720545001328,
+      "milliseconds": 20.40889859199524
+    },
+    {
+      "at_seconds": 10.991385899484158,
+      "milliseconds": 19.331399351358414
+    },
+    {
+      "at_seconds": 11.010943301022053,
+      "milliseconds": 19.557401537895203
+    },
+    {
+      "at_seconds": 11.030337199568748,
+      "milliseconds": 19.39389854669571
+    },
+    {
+      "at_seconds": 11.050117399543524,
+      "milliseconds": 19.780199974775314
+    },
+    {
+      "at_seconds": 11.069941699504852,
+      "milliseconds": 19.824299961328506
+    },
+    {
+      "at_seconds": 11.089448299258947,
+      "milliseconds": 19.506599754095078
+    },
+    {
+      "at_seconds": 11.108460500836372,
+      "milliseconds": 19.012201577425003
+    },
+    {
+      "at_seconds": 11.129220299422741,
+      "milliseconds": 20.75979858636856
+    },
+    {
+      "at_seconds": 11.150718498975039,
+      "milliseconds": 21.498199552297592
+    },
+    {
+      "at_seconds": 11.171179600059986,
+      "milliseconds": 20.461101084947586
+    },
+    {
+      "at_seconds": 11.191242799162865,
+      "milliseconds": 20.06319910287857
+    },
+    {
+      "at_seconds": 11.210951201617718,
+      "milliseconds": 19.708402454853058
+    },
+    {
+      "at_seconds": 11.23079439997673,
+      "milliseconds": 19.843198359012604
+    },
+    {
+      "at_seconds": 11.250548399984837,
+      "milliseconds": 19.75400000810623
+    },
+    {
+      "at_seconds": 11.270273000001907,
+      "milliseconds": 19.72460001707077
+    },
+    {
+      "at_seconds": 11.289570800960064,
+      "milliseconds": 19.297800958156586
+    },
+    {
+      "at_seconds": 11.310897398740053,
+      "milliseconds": 21.326597779989243
+    },
+    {
+      "at_seconds": 11.331135500222445,
+      "milliseconds": 20.238101482391357
+    },
+    {
+      "at_seconds": 11.350341401994228,
+      "milliseconds": 19.20590177178383
+    },
+    {
+      "at_seconds": 11.370358400046825,
+      "milliseconds": 20.016998052597046
+    },
+    {
+      "at_seconds": 11.38974780216813,
+      "milliseconds": 19.389402121305466
+    },
+    {
+      "at_seconds": 11.40950620174408,
+      "milliseconds": 19.758399575948715
+    },
+    {
+      "at_seconds": 11.429141402244568,
+      "milliseconds": 19.63520050048828
+    },
+    {
+      "at_seconds": 11.448278900235891,
+      "milliseconds": 19.13749799132347
+    },
+    {
+      "at_seconds": 11.46821479871869,
+      "milliseconds": 19.93589848279953
+    },
+    {
+      "at_seconds": 11.488352600485086,
+      "milliseconds": 20.13780176639557
+    },
+    {
+      "at_seconds": 11.507995799183846,
+      "milliseconds": 19.64319869875908
+    },
+    {
+      "at_seconds": 11.528248202055693,
+      "milliseconds": 20.252402871847153
+    },
+    {
+      "at_seconds": 11.547460298985243,
+      "milliseconds": 19.21209692955017
+    },
+    {
+      "at_seconds": 11.566836699843407,
+      "milliseconds": 19.376400858163834
+    },
+    {
+      "at_seconds": 11.58568299934268,
+      "milliseconds": 18.8462994992733
+    },
+    {
+      "at_seconds": 11.60540210083127,
+      "milliseconds": 19.71910148859024
+    },
+    {
+      "at_seconds": 11.624597899615765,
+      "milliseconds": 19.1957987844944
+    },
+    {
+      "at_seconds": 11.644172199070454,
+      "milliseconds": 19.574299454689026
+    },
+    {
+      "at_seconds": 11.664027702063322,
+      "milliseconds": 19.855502992868423
+    },
+    {
+      "at_seconds": 11.683821801096201,
+      "milliseconds": 19.794099032878876
+    },
+    {
+      "at_seconds": 11.703626099973917,
+      "milliseconds": 19.804298877716064
+    },
+    {
+      "at_seconds": 11.723887600004673,
+      "milliseconds": 20.261500030755997
+    },
+    {
+      "at_seconds": 11.745222300291061,
+      "milliseconds": 21.334700286388397
+    },
+    {
+      "at_seconds": 11.765083700418472,
+      "milliseconds": 19.86140012741089
+    },
+    {
+      "at_seconds": 11.785137601196766,
+      "milliseconds": 20.05390077829361
+    },
+    {
+      "at_seconds": 11.804772399365902,
+      "milliseconds": 19.634798169136047
+    },
+    {
+      "at_seconds": 11.825109802186489,
+      "milliseconds": 20.337402820587158
+    },
+    {
+      "at_seconds": 11.846042301505804,
+      "milliseconds": 20.932499319314957
+    },
+    {
+      "at_seconds": 11.867538999766111,
+      "milliseconds": 21.496698260307312
+    },
+    {
+      "at_seconds": 11.889584001153708,
+      "milliseconds": 22.04500138759613
+    },
+    {
+      "at_seconds": 11.911447800695896,
+      "milliseconds": 21.863799542188644
+    },
+    {
+      "at_seconds": 11.933096401393414,
+      "milliseconds": 21.648600697517395
+    },
+    {
+      "at_seconds": 11.95474350079894,
+      "milliseconds": 21.647099405527115
+    },
+    {
+      "at_seconds": 11.977095302194357,
+      "milliseconds": 22.35180139541626
+    },
+    {
+      "at_seconds": 11.998915798962116,
+      "milliseconds": 21.820496767759323
+    },
+    {
+      "at_seconds": 12.022960901260376,
+      "milliseconds": 24.045102298259735
+    },
+    {
+      "at_seconds": 12.044796198606491,
+      "milliseconds": 21.835297346115112
+    },
+    {
+      "at_seconds": 12.066347099840641,
+      "milliseconds": 21.550901234149933
+    },
+    {
+      "at_seconds": 12.087457500398159,
+      "milliseconds": 21.110400557518005
+    },
+    {
+      "at_seconds": 12.108105700463057,
+      "milliseconds": 20.648200064897537
+    },
+    {
+      "at_seconds": 12.127435699105263,
+      "milliseconds": 19.329998642206192
+    },
+    {
+      "at_seconds": 12.147194799035788,
+      "milliseconds": 19.759099930524826
+    },
+    {
+      "at_seconds": 12.16730910167098,
+      "milliseconds": 20.11430263519287
+    },
+    {
+      "at_seconds": 12.186471000313759,
+      "milliseconds": 19.161898642778397
+    },
+    {
+      "at_seconds": 12.2057262994349,
+      "milliseconds": 19.255299121141434
+    },
+    {
+      "at_seconds": 12.224946800619364,
+      "milliseconds": 19.2205011844635
+    },
+    {
+      "at_seconds": 12.244663000106812,
+      "milliseconds": 19.71619948744774
+    },
+    {
+      "at_seconds": 12.264471501111984,
+      "milliseconds": 19.80850100517273
+    },
+    {
+      "at_seconds": 12.28314059972763,
+      "milliseconds": 18.669098615646362
+    },
+    {
+      "at_seconds": 12.303281500935555,
+      "milliseconds": 20.14090120792389
+    },
+    {
+      "at_seconds": 12.32417980208993,
+      "milliseconds": 20.898301154375076
+    },
+    {
+      "at_seconds": 12.345613900572062,
+      "milliseconds": 21.434098482131958
+    },
+    {
+      "at_seconds": 12.366887800395489,
+      "milliseconds": 21.2738998234272
+    },
+    {
+      "at_seconds": 12.386686500161886,
+      "milliseconds": 19.798699766397476
+    },
+    {
+      "at_seconds": 12.40737210214138,
+      "milliseconds": 20.685601979494095
+    },
+    {
+      "at_seconds": 12.42711079865694,
+      "milliseconds": 19.73869651556015
+    },
+    {
+      "at_seconds": 12.446286801248789,
+      "milliseconds": 19.176002591848373
+    },
+    {
+      "at_seconds": 12.466325100511312,
+      "milliseconds": 20.03829926252365
+    },
+    {
+      "at_seconds": 12.486062999814749,
+      "milliseconds": 19.73789930343628
+    },
+    {
+      "at_seconds": 12.505913499742746,
+      "milliseconds": 19.85049992799759
+    },
+    {
+      "at_seconds": 12.525505900382996,
+      "milliseconds": 19.592400640249252
+    },
+    {
+      "at_seconds": 12.546214200556278,
+      "milliseconds": 20.708300173282623
+    },
+    {
+      "at_seconds": 12.565865099430084,
+      "milliseconds": 19.650898873806
+    },
+    {
+      "at_seconds": 12.586083099246025,
+      "milliseconds": 20.217999815940857
+    },
+    {
+      "at_seconds": 12.60575219988823,
+      "milliseconds": 19.669100642204285
+    },
+    {
+      "at_seconds": 12.626481499522924,
+      "milliseconds": 20.729299634695053
+    },
+    {
+      "at_seconds": 12.645554099231958,
+      "milliseconds": 19.072599709033966
+    },
+    {
+      "at_seconds": 12.664768300950527,
+      "milliseconds": 19.214201718568802
+    },
+    {
+      "at_seconds": 12.684952300041914,
+      "milliseconds": 20.183999091386795
+    },
+    {
+      "at_seconds": 12.704040799289942,
+      "milliseconds": 19.0884992480278
+    },
+    {
+      "at_seconds": 12.723201401531696,
+      "milliseconds": 19.160602241754532
+    },
+    {
+      "at_seconds": 12.742313601076603,
+      "milliseconds": 19.112199544906616
+    },
+    {
+      "at_seconds": 12.761629398912191,
+      "milliseconds": 19.315797835588455
+    },
+    {
+      "at_seconds": 12.78084360063076,
+      "milliseconds": 19.214201718568802
+    },
+    {
+      "at_seconds": 12.800566300749779,
+      "milliseconds": 19.722700119018555
+    },
+    {
+      "at_seconds": 12.819556999951601,
+      "milliseconds": 18.99069920182228
+    },
+    {
+      "at_seconds": 12.839741200208664,
+      "milliseconds": 20.184200257062912
+    },
+    {
+      "at_seconds": 12.859241399914026,
+      "milliseconds": 19.50019970536232
+    },
+    {
+      "at_seconds": 12.878558799624443,
+      "milliseconds": 19.317399710416794
+    },
+    {
+      "at_seconds": 12.897984601557255,
+      "milliseconds": 19.425801932811737
+    },
+    {
+      "at_seconds": 12.91749320179224,
+      "milliseconds": 19.50860023498535
+    },
+    {
+      "at_seconds": 12.936862200498581,
+      "milliseconds": 19.36899870634079
+    },
+    {
+      "at_seconds": 12.955754399299622,
+      "milliseconds": 18.89219880104065
+    },
+    {
+      "at_seconds": 12.9755571000278,
+      "milliseconds": 19.802700728178024
+    },
+    {
+      "at_seconds": 12.994989100843668,
+      "milliseconds": 19.432000815868378
+    },
+    {
+      "at_seconds": 13.013851799070835,
+      "milliseconds": 18.86269822716713
+    },
+    {
+      "at_seconds": 13.032640099525452,
+      "milliseconds": 18.788300454616547
+    },
+    {
+      "at_seconds": 13.051487099379301,
+      "milliseconds": 18.84699985384941
+    },
+    {
+      "at_seconds": 13.071550499647856,
+      "milliseconds": 20.063400268554688
+    },
+    {
+      "at_seconds": 13.091869801282883,
+      "milliseconds": 20.31930163502693
+    },
+    {
+      "at_seconds": 13.111630599945784,
+      "milliseconds": 19.760798662900925
+    },
+    {
+      "at_seconds": 13.13097070157528,
+      "milliseconds": 19.34010162949562
+    },
+    {
+      "at_seconds": 13.150262501090765,
+      "milliseconds": 19.291799515485764
+    },
+    {
+      "at_seconds": 13.171116199344397,
+      "milliseconds": 20.853698253631592
+    },
+    {
+      "at_seconds": 13.190869901329279,
+      "milliseconds": 19.753701984882355
+    },
+    {
+      "at_seconds": 13.21244540065527,
+      "milliseconds": 21.575499325990677
+    },
+    {
+      "at_seconds": 13.232574600726366,
+      "milliseconds": 20.12920007109642
+    },
+    {
+      "at_seconds": 13.253103502094746,
+      "milliseconds": 20.528901368379593
+    },
+    {
+      "at_seconds": 13.273673102259636,
+      "milliseconds": 20.56960016489029
+    },
+    {
+      "at_seconds": 13.29589569941163,
+      "milliseconds": 22.222597151994705
+    },
+    {
+      "at_seconds": 13.317758101969957,
+      "milliseconds": 21.86240255832672
+    },
+    {
+      "at_seconds": 13.340680699795485,
+      "milliseconds": 22.92259782552719
+    },
+    {
+      "at_seconds": 13.363438699394464,
+      "milliseconds": 22.75799959897995
+    },
+    {
+      "at_seconds": 13.384434200823307,
+      "milliseconds": 20.995501428842545
+    },
+    {
+      "at_seconds": 13.40433169901371,
+      "milliseconds": 19.897498190402985
+    },
+    {
+      "at_seconds": 13.424440901726484,
+      "milliseconds": 20.109202712774277
+    },
+    {
+      "at_seconds": 13.44416780024767,
+      "milliseconds": 19.72689852118492
+    },
+    {
+      "at_seconds": 13.464826699346304,
+      "milliseconds": 20.65889909863472
+    },
+    {
+      "at_seconds": 13.487983599305153,
+      "milliseconds": 23.156899958848953
+    },
+    {
+      "at_seconds": 13.509003099054098,
+      "milliseconds": 21.019499748945236
+    },
+    {
+      "at_seconds": 13.53128520026803,
+      "milliseconds": 22.282101213932037
+    },
+    {
+      "at_seconds": 13.551197599619627,
+      "milliseconds": 19.912399351596832
+    },
+    {
+      "at_seconds": 13.575249299407005,
+      "milliseconds": 24.05169978737831
+    },
+    {
+      "at_seconds": 13.598852399736643,
+      "milliseconds": 23.603100329637527
+    },
+    {
+      "at_seconds": 13.61986729875207,
+      "milliseconds": 21.014899015426636
+    },
+    {
+      "at_seconds": 13.642295598983765,
+      "milliseconds": 22.428300231695175
+    },
+    {
+      "at_seconds": 13.66333819925785,
+      "milliseconds": 21.042600274086
+    },
+    {
+      "at_seconds": 13.68467789888382,
+      "milliseconds": 21.339699625968933
+    },
+    {
+      "at_seconds": 13.704824298620224,
+      "milliseconds": 20.14639973640442
+    },
+    {
+      "at_seconds": 13.725145999342203,
+      "milliseconds": 20.32170072197914
+    },
+    {
+      "at_seconds": 13.746554601937532,
+      "milliseconds": 21.408602595329285
+    },
+    {
+      "at_seconds": 13.768509801477194,
+      "milliseconds": 21.955199539661407
+    },
+    {
+      "at_seconds": 13.79205559939146,
+      "milliseconds": 23.545797914266586
+    },
+    {
+      "at_seconds": 13.81315840035677,
+      "milliseconds": 21.102800965309143
+    },
+    {
+      "at_seconds": 13.834109500050545,
+      "milliseconds": 20.951099693775177
+    },
+    {
+      "at_seconds": 13.855692900717258,
+      "milliseconds": 21.583400666713715
+    },
+    {
+      "at_seconds": 13.875586099922657,
+      "milliseconds": 19.89319920539856
+    },
+    {
+      "at_seconds": 13.895730700343847,
+      "milliseconds": 20.144600421190262
+    },
+    {
+      "at_seconds": 13.91489690169692,
+      "milliseconds": 19.16620135307312
+    },
+    {
+      "at_seconds": 13.935879200696945,
+      "milliseconds": 20.982299000024796
+    },
+    {
+      "at_seconds": 13.955509800463915,
+      "milliseconds": 19.63059976696968
+    },
+    {
+      "at_seconds": 13.974911998957396,
+      "milliseconds": 19.402198493480682
+    },
+    {
+      "at_seconds": 13.994403202086687,
+      "milliseconds": 19.491203129291534
+    },
+    {
+      "at_seconds": 14.014562800526619,
+      "milliseconds": 20.15959843993187
+    },
+    {
+      "at_seconds": 14.03389859944582,
+      "milliseconds": 19.335798919200897
+    },
+    {
+      "at_seconds": 14.05335870012641,
+      "milliseconds": 19.460100680589676
+    },
+    {
+      "at_seconds": 14.072350099682808,
+      "milliseconds": 18.99139955639839
+    },
+    {
+      "at_seconds": 14.091654401272535,
+      "milliseconds": 19.3043015897274
+    },
+    {
+      "at_seconds": 14.111351601779461,
+      "milliseconds": 19.697200506925583
+    },
+    {
+      "at_seconds": 14.132203299552202,
+      "milliseconds": 20.851697772741318
+    },
+    {
+      "at_seconds": 14.153384398669004,
+      "milliseconds": 21.181099116802216
+    },
+    {
+      "at_seconds": 14.172805801033974,
+      "milliseconds": 19.421402364969254
+    },
+    {
+      "at_seconds": 14.191861901432276,
+      "milliseconds": 19.05610039830208
+    },
+    {
+      "at_seconds": 14.210944801568985,
+      "milliseconds": 19.082900136709213
+    },
+    {
+      "at_seconds": 14.232173800468445,
+      "milliseconds": 21.22899889945984
+    },
+    {
+      "at_seconds": 14.25273409858346,
+      "milliseconds": 20.56029811501503
+    },
+    {
+      "at_seconds": 14.272102300077677,
+      "milliseconds": 19.36820149421692
+    },
+    {
+      "at_seconds": 14.291415099054575,
+      "milliseconds": 19.312798976898193
+    },
+    {
+      "at_seconds": 14.31303159892559,
+      "milliseconds": 21.61649987101555
+    },
+    {
+      "at_seconds": 14.333401799201965,
+      "milliseconds": 20.370200276374817
+    },
+    {
+      "at_seconds": 14.353237301111221,
+      "milliseconds": 19.83550190925598
+    },
+    {
+      "at_seconds": 14.373498801141977,
+      "milliseconds": 20.261500030755997
+    },
+    {
+      "at_seconds": 14.393580298870802,
+      "milliseconds": 20.081497728824615
+    },
+    {
+      "at_seconds": 14.413610398769379,
+      "milliseconds": 20.030099898576736
+    },
+    {
+      "at_seconds": 14.434221401810646,
+      "milliseconds": 20.611003041267395
+    },
+    {
+      "at_seconds": 14.45533600077033,
+      "milliseconds": 21.114598959684372
+    },
+    {
+      "at_seconds": 14.475483398884535,
+      "milliseconds": 20.147398114204407
+    },
+    {
+      "at_seconds": 14.495797500014305,
+      "milliseconds": 20.31410112977028
+    },
+    {
+      "at_seconds": 14.515088599175215,
+      "milliseconds": 19.291099160909653
+    },
+    {
+      "at_seconds": 14.53447699919343,
+      "milliseconds": 19.38840001821518
+    },
+    {
+      "at_seconds": 14.554060600697994,
+      "milliseconds": 19.583601504564285
+    },
+    {
+      "at_seconds": 14.574005201458931,
+      "milliseconds": 19.944600760936737
+    },
+    {
+      "at_seconds": 14.594810999929905,
+      "milliseconds": 20.80579847097397
+    },
+    {
+      "at_seconds": 14.615030098706484,
+      "milliseconds": 20.219098776578903
+    },
+    {
+      "at_seconds": 14.635910000652075,
+      "milliseconds": 20.879901945590973
+    },
+    {
+      "at_seconds": 14.655459899455309,
+      "milliseconds": 19.5498988032341
+    },
+    {
+      "at_seconds": 14.676113098859787,
+      "milliseconds": 20.653199404478073
+    },
+    {
+      "at_seconds": 14.697027400135994,
+      "milliseconds": 20.91430127620697
+    },
+    {
+      "at_seconds": 14.716467298567295,
+      "milliseconds": 19.439898431301117
+    },
+    {
+      "at_seconds": 14.736469902098179,
+      "milliseconds": 20.00260353088379
+    },
+    {
+      "at_seconds": 14.756804801523685,
+      "milliseconds": 20.334899425506592
+    },
+    {
+      "at_seconds": 14.777031399309635,
+      "milliseconds": 20.226597785949707
+    },
+    {
+      "at_seconds": 14.797136299312115,
+      "milliseconds": 20.104900002479553
+    },
+    {
+      "at_seconds": 14.817545801401138,
+      "milliseconds": 20.40950208902359
+    },
+    {
+      "at_seconds": 14.838500399142504,
+      "milliseconds": 20.954597741365433
+    },
+    {
+      "at_seconds": 14.858614102005959,
+      "milliseconds": 20.11370286345482
+    },
+    {
+      "at_seconds": 14.878911700099707,
+      "milliseconds": 20.297598093748093
+    },
+    {
+      "at_seconds": 14.898717399686575,
+      "milliseconds": 19.805699586868286
+    },
+    {
+      "at_seconds": 14.918064899742603,
+      "milliseconds": 19.347500056028366
+    },
+    {
+      "at_seconds": 14.937590401619673,
+      "milliseconds": 19.525501877069473
+    },
+    {
+      "at_seconds": 14.957761000841856,
+      "milliseconds": 20.170599222183228
+    },
+    {
+      "at_seconds": 14.976934399455786,
+      "milliseconds": 19.17339861392975
+    },
+    {
+      "at_seconds": 14.99702050164342,
+      "milliseconds": 20.086102187633514
+    }
+  ],
+  "raw_memory_and_counts": [
+    {
+      "at_seconds": 0.009236101061105728,
+      "process_used_physical_bytes": 3604717568,
+      "process_lifetime_peak_used_physical_bytes": 3713294336,
+      "counts": {
+        "npc_count": 50,
+        "npc_begun_play_count": 50,
+        "npc_hidden_count": 0,
+        "npc_collision_enabled_count": 50,
+        "npc_actor_tick_enabled_count": 50,
+        "npc_ai_controller_count": 50,
+        "world_ai_controller_count": 50,
+        "npc_brain_running_count": 50,
+        "npc_blackboard_known_count": 50,
+        "npc_active_count": 50
+      }
+    },
+    {
+      "at_seconds": 0.2721880003809929,
+      "process_used_physical_bytes": 3604774912,
+      "process_lifetime_peak_used_physical_bytes": 3713294336,
+      "counts": {
+        "npc_count": 50,
+        "npc_begun_play_count": 50,
+        "npc_hidden_count": 0,
+        "npc_collision_enabled_count": 50,
+        "npc_actor_tick_enabled_count": 50,
+        "npc_ai_controller_count": 50,
+        "world_ai_controller_count": 50,
+        "npc_brain_running_count": 50,
+        "npc_blackboard_known_count": 50,
+        "npc_active_count": 50
+      }
+    },
+    {
+      "at_seconds": 0.5348048992455006,
+      "process_used_physical_bytes": 3604877312,
+      "process_lifetime_peak_used_physical_bytes": 3713294336,
+      "counts": {
+        "npc_count": 50,
+        "npc_begun_play_count": 50,
+        "npc_hidden_count": 0,
+        "npc_collision_enabled_count": 50,
+        "npc_actor_tick_enabled_count": 50,
+        "npc_ai_controller_count": 50,
+        "world_ai_controller_count": 50,
+        "npc_brain_running_count": 50,
+        "npc_blackboard_known_count": 50,
+        "npc_active_count": 50
+      }
+    },
+    {
+      "at_seconds": 0.7974431999027729,
+      "process_used_physical_bytes": 3604905984,
+      "process_lifetime_peak_used_physical_bytes": 3713294336,
+      "counts": {
+        "npc_count": 50,
+        "npc_begun_play_count": 50,
+        "npc_hidden_count": 0,
+        "npc_collision_enabled_count": 50,
+        "npc_actor_tick_enabled_count": 50,
+        "npc_ai_controller_count": 50,
+        "world_ai_controller_count": 50,
+        "npc_brain_running_count": 50,
+        "npc_blackboard_known_count": 50,
+        "npc_active_count": 50
+      }
+    },
+    {
+      "at_seconds": 1.0619029998779297,
+      "process_used_physical_bytes": 3604783104,
+      "process_lifetime_peak_used_physical_bytes": 3713294336,
+      "counts": {
+        "npc_count": 50,
+        "npc_begun_play_count": 50,
+        "npc_hidden_count": 0,
+        "npc_collision_enabled_count": 50,
+        "npc_actor_tick_enabled_count": 50,
+        "npc_ai_controller_count": 50,
+        "world_ai_controller_count": 50,
+        "npc_brain_running_count": 50,
+        "npc_blackboard_known_count": 50,
+        "npc_active_count": 50
+      }
+    },
+    {
+      "at_seconds": 1.326655600219965,
+      "process_used_physical_bytes": 3604791296,
+      "process_lifetime_peak_used_physical_bytes": 3713294336,
+      "counts": {
+        "npc_count": 50,
+        "npc_begun_play_count": 50,
+        "npc_hidden_count": 0,
+        "npc_collision_enabled_count": 50,
+        "npc_actor_tick_enabled_count": 50,
+        "npc_ai_controller_count": 50,
+        "world_ai_controller_count": 50,
+        "npc_brain_running_count": 50,
+        "npc_blackboard_known_count": 50,
+        "npc_active_count": 50
+      }
+    },
+    {
+      "at_seconds": 1.589350800961256,
+      "process_used_physical_bytes": 3604791296,
+      "process_lifetime_peak_used_physical_bytes": 3713294336,
+      "counts": {
+        "npc_count": 50,
+        "npc_begun_play_count": 50,
+        "npc_hidden_count": 0,
+        "npc_collision_enabled_count": 50,
+        "npc_actor_tick_enabled_count": 50,
+        "npc_ai_controller_count": 50,
+        "world_ai_controller_count": 50,
+        "npc_brain_running_count": 50,
+        "npc_blackboard_known_count": 50,
+        "npc_active_count": 50
+      }
+    },
+    {
+      "at_seconds": 1.8493184000253677,
+      "process_used_physical_bytes": 3604803584,
+      "process_lifetime_peak_used_physical_bytes": 3713294336,
+      "counts": {
+        "npc_count": 50,
+        "npc_begun_play_count": 50,
+        "npc_hidden_count": 0,
+        "npc_collision_enabled_count": 50,
+        "npc_actor_tick_enabled_count": 50,
+        "npc_ai_controller_count": 50,
+        "world_ai_controller_count": 50,
+        "npc_brain_running_count": 50,
+        "npc_blackboard_known_count": 50,
+        "npc_active_count": 50
+      }
+    },
+    {
+      "at_seconds": 2.112729799002409,
+      "process_used_physical_bytes": 3604856832,
+      "process_lifetime_peak_used_physical_bytes": 3713294336,
+      "counts": {
+        "npc_count": 50,
+        "npc_begun_play_count": 50,
+        "npc_hidden_count": 0,
+        "npc_collision_enabled_count": 50,
+        "npc_actor_tick_enabled_count": 50,
+        "npc_ai_controller_count": 50,
+        "world_ai_controller_count": 50,
+        "npc_brain_running_count": 50,
+        "npc_blackboard_known_count": 50,
+        "npc_active_count": 50
+      }
+    },
+    {
+      "at_seconds": 2.3799789994955063,
+      "process_used_physical_bytes": 3604885504,
+      "process_lifetime_peak_used_physical_bytes": 3713294336,
+      "counts": {
+        "npc_count": 50,
+        "npc_begun_play_count": 50,
+        "npc_hidden_count": 0,
+        "npc_collision_enabled_count": 50,
+        "npc_actor_tick_enabled_count": 50,
+        "npc_ai_controller_count": 50,
+        "world_ai_controller_count": 50,
+        "npc_brain_running_count": 50,
+        "npc_blackboard_known_count": 50,
+        "npc_active_count": 50
+      }
+    },
+    {
+      "at_seconds": 2.6494628004729748,
+      "process_used_physical_bytes": 3604951040,
+      "process_lifetime_peak_used_physical_bytes": 3713294336,
+      "counts": {
+        "npc_count": 50,
+        "npc_begun_play_count": 50,
+        "npc_hidden_count": 0,
+        "npc_collision_enabled_count": 50,
+        "npc_actor_tick_enabled_count": 50,
+        "npc_ai_controller_count": 50,
+        "world_ai_controller_count": 50,
+        "npc_brain_running_count": 50,
+        "npc_blackboard_known_count": 50,
+        "npc_active_count": 50
+      }
+    },
+    {
+      "at_seconds": 2.915810201317072,
+      "process_used_physical_bytes": 3604975616,
+      "process_lifetime_peak_used_physical_bytes": 3713294336,
+      "counts": {
+        "npc_count": 50,
+        "npc_begun_play_count": 50,
+        "npc_hidden_count": 0,
+        "npc_collision_enabled_count": 50,
+        "npc_actor_tick_enabled_count": 50,
+        "npc_ai_controller_count": 50,
+        "world_ai_controller_count": 50,
+        "npc_brain_running_count": 50,
+        "npc_blackboard_known_count": 50,
+        "npc_active_count": 50
+      }
+    },
+    {
+      "at_seconds": 3.18198100104928,
+      "process_used_physical_bytes": 3604975616,
+      "process_lifetime_peak_used_physical_bytes": 3713294336,
+      "counts": {
+        "npc_count": 50,
+        "npc_begun_play_count": 50,
+        "npc_hidden_count": 0,
+        "npc_collision_enabled_count": 50,
+        "npc_actor_tick_enabled_count": 50,
+        "npc_ai_controller_count": 50,
+        "world_ai_controller_count": 50,
+        "npc_brain_running_count": 50,
+        "npc_blackboard_known_count": 50,
+        "npc_active_count": 50
+      }
+    },
+    {
+      "at_seconds": 3.447221700102091,
+      "process_used_physical_bytes": 3605057536,
+      "process_lifetime_peak_used_physical_bytes": 3713294336,
+      "counts": {
+        "npc_count": 50,
+        "npc_begun_play_count": 50,
+        "npc_hidden_count": 0,
+        "npc_collision_enabled_count": 50,
+        "npc_actor_tick_enabled_count": 50,
+        "npc_ai_controller_count": 50,
+        "world_ai_controller_count": 50,
+        "npc_brain_running_count": 50,
+        "npc_blackboard_known_count": 50,
+        "npc_active_count": 50
+      }
+    },
+    {
+      "at_seconds": 3.706859700381756,
+      "process_used_physical_bytes": 3605061632,
+      "process_lifetime_peak_used_physical_bytes": 3713294336,
+      "counts": {
+        "npc_count": 50,
+        "npc_begun_play_count": 50,
+        "npc_hidden_count": 0,
+        "npc_collision_enabled_count": 50,
+        "npc_actor_tick_enabled_count": 50,
+        "npc_ai_controller_count": 50,
+        "world_ai_controller_count": 50,
+        "npc_brain_running_count": 50,
+        "npc_blackboard_known_count": 50,
+        "npc_active_count": 50
+      }
+    },
+    {
+      "at_seconds": 3.9718861989676952,
+      "process_used_physical_bytes": 3599958016,
+      "process_lifetime_peak_used_physical_bytes": 3713294336,
+      "counts": {
+        "npc_count": 50,
+        "npc_begun_play_count": 50,
+        "npc_hidden_count": 0,
+        "npc_collision_enabled_count": 50,
+        "npc_actor_tick_enabled_count": 50,
+        "npc_ai_controller_count": 50,
+        "world_ai_controller_count": 50,
+        "npc_brain_running_count": 50,
+        "npc_blackboard_known_count": 50,
+        "npc_active_count": 50
+      }
+    },
+    {
+      "at_seconds": 4.233807399868965,
+      "process_used_physical_bytes": 3599958016,
+      "process_lifetime_peak_used_physical_bytes": 3713294336,
+      "counts": {
+        "npc_count": 50,
+        "npc_begun_play_count": 50,
+        "npc_hidden_count": 0,
+        "npc_collision_enabled_count": 50,
+        "npc_actor_tick_enabled_count": 50,
+        "npc_ai_controller_count": 50,
+        "world_ai_controller_count": 50,
+        "npc_brain_running_count": 50,
+        "npc_blackboard_known_count": 50,
+        "npc_active_count": 50
+      }
+    },
+    {
+      "at_seconds": 4.501428101211786,
+      "process_used_physical_bytes": 3599966208,
+      "process_lifetime_peak_used_physical_bytes": 3713294336,
+      "counts": {
+        "npc_count": 50,
+        "npc_begun_play_count": 50,
+        "npc_hidden_count": 0,
+        "npc_collision_enabled_count": 50,
+        "npc_actor_tick_enabled_count": 50,
+        "npc_ai_controller_count": 50,
+        "world_ai_controller_count": 50,
+        "npc_brain_running_count": 50,
+        "npc_blackboard_known_count": 50,
+        "npc_active_count": 50
+      }
+    },
+    {
+      "at_seconds": 4.752693299204111,
+      "process_used_physical_bytes": 3599966208,
+      "process_lifetime_peak_used_physical_bytes": 3713294336,
+      "counts": {
+        "npc_count": 50,
+        "npc_begun_play_count": 50,
+        "npc_hidden_count": 0,
+        "npc_collision_enabled_count": 50,
+        "npc_actor_tick_enabled_count": 50,
+        "npc_ai_controller_count": 50,
+        "world_ai_controller_count": 50,
+        "npc_brain_running_count": 50,
+        "npc_blackboard_known_count": 50,
+        "npc_active_count": 50
+      }
+    },
+    {
+      "at_seconds": 5.018047198653221,
+      "process_used_physical_bytes": 3599970304,
+      "process_lifetime_peak_used_physical_bytes": 3713294336,
+      "counts": {
+        "npc_count": 50,
+        "npc_begun_play_count": 50,
+        "npc_hidden_count": 0,
+        "npc_collision_enabled_count": 50,
+        "npc_actor_tick_enabled_count": 50,
+        "npc_ai_controller_count": 50,
+        "world_ai_controller_count": 50,
+        "npc_brain_running_count": 50,
+        "npc_blackboard_known_count": 50,
+        "npc_active_count": 50
+      }
+    },
+    {
+      "at_seconds": 5.269219499081373,
+      "process_used_physical_bytes": 3599982592,
+      "process_lifetime_peak_used_physical_bytes": 3713294336,
+      "counts": {
+        "npc_count": 50,
+        "npc_begun_play_count": 50,
+        "npc_hidden_count": 0,
+        "npc_collision_enabled_count": 50,
+        "npc_actor_tick_enabled_count": 50,
+        "npc_ai_controller_count": 50,
+        "world_ai_controller_count": 50,
+        "npc_brain_running_count": 50,
+        "npc_blackboard_known_count": 50,
+        "npc_active_count": 50
+      }
+    },
+    {
+      "at_seconds": 5.519639998674393,
+      "process_used_physical_bytes": 3599986688,
+      "process_lifetime_peak_used_physical_bytes": 3713294336,
+      "counts": {
+        "npc_count": 50,
+        "npc_begun_play_count": 50,
+        "npc_hidden_count": 0,
+        "npc_collision_enabled_count": 50,
+        "npc_actor_tick_enabled_count": 50,
+        "npc_ai_controller_count": 50,
+        "world_ai_controller_count": 50,
+        "npc_brain_running_count": 50,
+        "npc_blackboard_known_count": 50,
+        "npc_active_count": 50
+      }
+    },
+    {
+      "at_seconds": 5.782640401273966,
+      "process_used_physical_bytes": 3596128256,
+      "process_lifetime_peak_used_physical_bytes": 3713294336,
+      "counts": {
+        "npc_count": 50,
+        "npc_begun_play_count": 50,
+        "npc_hidden_count": 0,
+        "npc_collision_enabled_count": 50,
+        "npc_actor_tick_enabled_count": 50,
+        "npc_ai_controller_count": 50,
+        "world_ai_controller_count": 50,
+        "npc_brain_running_count": 50,
+        "npc_blackboard_known_count": 50,
+        "npc_active_count": 50
+      }
+    },
+    {
+      "at_seconds": 6.042858298867941,
+      "process_used_physical_bytes": 3585781760,
+      "process_lifetime_peak_used_physical_bytes": 3713294336,
+      "counts": {
+        "npc_count": 50,
+        "npc_begun_play_count": 50,
+        "npc_hidden_count": 0,
+        "npc_collision_enabled_count": 50,
+        "npc_actor_tick_enabled_count": 50,
+        "npc_ai_controller_count": 50,
+        "world_ai_controller_count": 50,
+        "npc_brain_running_count": 50,
+        "npc_blackboard_known_count": 50,
+        "npc_active_count": 50
+      }
+    },
+    {
+      "at_seconds": 6.304602801799774,
+      "process_used_physical_bytes": 3585785856,
+      "process_lifetime_peak_used_physical_bytes": 3713294336,
+      "counts": {
+        "npc_count": 50,
+        "npc_begun_play_count": 50,
+        "npc_hidden_count": 0,
+        "npc_collision_enabled_count": 50,
+        "npc_actor_tick_enabled_count": 50,
+        "npc_ai_controller_count": 50,
+        "world_ai_controller_count": 50,
+        "npc_brain_running_count": 50,
+        "npc_blackboard_known_count": 50,
+        "npc_active_count": 50
+      }
+    },
+    {
+      "at_seconds": 6.5687175989151,
+      "process_used_physical_bytes": 3585814528,
+      "process_lifetime_peak_used_physical_bytes": 3713294336,
+      "counts": {
+        "npc_count": 50,
+        "npc_begun_play_count": 50,
+        "npc_hidden_count": 0,
+        "npc_collision_enabled_count": 50,
+        "npc_actor_tick_enabled_count": 50,
+        "npc_ai_controller_count": 50,
+        "world_ai_controller_count": 50,
+        "npc_brain_running_count": 50,
+        "npc_blackboard_known_count": 50,
+        "npc_active_count": 50
+      }
+    },
+    {
+      "at_seconds": 6.82129679992795,
+      "process_used_physical_bytes": 3585884160,
+      "process_lifetime_peak_used_physical_bytes": 3713294336,
+      "counts": {
+        "npc_count": 50,
+        "npc_begun_play_count": 50,
+        "npc_hidden_count": 0,
+        "npc_collision_enabled_count": 50,
+        "npc_actor_tick_enabled_count": 50,
+        "npc_ai_controller_count": 50,
+        "world_ai_controller_count": 50,
+        "npc_brain_running_count": 50,
+        "npc_blackboard_known_count": 50,
+        "npc_active_count": 50
+      }
+    },
+    {
+      "at_seconds": 7.089765001088381,
+      "process_used_physical_bytes": 3564441600,
+      "process_lifetime_peak_used_physical_bytes": 3713294336,
+      "counts": {
+        "npc_count": 50,
+        "npc_begun_play_count": 50,
+        "npc_hidden_count": 0,
+        "npc_collision_enabled_count": 50,
+        "npc_actor_tick_enabled_count": 50,
+        "npc_ai_controller_count": 50,
+        "world_ai_controller_count": 50,
+        "npc_brain_running_count": 50,
+        "npc_blackboard_known_count": 50,
+        "npc_active_count": 50
+      }
+    },
+    {
+      "at_seconds": 7.3566096015274525,
+      "process_used_physical_bytes": 3564457984,
+      "process_lifetime_peak_used_physical_bytes": 3713294336,
+      "counts": {
+        "npc_count": 50,
+        "npc_begun_play_count": 50,
+        "npc_hidden_count": 0,
+        "npc_collision_enabled_count": 50,
+        "npc_actor_tick_enabled_count": 50,
+        "npc_ai_controller_count": 50,
+        "world_ai_controller_count": 50,
+        "npc_brain_running_count": 50,
+        "npc_blackboard_known_count": 50,
+        "npc_active_count": 50
+      }
+    },
+    {
+      "at_seconds": 7.621746700257063,
+      "process_used_physical_bytes": 3564466176,
+      "process_lifetime_peak_used_physical_bytes": 3713294336,
+      "counts": {
+        "npc_count": 50,
+        "npc_begun_play_count": 50,
+        "npc_hidden_count": 0,
+        "npc_collision_enabled_count": 50,
+        "npc_actor_tick_enabled_count": 50,
+        "npc_ai_controller_count": 50,
+        "world_ai_controller_count": 50,
+        "npc_brain_running_count": 50,
+        "npc_blackboard_known_count": 50,
+        "npc_active_count": 50
+      }
+    },
+    {
+      "at_seconds": 7.89070650190115,
+      "process_used_physical_bytes": 3546673152,
+      "process_lifetime_peak_used_physical_bytes": 3713294336,
+      "counts": {
+        "npc_count": 50,
+        "npc_begun_play_count": 50,
+        "npc_hidden_count": 0,
+        "npc_collision_enabled_count": 50,
+        "npc_actor_tick_enabled_count": 50,
+        "npc_ai_controller_count": 50,
+        "world_ai_controller_count": 50,
+        "npc_brain_running_count": 50,
+        "npc_blackboard_known_count": 50,
+        "npc_active_count": 50
+      }
+    },
+    {
+      "at_seconds": 8.157914001494646,
+      "process_used_physical_bytes": 3546673152,
+      "process_lifetime_peak_used_physical_bytes": 3713294336,
+      "counts": {
+        "npc_count": 50,
+        "npc_begun_play_count": 50,
+        "npc_hidden_count": 0,
+        "npc_collision_enabled_count": 50,
+        "npc_actor_tick_enabled_count": 50,
+        "npc_ai_controller_count": 50,
+        "world_ai_controller_count": 50,
+        "npc_brain_running_count": 50,
+        "npc_blackboard_known_count": 50,
+        "npc_active_count": 50
+      }
+    },
+    {
+      "at_seconds": 8.429184801876545,
+      "process_used_physical_bytes": 3546673152,
+      "process_lifetime_peak_used_physical_bytes": 3713294336,
+      "counts": {
+        "npc_count": 50,
+        "npc_begun_play_count": 50,
+        "npc_hidden_count": 0,
+        "npc_collision_enabled_count": 50,
+        "npc_actor_tick_enabled_count": 50,
+        "npc_ai_controller_count": 50,
+        "world_ai_controller_count": 50,
+        "npc_brain_running_count": 50,
+        "npc_blackboard_known_count": 50,
+        "npc_active_count": 50
+      }
+    },
+    {
+      "at_seconds": 8.68461450189352,
+      "process_used_physical_bytes": 3546677248,
+      "process_lifetime_peak_used_physical_bytes": 3713294336,
+      "counts": {
+        "npc_count": 50,
+        "npc_begun_play_count": 50,
+        "npc_hidden_count": 0,
+        "npc_collision_enabled_count": 50,
+        "npc_actor_tick_enabled_count": 50,
+        "npc_ai_controller_count": 50,
+        "world_ai_controller_count": 50,
+        "npc_brain_running_count": 50,
+        "npc_blackboard_known_count": 50,
+        "npc_active_count": 50
+      }
+    },
+    {
+      "at_seconds": 8.949856799095869,
+      "process_used_physical_bytes": 3532521472,
+      "process_lifetime_peak_used_physical_bytes": 3713294336,
+      "counts": {
+        "npc_count": 50,
+        "npc_begun_play_count": 50,
+        "npc_hidden_count": 0,
+        "npc_collision_enabled_count": 50,
+        "npc_actor_tick_enabled_count": 50,
+        "npc_ai_controller_count": 50,
+        "world_ai_controller_count": 50,
+        "npc_brain_running_count": 50,
+        "npc_blackboard_known_count": 50,
+        "npc_active_count": 50
+      }
+    },
+    {
+      "at_seconds": 9.20656830072403,
+      "process_used_physical_bytes": 3532652544,
+      "process_lifetime_peak_used_physical_bytes": 3713294336,
+      "counts": {
+        "npc_count": 50,
+        "npc_begun_play_count": 50,
+        "npc_hidden_count": 0,
+        "npc_collision_enabled_count": 50,
+        "npc_actor_tick_enabled_count": 50,
+        "npc_ai_controller_count": 50,
+        "world_ai_controller_count": 50,
+        "npc_brain_running_count": 50,
+        "npc_blackboard_known_count": 50,
+        "npc_active_count": 50
+      }
+    },
+    {
+      "at_seconds": 9.47027900069952,
+      "process_used_physical_bytes": 3532656640,
+      "process_lifetime_peak_used_physical_bytes": 3713294336,
+      "counts": {
+        "npc_count": 50,
+        "npc_begun_play_count": 50,
+        "npc_hidden_count": 0,
+        "npc_collision_enabled_count": 50,
+        "npc_actor_tick_enabled_count": 50,
+        "npc_ai_controller_count": 50,
+        "world_ai_controller_count": 50,
+        "npc_brain_running_count": 50,
+        "npc_blackboard_known_count": 50,
+        "npc_active_count": 50
+      }
+    },
+    {
+      "at_seconds": 9.734522599726915,
+      "process_used_physical_bytes": 3532656640,
+      "process_lifetime_peak_used_physical_bytes": 3713294336,
+      "counts": {
+        "npc_count": 50,
+        "npc_begun_play_count": 50,
+        "npc_hidden_count": 0,
+        "npc_collision_enabled_count": 50,
+        "npc_actor_tick_enabled_count": 50,
+        "npc_ai_controller_count": 50,
+        "world_ai_controller_count": 50,
+        "npc_brain_running_count": 50,
+        "npc_blackboard_known_count": 50,
+        "npc_active_count": 50
+      }
+    },
+    {
+      "at_seconds": 10.00035209953785,
+      "process_used_physical_bytes": 3529408512,
+      "process_lifetime_peak_used_physical_bytes": 3713294336,
+      "counts": {
+        "npc_count": 50,
+        "npc_begun_play_count": 50,
+        "npc_hidden_count": 0,
+        "npc_collision_enabled_count": 50,
+        "npc_actor_tick_enabled_count": 50,
+        "npc_ai_controller_count": 50,
+        "world_ai_controller_count": 50,
+        "npc_brain_running_count": 50,
+        "npc_blackboard_known_count": 50,
+        "npc_active_count": 50
+      }
+    },
+    {
+      "at_seconds": 10.256643299013376,
+      "process_used_physical_bytes": 3529424896,
+      "process_lifetime_peak_used_physical_bytes": 3713294336,
+      "counts": {
+        "npc_count": 50,
+        "npc_begun_play_count": 50,
+        "npc_hidden_count": 0,
+        "npc_collision_enabled_count": 50,
+        "npc_actor_tick_enabled_count": 50,
+        "npc_ai_controller_count": 50,
+        "world_ai_controller_count": 50,
+        "npc_brain_running_count": 50,
+        "npc_blackboard_known_count": 50,
+        "npc_active_count": 50
+      }
+    },
+    {
+      "at_seconds": 10.512292101979256,
+      "process_used_physical_bytes": 3529502720,
+      "process_lifetime_peak_used_physical_bytes": 3713294336,
+      "counts": {
+        "npc_count": 50,
+        "npc_begun_play_count": 50,
+        "npc_hidden_count": 0,
+        "npc_collision_enabled_count": 50,
+        "npc_actor_tick_enabled_count": 50,
+        "npc_ai_controller_count": 50,
+        "world_ai_controller_count": 50,
+        "npc_brain_running_count": 50,
+        "npc_blackboard_known_count": 50,
+        "npc_active_count": 50
+      }
+    },
+    {
+      "at_seconds": 10.774000901728868,
+      "process_used_physical_bytes": 3529510912,
+      "process_lifetime_peak_used_physical_bytes": 3713294336,
+      "counts": {
+        "npc_count": 50,
+        "npc_begun_play_count": 50,
+        "npc_hidden_count": 0,
+        "npc_collision_enabled_count": 50,
+        "npc_actor_tick_enabled_count": 50,
+        "npc_ai_controller_count": 50,
+        "world_ai_controller_count": 50,
+        "npc_brain_running_count": 50,
+        "npc_blackboard_known_count": 50,
+        "npc_active_count": 50
+      }
+    },
+    {
+      "at_seconds": 11.030337199568748,
+      "process_used_physical_bytes": 3529523200,
+      "process_lifetime_peak_used_physical_bytes": 3713294336,
+      "counts": {
+        "npc_count": 50,
+        "npc_begun_play_count": 50,
+        "npc_hidden_count": 0,
+        "npc_collision_enabled_count": 50,
+        "npc_actor_tick_enabled_count": 50,
+        "npc_ai_controller_count": 50,
+        "world_ai_controller_count": 50,
+        "npc_brain_running_count": 50,
+        "npc_blackboard_known_count": 50,
+        "npc_active_count": 50
+      }
+    },
+    {
+      "at_seconds": 11.289570800960064,
+      "process_used_physical_bytes": 3529527296,
+      "process_lifetime_peak_used_physical_bytes": 3713294336,
+      "counts": {
+        "npc_count": 50,
+        "npc_begun_play_count": 50,
+        "npc_hidden_count": 0,
+        "npc_collision_enabled_count": 50,
+        "npc_actor_tick_enabled_count": 50,
+        "npc_ai_controller_count": 50,
+        "world_ai_controller_count": 50,
+        "npc_brain_running_count": 50,
+        "npc_blackboard_known_count": 50,
+        "npc_active_count": 50
+      }
+    },
+    {
+      "at_seconds": 11.547460298985243,
+      "process_used_physical_bytes": 3529531392,
+      "process_lifetime_peak_used_physical_bytes": 3713294336,
+      "counts": {
+        "npc_count": 50,
+        "npc_begun_play_count": 50,
+        "npc_hidden_count": 0,
+        "npc_collision_enabled_count": 50,
+        "npc_actor_tick_enabled_count": 50,
+        "npc_ai_controller_count": 50,
+        "world_ai_controller_count": 50,
+        "npc_brain_running_count": 50,
+        "npc_blackboard_known_count": 50,
+        "npc_active_count": 50
+      }
+    },
+    {
+      "at_seconds": 11.804772399365902,
+      "process_used_physical_bytes": 3529543680,
+      "process_lifetime_peak_used_physical_bytes": 3713294336,
+      "counts": {
+        "npc_count": 50,
+        "npc_begun_play_count": 50,
+        "npc_hidden_count": 0,
+        "npc_collision_enabled_count": 50,
+        "npc_actor_tick_enabled_count": 50,
+        "npc_ai_controller_count": 50,
+        "world_ai_controller_count": 50,
+        "npc_brain_running_count": 50,
+        "npc_blackboard_known_count": 50,
+        "npc_active_count": 50
+      }
+    },
+    {
+      "at_seconds": 12.066347099840641,
+      "process_used_physical_bytes": 3529543680,
+      "process_lifetime_peak_used_physical_bytes": 3713294336,
+      "counts": {
+        "npc_count": 50,
+        "npc_begun_play_count": 50,
+        "npc_hidden_count": 0,
+        "npc_collision_enabled_count": 50,
+        "npc_actor_tick_enabled_count": 50,
+        "npc_ai_controller_count": 50,
+        "world_ai_controller_count": 50,
+        "npc_brain_running_count": 50,
+        "npc_blackboard_known_count": 50,
+        "npc_active_count": 50
+      }
+    },
+    {
+      "at_seconds": 12.32417980208993,
+      "process_used_physical_bytes": 3529551872,
+      "process_lifetime_peak_used_physical_bytes": 3713294336,
+      "counts": {
+        "npc_count": 50,
+        "npc_begun_play_count": 50,
+        "npc_hidden_count": 0,
+        "npc_collision_enabled_count": 50,
+        "npc_actor_tick_enabled_count": 50,
+        "npc_ai_controller_count": 50,
+        "world_ai_controller_count": 50,
+        "npc_brain_running_count": 50,
+        "npc_blackboard_known_count": 50,
+        "npc_active_count": 50
+      }
+    },
+    {
+      "at_seconds": 12.586083099246025,
+      "process_used_physical_bytes": 3529555968,
+      "process_lifetime_peak_used_physical_bytes": 3713294336,
+      "counts": {
+        "npc_count": 50,
+        "npc_begun_play_count": 50,
+        "npc_hidden_count": 0,
+        "npc_collision_enabled_count": 50,
+        "npc_actor_tick_enabled_count": 50,
+        "npc_ai_controller_count": 50,
+        "world_ai_controller_count": 50,
+        "npc_brain_running_count": 50,
+        "npc_blackboard_known_count": 50,
+        "npc_active_count": 50
+      }
+    },
+    {
+      "at_seconds": 12.839741200208664,
+      "process_used_physical_bytes": 3529555968,
+      "process_lifetime_peak_used_physical_bytes": 3713294336,
+      "counts": {
+        "npc_count": 50,
+        "npc_begun_play_count": 50,
+        "npc_hidden_count": 0,
+        "npc_collision_enabled_count": 50,
+        "npc_actor_tick_enabled_count": 50,
+        "npc_ai_controller_count": 50,
+        "world_ai_controller_count": 50,
+        "npc_brain_running_count": 50,
+        "npc_blackboard_known_count": 50,
+        "npc_active_count": 50
+      }
+    },
+    {
+      "at_seconds": 13.091869801282883,
+      "process_used_physical_bytes": 3529564160,
+      "process_lifetime_peak_used_physical_bytes": 3713294336,
+      "counts": {
+        "npc_count": 50,
+        "npc_begun_play_count": 50,
+        "npc_hidden_count": 0,
+        "npc_collision_enabled_count": 50,
+        "npc_actor_tick_enabled_count": 50,
+        "npc_ai_controller_count": 50,
+        "world_ai_controller_count": 50,
+        "npc_brain_running_count": 50,
+        "npc_blackboard_known_count": 50,
+        "npc_active_count": 50
+      }
+    },
+    {
+      "at_seconds": 13.363438699394464,
+      "process_used_physical_bytes": 3529572352,
+      "process_lifetime_peak_used_physical_bytes": 3713294336,
+      "counts": {
+        "npc_count": 50,
+        "npc_begun_play_count": 50,
+        "npc_hidden_count": 0,
+        "npc_collision_enabled_count": 50,
+        "npc_actor_tick_enabled_count": 50,
+        "npc_ai_controller_count": 50,
+        "world_ai_controller_count": 50,
+        "npc_brain_running_count": 50,
+        "npc_blackboard_known_count": 50,
+        "npc_active_count": 50
+      }
+    },
+    {
+      "at_seconds": 13.61986729875207,
+      "process_used_physical_bytes": 3529576448,
+      "process_lifetime_peak_used_physical_bytes": 3713294336,
+      "counts": {
+        "npc_count": 50,
+        "npc_begun_play_count": 50,
+        "npc_hidden_count": 0,
+        "npc_collision_enabled_count": 50,
+        "npc_actor_tick_enabled_count": 50,
+        "npc_ai_controller_count": 50,
+        "world_ai_controller_count": 50,
+        "npc_brain_running_count": 50,
+        "npc_blackboard_known_count": 50,
+        "npc_active_count": 50
+      }
+    },
+    {
+      "at_seconds": 13.875586099922657,
+      "process_used_physical_bytes": 3529584640,
+      "process_lifetime_peak_used_physical_bytes": 3713294336,
+      "counts": {
+        "npc_count": 50,
+        "npc_begun_play_count": 50,
+        "npc_hidden_count": 0,
+        "npc_collision_enabled_count": 50,
+        "npc_actor_tick_enabled_count": 50,
+        "npc_ai_controller_count": 50,
+        "world_ai_controller_count": 50,
+        "npc_brain_running_count": 50,
+        "npc_blackboard_known_count": 50,
+        "npc_active_count": 50
+      }
+    },
+    {
+      "at_seconds": 14.132203299552202,
+      "process_used_physical_bytes": 3529588736,
+      "process_lifetime_peak_used_physical_bytes": 3713294336,
+      "counts": {
+        "npc_count": 50,
+        "npc_begun_play_count": 50,
+        "npc_hidden_count": 0,
+        "npc_collision_enabled_count": 50,
+        "npc_actor_tick_enabled_count": 50,
+        "npc_ai_controller_count": 50,
+        "world_ai_controller_count": 50,
+        "npc_brain_running_count": 50,
+        "npc_blackboard_known_count": 50,
+        "npc_active_count": 50
+      }
+    },
+    {
+      "at_seconds": 14.393580298870802,
+      "process_used_physical_bytes": 3529592832,
+      "process_lifetime_peak_used_physical_bytes": 3713294336,
+      "counts": {
+        "npc_count": 50,
+        "npc_begun_play_count": 50,
+        "npc_hidden_count": 0,
+        "npc_collision_enabled_count": 50,
+        "npc_actor_tick_enabled_count": 50,
+        "npc_ai_controller_count": 50,
+        "world_ai_controller_count": 50,
+        "npc_brain_running_count": 50,
+        "npc_blackboard_known_count": 50,
+        "npc_active_count": 50
+      }
+    },
+    {
+      "at_seconds": 14.655459899455309,
+      "process_used_physical_bytes": 3529596928,
+      "process_lifetime_peak_used_physical_bytes": 3713294336,
+      "counts": {
+        "npc_count": 50,
+        "npc_begun_play_count": 50,
+        "npc_hidden_count": 0,
+        "npc_collision_enabled_count": 50,
+        "npc_actor_tick_enabled_count": 50,
+        "npc_ai_controller_count": 50,
+        "world_ai_controller_count": 50,
+        "npc_brain_running_count": 50,
+        "npc_blackboard_known_count": 50,
+        "npc_active_count": 50
+      }
+    },
+    {
+      "at_seconds": 14.918064899742603,
+      "process_used_physical_bytes": 3529601024,
+      "process_lifetime_peak_used_physical_bytes": 3713294336,
+      "counts": {
+        "npc_count": 50,
+        "npc_begun_play_count": 50,
+        "npc_hidden_count": 0,
+        "npc_collision_enabled_count": 50,
+        "npc_actor_tick_enabled_count": 50,
+        "npc_ai_controller_count": 50,
+        "world_ai_controller_count": 50,
+        "npc_brain_running_count": 50,
+        "npc_blackboard_known_count": 50,
+        "npc_active_count": 50
+      }
+    }
+  ],
+  "world_actor_tick_scope": "FPlatformTime span between OnWorldPreActorTick and OnWorldPostActorTick for this PIE world. Includes all actors and intervening world work, not isolated NPC CPU time, a complete game-thread time, or GPU time. Tick starts within the capture window; its completion can cross the final boundary.",
+  "frame_interval_scope": "Wall-clock intervals between actual game-thread OnEndFrame delegates wholly inside the capture window. Includes editor, PIE, rendering waits, frame caps and instrumentation; not standalone packaged-game FPS or isolated GPU frame time.",
+  "memory_scope": "Whole editor process physical memory sampled at least 0.25 seconds apart; not per-NPC allocation or an allocation cap. Lifetime OS peak also includes startup and map loading.",
+  "memory_sampling_minimum_interval_seconds": 0.25,
+  "peak_sampled_process_used_physical_bytes": 3605061632,
+  "final_process_used_physical_bytes": 3529625600,
+  "process_lifetime_peak_used_physical_bytes": 3713294336,
+  "cpu_brand": "11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz",
+  "logical_cpu_count": 16,
+  "machine_physical_memory_bytes": 68563558400,
+  "nullrhi_requested": false,
+  "rhi_name": "D3D12",
+  "rhi_adapter_name": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "system_resolution_width": 1280,
+  "system_resolution_height": 720,
+  "system_window_mode": 2,
+  "fixed_timestep_enabled": false,
+  "configured_fixed_delta_seconds": 0.03333333333333333,
+  "configured_max_fps": 0,
+  "configured_vsync": 0,
+  "end_world_time_seconds": 25.658657297492027,
+  "world_time_advanced_since_setup_seconds": 25.39342410862446,
+  "end_schedule_minute": 600,
+  "actual_game_viewport_width": 1280,
+  "actual_game_viewport_height": 720,
+  "assertions_passed": true
+}

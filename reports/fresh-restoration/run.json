@@ -1,0 +1,250 @@
+{
+  "schema": "npc-unreal-check-run/v1",
+  "engine_version": {
+    "MajorVersion": 5,
+    "MinorVersion": 4,
+    "PatchVersion": 4,
+    "Changelist": 35576357,
+    "CompatibleChangelist": 33043543,
+    "IsLicenseeVersion": 0,
+    "IsPromotedBuild": 1,
+    "BranchName": "++UE5+Release-5.4"
+  },
+  "scope": "Actual Windows Unreal source build and PIE checks; not an independent-machine certification",
+  "project": "<restored-project>\\NPC.uproject",
+  "results": [
+    {
+      "name": "source-build",
+      "command": [
+        "<UE_5.4.4>\\Engine\\Binaries\\ThirdParty\\DotNet\\6.0.302\\windows\\dotnet.exe",
+        "<UE_5.4.4>\\Engine\\Binaries\\DotNET\\UnrealBuildTool\\UnrealBuildTool.dll",
+        "NPCEditor",
+        "Win64",
+        "Development",
+        "-Project=<restored-project>\\NPC.uproject",
+        "-WaitMutex",
+        "-NoHotReloadFromIDE",
+        "-CompilerVersion=14.38.33130"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.4060000000026776
+    },
+    {
+      "name": "blueprints",
+      "command": [
+        "<UE_5.4.4>\\Engine\\Binaries\\Win64\\UnrealEditor-Cmd.exe",
+        "<restored-project>\\NPC.uproject",
+        "-ExecutePythonScript=<verification-workspace>\\restore-candidate\\tools\\inspect_blueprints.py",
+        "-NpcBlueprintReport=<verification-workspace>\\fresh-validation\\blueprints.json",
+        "-unattended",
+        "-nullrhi",
+        "-nosplash",
+        "-nosound",
+        "-nop4",
+        "-stdout",
+        "-FullStdOutLogOutput",
+        "-abslog=<verification-workspace>\\fresh-validation\\blueprints.log"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 17.7029999999977,
+      "report": "blueprints.json"
+    },
+    {
+      "name": "world",
+      "command": [
+        "<UE_5.4.4>\\Engine\\Binaries\\Win64\\UnrealEditor-Cmd.exe",
+        "<restored-project>\\NPC.uproject",
+        "-unattended",
+        "-nosplash",
+        "-nosound",
+        "-nop4",
+        "-stdout",
+        "-FullStdOutLogOutput",
+        "-ExecCmds=Automation RunTests NPC.Gameplay.WorldInventory",
+        "-TestExit=Automation Test Queue Empty",
+        "-NpcAuditReport=<verification-workspace>\\fresh-validation\\world.json",
+        "-ReportExportPath=<verification-workspace>\\fresh-validation\\world-automation",
+        "-abslog=<verification-workspace>\\fresh-validation\\world.log",
+        "-nullrhi"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 22.45300000000134,
+      "automation": {
+        "succeeded": 1,
+        "succeededWithWarnings": 0,
+        "failed": 0,
+        "notRun": 0
+      },
+      "report": "world.json"
+    },
+    {
+      "name": "states",
+      "command": [
+        "<UE_5.4.4>\\Engine\\Binaries\\Win64\\UnrealEditor-Cmd.exe",
+        "<restored-project>\\NPC.uproject",
+        "-unattended",
+        "-nosplash",
+        "-nosound",
+        "-nop4",
+        "-stdout",
+        "-FullStdOutLogOutput",
+        "-ExecCmds=Automation RunTests NPC.Gameplay.OriginalContracts",
+        "-TestExit=Automation Test Queue Empty",
+        "-NpcAuditReport=<verification-workspace>\\fresh-validation\\states.json",
+        "-ReportExportPath=<verification-workspace>\\fresh-validation\\states-automation",
+        "-abslog=<verification-workspace>\\fresh-validation\\states.log",
+        "-nullrhi"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 22.93699999999808,
+      "automation": {
+        "succeeded": 1,
+        "succeededWithWarnings": 0,
+        "failed": 0,
+        "notRun": 0
+      },
+      "report": "states.json"
+    },
+    {
+      "name": "interactions",
+      "command": [
+        "<UE_5.4.4>\\Engine\\Binaries\\Win64\\UnrealEditor-Cmd.exe",
+        "<restored-project>\\NPC.uproject",
+        "-unattended",
+        "-nosplash",
+        "-nosound",
+        "-nop4",
+        "-stdout",
+        "-FullStdOutLogOutput",
+        "-ExecCmds=Automation RunTests NPC.Gameplay.InteractionContracts",
+        "-TestExit=Automation Test Queue Empty",
+        "-NpcInteractionReport=<verification-workspace>\\fresh-validation\\interactions.json",
+        "-ReportExportPath=<verification-workspace>\\fresh-validation\\interactions-automation",
+        "-abslog=<verification-workspace>\\fresh-validation\\interactions.log",
+        "-nullrhi"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 22.718999999997322,
+      "automation": {
+        "succeeded": 1,
+        "succeededWithWarnings": 0,
+        "failed": 0,
+        "notRun": 0
+      },
+      "report": "interactions.json"
+    },
+    {
+      "name": "quests",
+      "command": [
+        "<UE_5.4.4>\\Engine\\Binaries\\Win64\\UnrealEditor-Cmd.exe",
+        "<restored-project>\\NPC.uproject",
+        "-unattended",
+        "-nosplash",
+        "-nosound",
+        "-nop4",
+        "-stdout",
+        "-FullStdOutLogOutput",
+        "-ExecCmds=Automation RunTests NPC.Gameplay.QuestContracts",
+        "-TestExit=Automation Test Queue Empty",
+        "-NpcQuestReport=<verification-workspace>\\fresh-validation\\quests.json",
+        "-ReportExportPath=<verification-workspace>\\fresh-validation\\quests-automation",
+        "-abslog=<verification-workspace>\\fresh-validation\\quests.log",
+        "-nullrhi"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 22.48400000000038,
+      "automation": {
+        "succeeded": 1,
+        "succeededWithWarnings": 0,
+        "failed": 0,
+        "notRun": 0
+      },
+      "report": "quests.json"
+    },
+    {
+      "name": "probability",
+      "command": [
+        "<UE_5.4.4>\\Engine\\Binaries\\Win64\\UnrealEditor-Cmd.exe",
+        "<restored-project>\\NPC.uproject",
+        "-unattended",
+        "-nosplash",
+        "-nosound",
+        "-nop4",
+        "-stdout",
+        "-FullStdOutLogOutput",
+        "-ExecCmds=Automation RunTests NPC.Gameplay.QuestProbability",
+        "-TestExit=Automation Test Queue Empty",
+        "-NpcQuestProbabilityReport=<verification-workspace>\\fresh-validation\\probability.json",
+        "-ReportExportPath=<verification-workspace>\\fresh-validation\\probability-automation",
+        "-abslog=<verification-workspace>\\fresh-validation\\probability.log",
+        "-nullrhi"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 22.59400000000096,
+      "automation": {
+        "succeeded": 1,
+        "succeededWithWarnings": 0,
+        "failed": 0,
+        "notRun": 0
+      },
+      "report": "probability.json"
+    },
+    {
+      "name": "navigation",
+      "command": [
+        "<UE_5.4.4>\\Engine\\Binaries\\Win64\\UnrealEditor-Cmd.exe",
+        "<restored-project>\\NPC.uproject",
+        "-unattended",
+        "-nosplash",
+        "-nosound",
+        "-nop4",
+        "-stdout",
+        "-FullStdOutLogOutput",
+        "-ExecCmds=Automation RunTests NPC.Gameplay.NavigationContracts",
+        "-TestExit=Automation Test Queue Empty",
+        "-NpcNavigationReport=<verification-workspace>\\fresh-validation\\navigation.json",
+        "-ReportExportPath=<verification-workspace>\\fresh-validation\\navigation-automation",
+        "-abslog=<verification-workspace>\\fresh-validation\\navigation.log",
+        "-nullrhi"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 32.125,
+      "automation": {
+        "succeeded": 1,
+        "succeededWithWarnings": 0,
+        "failed": 0,
+        "notRun": 0
+      },
+      "report": "navigation.json"
+    },
+    {
+      "name": "inventory-input",
+      "command": [
+        "<UE_5.4.4>\\Engine\\Binaries\\Win64\\UnrealEditor-Cmd.exe",
+        "<restored-project>\\NPC.uproject",
+        "-unattended",
+        "-nosplash",
+        "-nosound",
+        "-nop4",
+        "-stdout",
+        "-FullStdOutLogOutput",
+        "-ExecCmds=Automation RunTests NPC.Gameplay.InventoryInputContracts",
+        "-TestExit=Automation Test Queue Empty",
+        "-NpcInventoryInputReport=<verification-workspace>\\fresh-validation\\inventory-input.json",
+        "-ReportExportPath=<verification-workspace>\\fresh-validation\\inventory-input-automation",
+        "-abslog=<verification-workspace>\\fresh-validation\\inventory-input.log",
+        "-nullrhi"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 82.59400000000096,
+      "automation": {
+        "succeeded": 1,
+        "succeededWithWarnings": 0,
+        "failed": 0,
+        "notRun": 0
+      },
+      "report": "inventory-input.json"
+    }
+  ],
+  "status": "passed"
+}

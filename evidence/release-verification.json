@@ -1,0 +1,26 @@
+{
+  "schema": "npc-release-verification/v1",
+  "source_version": "1",
+  "status": "passed",
+  "scope": "Same-computer fresh source restoration and native Windows Unreal Engine checks. The installed engine/toolchain and system caches are shared. This is not an independent-machine or exhaustive-input certification.",
+  "original_git_revision": "a3a518e62ac576dad6b9f586f0aa4fbb21b671ac",
+  "original_archive_sha256": "ba8e4ba770461e5272ff6cfaeaf4be9fe0219ec3fa630a404572c627e8080bfe",
+  "source_manifest": "manifests/final-project.json",
+  "source_manifest_sha256": "75c69085356ceadc753c14123a1135781d31092b2c279e2f244ebc0bee17b976",
+  "source_files": 2371,
+  "overlay_files": 29,
+  "replaced_files": 7,
+  "added_editor_source_files": 22,
+  "fresh_runner_report": "reports/fresh-restoration/run.json",
+  "blueprints_compiled": 46,
+  "compile_errors": 0,
+  "compile_warnings": 0,
+  "gameplay_suites_passed": 7,
+  "final_rendered_profile_runs_passed": 9,
+  "profile_scope": "Maintained project with identical production source and profiling implementation. Three repetitions for each 5/20/50 NPC workload; whole-world actor-tick and editor end-frame intervals.",
+  "follow_speed_gameplay_change": false,
+  "declined_lookup_optimization": {
+    "measured_reduction_percent": 4.0344978,
+    "adoption_threshold_percent": 5
+  }
+}

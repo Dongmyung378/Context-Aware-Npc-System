@@ -1,0 +1,169 @@
+{
+  "schema": "npc-portfolio-figures/v1",
+  "language": "en",
+  "renderer": "Matplotlib 3.11.2",
+  "generator_sha256": "4e6d6b48ad7dfb62fbb82eee8de152b46bdad0296ddca461a39c823b3d90a5ce",
+  "svg_text": "portable paths",
+  "state_contracts": {
+    "initial_passed": 69,
+    "corrected_passed": 78,
+    "total": 78,
+    "scope": "same actual PIE state contracts, not model accuracy"
+  },
+  "probability": [
+    {
+      "count": 976,
+      "trials": 10000,
+      "rate": 0.0976,
+      "lower": 0.09193694057269151,
+      "upper": 0.103572101316029,
+      "threshold": 0.1,
+      "seed": 378
+    },
+    {
+      "count": 1003,
+      "trials": 10000,
+      "rate": 0.1003,
+      "lower": 0.09456489044619147,
+      "upper": 0.10634207785132739,
+      "threshold": 0.1,
+      "seed": 378,
+      "stamina": 100.0,
+      "money": 1000.0
+    }
+  ],
+  "final_profile_run_medians": {
+    "5": {
+      "world": [
+        4.903201013803482,
+        4.7613512724637985,
+        4.633598029613495
+      ],
+      "editor": [
+        15.029098838567734,
+        15.170801430940628,
+        15.173448249697685
+      ]
+    },
+    "20": {
+      "world": [
+        8.890099823474884,
+        8.79875011742115,
+        8.675999939441681
+      ],
+      "editor": [
+        15.818251296877861,
+        15.684299170970917,
+        15.617799013853073
+      ]
+    },
+    "50": {
+      "world": [
+        16.751598566770554,
+        16.90554991364479,
+        16.395997256040573
+      ],
+      "editor": [
+        23.868348449468613,
+        24.17920157313347,
+        23.52525107562542
+      ]
+    }
+  },
+  "sources": [
+    {
+      "name": "initial-state-contracts-valid.json",
+      "sha256": "ce6234ed9388acb14aba6720b5124367d818354c9fa12a7c4965193fa32d421a"
+    },
+    {
+      "name": "corrected-state-contracts.json",
+      "sha256": "a557c9672754af9e910bec6f1649bd5b2310747cd850e38c8f4f776cb598cf2d"
+    },
+    {
+      "name": "corrected-interaction-contracts.json",
+      "sha256": "d321c73c84c2504cbfb9a1a0b454ad3e8f83e797fcf92f5948e0f059c91edb16"
+    },
+    {
+      "name": "corrected-quest-probability.json",
+      "sha256": "fe39a1b69d26bb80798b1ee8be0563cf7bd4a83a1963132bf8f42f53bafb257c"
+    },
+    {
+      "name": "final-profile-batch.json",
+      "sha256": "1a3cd39e51fe724f6be7976513e572970e9b1d6ffb273ed4cba52553e594fe12"
+    },
+    {
+      "name": "final-navigation-contracts.json",
+      "sha256": "3d6c9333433826c60a5219b8133d8cd52307ec654a8cce53880106f8fab93b6a"
+    },
+    {
+      "name": "final-profile-5-r1.json",
+      "sha256": "01cb4b7e4f8fb9504c474b87474f405e2f71f17ee8c4829a33cc37bd81c9fdf5"
+    },
+    {
+      "name": "final-profile-5-r2.json",
+      "sha256": "f1e1cef6f009d0737e594737b339a5fc1da4b0429bbc1ed3ce83fbd276b96caf"
+    },
+    {
+      "name": "final-profile-5-r3.json",
+      "sha256": "542ee38dad1c3d8b02fdf20a02beca310c65c3e128e2a3db880a2f2bbafe14f7"
+    },
+    {
+      "name": "final-profile-20-r1.json",
+      "sha256": "e7e24e0e8e5f01bd55c1627015e76a5d98f7ce9e81c6568a73d5de794f2a8d20"
+    },
+    {
+      "name": "final-profile-20-r2.json",
+      "sha256": "d154dd2a5b349c2167db0085ab9dfd7bbfefd9af42d3ced0a88d0d3af04ec0fd"
+    },
+    {
+      "name": "final-profile-20-r3.json",
+      "sha256": "09b4ff5070a6363f6508a9d2e51d907bcf137ccf769c14d62cb7729fc833e559"
+    },
+    {
+      "name": "final-profile-50-r1.json",
+      "sha256": "35f6da13a14ddb5d69e168e0cd674d9051f0bb0da4681a4b08e1badd245ba65f"
+    },
+    {
+      "name": "final-profile-50-r2.json",
+      "sha256": "e9b14dafb46b21bff0ced0e400db9d2f751ddd192cfe0a48ce1a7e83dfd87e67"
+    },
+    {
+      "name": "final-profile-50-r3.json",
+      "sha256": "b1ca97e080f3560aaaef3beb5123be66cdf39cb6de2dfb4bf8cd77f5405d626a"
+    }
+  ],
+  "artifacts": [
+    {
+      "name": "npc-state-contracts.svg",
+      "sha256": "3f9f290e9ae964953229c815f756fe0abc21bc4860b689846c404523dd2196cd"
+    },
+    {
+      "name": "npc-state-contracts.png",
+      "sha256": "8e4eccee81f7b4044421935238dcf39dc9642253d471cfa626372ef486297c84"
+    },
+    {
+      "name": "npc-probability.svg",
+      "sha256": "9b2ddc96e71a9d2ff9c9d2ed6c406ab093b1ddb0743ff652f0e176f84be6a40f"
+    },
+    {
+      "name": "npc-probability.png",
+      "sha256": "346008f8152d9c31b139f9b0f2d1b92039c6ae69984b1f68ae5735cdc206db00"
+    },
+    {
+      "name": "npc-validation-overview.svg",
+      "sha256": "2a0dd0995b8d8d3d8c4d2f7179fe4075795f936edab9f27aac7a07debb7d5c71"
+    },
+    {
+      "name": "npc-validation-overview.png",
+      "sha256": "c1c7c95a48297ab634d59be44c998783931adaf6d7d9b3a3e464ba5bd6f4a08a"
+    },
+    {
+      "name": "npc-runtime-profile.svg",
+      "sha256": "ea8226e7653498f98b2da3936e144ac04f8e6c82753f15b97f075cedb3e9e9b4"
+    },
+    {
+      "name": "npc-runtime-profile.png",
+      "sha256": "045049750ade45d7d9c4c481febf120a8470cdcb780921e62563e49349ee70bd"
+    }
+  ]
+}

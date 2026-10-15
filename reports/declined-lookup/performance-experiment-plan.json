@@ -1,0 +1,11 @@
+{
+  "schema": "npc-bounded-performance-plan/v1",
+  "status": "fixed_before_candidate_measurements",
+  "candidate": "Consolidate three GameMode lookup and cast pairs into one per original NPC Tick, preserving all ordered Sequence branches and per-frame behavior",
+  "baseline": "Published original Content, three independent editor runs per NPC count at 5, 20 and 50, fixed 1280x720 D3D12 viewport, 10-second warmup and 15-second capture",
+  "primary_metric": "Median of three run medians for the actual PIE world actor-tick span at 50 NPCs, including all world actors rather than isolated NPC CPU time",
+  "early_stop": "Measure three 50-NPC candidate runs first. If the primary median reduction is below 5 percent, decline adoption and stop this experiment",
+  "adoption_gate": "At least 5 percent lower primary median, all functional contracts unchanged or corrected, then no greater than 5 percent regression in median-of-run-p95 world actor-tick spans at 5 or 20 NPCs",
+  "non_claims": "This is a bounded single-machine engineering screen, not statistical significance or a general FPS guarantee. Raw timings and run variation remain available",
+  "preservation": "Keep the initial asset and experiment results. A declined candidate remains inspectable source tooling and is excluded from the final playable asset"
+}

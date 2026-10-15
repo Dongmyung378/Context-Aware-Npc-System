@@ -1,0 +1,784 @@
+{
+  "schema_version": 1,
+  "source_version": "1",
+  "engine_version": "5.4.4",
+  "original_archive": {
+    "bytes": 2257866122,
+    "sha256": "ba8e4ba770461e5272ff6cfaeaf4be9fe0219ec3fa630a404572c627e8080bfe"
+  },
+  "original_manifest": "manifests/original-project.json",
+  "overlay_manifest": "manifests/overlay.json",
+  "final_manifest": "manifests/final-project.json",
+  "files": [
+    {
+      "path": "README.ko.md",
+      "bytes": 13511,
+      "sha256": "0ae1a6de15cfcd48336b09090c473bd9911dcf1ca55e03b0ee08f4700182c158"
+    },
+    {
+      "path": "README.md",
+      "bytes": 12026,
+      "sha256": "3423d7110da2f1d032fa0c1abb85be18a68467c12c78f8a144084edbdb39a8a6"
+    },
+    {
+      "path": "docs/architecture.ko.md",
+      "bytes": 18088,
+      "sha256": "91c0e17556bc8b17f7db83019a28e16bf13508967d1573e5cb832290ffd7e61a"
+    },
+    {
+      "path": "docs/architecture.md",
+      "bytes": 15393,
+      "sha256": "2616ae557344b6a5547164e7baca42f808b391ff768d40fd952843f220dc8f12"
+    },
+    {
+      "path": "docs/blueprint-inspection.ko.md",
+      "bytes": 11085,
+      "sha256": "82b027daf443ed368586b2fc4ce8bfce0ee571b426e374732787d67af683bf10"
+    },
+    {
+      "path": "docs/blueprint-inspection.md",
+      "bytes": 9342,
+      "sha256": "9f54dc14b94d9e0517519f78423f99ddb49157d0e112e890daed3fc494185f7b"
+    },
+    {
+      "path": "docs/reproduce.ko.md",
+      "bytes": 12413,
+      "sha256": "25f2d5a2d053d16214c106d4f02e4421ee225b9028e706f391e23c0e8ff9c97c"
+    },
+    {
+      "path": "docs/reproduce.md",
+      "bytes": 10947,
+      "sha256": "0d58e893453423e5ce8db0ff76c7b2f0d97a2a58649e9c906b7b126af56f2503"
+    },
+    {
+      "path": "docs/results.ko.md",
+      "bytes": 15698,
+      "sha256": "26e01af40a14a0a122a37d56714eb612a457befce97c318d7a1e81515dc68f79"
+    },
+    {
+      "path": "docs/results.md",
+      "bytes": 14051,
+      "sha256": "52ec118833c3265e676b09eeea9b6a953343cc87175a8aeeec0b8b19de79815b"
+    },
+    {
+      "path": "docs/source-provenance.ko.md",
+      "bytes": 7145,
+      "sha256": "8700454ffeb646484c1d747975f2c009c084a34133ed448ce6f1853a5dbe7628"
+    },
+    {
+      "path": "docs/source-provenance.md",
+      "bytes": 6312,
+      "sha256": "68032acd5b26352076794b91cec7e933299dccdaa8d6d43c1d7797ad8d375864"
+    },
+    {
+      "path": "evidence/cold-source-build.json",
+      "bytes": 690,
+      "sha256": "09606db0bdd3c6caeb9fed4599c4d8f550ac490f90d9a320cd74391f39006162"
+    },
+    {
+      "path": "evidence/python-tool-checks.json",
+      "bytes": 662,
+      "sha256": "a16d0d688cd26dd3c2ea7f3cad88dce52f2f2e29f812e6ef2a640fdce8a5bd6c"
+    },
+    {
+      "path": "evidence/release-verification.json",
+      "bytes": 1351,
+      "sha256": "5f52c3b6b191cd1542db768656763d4dafb11ef93bd6e35db25f094fdf82c604"
+    },
+    {
+      "path": "evidence/rendered-capture.json",
+      "bytes": 1191,
+      "sha256": "2c5d3453a13c57e22078aa749e6be62b98993b7f4a0cac45f87f413bf32c8ca4"
+    },
+    {
+      "path": "evidence/source-restoration.json",
+      "bytes": 482,
+      "sha256": "1da5aec51a9918d6b035fa2e61304395a465b37839e9c2fbfe7bce01e4884677"
+    },
+    {
+      "path": "figures/README.ko.md",
+      "bytes": 1905,
+      "sha256": "cd03855c94d1654dff93af12509e547f84b04622012d2a63327a75e614615f46"
+    },
+    {
+      "path": "figures/README.md",
+      "bytes": 1632,
+      "sha256": "825ce026ae6275eda31ab8273da35bb51968f45fd28af7a69f927ecfeba93b10"
+    },
+    {
+      "path": "figures/en/figures-manifest.json",
+      "bytes": 4992,
+      "sha256": "d21f6c4ba8d3dfd07507112c06ae9412ce23cb5eceacd777430263cb77133fe2"
+    },
+    {
+      "path": "figures/en/npc-probability.png",
+      "bytes": 83791,
+      "sha256": "346008f8152d9c31b139f9b0f2d1b92039c6ae69984b1f68ae5735cdc206db00"
+    },
+    {
+      "path": "figures/en/npc-probability.svg",
+      "bytes": 72321,
+      "sha256": "9b2ddc96e71a9d2ff9c9d2ed6c406ab093b1ddb0743ff652f0e176f84be6a40f"
+    },
+    {
+      "path": "figures/en/npc-runtime-profile.png",
+      "bytes": 115115,
+      "sha256": "045049750ade45d7d9c4c481febf120a8470cdcb780921e62563e49349ee70bd"
+    },
+    {
+      "path": "figures/en/npc-runtime-profile.svg",
+      "bytes": 82328,
+      "sha256": "ea8226e7653498f98b2da3936e144ac04f8e6c82753f15b97f075cedb3e9e9b4"
+    },
+    {
+      "path": "figures/en/npc-state-contracts.png",
+      "bytes": 64578,
+      "sha256": "8e4eccee81f7b4044421935238dcf39dc9642253d471cfa626372ef486297c84"
+    },
+    {
+      "path": "figures/en/npc-state-contracts.svg",
+      "bytes": 56839,
+      "sha256": "3f9f290e9ae964953229c815f756fe0abc21bc4860b689846c404523dd2196cd"
+    },
+    {
+      "path": "figures/en/npc-validation-overview.png",
+      "bytes": 135339,
+      "sha256": "c1c7c95a48297ab634d59be44c998783931adaf6d7d9b3a3e464ba5bd6f4a08a"
+    },
+    {
+      "path": "figures/en/npc-validation-overview.svg",
+      "bytes": 104665,
+      "sha256": "2a0dd0995b8d8d3d8c4d2f7179fe4075795f936edab9f27aac7a07debb7d5c71"
+    },
+    {
+      "path": "figures/ko/figures-manifest.json",
+      "bytes": 4992,
+      "sha256": "f8c5331b827e98d75c22de95f829cf6d1c3126cf2b5646623a98f269cda19c52"
+    },
+    {
+      "path": "figures/ko/npc-probability.png",
+      "bytes": 73413,
+      "sha256": "0de340182bcf931286c65a724775698c8ce39aecd161ad518698c52304369e56"
+    },
+    {
+      "path": "figures/ko/npc-probability.svg",
+      "bytes": 86297,
+      "sha256": "c67e188956f07ea53b3196ed65d19d3c9e0044c0ea746dca167c0b2f72a28eb0"
+    },
+    {
+      "path": "figures/ko/npc-runtime-profile.png",
+      "bytes": 103145,
+      "sha256": "29c6147e7d6e75ae0c0ef27c323610ac65c1a9e006779e4cda961bbdac85412b"
+    },
+    {
+      "path": "figures/ko/npc-runtime-profile.svg",
+      "bytes": 104470,
+      "sha256": "6a9f26d91c73efba56984547afc81b5122b4abf18d4fcb14d42413bb7e239dfe"
+    },
+    {
+      "path": "figures/ko/npc-state-contracts.png",
+      "bytes": 53398,
+      "sha256": "1488bf6d35dd7cd0df882d1c1073dfdf6321d813ca42cd6a093c5a8b4dc96080"
+    },
+    {
+      "path": "figures/ko/npc-state-contracts.svg",
+      "bytes": 55965,
+      "sha256": "a79d3994261ce2504055eb6d23fc33b31b8290781e22b67cf067f088f4ae5e0a"
+    },
+    {
+      "path": "figures/ko/npc-validation-overview.png",
+      "bytes": 125286,
+      "sha256": "a05fa4d4bc219d801f7b26a103f941ddc6febaecf1a8afa503d6fb099256f089"
+    },
+    {
+      "path": "figures/ko/npc-validation-overview.svg",
+      "bytes": 129520,
+      "sha256": "ad1ba121d2865b0951599bcebf8f86114c8ee68074af524ae00aa223bdb019c3"
+    },
+    {
+      "path": "figures/screenshots/dialogue.png",
+      "bytes": 1045349,
+      "sha256": "ccb08c65ee03e4c74153864c0c2c33e4dfc252f78aa7f1225afa22845313c5bf"
+    },
+    {
+      "path": "figures/screenshots/gameplay.png",
+      "bytes": 1104571,
+      "sha256": "bbc58e4dd6a196e74d7dd12c980aa8c580c2a667979d5591d4399f6583f326e1"
+    },
+    {
+      "path": "figures/screenshots/trading.png",
+      "bytes": 410592,
+      "sha256": "d2afa8d740d4384f4e446b3b37340bd6c2906c6c4d3463ee0ec003a89d2b5f7f"
+    },
+    {
+      "path": "inspections/README.ko.md",
+      "bytes": 2032,
+      "sha256": "9ba7a94bc09169156fcb6391c42f9955acc88f4ad757881396f5f7ba3ed2e078"
+    },
+    {
+      "path": "inspections/README.md",
+      "bytes": 1788,
+      "sha256": "e6e19d4b362dc9ef4c05d83f3adb15f03c4e99875aac57e627fba6b27f2afcf2"
+    },
+    {
+      "path": "inspections/behavior-tree/BT_NPC-task-settings.json",
+      "bytes": 1860,
+      "sha256": "8a9b741d6618254e80392ccc796583df51153645f5379975ad28eb9437fd8b98"
+    },
+    {
+      "path": "inspections/blueprints/initial/BPI_Interaction.json",
+      "bytes": 4547,
+      "sha256": "54c54bf93c12566e3120cd9b4f3be4bd7c45f7a5aa2937bf8c19b65e74048ec5"
+    },
+    {
+      "path": "inspections/blueprints/initial/BP_GameMode.json",
+      "bytes": 238405,
+      "sha256": "40844abdace7a27391cd8a645a71b86d923bbd82f6ec6acde250d66a1b8e58b0"
+    },
+    {
+      "path": "inspections/blueprints/initial/BP_Item_Master.json",
+      "bytes": 335423,
+      "sha256": "68b4dcc290f4188a634ea505b0382a2609a60494e26b8289d3abe85d92674966"
+    },
+    {
+      "path": "inspections/blueprints/initial/BP_Mushroom.json",
+      "bytes": 335423,
+      "sha256": "68b4dcc290f4188a634ea505b0382a2609a60494e26b8289d3abe85d92674966"
+    },
+    {
+      "path": "inspections/blueprints/initial/BP_NPC_Standard.json",
+      "bytes": 1945505,
+      "sha256": "16a1ef0577eb80f3816691e251a86da92ee0a6c3657fba289f935f3fb4697a95"
+    },
+    {
+      "path": "inspections/blueprints/initial/BP_ThirdPersonCharacter.json",
+      "bytes": 363433,
+      "sha256": "a69bc4fcf75e645df0ed86fbfd66f7f22d144898d16d9bc2bf542da76a3f3c8d"
+    },
+    {
+      "path": "inspections/blueprints/initial/BTD_RandomChance.json",
+      "bytes": 15745,
+      "sha256": "709c6961e34bba9bc514e320808ccbcbeeeea2b4e3a39bfb23daf9b9d7f35164"
+    },
+    {
+      "path": "inspections/blueprints/initial/BTTask_ChasePlayer.json",
+      "bytes": 25409,
+      "sha256": "fcf077908f3d3cf10dd2ef94d3e92f5858f5fcdfd3bdffcc0bab515e56131201"
+    },
+    {
+      "path": "inspections/blueprints/initial/BTTask_PatrolRandom.json",
+      "bytes": 59687,
+      "sha256": "c731d72e791f489b02329613b1e134497677256f3a51e90bf36a9219255c9431"
+    },
+    {
+      "path": "inspections/blueprints/initial/My_AIController.json",
+      "bytes": 22718,
+      "sha256": "f80a8d503fafab50c07cba775bac1f3ad022559aa8f928173c701e4a1e0176d7"
+    },
+    {
+      "path": "inspections/blueprints/initial/WBP_Clock_Stamina_Money_Dash.json",
+      "bytes": 141588,
+      "sha256": "a767846e13b8a31e59d22f86d6fa968af3873bd0e2a5bc270d307cee8a8d0bd0"
+    },
+    {
+      "path": "inspections/blueprints/initial/WBP_Dialogue.json",
+      "bytes": 8849,
+      "sha256": "b7d556047064e03bccc25d1cba9a17ddc0c1485d108087250763ad6875b55784"
+    },
+    {
+      "path": "inspections/blueprints/initial/WBP_DialogueEnd.json",
+      "bytes": 8849,
+      "sha256": "b7d556047064e03bccc25d1cba9a17ddc0c1485d108087250763ad6875b55784"
+    },
+    {
+      "path": "inspections/blueprints/initial/WBP_Interaction.json",
+      "bytes": 8861,
+      "sha256": "a016a434c5441cac9469d913d1d1756f07a08ba9c725ae0d4498ee05051e3154"
+    },
+    {
+      "path": "inspections/blueprints/initial/WBP_InventoryLine.json",
+      "bytes": 736896,
+      "sha256": "9ec2424765d1ae587457a3f6a95133d755463a801ad855635ca2c9354e8514ef"
+    },
+    {
+      "path": "inspections/blueprints/initial/WBP_InventoryMain.json",
+      "bytes": 54019,
+      "sha256": "65ef7795da60244ad836835db7fd3bbb139b91d9b2a66b1bc7d2b09ee4ca9e18"
+    },
+    {
+      "path": "inspections/blueprints/initial/WBP_ShopMain.json",
+      "bytes": 153959,
+      "sha256": "26f6c0204f45bcc80f3596064494e4966599862ca3fa481462a0270d215cb081"
+    },
+    {
+      "path": "inspections/blueprints/initial/WBP_Take.json",
+      "bytes": 8833,
+      "sha256": "866b08205ea97122318790f99934ce576057abafd30fb068b2b1baac3a4d9e5f"
+    },
+    {
+      "path": "inspections/blueprints/maintained/BP_NPC_Standard.json",
+      "bytes": 1949890,
+      "sha256": "58de489100e0213496e5ad4555c1d486adc10fcd868fd40e72bbf8af20d95354"
+    },
+    {
+      "path": "inspections/blueprints/npc-execution-changes.json",
+      "bytes": 2986,
+      "sha256": "b1a3ecfd94e2a2995bcb2ff1d17f7d5fd18fc41ba4d8e7a02f2cf198db8deb8f"
+    },
+    {
+      "path": "inspections/index.json",
+      "bytes": 20982,
+      "sha256": "28c1c68551d2b9c25a928b7652eca96490c8d691d10774594f747113117ae113"
+    },
+    {
+      "path": "inspections/tables/initial/DT_Item_Data.json",
+      "bytes": 19209,
+      "sha256": "314fb26d1a534bb3d63d955e741c8450c32c1309d7687e13438ae9e67fa0dcf4"
+    },
+    {
+      "path": "inspections/tables/initial/DT_NPC_Data.json",
+      "bytes": 2823,
+      "sha256": "9d087b2b764f4d585269b3bd3bdad7c6f06e90e105cb26dffaf253642a8865bf"
+    },
+    {
+      "path": "inspections/tables/initial/DT_QuestList.json",
+      "bytes": 8373,
+      "sha256": "79ba39f9a3e975ff31f8ce945103a917089af4384b71aa82f62d3bd262548759"
+    },
+    {
+      "path": "inspections/vendor/butterfly-construction-change.json",
+      "bytes": 1252,
+      "sha256": "192c25dbe7266db9132862b49fd8d619458efd59eb612f20df3e2176edf991df"
+    },
+    {
+      "path": "inspections/vendor/initial/BP_Butterfly.json",
+      "bytes": 193786,
+      "sha256": "2f48966170dfb63a65e2bf4e930d1e2fb23d11793ddd72347bdc5fea69f1229e"
+    },
+    {
+      "path": "inspections/vendor/maintained/BP_Butterfly.json",
+      "bytes": 161348,
+      "sha256": "2c4256b597f45b7fbeb187c18f5787dc9da71c62dd3dd9f2551bb57ed074506b"
+    },
+    {
+      "path": "manifests/final-project.json",
+      "bytes": 517296,
+      "sha256": "75c69085356ceadc753c14123a1135781d31092b2c279e2f244ebc0bee17b976"
+    },
+    {
+      "path": "manifests/original-project.json",
+      "bytes": 513010,
+      "sha256": "fdaec0addc647fbee06df82787da429e3bb22735a10da4be0e57e39e2db65887"
+    },
+    {
+      "path": "manifests/overlay.json",
+      "bytes": 9288,
+      "sha256": "3fdc1b79e91a3f363c1d4bf04b73302ddcb35cdb253951eef3c057ed32090ec8"
+    },
+    {
+      "path": "overlay/Config/DefaultEngine.ini",
+      "bytes": 2737,
+      "sha256": "bcb54a2b3193a1babc30c782fd4440ef25ec248328a6654abf71f1764136548e"
+    },
+    {
+      "path": "overlay/Config/DefaultGame.ini",
+      "bytes": 279,
+      "sha256": "cd971e10cc71d2b563daff2147e10b045493c4a1a16b57971d3eebe65958b678"
+    },
+    {
+      "path": "overlay/Content/AdvancedVillagePack/Blueprints/BP_Butterfly.uasset",
+      "bytes": 256859,
+      "sha256": "42a73c962c4fd230ece429dd5be8c570e59a9413f6f19920588bb6a09dd1e259"
+    },
+    {
+      "path": "overlay/Content/ThirdPerson/Blueprints/BP_NPC_Standard.uasset",
+      "bytes": 1245641,
+      "sha256": "34016ac778f1fc6dd8c64c21c9f9248b73ef8d60ce89c2e9fd28ccf61737e759"
+    },
+    {
+      "path": "overlay/Content/ThirdPerson/Maps/ThirdPersonMap.umap",
+      "bytes": 22275,
+      "sha256": "bcf2e864488502f833dec59b8e47385400c9a02e6d33815bf8e4b41114ab6614"
+    },
+    {
+      "path": "overlay/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/6/Y8/B5W8N6X01MFMWF4ZO4QWYL.uasset",
+      "bytes": 469506,
+      "sha256": "49b9836aa1405a6d35b71e8a566ab3eacc847ce7fdf331bd9825f85dd7f42ad7"
+    },
+    {
+      "path": "overlay/NPC.uproject",
+      "bytes": 776,
+      "sha256": "95f45cdd6eace5594c8d153d63e0fedad2cff6ba0ba8f31660c27b8d91f49ea9"
+    },
+    {
+      "path": "overlay/Plugins/NpcAudit/NpcAudit.uplugin",
+      "bytes": 411,
+      "sha256": "4d72beeccfca70a0778dfc3fc2a5c7ec24b196fa1378f9963aa86fcb9ec761db"
+    },
+    {
+      "path": "overlay/Plugins/NpcAudit/README.md",
+      "bytes": 4782,
+      "sha256": "d69872146c1e54cdd601e8ec0c48527450b44db009d3ea036126dec95a681a16"
+    },
+    {
+      "path": "overlay/Plugins/NpcAudit/Source/NpcAudit/NpcAudit.Build.cs",
+      "bytes": 496,
+      "sha256": "8f4549bb4e1b36aa119679ce2c6d30e71f1f82821f75d04f1933e41a64364805"
+    },
+    {
+      "path": "overlay/Plugins/NpcAudit/Source/NpcAudit/Private/NpcAuditLibrary.cpp",
+      "bytes": 28768,
+      "sha256": "90d8f63be7cb41adb94022e23b55ccaaf4808c107f1008e662a3fcf355a68c8e"
+    },
+    {
+      "path": "overlay/Plugins/NpcAudit/Source/NpcAudit/Private/NpcAuditModule.cpp",
+      "bytes": 84,
+      "sha256": "fbd823a23fb67ba83238c6f8bf7909eec31a4348c126100e3d909ea1985b3aa9"
+    },
+    {
+      "path": "overlay/Plugins/NpcAudit/Source/NpcAudit/Private/NpcBlueprintPatchLibrary.cpp",
+      "bytes": 4926,
+      "sha256": "990632d7fcbb3b8705545321b83f494218ef4e15b322b72737985921a7db44b2"
+    },
+    {
+      "path": "overlay/Plugins/NpcAudit/Source/NpcAudit/Private/NpcGameplayTests.cpp",
+      "bytes": 42344,
+      "sha256": "6b1cd0afc77d3bb62ec308074273c66f7e73ee38ffe6a061e9faf3c060e2f269"
+    },
+    {
+      "path": "overlay/Plugins/NpcAudit/Source/NpcAudit/Private/NpcInteractionTests.cpp",
+      "bytes": 56423,
+      "sha256": "e3e57b1bd72700bfb1892bdd944357f25752466964157f0dc170dd6033932477"
+    },
+    {
+      "path": "overlay/Plugins/NpcAudit/Source/NpcAudit/Private/NpcInventoryInputTests.cpp",
+      "bytes": 36680,
+      "sha256": "89b41bc0c7e60fdd9266d47fa4e7423080ca0c5d85991d668141f1286ae7f6d2"
+    },
+    {
+      "path": "overlay/Plugins/NpcAudit/Source/NpcAudit/Private/NpcMaintenanceLibrary.cpp",
+      "bytes": 43918,
+      "sha256": "c8fcf30bf5e97a83ceb6d3f025c8a493aa8630051e940be69032d591a4e87a50"
+    },
+    {
+      "path": "overlay/Plugins/NpcAudit/Source/NpcAudit/Private/NpcNavigationTests.cpp",
+      "bytes": 65210,
+      "sha256": "585ad491dc1d7d79bfddc0917af110ba6372bb73e30cf0620d07e163b0d080f0"
+    },
+    {
+      "path": "overlay/Plugins/NpcAudit/Source/NpcAudit/Private/NpcProbabilityTests.cpp",
+      "bytes": 7717,
+      "sha256": "892296ffc166e3dfbfdb5192ff8dd654f5624aa8e562206c061e3d1b8b904fce"
+    },
+    {
+      "path": "overlay/Plugins/NpcAudit/Source/NpcAudit/Private/NpcProfileTests.cpp",
+      "bytes": 45946,
+      "sha256": "9cd303b15eb9d48cf60d6b0f9118c32c0c118657ac6b9065bbdb2b3f56b0198c"
+    },
+    {
+      "path": "overlay/Plugins/NpcAudit/Source/NpcAudit/Private/NpcQuestTests.cpp",
+      "bytes": 30349,
+      "sha256": "8a11c56d449fb45a1354f20614d43d99d501ce979868bc3ee7fd1207a2b7d8bc"
+    },
+    {
+      "path": "overlay/Plugins/NpcAudit/Source/NpcAudit/Private/NpcTickOptimizationLibrary.cpp",
+      "bytes": 14264,
+      "sha256": "e562a67f4a5b0d13db1430d669670436fc2042661f96abea545ff81c3c4c170d"
+    },
+    {
+      "path": "overlay/Plugins/NpcAudit/Source/NpcAudit/Private/NpcVendorPatchLibrary.cpp",
+      "bytes": 24784,
+      "sha256": "2b12dedc58420c578e14b7bdf099b222121cf8bb33b6cf0457469300d6846a13"
+    },
+    {
+      "path": "overlay/Plugins/NpcAudit/Source/NpcAudit/Private/NpcVisualTests.cpp",
+      "bytes": 7964,
+      "sha256": "9d45711f7edc76e697aa923e2bc002355c598054fee8cb263cc3eb7d8714b8c7"
+    },
+    {
+      "path": "overlay/Plugins/NpcAudit/Source/NpcAudit/Public/NpcAuditLibrary.h",
+      "bytes": 1902,
+      "sha256": "76a2180068576d99151237a66278ef1b2b560d15a7119efbc9a0f6e82502c802"
+    },
+    {
+      "path": "overlay/Plugins/NpcAudit/Source/NpcAudit/Public/NpcBlueprintPatchLibrary.h",
+      "bytes": 470,
+      "sha256": "72ef5cf5ea84e60c46aa0d65654dbca47c89575d06068d98be95af5b34212bda"
+    },
+    {
+      "path": "overlay/Plugins/NpcAudit/Source/NpcAudit/Public/NpcMaintenanceLibrary.h",
+      "bytes": 2344,
+      "sha256": "5c7b83c775c19dbf1dd8b4361b1663f9311e33554fa43cf16094af8ce5665557"
+    },
+    {
+      "path": "overlay/Plugins/NpcAudit/Source/NpcAudit/Public/NpcTickOptimizationLibrary.h",
+      "bytes": 549,
+      "sha256": "6dc26094c448133973bf7391bba5d621823e1555f91bbe981050cf34fa6c996c"
+    },
+    {
+      "path": "overlay/Plugins/NpcAudit/Source/NpcAudit/Public/NpcVendorPatchLibrary.h",
+      "bytes": 732,
+      "sha256": "8b3b542b47ae2abaa91629985bad1b70c82ef215c4cf8d3164a3f420a6960a6d"
+    },
+    {
+      "path": "reports/README.ko.md",
+      "bytes": 9068,
+      "sha256": "284f372b017d8427ff58897233d1b05f77d2a26c615a9e81889d7b986ef212a2"
+    },
+    {
+      "path": "reports/README.md",
+      "bytes": 7852,
+      "sha256": "767bc52abf38016eec3c34a5a29ff9f013e23d9093df9d6f1161ffb884b52364"
+    },
+    {
+      "path": "reports/corrected-interaction-contracts.json",
+      "bytes": 74146,
+      "sha256": "d321c73c84c2504cbfb9a1a0b454ad3e8f83e797fcf92f5948e0f059c91edb16"
+    },
+    {
+      "path": "reports/corrected-quest-contracts.json",
+      "bytes": 7074,
+      "sha256": "0f7a380ccf8b48973c876702b5d88085c2ec5c4d3a572a32a7fd53cf062ba94b"
+    },
+    {
+      "path": "reports/corrected-quest-probability.json",
+      "bytes": 723,
+      "sha256": "fe39a1b69d26bb80798b1ee8be0563cf7bd4a83a1963132bf8f42f53bafb257c"
+    },
+    {
+      "path": "reports/corrected-state-contracts.json",
+      "bytes": 21631,
+      "sha256": "a557c9672754af9e910bec6f1649bd5b2310747cd850e38c8f4f776cb598cf2d"
+    },
+    {
+      "path": "reports/declined-lookup/baseline-profile-50-r1.json",
+      "bytes": 176378,
+      "sha256": "f199576160476f8493145d77941d8293dd56217e8f24f5cf47f7c32f91a58703"
+    },
+    {
+      "path": "reports/declined-lookup/baseline-profile-50-r2.json",
+      "bytes": 179469,
+      "sha256": "9a690cf13e7d7a41224e79a46d0e03411b004e953f41361c5005b99694820ae3"
+    },
+    {
+      "path": "reports/declined-lookup/baseline-profile-50-r3.json",
+      "bytes": 181627,
+      "sha256": "7c23f3377314e5e030aaa5cba3445f69bbd65a09bc8e6d9e210443ebc7b9a0a0"
+    },
+    {
+      "path": "reports/declined-lookup/candidate-application.json",
+      "bytes": 8749,
+      "sha256": "9b76be2491dde34a79c9d81788ffd03a8a2cbd05a1218d925fc736e970492137"
+    },
+    {
+      "path": "reports/declined-lookup/lookup-candidate-decision.json",
+      "bytes": 770,
+      "sha256": "e874956d396b71d474aaccae46638bd08609a4070cad09e10ffefa57f05e9de9"
+    },
+    {
+      "path": "reports/declined-lookup/lookup-candidate-profile-50-r1.json",
+      "bytes": 187859,
+      "sha256": "d1a7651f89d9effa81d7cc66988667897be08d2db10f98e9b42ea48dac3a708a"
+    },
+    {
+      "path": "reports/declined-lookup/lookup-candidate-profile-50-r2.json",
+      "bytes": 184530,
+      "sha256": "b8638bbb7466a75b4de2dc81cd5cf2fca844e3e6e06e2af24211487222e87165"
+    },
+    {
+      "path": "reports/declined-lookup/lookup-candidate-profile-50-r3.json",
+      "bytes": 185897,
+      "sha256": "fe78b82131e22003dfd77b90972800ee369bfcb11528042f9861682e715fcbcc"
+    },
+    {
+      "path": "reports/declined-lookup/performance-experiment-plan.json",
+      "bytes": 1332,
+      "sha256": "d3fc5021e6243d3a27c9fc35ea0e84a84f1e7449c136dd012b9a4001c9eacd28"
+    },
+    {
+      "path": "reports/final-blueprints.json",
+      "bytes": 22720,
+      "sha256": "5d8c95453d499c6daa026b2d495bb9748b6b35a61f6cec3f9a5d039975bdbde3"
+    },
+    {
+      "path": "reports/final-inventory-input-contracts.json",
+      "bytes": 10513,
+      "sha256": "d4c32e65b82fbb8a0bd7de4152627d1e706f0667f11fc00933b3f75e2596f4d2"
+    },
+    {
+      "path": "reports/final-navigation-contracts.json",
+      "bytes": 311385,
+      "sha256": "3d6c9333433826c60a5219b8133d8cd52307ec654a8cce53880106f8fab93b6a"
+    },
+    {
+      "path": "reports/final-profile-batch.json",
+      "bytes": 785,
+      "sha256": "1a3cd39e51fe724f6be7976513e572970e9b1d6ffb273ed4cba52553e594fe12"
+    },
+    {
+      "path": "reports/fresh-restoration/blueprints.json",
+      "bytes": 22720,
+      "sha256": "5d8c95453d499c6daa026b2d495bb9748b6b35a61f6cec3f9a5d039975bdbde3"
+    },
+    {
+      "path": "reports/fresh-restoration/interactions.json",
+      "bytes": 74147,
+      "sha256": "c0a9a0bb32816afa7395cbdae8c93ee03e0261e4b0f2ac3e00a7b45e1654898a"
+    },
+    {
+      "path": "reports/fresh-restoration/inventory-input.json",
+      "bytes": 10515,
+      "sha256": "08744b32eee904717b02ed510cb73a37748ea6e8936769a41458747941ef576a"
+    },
+    {
+      "path": "reports/fresh-restoration/navigation.json",
+      "bytes": 311502,
+      "sha256": "ae01382592adf3009d13611ec287c19237a5dd12fff04a355288ac8acab8cc55"
+    },
+    {
+      "path": "reports/fresh-restoration/probability.json",
+      "bytes": 723,
+      "sha256": "26dec0cf3c19ee20883343daba7c7099acd5f1e4780bf79b613428149662101c"
+    },
+    {
+      "path": "reports/fresh-restoration/quests.json",
+      "bytes": 7074,
+      "sha256": "0f7a380ccf8b48973c876702b5d88085c2ec5c4d3a572a32a7fd53cf062ba94b"
+    },
+    {
+      "path": "reports/fresh-restoration/run.json",
+      "bytes": 8590,
+      "sha256": "6144de537377359a30b7203428cd3361887fcf3e934ade780c91de56cfbe2d19"
+    },
+    {
+      "path": "reports/fresh-restoration/states.json",
+      "bytes": 21631,
+      "sha256": "a557c9672754af9e910bec6f1649bd5b2310747cd850e38c8f4f776cb598cf2d"
+    },
+    {
+      "path": "reports/fresh-restoration/world.json",
+      "bytes": 552642,
+      "sha256": "bff3ad61f59a62937ac1a327f3acf324424259b861e4bfa56bffd2d8385146f5"
+    },
+    {
+      "path": "reports/functional-run.json",
+      "bytes": 8154,
+      "sha256": "d14774d22a35ac1c5bdb934a9b83cd32bbd4b29683004b17df4097e3499c183f"
+    },
+    {
+      "path": "reports/initial-blueprints.json",
+      "bytes": 22956,
+      "sha256": "47f1c9cccdacfc3ffc6653de4353156238b00bdacdf6d481084f2d478dd2ac78"
+    },
+    {
+      "path": "reports/initial-state-contracts-valid.json",
+      "bytes": 21620,
+      "sha256": "ce6234ed9388acb14aba6720b5124367d818354c9fa12a7c4965193fa32d421a"
+    },
+    {
+      "path": "reports/profiles/final-profile-20-r1.json",
+      "bytes": 273349,
+      "sha256": "e7e24e0e8e5f01bd55c1627015e76a5d98f7ce9e81c6568a73d5de794f2a8d20"
+    },
+    {
+      "path": "reports/profiles/final-profile-20-r2.json",
+      "bytes": 274730,
+      "sha256": "d154dd2a5b349c2167db0085ab9dfd7bbfefd9af42d3ced0a88d0d3af04ec0fd"
+    },
+    {
+      "path": "reports/profiles/final-profile-20-r3.json",
+      "bytes": 276570,
+      "sha256": "09b4ff5070a6363f6508a9d2e51d907bcf137ccf769c14d62cb7729fc833e559"
+    },
+    {
+      "path": "reports/profiles/final-profile-5-r1.json",
+      "bytes": 259964,
+      "sha256": "01cb4b7e4f8fb9504c474b87474f405e2f71f17ee8c4829a33cc37bd81c9fdf5"
+    },
+    {
+      "path": "reports/profiles/final-profile-5-r2.json",
+      "bytes": 258540,
+      "sha256": "f1e1cef6f009d0737e594737b339a5fc1da4b0429bbc1ed3ce83fbd276b96caf"
+    },
+    {
+      "path": "reports/profiles/final-profile-5-r3.json",
+      "bytes": 257939,
+      "sha256": "542ee38dad1c3d8b02fdf20a02beca310c65c3e128e2a3db880a2f2bbafe14f7"
+    },
+    {
+      "path": "reports/profiles/final-profile-50-r1.json",
+      "bytes": 265983,
+      "sha256": "35f6da13a14ddb5d69e168e0cd674d9051f0bb0da4681a4b08e1badd245ba65f"
+    },
+    {
+      "path": "reports/profiles/final-profile-50-r2.json",
+      "bytes": 264427,
+      "sha256": "e9b14dafb46b21bff0ced0e400db9d2f751ddd192cfe0a48ce1a7e83dfd87e67"
+    },
+    {
+      "path": "reports/profiles/final-profile-50-r3.json",
+      "bytes": 268670,
+      "sha256": "b1ca97e080f3560aaaef3beb5123be66cdf39cb6de2dfb4bf8cd77f5405d626a"
+    },
+    {
+      "path": "reports/report-provenance.json",
+      "bytes": 12216,
+      "sha256": "a163e202defcbeb1ac6755d91aed5ee4e79cddadf4953874e036c55dd03ca8e1"
+    },
+    {
+      "path": "reports/world-inventory.json",
+      "bytes": 552641,
+      "sha256": "c882afa571ef0020c3e65312d930e43f5386680cf724c7fa51f0b669d95023ef"
+    },
+    {
+      "path": "tests/test_release_metadata.py",
+      "bytes": 8364,
+      "sha256": "3f83429081f353270cf25158bea6d1ea97a311d411612d15b7bca589c13d1f93"
+    },
+    {
+      "path": "tests/test_restore_tools.py",
+      "bytes": 13696,
+      "sha256": "b7a08ad08f79d2efa90443feb9b8fadddd821799954d2b528fab64eb08a6b20c"
+    },
+    {
+      "path": "tests/test_unreal_runner.py",
+      "bytes": 11905,
+      "sha256": "3a4f36f38aedd174bb1dfe15957f74dbd3f8e25073ef4423b64f10fac1eac79c"
+    },
+    {
+      "path": "tools/build_release_metadata.py",
+      "bytes": 17095,
+      "sha256": "c7dc7b5b0cd7b14888959777b833d2908a4652f546fb7b77d7ba6186ad65bd0d"
+    },
+    {
+      "path": "tools/bundle_lib.py",
+      "bytes": 21436,
+      "sha256": "49577ff1996430367abae1f76ac93a99cbdbe4bf5ec71344471c2970b6dd7e5f"
+    },
+    {
+      "path": "tools/generate_figures.py",
+      "bytes": 25605,
+      "sha256": "4e6d6b48ad7dfb62fbb82eee8de152b46bdad0296ddca461a39c823b3d90a5ce"
+    },
+    {
+      "path": "tools/inspect_blueprints.py",
+      "bytes": 2375,
+      "sha256": "37ed1ad9c288d7511bf21d18f901f889b7cd535272c8a4cfcaa0a9198deae622"
+    },
+    {
+      "path": "tools/restore_project.py",
+      "bytes": 1757,
+      "sha256": "3b821e8089306ec25f80a79e96b630b7f98d65b24b0727812378fa52388da57b"
+    },
+    {
+      "path": "tools/run_unreal_checks.py",
+      "bytes": 10064,
+      "sha256": "cdf143cfc5be81bed5fce8367d7e87ebd55842446c7e0a16d78bd544c2d2c5b3"
+    },
+    {
+      "path": "tools/verify_bundle.py",
+      "bytes": 1628,
+      "sha256": "032348ee29701775af3b805144d80cac70509ec9c7e23e3cda3f8fed757cb17e"
+    }
+  ]
+}

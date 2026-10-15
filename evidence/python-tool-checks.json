@@ -1,0 +1,18 @@
+{
+  "schema": "npc-python-tool-checks/v1",
+  "scope": "Synthetic archive, metadata and Unreal-runner report acceptance/orchestration tests; not gameplay execution.",
+  "windows": {
+    "status": "passed",
+    "tests": 44,
+    "python": "3.12.7",
+    "temporary_files": "Workspace-owned temporary folder used for the restricted session."
+  },
+  "linux_wsl": {
+    "status": "passed",
+    "restoration_tests": 18,
+    "release_metadata_tests": 7,
+    "filesystem": "Native Linux temporary filesystem",
+    "actual_unreal_game_executed": false
+  },
+  "windows_test_log_sha256": "870b2370cdae0842016887135941350e22d47ed36db520a76a1f35da0c769f52"
+}

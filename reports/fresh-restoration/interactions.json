@@ -1,0 +1,2176 @@
+{
+  "schema": "npc-interaction-contracts/v1",
+  "test": "NPC.Gameplay.InteractionContracts",
+  "engine_version": "5.4.4-35576357+++UE5+Release-5.4",
+  "map_package": "/Game/ThirdPerson/Maps/ThirdPersonMap",
+  "scope": "Actual original-map PIE player and NPCs, original Blueprint ProcessEvent dispatch, actual constructed UMG UButton OnClicked delegates, and original DecideItem calls. Runtime fixture snapshots are restored. No physical keyboard/mouse or rendered UI claim.",
+  "rng_seed": 378,
+  "target_geometry_fixture": {
+    "scope": "Three original NPCs are made visible and actor-collision-enabled only for the fixed direction fixture. The original hidden/collision flags and transforms are captured and restored. This isolates spatial selection; scheduled NPC availability is not its contract.",
+    "actor_availability": [
+      {
+        "npc_position_index": 0,
+        "actor_name": "BP_NPC_Standard_C_UAID_84A938F497F6CEB202_1348748719",
+        "selected_for_direction_fixture": true,
+        "hidden_before": true,
+        "collision_enabled_before": false,
+        "hidden_after_preparation": false,
+        "collision_enabled_after_preparation": true
+      },
+      {
+        "npc_position_index": 1,
+        "actor_name": "BP_NPC_Standard_C_UAID_84A938F497F6D7C102_2072863143",
+        "selected_for_direction_fixture": true,
+        "hidden_before": true,
+        "collision_enabled_before": false,
+        "hidden_after_preparation": false,
+        "collision_enabled_after_preparation": true
+      },
+      {
+        "npc_position_index": 2,
+        "actor_name": "BP_NPC_Standard_C_UAID_84A938F497F68BC002_1514459711",
+        "selected_for_direction_fixture": true,
+        "hidden_before": false,
+        "collision_enabled_before": true,
+        "hidden_after_preparation": false,
+        "collision_enabled_after_preparation": true
+      },
+      {
+        "npc_position_index": 3,
+        "actor_name": "BP_NPC_Standard_C_UAID_84A938F497F6D8C102_1487365321",
+        "selected_for_direction_fixture": false,
+        "hidden_before": true,
+        "collision_enabled_before": false,
+        "hidden_after_preparation": true,
+        "collision_enabled_after_preparation": false
+      },
+      {
+        "npc_position_index": 4,
+        "actor_name": "BP_NPC_Standard_C_UAID_84A938F497F6D8C102_1427366320",
+        "selected_for_direction_fixture": false,
+        "hidden_before": false,
+        "collision_enabled_before": true,
+        "hidden_after_preparation": false,
+        "collision_enabled_after_preparation": true
+      }
+    ],
+    "actor_availability_restored": true,
+    "restored_actor_availability": [
+      {
+        "actor_name": "BP_NPC_Standard_C_UAID_84A938F497F6CEB202_1348748719",
+        "actor_valid": true,
+        "expected_hidden": true,
+        "expected_collision_enabled": false,
+        "restored_hidden": true,
+        "restored_collision_enabled": false
+      },
+      {
+        "actor_name": "BP_NPC_Standard_C_UAID_84A938F497F6D7C102_2072863143",
+        "actor_valid": true,
+        "expected_hidden": true,
+        "expected_collision_enabled": false,
+        "restored_hidden": true,
+        "restored_collision_enabled": false
+      },
+      {
+        "actor_name": "BP_NPC_Standard_C_UAID_84A938F497F68BC002_1514459711",
+        "actor_valid": true,
+        "expected_hidden": false,
+        "expected_collision_enabled": true,
+        "restored_hidden": false,
+        "restored_collision_enabled": true
+      },
+      {
+        "actor_name": "BP_NPC_Standard_C_UAID_84A938F497F6D8C102_1487365321",
+        "actor_valid": true,
+        "expected_hidden": true,
+        "expected_collision_enabled": false,
+        "restored_hidden": true,
+        "restored_collision_enabled": false
+      },
+      {
+        "actor_name": "BP_NPC_Standard_C_UAID_84A938F497F6D8C102_1427366320",
+        "actor_valid": true,
+        "expected_hidden": false,
+        "expected_collision_enabled": true,
+        "restored_hidden": false,
+        "restored_collision_enabled": true
+      }
+    ]
+  },
+  "target_selection_matrix": {
+    "function": "BP_ThirdPersonCharacter.SendInteractionSignal",
+    "scope": "Fixed three-original-NPC geometry, 30 predefined unique nearest-direction cases; rotate the actual player Actor only. Does not assert camera targeting or physical key input.",
+    "interaction_key": "__NpcAuditSelectionOnly",
+    "oracle": "Predeclared NPC position indices; no runtime recreation of the production selection algorithm. Exact angular ties excluded; no new tie or front-only contract.",
+    "fixed_geometry": [
+      {
+        "npc_position_index": 0,
+        "actor_name": "BP_NPC_Standard_C_UAID_84A938F497F6CEB202_1348748719",
+        "relative_x": 200,
+        "relative_y": 0,
+        "relative_z": 0
+      },
+      {
+        "npc_position_index": 1,
+        "actor_name": "BP_NPC_Standard_C_UAID_84A938F497F6D7C102_2072863143",
+        "relative_x": 140,
+        "relative_y": 140,
+        "relative_z": 0
+      },
+      {
+        "npc_position_index": 2,
+        "actor_name": "BP_NPC_Standard_C_UAID_84A938F497F68BC002_1514459711",
+        "relative_x": -200,
+        "relative_y": 0,
+        "relative_z": 0
+      }
+    ],
+    "trials": 30,
+    "valid_overlap_trials": 30,
+    "dispatched_trials": 30,
+    "success_count": 30,
+    "failure_count": 0,
+    "success_rate": 1,
+    "cases": [
+      {
+        "requested_actor_yaw_degrees": -179,
+        "actual_actor_yaw_degrees": -179,
+        "expected_npc_position_index": 2,
+        "actual_npc_position_index": 2,
+        "actual_target_name": "BP_NPC_Standard_C_UAID_84A938F497F68BC002_1514459711",
+        "overlapping_npc_count": 3,
+        "all_three_expected_npcs_overlap": true,
+        "original_function_dispatched": true,
+        "observed_best_score": 0.9998477101325989,
+        "passed": true
+      },
+      {
+        "requested_actor_yaw_degrees": -165,
+        "actual_actor_yaw_degrees": -165,
+        "expected_npc_position_index": 2,
+        "actual_npc_position_index": 2,
+        "actual_target_name": "BP_NPC_Standard_C_UAID_84A938F497F68BC002_1514459711",
+        "overlapping_npc_count": 3,
+        "all_three_expected_npcs_overlap": true,
+        "original_function_dispatched": true,
+        "observed_best_score": 0.9659258127212524,
+        "passed": true
+      },
+      {
+        "requested_actor_yaw_degrees": -150,
+        "actual_actor_yaw_degrees": -150,
+        "expected_npc_position_index": 2,
+        "actual_npc_position_index": 2,
+        "actual_target_name": "BP_NPC_Standard_C_UAID_84A938F497F68BC002_1514459711",
+        "overlapping_npc_count": 3,
+        "all_three_expected_npcs_overlap": true,
+        "original_function_dispatched": true,
+        "observed_best_score": 0.8660253882408142,
+        "passed": true
+      },
+      {
+        "requested_actor_yaw_degrees": -135,
+        "actual_actor_yaw_degrees": -134.99999999999997,
+        "expected_npc_position_index": 2,
+        "actual_npc_position_index": 2,
+        "actual_target_name": "BP_NPC_Standard_C_UAID_84A938F497F68BC002_1514459711",
+        "overlapping_npc_count": 3,
+        "all_three_expected_npcs_overlap": true,
+        "original_function_dispatched": true,
+        "observed_best_score": 0.7071067690849304,
+        "passed": true
+      },
+      {
+        "requested_actor_yaw_degrees": -120,
+        "actual_actor_yaw_degrees": -119.99999999999997,
+        "expected_npc_position_index": 2,
+        "actual_npc_position_index": 2,
+        "actual_target_name": "BP_NPC_Standard_C_UAID_84A938F497F68BC002_1514459711",
+        "overlapping_npc_count": 3,
+        "all_three_expected_npcs_overlap": true,
+        "original_function_dispatched": true,
+        "observed_best_score": 0.5,
+        "passed": true
+      },
+      {
+        "requested_actor_yaw_degrees": -105,
+        "actual_actor_yaw_degrees": -105.00000000000001,
+        "expected_npc_position_index": 2,
+        "actual_npc_position_index": 2,
+        "actual_target_name": "BP_NPC_Standard_C_UAID_84A938F497F68BC002_1514459711",
+        "overlapping_npc_count": 3,
+        "all_three_expected_npcs_overlap": true,
+        "original_function_dispatched": true,
+        "observed_best_score": 0.258819043636322,
+        "passed": true
+      },
+      {
+        "requested_actor_yaw_degrees": -95,
+        "actual_actor_yaw_degrees": -95.00000000000001,
+        "expected_npc_position_index": 2,
+        "actual_npc_position_index": 2,
+        "actual_target_name": "BP_NPC_Standard_C_UAID_84A938F497F68BC002_1514459711",
+        "overlapping_npc_count": 3,
+        "all_three_expected_npcs_overlap": true,
+        "original_function_dispatched": true,
+        "observed_best_score": 0.08715574443340302,
+        "passed": true
+      },
+      {
+        "requested_actor_yaw_degrees": -85,
+        "actual_actor_yaw_degrees": -85,
+        "expected_npc_position_index": 0,
+        "actual_npc_position_index": 0,
+        "actual_target_name": "BP_NPC_Standard_C_UAID_84A938F497F6CEB202_1348748719",
+        "overlapping_npc_count": 3,
+        "all_three_expected_npcs_overlap": true,
+        "original_function_dispatched": true,
+        "observed_best_score": 0.08715574443340302,
+        "passed": true
+      },
+      {
+        "requested_actor_yaw_degrees": -75,
+        "actual_actor_yaw_degrees": -74.99999999999999,
+        "expected_npc_position_index": 0,
+        "actual_npc_position_index": 0,
+        "actual_target_name": "BP_NPC_Standard_C_UAID_84A938F497F6CEB202_1348748719",
+        "overlapping_npc_count": 3,
+        "all_three_expected_npcs_overlap": true,
+        "original_function_dispatched": true,
+        "observed_best_score": 0.258819043636322,
+        "passed": true
+      },
+      {
+        "requested_actor_yaw_degrees": -60,
+        "actual_actor_yaw_degrees": -59.999999999999986,
+        "expected_npc_position_index": 0,
+        "actual_npc_position_index": 0,
+        "actual_target_name": "BP_NPC_Standard_C_UAID_84A938F497F6CEB202_1348748719",
+        "overlapping_npc_count": 3,
+        "all_three_expected_npcs_overlap": true,
+        "original_function_dispatched": true,
+        "observed_best_score": 0.5,
+        "passed": true
+      },
+      {
+        "requested_actor_yaw_degrees": -45,
+        "actual_actor_yaw_degrees": -45,
+        "expected_npc_position_index": 0,
+        "actual_npc_position_index": 0,
+        "actual_target_name": "BP_NPC_Standard_C_UAID_84A938F497F6CEB202_1348748719",
+        "overlapping_npc_count": 3,
+        "all_three_expected_npcs_overlap": true,
+        "original_function_dispatched": true,
+        "observed_best_score": 0.7071067690849304,
+        "passed": true
+      },
+      {
+        "requested_actor_yaw_degrees": -30,
+        "actual_actor_yaw_degrees": -30.00000000000001,
+        "expected_npc_position_index": 0,
+        "actual_npc_position_index": 0,
+        "actual_target_name": "BP_NPC_Standard_C_UAID_84A938F497F6CEB202_1348748719",
+        "overlapping_npc_count": 3,
+        "all_three_expected_npcs_overlap": true,
+        "original_function_dispatched": true,
+        "observed_best_score": 0.8660253882408142,
+        "passed": true
+      },
+      {
+        "requested_actor_yaw_degrees": -15,
+        "actual_actor_yaw_degrees": -14.999999999999996,
+        "expected_npc_position_index": 0,
+        "actual_npc_position_index": 0,
+        "actual_target_name": "BP_NPC_Standard_C_UAID_84A938F497F6CEB202_1348748719",
+        "overlapping_npc_count": 3,
+        "all_three_expected_npcs_overlap": true,
+        "original_function_dispatched": true,
+        "observed_best_score": 0.9659258127212524,
+        "passed": true
+      },
+      {
+        "requested_actor_yaw_degrees": 0,
+        "actual_actor_yaw_degrees": 0,
+        "expected_npc_position_index": 0,
+        "actual_npc_position_index": 0,
+        "actual_target_name": "BP_NPC_Standard_C_UAID_84A938F497F6CEB202_1348748719",
+        "overlapping_npc_count": 3,
+        "all_three_expected_npcs_overlap": true,
+        "original_function_dispatched": true,
+        "observed_best_score": 1,
+        "passed": true
+      },
+      {
+        "requested_actor_yaw_degrees": 15,
+        "actual_actor_yaw_degrees": 14.999999999999998,
+        "expected_npc_position_index": 0,
+        "actual_npc_position_index": 0,
+        "actual_target_name": "BP_NPC_Standard_C_UAID_84A938F497F6CEB202_1348748719",
+        "overlapping_npc_count": 3,
+        "all_three_expected_npcs_overlap": true,
+        "original_function_dispatched": true,
+        "observed_best_score": 0.9659258127212524,
+        "passed": true
+      },
+      {
+        "requested_actor_yaw_degrees": 20,
+        "actual_actor_yaw_degrees": 20.00000000000001,
+        "expected_npc_position_index": 0,
+        "actual_npc_position_index": 0,
+        "actual_target_name": "BP_NPC_Standard_C_UAID_84A938F497F6CEB202_1348748719",
+        "overlapping_npc_count": 3,
+        "all_three_expected_npcs_overlap": true,
+        "original_function_dispatched": true,
+        "observed_best_score": 0.9396926164627075,
+        "passed": true
+      },
+      {
+        "requested_actor_yaw_degrees": 25,
+        "actual_actor_yaw_degrees": 25.000000000000014,
+        "expected_npc_position_index": 1,
+        "actual_npc_position_index": 1,
+        "actual_target_name": "BP_NPC_Standard_C_UAID_84A938F497F6D7C102_2072863143",
+        "overlapping_npc_count": 3,
+        "all_three_expected_npcs_overlap": true,
+        "original_function_dispatched": true,
+        "observed_best_score": 0.9396926164627075,
+        "passed": true
+      },
+      {
+        "requested_actor_yaw_degrees": 30,
+        "actual_actor_yaw_degrees": 30.000000000000025,
+        "expected_npc_position_index": 1,
+        "actual_npc_position_index": 1,
+        "actual_target_name": "BP_NPC_Standard_C_UAID_84A938F497F6D7C102_2072863143",
+        "overlapping_npc_count": 3,
+        "all_three_expected_npcs_overlap": true,
+        "original_function_dispatched": true,
+        "observed_best_score": 0.9659258127212524,
+        "passed": true
+      },
+      {
+        "requested_actor_yaw_degrees": 45,
+        "actual_actor_yaw_degrees": 45.00000000000003,
+        "expected_npc_position_index": 1,
+        "actual_npc_position_index": 1,
+        "actual_target_name": "BP_NPC_Standard_C_UAID_84A938F497F6D7C102_2072863143",
+        "overlapping_npc_count": 3,
+        "all_three_expected_npcs_overlap": true,
+        "original_function_dispatched": true,
+        "observed_best_score": 1,
+        "passed": true
+      },
+      {
+        "requested_actor_yaw_degrees": 60,
+        "actual_actor_yaw_degrees": 59.99999999999999,
+        "expected_npc_position_index": 1,
+        "actual_npc_position_index": 1,
+        "actual_target_name": "BP_NPC_Standard_C_UAID_84A938F497F6D7C102_2072863143",
+        "overlapping_npc_count": 3,
+        "all_three_expected_npcs_overlap": true,
+        "original_function_dispatched": true,
+        "observed_best_score": 0.9659258127212524,
+        "passed": true
+      },
+      {
+        "requested_actor_yaw_degrees": 75,
+        "actual_actor_yaw_degrees": 74.99999999999997,
+        "expected_npc_position_index": 1,
+        "actual_npc_position_index": 1,
+        "actual_target_name": "BP_NPC_Standard_C_UAID_84A938F497F6D7C102_2072863143",
+        "overlapping_npc_count": 3,
+        "all_three_expected_npcs_overlap": true,
+        "original_function_dispatched": true,
+        "observed_best_score": 0.8660253882408142,
+        "passed": true
+      },
+      {
+        "requested_actor_yaw_degrees": 90,
+        "actual_actor_yaw_degrees": 89.99999999999999,
+        "expected_npc_position_index": 1,
+        "actual_npc_position_index": 1,
+        "actual_target_name": "BP_NPC_Standard_C_UAID_84A938F497F6D7C102_2072863143",
+        "overlapping_npc_count": 3,
+        "all_three_expected_npcs_overlap": true,
+        "original_function_dispatched": true,
+        "observed_best_score": 0.7071067690849304,
+        "passed": true
+      },
+      {
+        "requested_actor_yaw_degrees": 105,
+        "actual_actor_yaw_degrees": 105.00000000000004,
+        "expected_npc_position_index": 1,
+        "actual_npc_position_index": 1,
+        "actual_target_name": "BP_NPC_Standard_C_UAID_84A938F497F6D7C102_2072863143",
+        "overlapping_npc_count": 3,
+        "all_three_expected_npcs_overlap": true,
+        "original_function_dispatched": true,
+        "observed_best_score": 0.5,
+        "passed": true
+      },
+      {
+        "requested_actor_yaw_degrees": 110,
+        "actual_actor_yaw_degrees": 110.00000000000003,
+        "expected_npc_position_index": 1,
+        "actual_npc_position_index": 1,
+        "actual_target_name": "BP_NPC_Standard_C_UAID_84A938F497F6D7C102_2072863143",
+        "overlapping_npc_count": 3,
+        "all_three_expected_npcs_overlap": true,
+        "original_function_dispatched": true,
+        "observed_best_score": 0.4226182699203491,
+        "passed": true
+      },
+      {
+        "requested_actor_yaw_degrees": 115,
+        "actual_actor_yaw_degrees": 115,
+        "expected_npc_position_index": 2,
+        "actual_npc_position_index": 2,
+        "actual_target_name": "BP_NPC_Standard_C_UAID_84A938F497F68BC002_1514459711",
+        "overlapping_npc_count": 3,
+        "all_three_expected_npcs_overlap": true,
+        "original_function_dispatched": true,
+        "observed_best_score": 0.4226182699203491,
+        "passed": true
+      },
+      {
+        "requested_actor_yaw_degrees": 120,
+        "actual_actor_yaw_degrees": 119.99999999999999,
+        "expected_npc_position_index": 2,
+        "actual_npc_position_index": 2,
+        "actual_target_name": "BP_NPC_Standard_C_UAID_84A938F497F68BC002_1514459711",
+        "overlapping_npc_count": 3,
+        "all_three_expected_npcs_overlap": true,
+        "original_function_dispatched": true,
+        "observed_best_score": 0.5,
+        "passed": true
+      },
+      {
+        "requested_actor_yaw_degrees": 135,
+        "actual_actor_yaw_degrees": 134.99999999999997,
+        "expected_npc_position_index": 2,
+        "actual_npc_position_index": 2,
+        "actual_target_name": "BP_NPC_Standard_C_UAID_84A938F497F68BC002_1514459711",
+        "overlapping_npc_count": 3,
+        "all_three_expected_npcs_overlap": true,
+        "original_function_dispatched": true,
+        "observed_best_score": 0.7071067690849304,
+        "passed": true
+      },
+      {
+        "requested_actor_yaw_degrees": 150,
+        "actual_actor_yaw_degrees": 150,
+        "expected_npc_position_index": 2,
+        "actual_npc_position_index": 2,
+        "actual_target_name": "BP_NPC_Standard_C_UAID_84A938F497F68BC002_1514459711",
+        "overlapping_npc_count": 3,
+        "all_three_expected_npcs_overlap": true,
+        "original_function_dispatched": true,
+        "observed_best_score": 0.8660253882408142,
+        "passed": true
+      },
+      {
+        "requested_actor_yaw_degrees": 165,
+        "actual_actor_yaw_degrees": 165,
+        "expected_npc_position_index": 2,
+        "actual_npc_position_index": 2,
+        "actual_target_name": "BP_NPC_Standard_C_UAID_84A938F497F68BC002_1514459711",
+        "overlapping_npc_count": 3,
+        "all_three_expected_npcs_overlap": true,
+        "original_function_dispatched": true,
+        "observed_best_score": 0.9659258127212524,
+        "passed": true
+      },
+      {
+        "requested_actor_yaw_degrees": 179,
+        "actual_actor_yaw_degrees": 179,
+        "expected_npc_position_index": 2,
+        "actual_npc_position_index": 2,
+        "actual_target_name": "BP_NPC_Standard_C_UAID_84A938F497F68BC002_1514459711",
+        "overlapping_npc_count": 3,
+        "all_three_expected_npcs_overlap": true,
+        "original_function_dispatched": true,
+        "observed_best_score": 0.9998477101325989,
+        "passed": true
+      }
+    ]
+  },
+  "rare_item_sampling": {
+    "function": "BP_Item_Master.DecideItem",
+    "rng": "Engine FMath::RandInit seed; original RandomFloatInRange graph",
+    "seed": 378,
+    "trials": 10000,
+    "rare_count": 976,
+    "rare_rate": 0.0976,
+    "configured_threshold": 0.1,
+    "comparison": "random_draw <= 0.1",
+    "wilson_95_lower": 0.09193694057269151,
+    "wilson_95_upper": 0.103572101316029,
+    "unexpected_id_count": 0,
+    "table_row_mismatch_count": 0,
+    "elapsed_seconds": 0.05891740000151913,
+    "acceptance_rule": "Predefined broad sanity interval 0.07 <= observed rate <= 0.13, not exact population probability proof."
+  },
+  "behavior_decorator_sampling": {
+    "function": "BTD_RandomChance.PerformConditionCheck",
+    "scope": "Actual original decorator event on a runtime instance with the actual PIE player as OwnerActor. Does not claim a full behavior-tree traversal or quest award.",
+    "original_default_chance": 0,
+    "configured_test_chance": 0.1,
+    "seed": 378,
+    "trials": 2000,
+    "accepted_count": 175,
+    "observed_rate": 0.08750000000000001,
+    "comparison": "random_draw < Chance",
+    "zero_chance_trials": 100,
+    "zero_chance_accepted_count": 0,
+    "elapsed_seconds": 0.0033767999993870035,
+    "acceptance_rule": "Predefined broad sanity interval 0.07 <= observed rate <= 0.13; no full-quest execution claim."
+  },
+  "runtime_property_snapshot_count": 14,
+  "captured_runtime_properties_restored": true,
+  "checks": [
+    {
+      "case": "setup.actual_possessed_original_player",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "setup.original_item_table",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "setup.original_npc_class",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "setup.original_five_npcs",
+      "passed": true,
+      "expected": 5,
+      "actual": 5
+    },
+    {
+      "case": "setup.player_property.Inventory",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "setup.player_property.Money",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "setup.player_property.Current_Stamina",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "setup.player_property.Max_Stamina",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "setup.player_property.Base_Speed",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "setup.player_property.Reduce_Stamina",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "setup.player_property.BestScore",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "setup.player_property.BestTarget",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "setup.player_property.InventoryWidgetRef",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "setup.npc_trust_property.BP_NPC_Standard_C_UAID_84A938F497F6CEB202_1348748719",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "setup.npc_trust_property.BP_NPC_Standard_C_UAID_84A938F497F6D7C102_2072863143",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "setup.npc_trust_property.BP_NPC_Standard_C_UAID_84A938F497F68BC002_1514459711",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "setup.npc_trust_property.BP_NPC_Standard_C_UAID_84A938F497F6D8C102_1487365321",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "setup.npc_trust_property.BP_NPC_Standard_C_UAID_84A938F497F6D8C102_1427366320",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "target.geometry_contains_three_original_npcs",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "dispatch.original_function.SendInteractionSignal",
+      "passed": true,
+      "expected": "successful actual ProcessEvent",
+      "actual": "{\r\n\t\"schema\": \"npc-audit/v1\",\r\n\t\"operation\": \"invoke\",\r\n\t\"ok\": true,\r\n\t\"function\": \"SendInteractionSignal\",\r\n\t\"execution\": \"synchronous_dispatch_completed\",\r\n\t\"latent_completion_observed\": false,\r\n\t\"parameters\":\r\n\t{\r\n\t\t\"KeyName\": \"__NpcAuditSelectionOnly\"\r\n\t}\r\n}"
+    },
+    {
+      "case": "target.actor_forward_selects_front_npc",
+      "passed": true,
+      "expected": "BP_NPC_Standard_C_UAID_84A938F497F6CEB202_1348748719",
+      "actual": "BP_NPC_Standard_C_UAID_84A938F497F6CEB202_1348748719"
+    },
+    {
+      "case": "target.front_dot_product",
+      "passed": true,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "case": "dispatch.original_function.SendInteractionSignal",
+      "passed": true,
+      "expected": "successful actual ProcessEvent",
+      "actual": "{\r\n\t\"schema\": \"npc-audit/v1\",\r\n\t\"operation\": \"invoke\",\r\n\t\"ok\": true,\r\n\t\"function\": \"SendInteractionSignal\",\r\n\t\"execution\": \"synchronous_dispatch_completed\",\r\n\t\"latent_completion_observed\": false,\r\n\t\"parameters\":\r\n\t{\r\n\t\t\"KeyName\": \"__NpcAuditSelectionOnly\"\r\n\t}\r\n}"
+    },
+    {
+      "case": "target.rotated_actor_selects_other_npc",
+      "passed": true,
+      "expected": "BP_NPC_Standard_C_UAID_84A938F497F68BC002_1514459711",
+      "actual": "BP_NPC_Standard_C_UAID_84A938F497F68BC002_1514459711"
+    },
+    {
+      "case": "target.matrix.yaw_-179.three_live_overlaps",
+      "passed": true,
+      "expected": 3,
+      "actual": 3
+    },
+    {
+      "case": "dispatch.original_function.SendInteractionSignal",
+      "passed": true,
+      "expected": "successful actual ProcessEvent",
+      "actual": "{\r\n\t\"schema\": \"npc-audit/v1\",\r\n\t\"operation\": \"invoke\",\r\n\t\"ok\": true,\r\n\t\"function\": \"SendInteractionSignal\",\r\n\t\"execution\": \"synchronous_dispatch_completed\",\r\n\t\"latent_completion_observed\": false,\r\n\t\"parameters\":\r\n\t{\r\n\t\t\"KeyName\": \"__NpcAuditSelectionOnly\"\r\n\t}\r\n}"
+    },
+    {
+      "case": "target.matrix.yaw_-179.expected_target",
+      "passed": true,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "case": "target.matrix.yaw_-165.three_live_overlaps",
+      "passed": true,
+      "expected": 3,
+      "actual": 3
+    },
+    {
+      "case": "dispatch.original_function.SendInteractionSignal",
+      "passed": true,
+      "expected": "successful actual ProcessEvent",
+      "actual": "{\r\n\t\"schema\": \"npc-audit/v1\",\r\n\t\"operation\": \"invoke\",\r\n\t\"ok\": true,\r\n\t\"function\": \"SendInteractionSignal\",\r\n\t\"execution\": \"synchronous_dispatch_completed\",\r\n\t\"latent_completion_observed\": false,\r\n\t\"parameters\":\r\n\t{\r\n\t\t\"KeyName\": \"__NpcAuditSelectionOnly\"\r\n\t}\r\n}"
+    },
+    {
+      "case": "target.matrix.yaw_-165.expected_target",
+      "passed": true,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "case": "target.matrix.yaw_-150.three_live_overlaps",
+      "passed": true,
+      "expected": 3,
+      "actual": 3
+    },
+    {
+      "case": "dispatch.original_function.SendInteractionSignal",
+      "passed": true,
+      "expected": "successful actual ProcessEvent",
+      "actual": "{\r\n\t\"schema\": \"npc-audit/v1\",\r\n\t\"operation\": \"invoke\",\r\n\t\"ok\": true,\r\n\t\"function\": \"SendInteractionSignal\",\r\n\t\"execution\": \"synchronous_dispatch_completed\",\r\n\t\"latent_completion_observed\": false,\r\n\t\"parameters\":\r\n\t{\r\n\t\t\"KeyName\": \"__NpcAuditSelectionOnly\"\r\n\t}\r\n}"
+    },
+    {
+      "case": "target.matrix.yaw_-150.expected_target",
+      "passed": true,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "case": "target.matrix.yaw_-135.three_live_overlaps",
+      "passed": true,
+      "expected": 3,
+      "actual": 3
+    },
+    {
+      "case": "dispatch.original_function.SendInteractionSignal",
+      "passed": true,
+      "expected": "successful actual ProcessEvent",
+      "actual": "{\r\n\t\"schema\": \"npc-audit/v1\",\r\n\t\"operation\": \"invoke\",\r\n\t\"ok\": true,\r\n\t\"function\": \"SendInteractionSignal\",\r\n\t\"execution\": \"synchronous_dispatch_completed\",\r\n\t\"latent_completion_observed\": false,\r\n\t\"parameters\":\r\n\t{\r\n\t\t\"KeyName\": \"__NpcAuditSelectionOnly\"\r\n\t}\r\n}"
+    },
+    {
+      "case": "target.matrix.yaw_-135.expected_target",
+      "passed": true,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "case": "target.matrix.yaw_-120.three_live_overlaps",
+      "passed": true,
+      "expected": 3,
+      "actual": 3
+    },
+    {
+      "case": "dispatch.original_function.SendInteractionSignal",
+      "passed": true,
+      "expected": "successful actual ProcessEvent",
+      "actual": "{\r\n\t\"schema\": \"npc-audit/v1\",\r\n\t\"operation\": \"invoke\",\r\n\t\"ok\": true,\r\n\t\"function\": \"SendInteractionSignal\",\r\n\t\"execution\": \"synchronous_dispatch_completed\",\r\n\t\"latent_completion_observed\": false,\r\n\t\"parameters\":\r\n\t{\r\n\t\t\"KeyName\": \"__NpcAuditSelectionOnly\"\r\n\t}\r\n}"
+    },
+    {
+      "case": "target.matrix.yaw_-120.expected_target",
+      "passed": true,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "case": "target.matrix.yaw_-105.three_live_overlaps",
+      "passed": true,
+      "expected": 3,
+      "actual": 3
+    },
+    {
+      "case": "dispatch.original_function.SendInteractionSignal",
+      "passed": true,
+      "expected": "successful actual ProcessEvent",
+      "actual": "{\r\n\t\"schema\": \"npc-audit/v1\",\r\n\t\"operation\": \"invoke\",\r\n\t\"ok\": true,\r\n\t\"function\": \"SendInteractionSignal\",\r\n\t\"execution\": \"synchronous_dispatch_completed\",\r\n\t\"latent_completion_observed\": false,\r\n\t\"parameters\":\r\n\t{\r\n\t\t\"KeyName\": \"__NpcAuditSelectionOnly\"\r\n\t}\r\n}"
+    },
+    {
+      "case": "target.matrix.yaw_-105.expected_target",
+      "passed": true,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "case": "target.matrix.yaw_-95.three_live_overlaps",
+      "passed": true,
+      "expected": 3,
+      "actual": 3
+    },
+    {
+      "case": "dispatch.original_function.SendInteractionSignal",
+      "passed": true,
+      "expected": "successful actual ProcessEvent",
+      "actual": "{\r\n\t\"schema\": \"npc-audit/v1\",\r\n\t\"operation\": \"invoke\",\r\n\t\"ok\": true,\r\n\t\"function\": \"SendInteractionSignal\",\r\n\t\"execution\": \"synchronous_dispatch_completed\",\r\n\t\"latent_completion_observed\": false,\r\n\t\"parameters\":\r\n\t{\r\n\t\t\"KeyName\": \"__NpcAuditSelectionOnly\"\r\n\t}\r\n}"
+    },
+    {
+      "case": "target.matrix.yaw_-95.expected_target",
+      "passed": true,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "case": "target.matrix.yaw_-85.three_live_overlaps",
+      "passed": true,
+      "expected": 3,
+      "actual": 3
+    },
+    {
+      "case": "dispatch.original_function.SendInteractionSignal",
+      "passed": true,
+      "expected": "successful actual ProcessEvent",
+      "actual": "{\r\n\t\"schema\": \"npc-audit/v1\",\r\n\t\"operation\": \"invoke\",\r\n\t\"ok\": true,\r\n\t\"function\": \"SendInteractionSignal\",\r\n\t\"execution\": \"synchronous_dispatch_completed\",\r\n\t\"latent_completion_observed\": false,\r\n\t\"parameters\":\r\n\t{\r\n\t\t\"KeyName\": \"__NpcAuditSelectionOnly\"\r\n\t}\r\n}"
+    },
+    {
+      "case": "target.matrix.yaw_-85.expected_target",
+      "passed": true,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "case": "target.matrix.yaw_-75.three_live_overlaps",
+      "passed": true,
+      "expected": 3,
+      "actual": 3
+    },
+    {
+      "case": "dispatch.original_function.SendInteractionSignal",
+      "passed": true,
+      "expected": "successful actual ProcessEvent",
+      "actual": "{\r\n\t\"schema\": \"npc-audit/v1\",\r\n\t\"operation\": \"invoke\",\r\n\t\"ok\": true,\r\n\t\"function\": \"SendInteractionSignal\",\r\n\t\"execution\": \"synchronous_dispatch_completed\",\r\n\t\"latent_completion_observed\": false,\r\n\t\"parameters\":\r\n\t{\r\n\t\t\"KeyName\": \"__NpcAuditSelectionOnly\"\r\n\t}\r\n}"
+    },
+    {
+      "case": "target.matrix.yaw_-75.expected_target",
+      "passed": true,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "case": "target.matrix.yaw_-60.three_live_overlaps",
+      "passed": true,
+      "expected": 3,
+      "actual": 3
+    },
+    {
+      "case": "dispatch.original_function.SendInteractionSignal",
+      "passed": true,
+      "expected": "successful actual ProcessEvent",
+      "actual": "{\r\n\t\"schema\": \"npc-audit/v1\",\r\n\t\"operation\": \"invoke\",\r\n\t\"ok\": true,\r\n\t\"function\": \"SendInteractionSignal\",\r\n\t\"execution\": \"synchronous_dispatch_completed\",\r\n\t\"latent_completion_observed\": false,\r\n\t\"parameters\":\r\n\t{\r\n\t\t\"KeyName\": \"__NpcAuditSelectionOnly\"\r\n\t}\r\n}"
+    },
+    {
+      "case": "target.matrix.yaw_-60.expected_target",
+      "passed": true,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "case": "target.matrix.yaw_-45.three_live_overlaps",
+      "passed": true,
+      "expected": 3,
+      "actual": 3
+    },
+    {
+      "case": "dispatch.original_function.SendInteractionSignal",
+      "passed": true,
+      "expected": "successful actual ProcessEvent",
+      "actual": "{\r\n\t\"schema\": \"npc-audit/v1\",\r\n\t\"operation\": \"invoke\",\r\n\t\"ok\": true,\r\n\t\"function\": \"SendInteractionSignal\",\r\n\t\"execution\": \"synchronous_dispatch_completed\",\r\n\t\"latent_completion_observed\": false,\r\n\t\"parameters\":\r\n\t{\r\n\t\t\"KeyName\": \"__NpcAuditSelectionOnly\"\r\n\t}\r\n}"
+    },
+    {
+      "case": "target.matrix.yaw_-45.expected_target",
+      "passed": true,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "case": "target.matrix.yaw_-30.three_live_overlaps",
+      "passed": true,
+      "expected": 3,
+      "actual": 3
+    },
+    {
+      "case": "dispatch.original_function.SendInteractionSignal",
+      "passed": true,
+      "expected": "successful actual ProcessEvent",
+      "actual": "{\r\n\t\"schema\": \"npc-audit/v1\",\r\n\t\"operation\": \"invoke\",\r\n\t\"ok\": true,\r\n\t\"function\": \"SendInteractionSignal\",\r\n\t\"execution\": \"synchronous_dispatch_completed\",\r\n\t\"latent_completion_observed\": false,\r\n\t\"parameters\":\r\n\t{\r\n\t\t\"KeyName\": \"__NpcAuditSelectionOnly\"\r\n\t}\r\n}"
+    },
+    {
+      "case": "target.matrix.yaw_-30.expected_target",
+      "passed": true,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "case": "target.matrix.yaw_-15.three_live_overlaps",
+      "passed": true,
+      "expected": 3,
+      "actual": 3
+    },
+    {
+      "case": "dispatch.original_function.SendInteractionSignal",
+      "passed": true,
+      "expected": "successful actual ProcessEvent",
+      "actual": "{\r\n\t\"schema\": \"npc-audit/v1\",\r\n\t\"operation\": \"invoke\",\r\n\t\"ok\": true,\r\n\t\"function\": \"SendInteractionSignal\",\r\n\t\"execution\": \"synchronous_dispatch_completed\",\r\n\t\"latent_completion_observed\": false,\r\n\t\"parameters\":\r\n\t{\r\n\t\t\"KeyName\": \"__NpcAuditSelectionOnly\"\r\n\t}\r\n}"
+    },
+    {
+      "case": "target.matrix.yaw_-15.expected_target",
+      "passed": true,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "case": "target.matrix.yaw_0.three_live_overlaps",
+      "passed": true,
+      "expected": 3,
+      "actual": 3
+    },
+    {
+      "case": "dispatch.original_function.SendInteractionSignal",
+      "passed": true,
+      "expected": "successful actual ProcessEvent",
+      "actual": "{\r\n\t\"schema\": \"npc-audit/v1\",\r\n\t\"operation\": \"invoke\",\r\n\t\"ok\": true,\r\n\t\"function\": \"SendInteractionSignal\",\r\n\t\"execution\": \"synchronous_dispatch_completed\",\r\n\t\"latent_completion_observed\": false,\r\n\t\"parameters\":\r\n\t{\r\n\t\t\"KeyName\": \"__NpcAuditSelectionOnly\"\r\n\t}\r\n}"
+    },
+    {
+      "case": "target.matrix.yaw_0.expected_target",
+      "passed": true,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "case": "target.matrix.yaw_15.three_live_overlaps",
+      "passed": true,
+      "expected": 3,
+      "actual": 3
+    },
+    {
+      "case": "dispatch.original_function.SendInteractionSignal",
+      "passed": true,
+      "expected": "successful actual ProcessEvent",
+      "actual": "{\r\n\t\"schema\": \"npc-audit/v1\",\r\n\t\"operation\": \"invoke\",\r\n\t\"ok\": true,\r\n\t\"function\": \"SendInteractionSignal\",\r\n\t\"execution\": \"synchronous_dispatch_completed\",\r\n\t\"latent_completion_observed\": false,\r\n\t\"parameters\":\r\n\t{\r\n\t\t\"KeyName\": \"__NpcAuditSelectionOnly\"\r\n\t}\r\n}"
+    },
+    {
+      "case": "target.matrix.yaw_15.expected_target",
+      "passed": true,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "case": "target.matrix.yaw_20.three_live_overlaps",
+      "passed": true,
+      "expected": 3,
+      "actual": 3
+    },
+    {
+      "case": "dispatch.original_function.SendInteractionSignal",
+      "passed": true,
+      "expected": "successful actual ProcessEvent",
+      "actual": "{\r\n\t\"schema\": \"npc-audit/v1\",\r\n\t\"operation\": \"invoke\",\r\n\t\"ok\": true,\r\n\t\"function\": \"SendInteractionSignal\",\r\n\t\"execution\": \"synchronous_dispatch_completed\",\r\n\t\"latent_completion_observed\": false,\r\n\t\"parameters\":\r\n\t{\r\n\t\t\"KeyName\": \"__NpcAuditSelectionOnly\"\r\n\t}\r\n}"
+    },
+    {
+      "case": "target.matrix.yaw_20.expected_target",
+      "passed": true,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "case": "target.matrix.yaw_25.three_live_overlaps",
+      "passed": true,
+      "expected": 3,
+      "actual": 3
+    },
+    {
+      "case": "dispatch.original_function.SendInteractionSignal",
+      "passed": true,
+      "expected": "successful actual ProcessEvent",
+      "actual": "{\r\n\t\"schema\": \"npc-audit/v1\",\r\n\t\"operation\": \"invoke\",\r\n\t\"ok\": true,\r\n\t\"function\": \"SendInteractionSignal\",\r\n\t\"execution\": \"synchronous_dispatch_completed\",\r\n\t\"latent_completion_observed\": false,\r\n\t\"parameters\":\r\n\t{\r\n\t\t\"KeyName\": \"__NpcAuditSelectionOnly\"\r\n\t}\r\n}"
+    },
+    {
+      "case": "target.matrix.yaw_25.expected_target",
+      "passed": true,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "case": "target.matrix.yaw_30.three_live_overlaps",
+      "passed": true,
+      "expected": 3,
+      "actual": 3
+    },
+    {
+      "case": "dispatch.original_function.SendInteractionSignal",
+      "passed": true,
+      "expected": "successful actual ProcessEvent",
+      "actual": "{\r\n\t\"schema\": \"npc-audit/v1\",\r\n\t\"operation\": \"invoke\",\r\n\t\"ok\": true,\r\n\t\"function\": \"SendInteractionSignal\",\r\n\t\"execution\": \"synchronous_dispatch_completed\",\r\n\t\"latent_completion_observed\": false,\r\n\t\"parameters\":\r\n\t{\r\n\t\t\"KeyName\": \"__NpcAuditSelectionOnly\"\r\n\t}\r\n}"
+    },
+    {
+      "case": "target.matrix.yaw_30.expected_target",
+      "passed": true,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "case": "target.matrix.yaw_45.three_live_overlaps",
+      "passed": true,
+      "expected": 3,
+      "actual": 3
+    },
+    {
+      "case": "dispatch.original_function.SendInteractionSignal",
+      "passed": true,
+      "expected": "successful actual ProcessEvent",
+      "actual": "{\r\n\t\"schema\": \"npc-audit/v1\",\r\n\t\"operation\": \"invoke\",\r\n\t\"ok\": true,\r\n\t\"function\": \"SendInteractionSignal\",\r\n\t\"execution\": \"synchronous_dispatch_completed\",\r\n\t\"latent_completion_observed\": false,\r\n\t\"parameters\":\r\n\t{\r\n\t\t\"KeyName\": \"__NpcAuditSelectionOnly\"\r\n\t}\r\n}"
+    },
+    {
+      "case": "target.matrix.yaw_45.expected_target",
+      "passed": true,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "case": "target.matrix.yaw_60.three_live_overlaps",
+      "passed": true,
+      "expected": 3,
+      "actual": 3
+    },
+    {
+      "case": "dispatch.original_function.SendInteractionSignal",
+      "passed": true,
+      "expected": "successful actual ProcessEvent",
+      "actual": "{\r\n\t\"schema\": \"npc-audit/v1\",\r\n\t\"operation\": \"invoke\",\r\n\t\"ok\": true,\r\n\t\"function\": \"SendInteractionSignal\",\r\n\t\"execution\": \"synchronous_dispatch_completed\",\r\n\t\"latent_completion_observed\": false,\r\n\t\"parameters\":\r\n\t{\r\n\t\t\"KeyName\": \"__NpcAuditSelectionOnly\"\r\n\t}\r\n}"
+    },
+    {
+      "case": "target.matrix.yaw_60.expected_target",
+      "passed": true,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "case": "target.matrix.yaw_75.three_live_overlaps",
+      "passed": true,
+      "expected": 3,
+      "actual": 3
+    },
+    {
+      "case": "dispatch.original_function.SendInteractionSignal",
+      "passed": true,
+      "expected": "successful actual ProcessEvent",
+      "actual": "{\r\n\t\"schema\": \"npc-audit/v1\",\r\n\t\"operation\": \"invoke\",\r\n\t\"ok\": true,\r\n\t\"function\": \"SendInteractionSignal\",\r\n\t\"execution\": \"synchronous_dispatch_completed\",\r\n\t\"latent_completion_observed\": false,\r\n\t\"parameters\":\r\n\t{\r\n\t\t\"KeyName\": \"__NpcAuditSelectionOnly\"\r\n\t}\r\n}"
+    },
+    {
+      "case": "target.matrix.yaw_75.expected_target",
+      "passed": true,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "case": "target.matrix.yaw_90.three_live_overlaps",
+      "passed": true,
+      "expected": 3,
+      "actual": 3
+    },
+    {
+      "case": "dispatch.original_function.SendInteractionSignal",
+      "passed": true,
+      "expected": "successful actual ProcessEvent",
+      "actual": "{\r\n\t\"schema\": \"npc-audit/v1\",\r\n\t\"operation\": \"invoke\",\r\n\t\"ok\": true,\r\n\t\"function\": \"SendInteractionSignal\",\r\n\t\"execution\": \"synchronous_dispatch_completed\",\r\n\t\"latent_completion_observed\": false,\r\n\t\"parameters\":\r\n\t{\r\n\t\t\"KeyName\": \"__NpcAuditSelectionOnly\"\r\n\t}\r\n}"
+    },
+    {
+      "case": "target.matrix.yaw_90.expected_target",
+      "passed": true,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "case": "target.matrix.yaw_105.three_live_overlaps",
+      "passed": true,
+      "expected": 3,
+      "actual": 3
+    },
+    {
+      "case": "dispatch.original_function.SendInteractionSignal",
+      "passed": true,
+      "expected": "successful actual ProcessEvent",
+      "actual": "{\r\n\t\"schema\": \"npc-audit/v1\",\r\n\t\"operation\": \"invoke\",\r\n\t\"ok\": true,\r\n\t\"function\": \"SendInteractionSignal\",\r\n\t\"execution\": \"synchronous_dispatch_completed\",\r\n\t\"latent_completion_observed\": false,\r\n\t\"parameters\":\r\n\t{\r\n\t\t\"KeyName\": \"__NpcAuditSelectionOnly\"\r\n\t}\r\n}"
+    },
+    {
+      "case": "target.matrix.yaw_105.expected_target",
+      "passed": true,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "case": "target.matrix.yaw_110.three_live_overlaps",
+      "passed": true,
+      "expected": 3,
+      "actual": 3
+    },
+    {
+      "case": "dispatch.original_function.SendInteractionSignal",
+      "passed": true,
+      "expected": "successful actual ProcessEvent",
+      "actual": "{\r\n\t\"schema\": \"npc-audit/v1\",\r\n\t\"operation\": \"invoke\",\r\n\t\"ok\": true,\r\n\t\"function\": \"SendInteractionSignal\",\r\n\t\"execution\": \"synchronous_dispatch_completed\",\r\n\t\"latent_completion_observed\": false,\r\n\t\"parameters\":\r\n\t{\r\n\t\t\"KeyName\": \"__NpcAuditSelectionOnly\"\r\n\t}\r\n}"
+    },
+    {
+      "case": "target.matrix.yaw_110.expected_target",
+      "passed": true,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "case": "target.matrix.yaw_115.three_live_overlaps",
+      "passed": true,
+      "expected": 3,
+      "actual": 3
+    },
+    {
+      "case": "dispatch.original_function.SendInteractionSignal",
+      "passed": true,
+      "expected": "successful actual ProcessEvent",
+      "actual": "{\r\n\t\"schema\": \"npc-audit/v1\",\r\n\t\"operation\": \"invoke\",\r\n\t\"ok\": true,\r\n\t\"function\": \"SendInteractionSignal\",\r\n\t\"execution\": \"synchronous_dispatch_completed\",\r\n\t\"latent_completion_observed\": false,\r\n\t\"parameters\":\r\n\t{\r\n\t\t\"KeyName\": \"__NpcAuditSelectionOnly\"\r\n\t}\r\n}"
+    },
+    {
+      "case": "target.matrix.yaw_115.expected_target",
+      "passed": true,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "case": "target.matrix.yaw_120.three_live_overlaps",
+      "passed": true,
+      "expected": 3,
+      "actual": 3
+    },
+    {
+      "case": "dispatch.original_function.SendInteractionSignal",
+      "passed": true,
+      "expected": "successful actual ProcessEvent",
+      "actual": "{\r\n\t\"schema\": \"npc-audit/v1\",\r\n\t\"operation\": \"invoke\",\r\n\t\"ok\": true,\r\n\t\"function\": \"SendInteractionSignal\",\r\n\t\"execution\": \"synchronous_dispatch_completed\",\r\n\t\"latent_completion_observed\": false,\r\n\t\"parameters\":\r\n\t{\r\n\t\t\"KeyName\": \"__NpcAuditSelectionOnly\"\r\n\t}\r\n}"
+    },
+    {
+      "case": "target.matrix.yaw_120.expected_target",
+      "passed": true,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "case": "target.matrix.yaw_135.three_live_overlaps",
+      "passed": true,
+      "expected": 3,
+      "actual": 3
+    },
+    {
+      "case": "dispatch.original_function.SendInteractionSignal",
+      "passed": true,
+      "expected": "successful actual ProcessEvent",
+      "actual": "{\r\n\t\"schema\": \"npc-audit/v1\",\r\n\t\"operation\": \"invoke\",\r\n\t\"ok\": true,\r\n\t\"function\": \"SendInteractionSignal\",\r\n\t\"execution\": \"synchronous_dispatch_completed\",\r\n\t\"latent_completion_observed\": false,\r\n\t\"parameters\":\r\n\t{\r\n\t\t\"KeyName\": \"__NpcAuditSelectionOnly\"\r\n\t}\r\n}"
+    },
+    {
+      "case": "target.matrix.yaw_135.expected_target",
+      "passed": true,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "case": "target.matrix.yaw_150.three_live_overlaps",
+      "passed": true,
+      "expected": 3,
+      "actual": 3
+    },
+    {
+      "case": "dispatch.original_function.SendInteractionSignal",
+      "passed": true,
+      "expected": "successful actual ProcessEvent",
+      "actual": "{\r\n\t\"schema\": \"npc-audit/v1\",\r\n\t\"operation\": \"invoke\",\r\n\t\"ok\": true,\r\n\t\"function\": \"SendInteractionSignal\",\r\n\t\"execution\": \"synchronous_dispatch_completed\",\r\n\t\"latent_completion_observed\": false,\r\n\t\"parameters\":\r\n\t{\r\n\t\t\"KeyName\": \"__NpcAuditSelectionOnly\"\r\n\t}\r\n}"
+    },
+    {
+      "case": "target.matrix.yaw_150.expected_target",
+      "passed": true,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "case": "target.matrix.yaw_165.three_live_overlaps",
+      "passed": true,
+      "expected": 3,
+      "actual": 3
+    },
+    {
+      "case": "dispatch.original_function.SendInteractionSignal",
+      "passed": true,
+      "expected": "successful actual ProcessEvent",
+      "actual": "{\r\n\t\"schema\": \"npc-audit/v1\",\r\n\t\"operation\": \"invoke\",\r\n\t\"ok\": true,\r\n\t\"function\": \"SendInteractionSignal\",\r\n\t\"execution\": \"synchronous_dispatch_completed\",\r\n\t\"latent_completion_observed\": false,\r\n\t\"parameters\":\r\n\t{\r\n\t\t\"KeyName\": \"__NpcAuditSelectionOnly\"\r\n\t}\r\n}"
+    },
+    {
+      "case": "target.matrix.yaw_165.expected_target",
+      "passed": true,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "case": "target.matrix.yaw_179.three_live_overlaps",
+      "passed": true,
+      "expected": 3,
+      "actual": 3
+    },
+    {
+      "case": "dispatch.original_function.SendInteractionSignal",
+      "passed": true,
+      "expected": "successful actual ProcessEvent",
+      "actual": "{\r\n\t\"schema\": \"npc-audit/v1\",\r\n\t\"operation\": \"invoke\",\r\n\t\"ok\": true,\r\n\t\"function\": \"SendInteractionSignal\",\r\n\t\"execution\": \"synchronous_dispatch_completed\",\r\n\t\"latent_completion_observed\": false,\r\n\t\"parameters\":\r\n\t{\r\n\t\t\"KeyName\": \"__NpcAuditSelectionOnly\"\r\n\t}\r\n}"
+    },
+    {
+      "case": "target.matrix.yaw_179.expected_target",
+      "passed": true,
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "case": "target.matrix.all_30_predefined_cases",
+      "passed": true,
+      "expected": 30,
+      "actual": 30
+    },
+    {
+      "case": "target.no_npc_overlap_precondition",
+      "passed": true,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "case": "dispatch.original_function.SendInteractionSignal",
+      "passed": true,
+      "expected": "successful actual ProcessEvent",
+      "actual": "{\r\n\t\"schema\": \"npc-audit/v1\",\r\n\t\"operation\": \"invoke\",\r\n\t\"ok\": true,\r\n\t\"function\": \"SendInteractionSignal\",\r\n\t\"execution\": \"synchronous_dispatch_completed\",\r\n\t\"latent_completion_observed\": false,\r\n\t\"parameters\":\r\n\t{\r\n\t\t\"KeyName\": \"__NpcAuditSelectionOnly\"\r\n\t}\r\n}"
+    },
+    {
+      "case": "target.no_overlap_clears_previous_target",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "target.no_overlap_resets_score",
+      "passed": true,
+      "expected": -1,
+      "actual": -1
+    },
+    {
+      "case": "fixture.target_actor_hidden_and_collision_flags_restored",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "trade.original_catalog_row",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "fixture.numeric_property.Trust_Level",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "fixture.numeric_property.Money",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "fixture.actual_row_array.Inventory",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "fixture.item_count_field",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "fixture.original_widget_class",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "fixture.actual_owned_widget",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "fixture.shop_target_npc",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "fixture.actual_row_array.NPC_SalesList",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "fixture.item_count_field",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "fixture.table_row.Bread",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "fixture.container_in_viewport",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "dispatch.original_function.UpdateShopUI",
+      "passed": true,
+      "expected": "successful actual ProcessEvent",
+      "actual": "{\r\n\t\"schema\": \"npc-audit/v1\",\r\n\t\"operation\": \"invoke\",\r\n\t\"ok\": true,\r\n\t\"function\": \"UpdateShopUI\",\r\n\t\"execution\": \"synchronous_dispatch_completed\",\r\n\t\"latent_completion_observed\": false,\r\n\t\"parameters\":\r\n\t{\r\n\t}\r\n}"
+    },
+    {
+      "case": "fixture.original_panel.NPC_ShopList",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "input.actual_bound_button.Button2",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "input.button_available.Button2",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "trade.exact_funds_money_debited",
+      "passed": true,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "case": "trade.exact_funds_one_item_added",
+      "passed": true,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "case": "fixture.numeric_property.Money",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "fixture.actual_row_array.Inventory",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "fixture.item_count_field",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "fixture.table_row.Bread",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "fixture.original_widget_class",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "fixture.actual_owned_widget",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "fixture.shop_target_npc",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "fixture.actual_row_array.NPC_SalesList",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "fixture.item_count_field",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "fixture.table_row.Bread",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "fixture.container_in_viewport",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "dispatch.original_function.UpdateShopUI",
+      "passed": true,
+      "expected": "successful actual ProcessEvent",
+      "actual": "{\r\n\t\"schema\": \"npc-audit/v1\",\r\n\t\"operation\": \"invoke\",\r\n\t\"ok\": true,\r\n\t\"function\": \"UpdateShopUI\",\r\n\t\"execution\": \"synchronous_dispatch_completed\",\r\n\t\"latent_completion_observed\": false,\r\n\t\"parameters\":\r\n\t{\r\n\t}\r\n}"
+    },
+    {
+      "case": "fixture.original_panel.NPC_ShopList",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "input.actual_bound_button.Button2",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "input.button_available.Button2",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "trade.existing_stack_quantity_incremented",
+      "passed": true,
+      "expected": 3,
+      "actual": 3
+    },
+    {
+      "case": "trade.existing_stack_not_duplicated",
+      "passed": true,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "case": "trade.existing_stack_price_debited",
+      "passed": true,
+      "expected": 95,
+      "actual": 95
+    },
+    {
+      "case": "fixture.numeric_property.Money",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "fixture.actual_row_array.Inventory",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "fixture.item_count_field",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "fixture.original_widget_class",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "fixture.actual_owned_widget",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "fixture.shop_target_npc",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "fixture.actual_row_array.NPC_SalesList",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "fixture.item_count_field",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "fixture.table_row.Bread",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "fixture.container_in_viewport",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "dispatch.original_function.UpdateShopUI",
+      "passed": true,
+      "expected": "successful actual ProcessEvent",
+      "actual": "{\r\n\t\"schema\": \"npc-audit/v1\",\r\n\t\"operation\": \"invoke\",\r\n\t\"ok\": true,\r\n\t\"function\": \"UpdateShopUI\",\r\n\t\"execution\": \"synchronous_dispatch_completed\",\r\n\t\"latent_completion_observed\": false,\r\n\t\"parameters\":\r\n\t{\r\n\t}\r\n}"
+    },
+    {
+      "case": "fixture.original_panel.NPC_ShopList",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "input.actual_bound_button.Button2",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "input.button_available.Button2",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "trade.insufficient_funds_money_unchanged",
+      "passed": true,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "case": "trade.insufficient_funds_inventory_unchanged",
+      "passed": true,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "case": "trade.original_rare_sale_row",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "fixture.numeric_property.Money",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "fixture.numeric_property.Trust_Level",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "fixture.actual_row_array.Inventory",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "fixture.item_count_field",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "fixture.table_row.Rare_Watermelon",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "fixture.original_widget_class",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "fixture.actual_owned_widget",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "fixture.shop_target_npc",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "fixture.actual_row_array.NPC_SalesList",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "fixture.item_count_field",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "fixture.table_row.Bread",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "fixture.container_in_viewport",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "dispatch.original_function.UpdateShopUI",
+      "passed": true,
+      "expected": "successful actual ProcessEvent",
+      "actual": "{\r\n\t\"schema\": \"npc-audit/v1\",\r\n\t\"operation\": \"invoke\",\r\n\t\"ok\": true,\r\n\t\"function\": \"UpdateShopUI\",\r\n\t\"execution\": \"synchronous_dispatch_completed\",\r\n\t\"latent_completion_observed\": false,\r\n\t\"parameters\":\r\n\t{\r\n\t}\r\n}"
+    },
+    {
+      "case": "fixture.original_panel.Player_InventoryList",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "input.actual_bound_button.Button1",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "input.button_available.Button1",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "trade.sell_entire_stack_removed",
+      "passed": true,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "case": "trade.sell_stack_revenue",
+      "passed": true,
+      "expected": 25,
+      "actual": 25
+    },
+    {
+      "case": "trade.sell_stack_npc_trust",
+      "passed": true,
+      "expected": 25,
+      "actual": 25
+    },
+    {
+      "case": "food.original_bread_row",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "fixture.numeric_property.Max_Stamina",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "fixture.numeric_property.Current_Stamina",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "fixture.actual_row_array.Inventory",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "fixture.item_count_field",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "fixture.table_row.Bread",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "fixture.original_widget_class",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "fixture.actual_owned_widget",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "fixture.container_in_viewport",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "dispatch.original_function.UpdateInventoryUI",
+      "passed": true,
+      "expected": "successful actual ProcessEvent",
+      "actual": "{\r\n\t\"schema\": \"npc-audit/v1\",\r\n\t\"operation\": \"invoke\",\r\n\t\"ok\": true,\r\n\t\"function\": \"UpdateInventoryUI\",\r\n\t\"execution\": \"synchronous_dispatch_completed\",\r\n\t\"latent_completion_observed\": false,\r\n\t\"parameters\":\r\n\t{\r\n\t}\r\n}"
+    },
+    {
+      "case": "fixture.original_panel.InventoryList",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "input.actual_bound_button.Button0",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "input.button_available.Button0",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "food.table_stamina_restored",
+      "passed": true,
+      "expected": 32.5,
+      "actual": 32.5
+    },
+    {
+      "case": "food.stack_consumes_one",
+      "passed": true,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "case": "fixture.numeric_property.Current_Stamina",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "fixture.actual_row_array.Inventory",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "fixture.item_count_field",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "fixture.table_row.Bread",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "fixture.original_widget_class",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "fixture.actual_owned_widget",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "fixture.container_in_viewport",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "dispatch.original_function.UpdateInventoryUI",
+      "passed": true,
+      "expected": "successful actual ProcessEvent",
+      "actual": "{\r\n\t\"schema\": \"npc-audit/v1\",\r\n\t\"operation\": \"invoke\",\r\n\t\"ok\": true,\r\n\t\"function\": \"UpdateInventoryUI\",\r\n\t\"execution\": \"synchronous_dispatch_completed\",\r\n\t\"latent_completion_observed\": false,\r\n\t\"parameters\":\r\n\t{\r\n\t}\r\n}"
+    },
+    {
+      "case": "fixture.original_panel.InventoryList",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "input.actual_bound_button.Button0",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "input.button_available.Button0",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "food.stamina_clamped_at_maximum",
+      "passed": true,
+      "expected": 100,
+      "actual": 100
+    },
+    {
+      "case": "food.final_unit_removed",
+      "passed": true,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "case": "fixture.numeric_property.Base_Speed",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "fixture.actual_row_array.Inventory",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "fixture.item_count_field",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "fixture.table_row.Cyber_Core",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "fixture.original_widget_class",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "fixture.actual_owned_widget",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "fixture.container_in_viewport",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "dispatch.original_function.UpdateInventoryUI",
+      "passed": true,
+      "expected": "successful actual ProcessEvent",
+      "actual": "{\r\n\t\"schema\": \"npc-audit/v1\",\r\n\t\"operation\": \"invoke\",\r\n\t\"ok\": true,\r\n\t\"function\": \"UpdateInventoryUI\",\r\n\t\"execution\": \"synchronous_dispatch_completed\",\r\n\t\"latent_completion_observed\": false,\r\n\t\"parameters\":\r\n\t{\r\n\t}\r\n}"
+    },
+    {
+      "case": "fixture.original_panel.InventoryList",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "input.actual_bound_button.Button0",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "input.button_available.Button0",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "food.original_special_effect.Cyber_Core",
+      "passed": true,
+      "expected": 320,
+      "actual": 320
+    },
+    {
+      "case": "food.special_consumed.Cyber_Core",
+      "passed": true,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "case": "fixture.numeric_property.Max_Stamina",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "fixture.actual_row_array.Inventory",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "fixture.item_count_field",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "fixture.table_row.Titan_Blood",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "fixture.original_widget_class",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "fixture.actual_owned_widget",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "fixture.container_in_viewport",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "dispatch.original_function.UpdateInventoryUI",
+      "passed": true,
+      "expected": "successful actual ProcessEvent",
+      "actual": "{\r\n\t\"schema\": \"npc-audit/v1\",\r\n\t\"operation\": \"invoke\",\r\n\t\"ok\": true,\r\n\t\"function\": \"UpdateInventoryUI\",\r\n\t\"execution\": \"synchronous_dispatch_completed\",\r\n\t\"latent_completion_observed\": false,\r\n\t\"parameters\":\r\n\t{\r\n\t}\r\n}"
+    },
+    {
+      "case": "fixture.original_panel.InventoryList",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "input.actual_bound_button.Button0",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "input.button_available.Button0",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "food.original_special_effect.Titan_Blood",
+      "passed": true,
+      "expected": 110,
+      "actual": 110
+    },
+    {
+      "case": "food.special_consumed.Titan_Blood",
+      "passed": true,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "case": "fixture.numeric_property.Reduce_Stamina",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "fixture.actual_row_array.Inventory",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "fixture.item_count_field",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "fixture.table_row.Eternal_Drink",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "fixture.original_widget_class",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "fixture.actual_owned_widget",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "fixture.container_in_viewport",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "dispatch.original_function.UpdateInventoryUI",
+      "passed": true,
+      "expected": "successful actual ProcessEvent",
+      "actual": "{\r\n\t\"schema\": \"npc-audit/v1\",\r\n\t\"operation\": \"invoke\",\r\n\t\"ok\": true,\r\n\t\"function\": \"UpdateInventoryUI\",\r\n\t\"execution\": \"synchronous_dispatch_completed\",\r\n\t\"latent_completion_observed\": false,\r\n\t\"parameters\":\r\n\t{\r\n\t}\r\n}"
+    },
+    {
+      "case": "fixture.original_panel.InventoryList",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "input.actual_bound_button.Button0",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "input.button_available.Button0",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "food.original_special_effect.Eternal_Drink",
+      "passed": true,
+      "expected": 9,
+      "actual": 9
+    },
+    {
+      "case": "food.special_consumed.Eternal_Drink",
+      "passed": true,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "case": "rare.original_item_class",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "rare.actual_deferred_item_actor",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "rare.original_reflected_function_and_fields",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "rare.both_original_table_rows",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "rare.only_original_normal_or_rare_ids",
+      "passed": true,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "case": "rare.every_result_matches_original_table_row",
+      "passed": true,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "case": "rare.observed_frequency_sanity_bound",
+      "passed": true,
+      "expected": "0.07 <= observed rate <= 0.13",
+      "actual": 0.0976
+    },
+    {
+      "case": "rare.actual_mesh_matches_selected_row",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "rare.actual_material_matches_selected_row",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "decorator.original_blueprint_class",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "decorator.actual_function_parameters",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "case": "decorator.zero_chance_rejects_all_100_calls",
+      "passed": true,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "case": "decorator.observed_frequency_sanity_bound",
+      "passed": true,
+      "expected": "0.07 <= observed rate <= 0.13",
+      "actual": 0.08750000000000001
+    },
+    {
+      "case": "fixture.captured_runtime_properties_restored",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    }
+  ],
+  "check_count": 273,
+  "passed_check_count": 273,
+  "failed_check_count": 0,
+  "elapsed_seconds": 0.09240870177745819,
+  "assertions_passed": true
+}

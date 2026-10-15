@@ -1,0 +1,14 @@
+{
+  "FileVersion": 3,
+  "Version": 1,
+  "VersionName": "1.0",
+  "FriendlyName": "NPC Audit",
+  "Description": "Editor-only reflection and actual Blueprint invocation for reproducible NPC verification.",
+  "Category": "Testing",
+  "EnabledByDefault": true,
+  "CanContainContent": false,
+  "IsBetaVersion": false,
+  "Modules": [
+    {"Name": "NpcAudit", "Type": "Editor", "LoadingPhase": "PostEngineInit"}
+  ]
+}
