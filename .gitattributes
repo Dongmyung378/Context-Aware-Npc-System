@@ -1,3 +1,12 @@
+# Preserve original asset and legacy document handling.
+*.uasset binary
+*.umap binary
+*.pdf binary
+*.pptx binary
+*.zip binary
+*.md text eol=lf
+*.txt text eol=lf
+
 # Manifest verification requires identical payload bytes on every platform.
 /.gitattributes -text
 /bundle.json -text
