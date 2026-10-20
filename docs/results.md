@@ -4,6 +4,26 @@
 
 The completed measurements below cover broader actual-engine verification and the reviewed dialogue and schedule corrections. They come from original-map PIE and actual Blueprint implementations. They are behavior counts and conditional event measurements, rather than machine-learning accuracy or an estimated portfolio-value score.
 
+## Reading the evidence
+
+PIE means Play in Editor: the game runs inside Unreal rather than in an external
+reimplementation. A state contract specifies a prepared input state and an
+expected response. A fixture creates that state, and an assertion checks an
+individual expectation. A suite groups related checks, so suite counts, assertion
+counts and whole gameplay scenarios use different denominators.
+
+Probability measurements count events from actual functions under repeatable
+conditions. A seed fixes the starting state of the random generator. Wilson
+intervals express uncertainty from finite event counts, rather than a guarantee
+that arbitrary play sessions will have exactly the measured frequency.
+
+For workload measurements, a Tick is the update of game objects during a frame.
+The world actor-tick span and editor frame interval measure different parts of
+execution. Median means the middle sorted value; the run-median range shows how
+that summary changed between repeated runs. Lower times describe shorter measured
+intervals under those conditions, not isolated NPC computation or a universal
+frame-rate guarantee.
+
 ## State contracts and retained corrections
 
 | Same state-contract set | Passed | Failed | Total |

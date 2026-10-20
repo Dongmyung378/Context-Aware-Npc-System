@@ -12,23 +12,23 @@
   "files": [
     {
       "path": "README.ko.md",
-      "bytes": 13511,
-      "sha256": "0ae1a6de15cfcd48336b09090c473bd9911dcf1ca55e03b0ee08f4700182c158"
+      "bytes": 16650,
+      "sha256": "b06aa2bdd7bba7606ee6c6645c2f9bf03dd587191f7200294ea8f00746cfd5ae"
     },
     {
       "path": "README.md",
-      "bytes": 12026,
-      "sha256": "3423d7110da2f1d032fa0c1abb85be18a68467c12c78f8a144084edbdb39a8a6"
+      "bytes": 14486,
+      "sha256": "254f40d259bea0a147429bc9f1aeef6447e1aed98ced61f7c4bba0a7735adcf3"
     },
     {
       "path": "docs/architecture.ko.md",
-      "bytes": 18088,
-      "sha256": "91c0e17556bc8b17f7db83019a28e16bf13508967d1573e5cb832290ffd7e61a"
+      "bytes": 18999,
+      "sha256": "e8ee57f04b305d756e61ef06d615a3cfabd2ba1bfbb560861613d33137631baa"
     },
     {
       "path": "docs/architecture.md",
-      "bytes": 15393,
-      "sha256": "2616ae557344b6a5547164e7baca42f808b391ff768d40fd952843f220dc8f12"
+      "bytes": 16140,
+      "sha256": "486160eeb8882d0e7e3ddfc30ce01ce2d6f5f7b0730b780974bb0e97f386ee52"
     },
     {
       "path": "docs/blueprint-inspection.ko.md",
@@ -52,13 +52,13 @@
     },
     {
       "path": "docs/results.ko.md",
-      "bytes": 15698,
-      "sha256": "26e01af40a14a0a122a37d56714eb612a457befce97c318d7a1e81515dc68f79"
+      "bytes": 17165,
+      "sha256": "795958d38db7c21b10827cce8c7bc877a5b448ddf16efce4317836fb77553843"
     },
     {
       "path": "docs/results.md",
-      "bytes": 14051,
-      "sha256": "52ec118833c3265e676b09eeea9b6a953343cc87175a8aeeec0b8b19de79815b"
+      "bytes": 15182,
+      "sha256": "5f04f9aba2b2429f66891cfcc40dfa24e8e5dac0dec79a378638ead0e32fc0a4"
     },
     {
       "path": "docs/source-provenance.ko.md",
@@ -97,8 +97,8 @@
     },
     {
       "path": "figures/README.ko.md",
-      "bytes": 1905,
-      "sha256": "cd03855c94d1654dff93af12509e547f84b04622012d2a63327a75e614615f46"
+      "bytes": 1935,
+      "sha256": "15d8f3766a592f087e88d94b6c4f09aa9b354e44463d41eaa79f79598a22c1ca"
     },
     {
       "path": "figures/README.md",

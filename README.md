@@ -2,6 +2,11 @@
 
 [English](README.md) | [한국어](README.ko.md)
 
+An **NPC** (non-player character) is a game character controlled by the game.
+Here, the player can approach a character, talk, trade, complete quests or ask
+for company. Game time, stamina, money, quest progress and the relationship with
+that character determine the resulting dialogue, available actions and movement.
+
 A personal Unreal Engine project connecting five NPCs to daily schedules, state-aware dialogue, quests, trading, trust and companion behavior.
 
 **Engine:** Unreal Engine 5.4.4  
@@ -16,6 +21,19 @@ The project explores how an NPC's routine, relationship with the player and curr
 The playable game uses authored rules and actual Unreal AI behavior. A separate Qwen feasibility experiment did not consistently follow gameplay constraints and was not integrated into the game. The maintained release preserves the five-NPC framework while correcting specific interaction behavior and adding source restoration and actual-engine verification tools. Later maintenance is recorded separately from the original development period.
 
 ![Actual NPC dialogue and relationship interface in the Unreal project](figures/screenshots/dialogue.png)
+
+### How the Unreal components fit together
+
+**Blueprint** is Unreal Engine's visual programming system: connected nodes
+implement the game's rules. A **Behavior Tree** chooses actions such as patrolling
+or following, using a **Blackboard** to share relevant state. **Data Tables**
+hold authored NPC, item and quest information, while **UMG** builds the visible
+dialogue, inventory and shop interfaces.
+
+An **Actor** is an object placed in the game world. An overlap identifies nearby
+objects inside a detection area; the player's Actor-forward vector describes
+the direction the character faces. The target-selection rule uses those nearby
+NPCs and that facing direction to choose whom the player interacts with.
 
 ## Key features
 
@@ -46,6 +64,13 @@ flowchart LR
 
 ## Recorded verification results
 
+**Play in Editor (PIE)** runs the game inside the Unreal editor. A **state
+contract** is a defined input state and an expected behavior: for example, a
+particular stamina and quest state should lead to the corresponding dialogue
+branch. A **fixture** prepares those conditions so the same check can be repeated.
+Passing the contract count therefore means satisfying those recorded expectations,
+not measuring a model's prediction accuracy.
+
 The checks below execute the project's Blueprint functions on actual Play in Editor actors. Expected outcomes and fixtures are defined in the test source and reported JSON.
 
 ![Actual-engine validation results and their separate scopes](figures/en/npc-validation-overview.svg)
@@ -61,6 +86,16 @@ The checks below execute the project's Blueprint functions on actual Play in Edi
 | Inventory input and respawn | **6/6 cases passed** | Actual PlayerController E input, item stacks, trust-filtered shop rows and the original 60-second respawn. |
 
 The 78 contracts cover defined state fixtures. The 30 target cases exclude exact directional ties and verify Actor-forward selection. Probability measurements count conditional function calls; they are not 10,000 complete conversations, completed quests or player sessions. The navigation check preserves the authored task-instance speed of **150** and verifies runtime `MaxWalkSpeed`; its home fixture does not establish that every authored home coordinate is reachable. The input suite dispatches real engine input events, with physical keyboard focus outside its scope.
+
+The probability rows compare how often an eligible random event occurred with
+its configured threshold. The observed percentage can differ from that threshold
+because the sample is finite. Each call resets the required conditions, so the
+denominator describes controlled function calls rather than whole play sessions.
+
+A **Tick** updates game objects during a frame. The workload comparison adds NPCs
+to observe how the measured update span and frame interval change. The median
+is the middle value after sorting measurements; lower elapsed times mean shorter
+measured processing or waiting intervals under the stated conditions.
 
 All **9 rendered workload runs** completed their validity checks: three runs each with 5, 20 and 50 NPCs. The table gives the **median of the three run medians**, rounded to three decimals.
 
@@ -79,6 +114,12 @@ The original 79-page report, its 11 feature checks and its 100-trial probability
 - **Current source and verification bundle:** [download `npc-source-and-verification.zip`](https://github.com/Dongmyung378/Context-Aware-Npc-System/raw/refs/heads/main/downloads/npc-source-and-verification.zip), then follow the [restoration guide](docs/reproduce.md).
 - **Original complete project:** [download `Project.zip` manually from Drive](https://drive.google.com/file/d/1qsdGAzKU3myKQVk04MfW-EngDHKKAqmW/view?usp=sharing).
 - **Recorded demonstrations:** [screencasts and supporting material](https://drive.google.com/drive/folders/1NyVitLN8_N_IztialbqUIZ3nomCIZ69q?usp=sharing).
+
+An **overlay** contains the explicit replacement and additional files to apply
+to the original project. A **manifest** lists the expected files and their content
+hashes; a hash is used to check whether a file's contents match the recorded
+version. These are restoration and integrity tools, while the engine checks
+below test actual gameplay behavior.
 
 The full original archive is a separate dependency: **2,257,866,122 bytes**, approximately 2.26 GB. The current compact bundle supplies the reviewed overlay, editor verification plugin source, manifests, tools and documentation. The restoration tool combines these inputs in a new directory and verifies the complete final source tree. The historical thirty-asset core ZIP is an inspection package and cannot run the full game on its own.
 

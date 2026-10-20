@@ -4,6 +4,18 @@
 
 The project connects five authored NPCs to a shared game clock, contextual dialogue, quests, trade, trust and companion behavior. The retained gameplay implementation uses Unreal Engine 5.4.4 Blueprint, Behavior Tree, Blackboard and Data Tables. Original development ran from September 2025 to June 2026; verification and maintenance in October 2026 are recorded separately.
 
+An NPC is a game-controlled character. This architecture connects player input
+and current state to authored dialogue, transactions and movement. Blueprint
+graphs implement the rules; a Behavior Tree selects movement tasks using shared
+Blackboard values; Data Tables supply the authored content. UMG widgets are the
+visible controls through which the player uses dialogue, inventory and shops.
+
+An Actor is an object in the game world. A Tick is its frame-update opportunity,
+while a task is a unit of behavior selected by the tree. A guard is a condition
+checked before an action may proceed. In the schedule correction below, the guard
+prevents a new return-home intention while an interaction is open; it does not
+replace the movement system.
+
 ## Runtime responsibilities
 
 | Component | Responsibility |
